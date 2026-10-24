@@ -278,7 +278,7 @@ Each milestone states a central question, an understanding target, earlier depen
 
 **Central question.** How can square-root branch maps retain the exponent when syndrome probabilities are small?
 
-**Understanding target.** Use the positive Kraus operators of polar recovery and the double-commutator identity for the corrected channel. Explain why subtracting scalar square roots and then squaring the operator-norm deviation yields a bound in terms of $\sum_s\Vert M_s-p_sI\Vert $, without dividing by $p_s$.
+**Understanding target.** Use the positive Kraus operators of polar recovery and the double-commutator identity for the corrected channel. Explain why subtracting scalar square roots and then squaring the operator-norm deviation yields a bound in terms of $\sum_s\Vert M_s-p_sI\Vert$, without dividing by $p_s$.
 
 **Dependencies and story role.** M09, M10, M21. This supplies the uniform-in-axis recovery upper bound and closes the rare-syndrome issue.
 

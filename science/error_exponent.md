@@ -188,7 +188,7 @@ U_\theta
 
 ### 3.1 Only complementary subsets share a syndrome
 
-The words $E_A$ and $E_B$ have the same syndrome precisely when $E_{A\triangle B}\in N$. The circuit property says this happens exactly when $A\triangle B$ is empty or all of $J$. Thus the error words in (15) fall into $2^{r-1}$ distinct complementary pairs $\lbrace A,J\setminus A\rbrace $, one per syndrome label reached by these words. At $\theta=0$, some such branches have zero amplitude; this does not change the pairing statement.
+The words $E_A$ and $E_B$ have the same syndrome precisely when $E_{A\triangle B}\in N$. The circuit property says this happens exactly when $A\triangle B$ is empty or all of $J$. Thus the error words in (15) fall into $2^{r-1}$ distinct complementary pairs $\lbrace A,J\setminus A\rbrace$, one per syndrome label reached by these words. At $\theta=0$, some such branches have zero amplitude; this does not change the pairing statement.
 
 For a pair represented by $A$ of weight $w$, use $E_A$ as the Pauli return from that syndrome sector. Since disjoint local factors commute and square to identity, the corresponding logical Kraus operator is
 
@@ -201,7 +201,7 @@ K_A
 
 where $\overline E=V^\dagger EV$ is a nontrivial Hermitian logical Pauli. Its two eigenspaces have dimension $D/2$.
 
-Because $r$ is even, the relative phase of the coefficients in (16) is real. After removing a common phase, this is $aI_D+\eta b\overline E$, with $a,b\geq0$ and $\eta\in\lbrace +1,-1\rbrace $. Thus
+Because $r$ is even, the relative phase of the coefficients in (16) is real. After removing a common phase, this is $aI_D+\eta b\overline E$, with $a,b\geq0$ and $\eta\in\lbrace +1,-1\rbrace$. Thus
 
 ```math
 \frac{1}{D}\mathrm{Tr}\sqrt{K_A^\dagger K_A}
@@ -210,7 +210,7 @@ Because $r$ is even, the relative phase of the coefficients in (16) is real. Aft
 \qquad\text{(17)}
 ```
 
-The branch contributes $\max\lbrace a^2,b^2\rbrace $ to optimal entanglement fidelity. Since $\sum_{\lbrace A,A^c\rbrace }(a^2+b^2)=1$, the optimal infidelity is the sum of the smaller probability in each pair.
+The branch contributes $\max(a^2,b^2)$ to optimal entanglement fidelity. Since $\sum_{\lbrace A,A^c\rbrace }(a^2+b^2)=1$, the optimal infidelity is the sum of the smaller probability in each pair.
 
 ### 3.2 Exact optimal error
 
@@ -258,7 +258,7 @@ Because every product in the second sum is real, the cross terms cancel entirely
 
 A nontrivial Hermitian Pauli has $\Vert \mathrm{Ad}_{\overline E}-\mathrm{id}\Vert _\diamond=2$. The upper bound is the general distance between channels; equality is attained by a balanced superposition of one $+1$ and one $-1$ eigenvector, which $\overline E$ sends to an orthogonal state. Hence (20) has half diamond error $p_r(q)$. Every recovery has half diamond error at least its entanglement infidelity and thus at least the optimal infidelity already calculated. This proves (19). $\square$
 
-The repetition-code weak-measurement mechanism is established in the coherent-error literature, notably Huang, Doherty, and Flammia. Its role here is the universal embedding: every finite-$r$ stabilizer code contains a minimum circuit that realizes (18), making the upper exponent sharp even against arbitrary post-syndrome recovery. See [the attribution comparison](../references/RELATED_WORK.md).
+The repetition-code weak-measurement mechanism is established in the coherent-error literature, notably Huang, Doherty, and Flammia. Its role here is the universal embedding: every stabilizer code with finite $r$ contains a minimum circuit that realizes (18), making the upper exponent sharp even against arbitrary post-syndrome recovery. See [the attribution comparison](../references/RELATED_WORK.md).
 
 ## 4. Small-angle and finite-angle consequences
 

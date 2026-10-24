@@ -310,7 +310,7 @@ The square root and the quadratic channel estimate balance. As a result,
 =O(|\theta|^r)
 ```
 
-for a fixed finite-$r$ code and $|\theta|\le1$. A zero-probability effect is the zero matrix by positivity, so it is covered as well. This mechanism is developed in [the upper-bound proof](../science/error_exponent.md#2-a-finite-code-collision-polynomial). The estimate gives one explicit code-dependent constant; it does not bound that constant uniformly over larger codes.
+for a fixed code with finite $r$ and for $|\theta|\le1$. A zero-probability effect is the zero matrix by positivity, so it is covered as well. This mechanism is developed in [the upper-bound proof](../science/error_exponent.md#2-a-finite-code-collision-polynomial). The estimate gives one explicit code-dependent constant; it does not bound that constant uniformly over larger codes.
 
 ## 10. Why the exponent is attained against every recovery
 
@@ -342,7 +342,7 @@ p_r\!\left(\sin^2(\theta/2)\right)
 +O(\theta^{r+2}).
 ```
 
-This positive coefficient and the preceding upper bound establish the sharp worst-case exponent for each fixed finite-$r$ code:
+This positive coefficient and the preceding upper bound establish the sharp worst-case exponent for each fixed code with finite $r$:
 
 ```math
 \sup_{\boldsymbol h}e_{\mathrm{opt}}(U_{\boldsymbol h}(\theta))
@@ -352,7 +352,7 @@ This positive coefficient and the preceding upper bound establish the sharp wors
 =\Theta(|\theta|^r).
 ```
 
-For $r=\infty$, both errors vanish exactly for every product unitary. At $r=2$ the toy example gives $p_2(q)=q$; at $r=4$ it gives $p_4(q)=3q^2-2q^3$. The repetition mechanism is inherited; the code-wide statement that every finite-$r$ code contains this witness is the new connection. The [complete lower bound](../science/error_exponent.md#3-an-embedded-even-repetition-witness) distinguishes this exact witness equality from the two generally different recovery metrics.
+For $r=\infty$, both errors vanish exactly for every product unitary. At $r=2$ the toy example gives $p_2(q)=q$; at $r=4$ it gives $p_4(q)=3q^2-2q^3$. The repetition mechanism is inherited; the code-wide statement that every code with finite $r$ contains this witness is the new connection. The [complete lower bound](../science/error_exponent.md#3-an-embedded-even-repetition-witness) distinguishes this exact witness equality from the two generally different recovery metrics.
 
 ## 11. From the five-qubit code to the one-CNOT separation
 
@@ -362,7 +362,7 @@ Concatenation replaces each outer physical qubit by an inner encoded qubit. A no
 
 Now take two such blocks. A matching stabilizer/logical support would need to match separately inside each block. On at least one block the logical is nontrivial and has odd weight, whereas the stabilizer restriction has even weight. This is impossible, giving $r=\infty$. Total parity alone would be insufficient: a logical acting nontrivially on both blocks can have even total weight.
 
-Conjugate the code by CNOT from physical qubit $0$ in the first block to physical qubit $5^t$ in the second. The construction chooses a minimum logical in the first block that avoids the control, so one weight-$3^t$ logical survives unchanged. A hypothetical shorter logical after CNOT would inverse-conjugate to a weight-$3^t$ logical of the product code touching both blocks. A minimum-weight product-code logical cannot do that, because its nontrivial logical block already uses the entire weight budget. The ordinary distance stays $3^t$.
+Conjugate the code by CNOT from physical qubit $0$ in the first block to physical qubit $5^t$ in the second. The construction chooses a minimum logical in the first block that avoids the control, so one logical of weight $3^t$ survives unchanged. A hypothetical shorter logical after CNOT would inverse-conjugate to a logical of weight $3^t$ in the product code touching both blocks. A minimum-weight product-code logical cannot do that, because its nontrivial logical block already uses the entire weight budget. The ordinary distance stays $3^t$.
 
 Meanwhile, a minimum logical $E_B$ with a $Z$ factor at the target transforms into $Z_0E_B$. Its weight is $3^t+1$. A normalizing subword must select the new control factor exactly when it selects the target factor; otherwise inverse CNOT leaves a detectable single-qubit $Z_0$ in the first block. Minimality of $E_B$ then permits only the empty and full subwords. The transformed operator is an even logical circuit. Since $r$ is even and at least the odd distance $3^t$, this circuit forces $r=3^t+1$.
 

@@ -79,7 +79,7 @@ F_{\mathrm{opt}}(U)\leq\frac12,
 \qquad\text{(5)}
 ```
 
-**Proof.** Choose $U$ so that $U^\dagger gU$ acts as a nontrivial Hermitian logical Pauli $\overline L$ on the code. Absorb a possible sign into $\overline L$. Since each syndrome sector is an eigenspace of $g$, with eigenvalue $\chi_s(g)\in\lbrace +1,-1\rbrace $,
+**Proof.** Choose $U$ so that $U^\dagger gU$ acts as a nontrivial Hermitian logical Pauli $\overline L$ on the code. Absorb a possible sign into $\overline L$. Since each syndrome sector is an eigenspace of $g$, with eigenvalue $\chi_s(g)\in\lbrace +1,-1\rbrace$,
 
 ```math
 K_s\overline L=\chi_s(g)K_s.
@@ -203,4 +203,4 @@ r(S_1\otimes S_2)=\min\{r(S_1),r(S_2)\},
 
 with the usual infinity convention. To prove the lower bound, restrict a support collision to a block where the logical factor is nontrivial; that block is itself a collision and its product weight cannot exceed the total. For the upper bound, extend any minimizing collision in one block by identity in the other. If neither block admits a collision, the same restriction argument excludes one in the product.
 
-The [one-CNOT family](code_families.md) uses these facts to produce equal-$[[n,k,d]]$ codes with $r=\infty$ and $r=d+1$, respectively, at unbounded distance.
+The [one-CNOT family](code_families.md) uses these facts to produce codes with equal parameters $[[n,k,d]]$ with $r=\infty$ and $r=d+1$, respectively, at unbounded distance.
