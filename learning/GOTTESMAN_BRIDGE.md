@@ -244,7 +244,7 @@ This also explains why total weight is too coarse. Two operators of equal weight
 
 For a matching-support pair $g\in S$ and $L\in N\setminus S$, form the phase-free product $E=gL$. On a site where $g$ and $L$ agree, $E$ is identity. On a site where they differ, both are nonidentity and $E$ anticommutes with the local factor of $g$. Thus the weight of $E$ counts exactly how many local Pauli axes must change in this collision.
 
-Let $\mathcal C_S$ contain all such matching-support pairs. The invariant minimizes that count:
+Let $\mathcal C_S$ be the set of all such matching-support pairs. The invariant minimizes that count:
 
 ```math
 r(S)=\min_{(g,L)\in\mathcal C_S}

@@ -159,7 +159,7 @@ This is a nontrivial logical Pauli of the transformed code, of even weight $m+1$
 
 First, a minimum-weight nontrivial logical $E_B$ has no proper nonempty normalizer subword. If such a subword were itself a nontrivial logical, it would contradict minimum distance. If it were a stabilizer, removing it would give a smaller representative of the same nontrivial logical class, again a contradiction.
 
-Consider any subword $F$ of $E'$. It selects a subset $J$ of the factors of $E_B$, together with a bit $f\in\{0,1\}$ specifying whether the control factor $Z_0$ is selected. Let $h\in\{0,1\}$ specify whether the target factor is selected. Since that target factor is $Z$, inverse conjugation gives
+Consider any subword $F$ of $E'$. It selects a subset $J$ of the factors of $E_B$, together with a bit $f\in\lbrace 0,1\rbrace $ specifying whether the control factor $Z_0$ is selected. Let $h\in\lbrace 0,1\rbrace $ specify whether the target factor is selected. Since that target factor is $Z$, inverse conjugation gives
 
 ```math
 C_t^\dagger F C_t=Z_0^{f\oplus h}(E_B)_J.

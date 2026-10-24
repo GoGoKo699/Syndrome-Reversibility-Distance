@@ -45,7 +45,7 @@ The proof below supplies an explicit finite-code upper bound and a witness with 
 
 ## 2. A finite-code collision polynomial
 
-Let $\mathcal C_S$ contain the pairs $(g,L)$ with $g\in S$, $L\in N\setminus S$, and exactly equal support. Define the polynomial
+Let $\mathcal C_S$ be the set of pairs $(g,L)$ with $g\in S$, $L\in N\setminus S$, and exactly equal support. Define the polynomial
 
 ```math
 B_S(x)=
@@ -188,7 +188,7 @@ U_\theta
 
 ### 3.1 Only complementary subsets share a syndrome
 
-The words $E_A$ and $E_B$ have the same syndrome precisely when $E_{A\triangle B}\in N$. The circuit property says this happens exactly when $A\triangle B$ is empty or all of $J$. Thus the error words in (15) fall into $2^{r-1}$ distinct complementary pairs $\{A,J\setminus A\}$, one per syndrome label reached by these words. At $\theta=0$, some such branches have zero amplitude; this does not change the pairing statement.
+The words $E_A$ and $E_B$ have the same syndrome precisely when $E_{A\triangle B}\in N$. The circuit property says this happens exactly when $A\triangle B$ is empty or all of $J$. Thus the error words in (15) fall into $2^{r-1}$ distinct complementary pairs $\lbrace A,J\setminus A\rbrace $, one per syndrome label reached by these words. At $\theta=0$, some such branches have zero amplitude; this does not change the pairing statement.
 
 For a pair represented by $A$ of weight $w$, use $E_A$ as the Pauli return from that syndrome sector. Since disjoint local factors commute and square to identity, the corresponding logical Kraus operator is
 
@@ -201,7 +201,7 @@ K_A
 
 where $\overline E=V^\dagger EV$ is a nontrivial Hermitian logical Pauli. Its two eigenspaces have dimension $D/2$.
 
-Because $r$ is even, the relative phase of the coefficients in (16) is real. After removing a common phase, this is $aI_D+\eta b\overline E$, with $a,b\geq0$ and $\eta\in\{+1,-1\}$. Thus
+Because $r$ is even, the relative phase of the coefficients in (16) is real. After removing a common phase, this is $aI_D+\eta b\overline E$, with $a,b\geq0$ and $\eta\in\lbrace +1,-1\rbrace $. Thus
 
 ```math
 \frac1D\mathrm{Tr}\sqrt{K_A^\dagger K_A}
@@ -210,7 +210,7 @@ Because $r$ is even, the relative phase of the coefficients in (16) is real. Aft
 \qquad\text{(17)}
 ```
 
-The branch contributes $\max\{a^2,b^2\}$ to optimal entanglement fidelity. Since $\sum_{\{A,A^c\}}(a^2+b^2)=1$, the optimal infidelity is the sum of the smaller probability in each pair.
+The branch contributes $\max\lbrace a^2,b^2\rbrace $ to optimal entanglement fidelity. Since $\sum_{\lbrace A,A^c\rbrace }(a^2+b^2)=1$, the optimal infidelity is the sum of the smaller probability in each pair.
 
 ### 3.2 Exact optimal error
 

@@ -79,7 +79,7 @@ F_{\mathrm{opt}}(U)\leq\frac12,
 \qquad\text{(5)}
 ```
 
-**Proof.** Choose $U$ so that $U^\dagger gU$ acts as a nontrivial Hermitian logical Pauli $\overline L$ on the code. Absorb a possible sign into $\overline L$. Since each syndrome sector is an eigenspace of $g$, with eigenvalue $\chi_s(g)\in\{+1,-1\}$,
+**Proof.** Choose $U$ so that $U^\dagger gU$ acts as a nontrivial Hermitian logical Pauli $\overline L$ on the code. Absorb a possible sign into $\overline L$. Since each syndrome sector is an eigenspace of $g$, with eigenvalue $\chi_s(g)\in\lbrace +1,-1\rbrace $,
 
 ```math
 K_s\overline L=\chi_s(g)K_s.
