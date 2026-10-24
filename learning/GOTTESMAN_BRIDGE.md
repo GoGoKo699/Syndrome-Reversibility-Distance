@@ -100,7 +100,7 @@ Take the positive eigenspace of the stabilizer $XX$. It encodes one qubit with b
 \lvert1_L\rangle=\lvert--\rangle,
 \qquad
 \lvert\pm\rangle=
-\frac{\lvert0\rangle\pm\lvert1\rangle}{\sqrt2}.
+\frac{\lvert0\rangle\pm\lvert1\rangle}{\sqrt{2}}.
 ```
 
 The physical operator $E=ZZ$ swaps these basis states, so its induced logical action is $\overline X$. A physical $XI$ acts as a nontrivial logical phase operator, so this toy code has ordinary distance $d=1$. It illustrates the measurement mechanism rather than supplying protection against every single-qubit error.
@@ -180,7 +180,7 @@ Entanglement fidelity tests preservation of the maximally entangled logical/refe
 
 ```math
 \lvert\Omega_D\rangle
-=\frac1{\sqrt D}\sum_{j=1}^D
+=\frac{1}{\sqrt{D}}\sum_{j=1}^D
 \lvert j\rangle_L\lvert j\rangle_R.
 ```
 
@@ -188,7 +188,7 @@ Preserving this state checks the channel's action on superpositions as well as b
 
 ```math
 F_{\mathrm{opt}}(U)
-=\frac1{D^2}\sum_s
+=\frac{1}{D^2}\sum_s
 \left(\mathrm{Tr}\sqrt{M_s}\right)^2.
 ```
 
@@ -199,9 +199,9 @@ This is the Gregoratti–Werner recovery theorem, with a self-contained derivati
 For a channel $\Lambda$ on the logical system, its half-diamond distance from the ideal channel can be written
 
 ```math
-\frac12\lVert\Lambda-\mathrm{id}\rVert_\diamond
+\frac{1}{2}\lVert\Lambda-\mathrm{id}\rVert_\diamond
 =\sup_{\rho_{LR}}
-\frac12\left\lVert
+\frac{1}{2}\left\lVert
 (\Lambda\otimes\mathrm{id}_R)(\rho_{LR})-\rho_{LR}
 \right\rVert_1.
 ```
@@ -219,7 +219,7 @@ The support theorem combines three observations. Each can be understood separate
 First, the full syndrome projectors and the full stabilizer group determine one another by binary Fourier inversion:
 
 ```math
-\Pi_s=\frac1{|S|}\sum_{g\in S}\chi_s(g)g,
+\Pi_s=\frac{1}{|S|}\sum_{g\in S}\chi_s(g)g,
 \qquad
 g=\sum_s\chi_s(g)\Pi_s.
 ```
@@ -291,7 +291,7 @@ The positive-Kraus recovery channel has the exact identity
 
 ```math
 \Phi-\mathrm{id}
-=-\frac12\sum_s[A_s,[A_s,\,\cdot\,]],
+=-\frac{1}{2}\sum_s[A_s,[A_s,\,\cdot\,]],
 \qquad A_s=\sqrt{M_s}.
 ```
 
@@ -328,8 +328,8 @@ Because $r$ is even, their relative phase is real. The branch has the form $aI\p
 For $q=s^2\le1/2$, this gives the even-repetition tail
 
 ```math
-p_r(q)=\sum_{w>r/2}\binom rwq^w(1-q)^{r-w}
-+\frac12\binom r{r/2}q^{r/2}(1-q)^{r/2}.
+p_r(q)=\sum_{w>r/2}\binom{r}{w}q^w(1-q)^{r-w}
++\frac{1}{2}\binom{r}{r/2}q^{r/2}(1-q)^{r/2}.
 ```
 
 The factor one half counts equal-weight complementary pairs once. Returning the lower-weight subword realizes a Pauli dephasing channel with rate $p_r(q)$, so its half-diamond error equals the all-recovery fidelity lower bound. Both optimized errors are exactly $p_r(q)$ for this witness.
@@ -338,7 +338,7 @@ The tied pairs lead at small angle:
 
 ```math
 p_r\!\left(\sin^2(\theta/2)\right)
-=\frac12\binom r{r/2}\left(\frac\theta2\right)^r
+=\frac{1}{2}\binom{r}{r/2}\left(\frac{\theta}{2}\right)^r
 +O(\theta^{r+2}).
 ```
 

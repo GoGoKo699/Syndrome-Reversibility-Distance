@@ -82,7 +82,7 @@ Let $P_j$ be a nonidentity single-qubit Pauli. Its conjugate by $U_j(\theta)$ is
 ```math
 \left\Vert \frac{d}{d\theta}
 \left(U_j(\theta)^\dagger P_jU_j(\theta)\right)\right\Vert _\infty
-=\frac12\Vert [h_j,P_j]\Vert _\infty
+=\frac{1}{2}\Vert [h_j,P_j]\Vert _\infty
 \leq1.
 \qquad\text{(7)}
 ```
@@ -131,14 +131,14 @@ The polar recovery of [Proposition 1](model.md) has positive Kraus operators $A_
 
 ```math
 \Phi-\mathrm{id}
-=-\frac12\sum_s[A_s,[A_s,\,\cdot\,]].
+=-\frac{1}{2}\sum_s[A_s,[A_s,\,\cdot\,]].
 \qquad\text{(12)}
 ```
 
 Set $C_s=A_s-\sqrt{p_s}I_D$. Scalar shifts do not change commutators. Left or right multiplication by an operator $C$ has diamond norm at most $\Vert C\Vert _\infty$, so $\Vert [C,\,\cdot\,]\Vert _\diamond\leq2\Vert C\Vert _\infty$. It follows that
 
 ```math
-\frac12\Vert \Phi-\mathrm{id}\Vert _\diamond
+\frac{1}{2}\Vert \Phi-\mathrm{id}\Vert _\diamond
 \leq\sum_s\Vert C_s\Vert _\infty^2.
 \qquad\text{(13)}
 ```
@@ -146,7 +146,7 @@ Set $C_s=A_s-\sqrt{p_s}I_D$. Scalar shifts do not change commutators. Left or ri
 The scalar matrix $p_sI_D$ commutes with $M_s$. For every eigenvalue $\lambda\geq0$ of $M_s$,
 
 ```math
-(\sqrt\lambda-\sqrt{p_s})^2\leq|\lambda-p_s|.
+(\sqrt{\lambda}-\sqrt{p_s})^2\leq|\lambda-p_s|.
 ```
 
 Consequently
@@ -175,7 +175,7 @@ where the local factors $E_j$ are Hermitian nonidentity Paulis and $E$ is a nont
 ```math
 c=\cos(\theta/2),\qquad
 s=\sin(\theta/2),\qquad
-q=s^2\leq\frac12.
+q=s^2\leq\frac{1}{2}.
 ```
 
 The physical rotation has the exact expansion
@@ -204,7 +204,7 @@ where $\overline E=V^\dagger EV$ is a nontrivial Hermitian logical Pauli. Its tw
 Because $r$ is even, the relative phase of the coefficients in (16) is real. After removing a common phase, this is $aI_D+\eta b\overline E$, with $a,b\geq0$ and $\eta\in\lbrace +1,-1\rbrace $. Thus
 
 ```math
-\frac1D\mathrm{Tr}\sqrt{K_A^\dagger K_A}
+\frac{1}{D}\mathrm{Tr}\sqrt{K_A^\dagger K_A}
 =\frac{|a+b|+|a-b|}{2}
 =\max\{a,b\}.
 \qquad\text{(17)}
@@ -219,8 +219,8 @@ For $q\leq1/2$, the smaller probability belongs to the larger-weight subset. In 
 ```math
 \begin{aligned}
 p_r(q)
-&=\sum_{w>r/2}\binom rwq^w(1-q)^{r-w}\\
-&\quad+\frac12\binom r{r/2}q^{r/2}(1-q)^{r/2}
+&=\sum_{w>r/2}\binom{r}{w}q^w(1-q)^{r-w}\\
+&\quad+\frac{1}{2}\binom{r}{r/2}q^{r/2}(1-q)^{r/2}
 \end{aligned}
 \qquad\text{(18)}
 ```
@@ -266,7 +266,7 @@ The tie term is the leading contribution in (18). Since $q=\theta^2/4+O(\theta^4
 
 ```math
 p_r\!\left(\sin^2(\theta/2)\right)
-=\frac12\binom r{r/2}\left(\frac\theta2\right)^r
+=\frac{1}{2}\binom{r}{r/2}\left(\frac{\theta}{2}\right)^r
 +O(\theta^{r+2}).
 \qquad\text{(21)}
 ```
@@ -279,7 +279,7 @@ At the finite angle $\theta=\pi/2$, binomial symmetry gives $p_r(1/2)=1/2$. The 
 p_4(q)=3q^2-2q^3,
 \qquad
 p_4\!\left(\sin^2(\theta/2)\right)
-=\frac3{16}\theta^4+O(\theta^6).
+=\frac{3}{16}\theta^4+O(\theta^6).
 \qquad\text{(22)}
 ```
 
