@@ -17,7 +17,7 @@ All definitions and the order of operations are fixed in [the measured-channel m
 \cap
 \{\mathrm{supp}(L):L\in N\setminus S\}
 =\varnothing.
-\tag{1}
+\qquad\text{(1)}
 ```
 
 The set on the stabilizer side contains the **full stabilizer group**, not only a chosen independent generator list. Exact support also matters: neither equal weight nor support containment can replace equality in (1).
@@ -34,7 +34,7 @@ Fourier inversion of the syndrome projectors gives
 (-1)^{s\cdot a}g(a),\\
 g(a)&=\sum_s(-1)^{s\cdot a}\Pi_s.
 \end{aligned}
-\tag{2}
+\qquad\text{(2)}
 ```
 
 For each fixed $U$, all effects $M_s$ are scalar if and only if every compression $V^\dagger U^\dagger g(a)UV$ is scalar.
@@ -45,7 +45,7 @@ Fix a physical stabilizer $g$. Product conjugation preserves its exact support. 
 U^\dagger gU
 \in\mathrm{span}_{\mathbb R}
 \{Q:\mathrm{supp}(Q)=\mathrm{supp}(g)\},
-\tag{3}
+\qquad\text{(3)}
 ```
 
 where $Q$ ranges over canonical Hermitian tensor Paulis. Conversely, every tensor Pauli with that exact support occurs, up to its global sign, as a product-Clifford conjugate of $g$. The span of the entire conjugacy orbit is therefore exactly the space in (3).
@@ -59,7 +59,7 @@ V^\dagger QV=
 \pm I_D,&Q\in S,\\
 \overline Q,&Q\in N\setminus S,
 \end{cases}
-\tag{4}
+\qquad\text{(4)}
 ```
 
 where $\overline Q$ in the last line is a nontrivial logical Pauli, up to a sign, and has zero trace. The first line follows by inserting a stabilizer that anticommutes with $Q$ on either side of the compression. The second is the stabilizer eigenvalue condition. For the third, the quotient $N/S$ is the logical Pauli space; a nonzero element has a logical anticommuting partner, so its action is traceless and cannot be scalar.
@@ -76,14 +76,14 @@ The necessity proof gives a finite-angle operational witness, not only a failure
 F_{\mathrm{opt}}(U)\leq\frac12,
 \qquad
 \varepsilon_{\mathrm{opt}}(U)\geq\frac12.
-\tag{5}
+\qquad\text{(5)}
 ```
 
 **Proof.** Choose $U$ so that $U^\dagger gU$ acts as a nontrivial Hermitian logical Pauli $\overline L$ on the code. Absorb a possible sign into $\overline L$. Since each syndrome sector is an eigenspace of $g$, with eigenvalue $\chi_s(g)\in\{+1,-1\}$,
 
 ```math
 K_s\overline L=\chi_s(g)K_s.
-\tag{6}
+\qquad\text{(6)}
 ```
 
 Thus $K_s$ annihilates the opposite logical eigenspace. Both eigenspaces of $\overline L$ have dimension $D/2$, and $\mathrm{rank}M_s\leq D/2$. Cauchy–Schwarz on the support of $M_s$ yields
@@ -105,7 +105,7 @@ Let $\mathcal C_S$ be the set of pairs $(g,L)$ with $g\in S$, $L\in N\setminus S
 r(S)=
 \min_{(g,L)\in\mathcal C_S}
 \mathrm{wt}(gL),
-\tag{7}
+\qquad\text{(7)}
 ```
 
 with $r(S)=\infty$ when the set is empty. Multiplication in (7) is phase-free. Because $g$ and $L$ commute globally, a Hermitian representative of their product is available, but its sign has no effect on the weight.
@@ -115,7 +115,7 @@ Equivalently, $r$ is the least weight of a nontrivial logical Pauli $E$ for whic
 ```math
 g_jE_j=-E_jg_j
 \quad\text{at every }j\in\mathrm{supp}(E).
-\tag{8}
+\qquad\text{(8)}
 ```
 
 To see the equivalence, set $E=gL$ in a support collision. Wherever $g_j$ and $L_j$ differ, they are distinct nonidentity Paulis; their product is the third axis and anticommutes with $g_j$. Wherever they agree, $E_j=I$. Conversely, if (8) holds, $L=gE$ is a nontrivial logical label with the same support as $g$: its active factors remain nonidentity, and its other factors are unchanged.
@@ -124,7 +124,7 @@ Since $E\in N$, it commutes globally with $g$. Equation (8) then forces $\mathrm
 
 ```math
 r<\infty\quad\Longrightarrow\quad r\text{ is even and }r\geq d.
-\tag{9}
+\qquad\text{(9)}
 ```
 
 The [error-exponent theorem](error_exponent.md) gives (7) its operational meaning. Its use does not assume that an optimal recovery can be implemented efficiently.
@@ -137,7 +137,7 @@ For a fixed Hermitian Pauli word $E=\bigotimes_jE_j$ and a subset $A\subseteq\ma
 E_A\notin N
 \quad\text{for every proper nonempty }
 A\subset\mathrm{supp}(E).
-\tag{10}
+\qquad\text{(10)}
 ```
 
 The word “circuit” refers to a minimal binary linear dependence among the local syndrome columns. It does not mean a gate circuit. Condition (10) concerns the fixed local labels of $E$; it does not exclude all other Pauli operators with smaller supports.
@@ -146,7 +146,7 @@ The word “circuit” refers to a minimal binary linear dependence among the lo
 
 ```math
 r(S)=\min\{\mathrm{wt}(E): E\text{ is a logical circuit of even weight}\},
-\tag{11}
+\qquad\text{(11)}
 ```
 
 where an empty minimum is infinity.
@@ -167,14 +167,14 @@ H_E=(v_j)_{j\in J}\in\mathbb F_2^{(n-k)\times w},
 1,&g_\ell E_j=-E_jg_\ell,\\
 0,&g_\ell E_j=E_jg_\ell,
 \end{cases}
-\tag{12}
+\qquad\text{(12)}
 ```
 
 where $E_j$ in the commutation relation means the physical single-site Pauli. A subset of columns sums to zero exactly when the corresponding subword normalizes the code. As $E\in N$ and has no proper nonempty normalizer subword,
 
 ```math
 \ker H_E=\mathrm{span}\{\mathbf1_J\}.
-\tag{13}
+\qquad\text{(13)}
 ```
 
 Because $w$ is even, $\mathbf1_J\cdot\mathbf1_J=0$ in $\mathbb F_2$. Therefore
@@ -198,7 +198,7 @@ Physical-qubit permutations and local Clifford transformations preserve $r$, sin
 
 ```math
 r(S_1\otimes S_2)=\min\{r(S_1),r(S_2)\},
-\tag{14}
+\qquad\text{(14)}
 ```
 
 with the usual infinity convention. To prove the lower bound, restrict a support collision to a block where the logical factor is nontrivial; that block is itself a collision and its product weight cannot exceed the total. For the upper bound, extend any minimizing collision in one block by identity in the other. If neither block admits a collision, the same restriction argument excludes one in the product.

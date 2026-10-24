@@ -31,7 +31,7 @@ The full syndrome is $s\in\mathbb F_2^m$, with projector
 
 ```math
 \Pi_s=2^{-m}\sum_{a\in\mathbb F_2^m}(-1)^{s\cdot a}g(a).
-\tag{1}
+\qquad\text{(1)}
 ```
 
 Each syndrome subspace has dimension $D$, and $\sum_s\Pi_s=I_P$. Choose a Pauli isometry $W_s:\mathcal H_L\to\Pi_s\mathcal H_P$ identifying that sector with the logical space. For example, $W_s=T_sV$ for a Pauli $T_s$ having syndrome $s$.
@@ -50,7 +50,7 @@ the measured channel is
 \mathcal N_U(\rho)
 =\sum_s |s\rangle\langle s|\otimes
 \Pi_sUV\rho V^\dagger U^\dagger\Pi_s.
-\tag{2}
+\qquad\text{(2)}
 ```
 
 The classical register has been dephased: coherent superpositions of different syndrome outcomes are not retained. The recovery acts after (2), may depend on $U$, and is otherwise an arbitrary completely positive trace-preserving map from the joint output to $\mathcal H_L$. Because the input to recovery is block diagonal in $s$, its action is equivalent to a family of trace-preserving recovery channels, one on each syndrome sector. A channel that also manipulates the classical register gives no additional action on these block-diagonal inputs.
@@ -61,7 +61,7 @@ Under the identifications $W_s$, the instrument has one logical Kraus operator p
 K_s=W_s^\dagger\Pi_sUV,
 \qquad
 M_s=K_s^\dagger K_s=V^\dagger U^\dagger\Pi_sUV.
-\tag{3}
+\qquad\text{(3)}
 ```
 
 Thus $M_s\geq0$, $\sum_sM_s=I_D$, and the outcome probability on logical state $\rho$ is $\mathrm{Tr}(M_s\rho)$. Changing $W_s$ only left-multiplies $K_s$ by a unitary and can be absorbed into recovery.
@@ -70,7 +70,7 @@ The recovery quantifiers are essential:
 
 ```math
 \text{for every specified }U\text{, there exists a recovery }\mathcal R_U.
-\tag{4}
+\qquad\text{(4)}
 ```
 
 We do not require one recovery to work for an unknown family of rotations. We also do not allow an operation between $U$ and the prescribed syndrome measurement. If the known inverse $U^\dagger$ could be applied there, the physical rotation could be undone before any measurement. Equations (2)–(4) ask which information is still available once the original measurement has already occurred.
@@ -93,7 +93,7 @@ e_{\mathrm{opt}}(U)&=1-F_{\mathrm{opt}}(U),\\
 \varepsilon_{\mathrm{opt}}(U)&=
 \inf_{\mathcal R}\frac12\Vert \mathcal R\mathcal N_U-\mathrm{id}_L\Vert _\diamond.
 \end{aligned}
-\tag{5}
+\qquad\text{(5)}
 ```
 
 The diamond norm includes an arbitrary reference system. Both errors lie in $[0,1]$. For any recovery,
@@ -101,7 +101,7 @@ The diamond norm includes an arbitrary reference system. Both errors lie in $[0,
 ```math
 1-F_e(\mathcal R\mathcal N_U)
 \leq\frac12\Vert \mathcal R\mathcal N_U-\mathrm{id}_L\Vert _\diamond.
-\tag{6}
+\qquad\text{(6)}
 ```
 
 Indeed, the diamond norm dominates the trace distance obtained with $|\Omega_D\rangle$, and the two-outcome test onto $|\Omega_D\rangle$ distinguishes that output from the ideal output with probability difference $1-F_e$. In particular, $e_{\mathrm{opt}}(U)\leq\varepsilon_{\mathrm{opt}}(U)$.
@@ -115,7 +115,7 @@ The next proposition is the optimal record-assisted fidelity result of Gregoratt
 ```math
 F_{\mathrm{opt}}(U)
 =\frac1{D^2}\sum_s\left(\mathrm{Tr}\sqrt{M_s}\right)^2.
-\tag{7}
+\qquad\text{(7)}
 ```
 
 A syndrome-dependent polar recovery attains this value and has logical Kraus operators $A_s=\sqrt{M_s}$.
@@ -128,7 +128,7 @@ Applying $Q_s^\dagger$ after outcome $s$ produces the channel
 \Phi_U(\rho)=\sum_s A_s\rho A_s,
 \qquad
 \sum_sA_s^2=I_D.
-\tag{8}
+\qquad\text{(8)}
 ```
 
 Its entanglement fidelity is the right-hand side of (7). To prove optimality, absorb $Q_s$ into an arbitrary recovery and denote that branch's recovery Kraus operators by $B_{s,\alpha}$, with $\sum_\alpha B_{s,\alpha}^\dagger B_{s,\alpha}=I_D$. Diagonalize $A_s$ with nonnegative eigenvalues $a_i$. The vectors
@@ -151,7 +151,7 @@ Therefore
 \sum_\alpha|\mathrm{Tr}(B_{s,\alpha}A_s)|^2
 =\left\Vert \sum_i a_iv_i\right\Vert _2^2
 \leq\left(\sum_i a_i\right)^2.
-\tag{9}
+\qquad\text{(9)}
 ```
 
 Summing the branch contributions to entanglement fidelity proves (7). The proof makes no invertibility assumption and includes zero-probability branches. $\square$
