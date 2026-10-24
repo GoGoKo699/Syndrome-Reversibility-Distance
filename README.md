@@ -17,12 +17,10 @@ Let $S$ be the full stabilizer group, and let $N$ be its Pauli centralizer. Grou
 =\varnothing.
 ```
 
-**Sharp error exponent.** Define the syndrome reversibility distance by
+**Sharp error exponent.** Let $\mathcal C_S$ contain the pairs $(g,L)$ with $g\in S$, $L\in N\setminus S$, and exactly equal support. Define the syndrome reversibility distance by
 
 ```math
-r(S)=\min_{\substack{g\in S,\ L\in N\setminus S\\
-\mathrm{supp}(g)=\mathrm{supp}(L)}}
-\mathrm{wt}(gL),
+r(S)=\min_{(g,L)\in\mathcal C_S}\mathrm{wt}(gL),
 \qquad \min\varnothing=\infty.
 ```
 
