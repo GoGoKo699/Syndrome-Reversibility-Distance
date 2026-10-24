@@ -24,6 +24,15 @@ Canonical files:
 - verification/README.md: commands, expected outputs, and limits of finite checks.
 - verification/run_all.py: reproduction entrypoint.
 
+Learning files:
+- learning/MILESTONES.md: exactly M01-M30, with 12 background/preliminaries
+  milestones and 18 narrative/innovation milestones; each has a central question,
+  understanding target, earlier dependencies, conceptual connection and sources.
+- learning/GOTTESMAN_BRIDGE.md: the single selected educational anchor, Daniel
+  Gottesman's An Introduction to Quantum Error Correction and Fault-Tolerant
+  Quantum Computation (arXiv:0904.2557v1, 2009; published 2010), with source sections,
+  notation translation, worked measurement example and project-specific derivations.
+
 Reading routes:
 - For the result: model, support criterion, error exponent, code families,
   and interpretation, in that order.
@@ -32,6 +41,9 @@ Reading routes:
 - For attribution: consult RELATED_WORK.md before describing an ingredient as new.
 - For finite evidence: execute the documented verification command and compare
   with committed output; do not treat a past success report as a new execution.
+- For self-directed learning: read the Gottesman bridge alongside M01-M30.
+  The map is common to all readers and is determined by the scientific project.
+  The bridge supplies the recovery and channel-norm material beyond the anchor.
 
 Preserve these distinctions:
 - S means the entire stabilizer group, not a chosen generator list. Membership
@@ -53,4 +65,7 @@ Preserve these distinctions:
   The support/circuit classification and their operational consequences are the
   conclusions proved in the scientific account.
 - Finite calculations do not establish universal theorems or external peer review.
+- The selected anchor supplies foundations. Primary research citations remain
+  necessary for attribution; they are not additional assigned textbooks. Use
+  the bridge to distinguish source material from the project's own conclusions.
 
