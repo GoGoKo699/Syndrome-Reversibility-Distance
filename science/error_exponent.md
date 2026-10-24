@@ -45,12 +45,11 @@ The proof below supplies an explicit finite-code upper bound and a witness with 
 
 ## 2. A finite-code collision polynomial
 
-Define the polynomial
+Let $\mathcal C_S$ contain the pairs $(g,L)$ with $g\in S$, $L\in N\setminus S$, and exactly equal support. Define the polynomial
 
 ```math
 B_S(x)=
-\sum_{\substack{g\in S,\ L\in N\setminus S\\
-\mathrm{supp}(g)=\mathrm{supp}(L)}}
+\sum_{(g,L)\in\mathcal C_S}
 x^{\mathrm{wt}(gL)}.
 \tag{4}
 ```

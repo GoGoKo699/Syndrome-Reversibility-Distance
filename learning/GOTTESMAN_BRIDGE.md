@@ -244,11 +244,10 @@ This also explains why total weight is too coarse. Two operators of equal weight
 
 For a matching-support pair $g\in S$ and $L\in N\setminus S$, form the phase-free product $E=gL$. On a site where $g$ and $L$ agree, $E$ is identity. On a site where they differ, both are nonidentity and $E$ anticommutes with the local factor of $g$. Thus the weight of $E$ counts exactly how many local Pauli axes must change in this collision.
 
-The invariant minimizes that count:
+Let $\mathcal C_S$ contain all such matching-support pairs. The invariant minimizes that count:
 
 ```math
-r(S)=\min_{\substack{g\in S,\ L\in N\setminus S\\
-\mathrm{supp}(g)=\mathrm{supp}(L)}}
+r(S)=\min_{(g,L)\in\mathcal C_S}
 \mathrm{wt}(gL),
 \qquad \min\varnothing=\infty.
 ```
@@ -275,8 +274,7 @@ U_{\boldsymbol h}(\theta)
 The norm bound fixes the meaning of the shared angle scale. Changing a local Pauli axis in the conjugation expansion costs at least one power of $|\theta|$. Exposing a logical Pauli through a stabilizer therefore costs at least $r$ powers. The collision polynomial keeps track of all such possibilities:
 
 ```math
-B_S(x)=\sum_{\substack{g\in S,\ L\in N\setminus S\\
-\mathrm{supp}(g)=\mathrm{supp}(L)}}
+B_S(x)=\sum_{(g,L)\in\mathcal C_S}
 x^{\mathrm{wt}(gL)}.
 ```
 

@@ -99,12 +99,11 @@ The syndrome has recorded an eigenvalue of a logical Pauli. Even with perfect kn
 
 ## 3. Syndrome reversibility distance
 
-Define
+Let $\mathcal C_S$ be the set of pairs $(g,L)$ with $g\in S$, $L\in N\setminus S$, and $\mathrm{supp}(g)=\mathrm{supp}(L)$. Define
 
 ```math
 r(S)=
-\min_{\substack{g\in S,\ L\in N\setminus S\\
-\mathrm{supp}(g)=\mathrm{supp}(L)}}
+\min_{(g,L)\in\mathcal C_S}
 \mathrm{wt}(gL),
 \tag{7}
 ```
