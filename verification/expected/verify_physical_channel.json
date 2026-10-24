@@ -1,0 +1,63 @@
+{
+  "check": "full_physical_channel",
+  "checks_passed": true,
+  "environment": {
+    "numpy": "2.3.5",
+    "python": "3.12.14"
+  },
+  "logical_dimension": 4,
+  "physical_dimension": 1024,
+  "product_code_generic_rotation": {
+    "maximum_nonscalar_effect_frobenius": 4.726340343173018e-16,
+    "optimal_entanglement_fidelity": 1.0000000000000002
+  },
+  "syndrome_sectors": 256,
+  "tolerance": 2e-12,
+  "witness_rotations": [
+    {
+      "active_syndromes": 8,
+      "dephasing_channel_residual_frobenius": 1.7554167342883506e-16,
+      "optimal_entanglement_infidelity": 1.868760146106485e-05,
+      "predicted_error": 1.86876014608828e-05,
+      "q": 0.002497917360987117,
+      "recovered_choi_distance_from_identity": 1.868760146089832e-05,
+      "theta": 0.1
+    },
+    {
+      "active_syndromes": 8,
+      "dephasing_channel_residual_frobenius": 6.888752704931532e-16,
+      "optimal_entanglement_infidelity": 0.00029602589615607133,
+      "predicted_error": 0.0002960258961564761,
+      "q": 0.009966711079379185,
+      "recovered_choi_distance_from_identity": 0.0002960258961562379,
+      "theta": 0.2
+    },
+    {
+      "active_syndromes": 8,
+      "dephasing_channel_residual_frobenius": 1.2362920382602608e-15,
+      "optimal_entanglement_infidelity": 0.004550550528169106,
+      "predicted_error": 0.00455055052816924,
+      "q": 0.039469502998557456,
+      "recovered_choi_distance_from_identity": 0.004550550528168551,
+      "theta": 0.4
+    },
+    {
+      "active_syndromes": 8,
+      "dephasing_channel_residual_frobenius": 5.688200336284365e-16,
+      "optimal_entanglement_infidelity": 0.06201536877089153,
+      "predicted_error": 0.062015368770891616,
+      "q": 0.1516466453264173,
+      "recovered_choi_distance_from_identity": 0.06201536877089175,
+      "theta": 0.8
+    },
+    {
+      "active_syndromes": 8,
+      "dephasing_channel_residual_frobenius": 3.925231146709438e-17,
+      "optimal_entanglement_infidelity": 0.5,
+      "predicted_error": 0.49999999999999983,
+      "q": 0.4999999999999999,
+      "recovered_choi_distance_from_identity": 0.4999999999999999,
+      "theta": 1.5707963267948966
+    }
+  ]
+}
