@@ -8,36 +8,36 @@ The operational order is the one in [Model and recovery](model.md): a known prod
 
 Let $Q_t$ be the $t$-fold concatenated five-qubit code, with $t\geq 1$, and put
 
-$$
+```math
 N_t=5^t,\qquad m_t=3^t.
-$$
+```
 
 Use two blocks, $A$ and $B$, with physical indices $0,\ldots,N_t-1$ and $N_t,\ldots,2N_t-1$. Define
 
-$$
+```math
 \mathcal C_t=Q_t\otimes Q_t,
 \qquad
 \widetilde{\mathcal C}_t=C_t\mathcal C_t,
 \qquad
-C_t=\operatorname{CNOT}(0\longrightarrow N_t).
-$$
+C_t=\mathrm{CNOT}(0\longrightarrow N_t).
+```
 
 Here conjugation by $C_t$ transforms both the code subspace and its full stabilizer group. Each code is subsequently measured in its own prescribed stabilizer syndrome.
 
 **Theorem.** These codes have the same parameters,
 
-$$
+```math
 \mathcal C_t,\widetilde{\mathcal C}_t:
 [[2\cdot5^t,\,2,\,3^t]],
-$$
+```
 
 but their syndrome reversibility invariants satisfy
 
-$$
+```math
 r(\mathcal C_t)=\infty,
 \qquad
 r(\widetilde{\mathcal C}_t)=3^t+1.
-$$
+```
 
 In particular:
 
@@ -90,11 +90,11 @@ Each word differs from the corresponding canonical logical Pauli by a stabilizer
 
 For phase-free Paulis $a,b$, let $\langle a,b\rangle$ be their binary symplectic pairing. A sitewise check gives
 
-$$
-\operatorname{wt}(ab)
-\equiv \operatorname{wt}(a)+\operatorname{wt}(b)
+```math
+\mathrm{wt}(ab)
+\equiv \mathrm{wt}(a)+\mathrm{wt}(b)
 +\langle a,b\rangle \pmod 2.
-$$
+```
 
 At a site where the local factors are different nonidentity Paulis, their product remains nonidentity and they anticommute. The other three cases give the displayed identity immediately. In particular, the parity of weight is additive for commuting Paulis.
 
@@ -137,9 +137,9 @@ Write $m=3^t$ and $N=5^t$. A two-qubit CNOT preserves the number of physical and
 
 Assume that the transformed code has a nontrivial logical Pauli $F$ of weight at most $m-1$. Its inverse conjugate
 
-$$
+```math
 F_0=C_t^\dagger F C_t
-$$
+```
 
 is a nontrivial logical Pauli of the product code, and has weight at most $m$. The product code has distance $m$, so its weight must equal $m$. The inverse conjugation must have increased the weight by exactly one. On the endpoint pair this is necessarily a change from one nonidentity factor to two. Thus $F_0$ acts nontrivially in both blocks.
 
@@ -151,9 +151,9 @@ The minimum logical $X$ in block $A$ constructed above avoids the control qubit.
 
 Let $E_B$ be the chosen minimum logical $Z$ in block $B$. Its weight is $m$ and its local factor on the target qubit $N$ is $Z$. CNOT conjugation gives
 
-$$
+```math
 E'=C_t E_B C_t^\dagger=Z_0E_B.
-$$
+```
 
 This is a nontrivial logical Pauli of the transformed code, of even weight $m+1$. We now show that it is a logical circuit in the precise sense of [Support criterion](support_criterion.md): no proper nonempty subword obtained by deleting some of its nonidentity local factors lies in the centralizer.
 
@@ -161,17 +161,17 @@ First, a minimum-weight nontrivial logical $E_B$ has no proper nonempty normaliz
 
 Consider any subword $F$ of $E'$. It selects a subset $J$ of the factors of $E_B$, together with a bit $f\in\{0,1\}$ specifying whether the control factor $Z_0$ is selected. Let $h\in\{0,1\}$ specify whether the target factor is selected. Since that target factor is $Z$, inverse conjugation gives
 
-$$
+```math
 C_t^\dagger F C_t=Z_0^{f\oplus h}(E_B)_J.
-$$
+```
 
 If $F$ normalizes the transformed code, the right-hand side must normalize the product code. A single $Z_0$ does not normalize block $A$: it is not a stabilizer because all stabilizers have even weight, and it is not a nontrivial logical because the distance is at least three. Therefore $f=h$. The remaining factor $(E_B)_J$ must normalize block $B$. By the minimum-weight argument, $J$ is either empty or the entire support of $E_B$. In the first case $f=h=0$ and $F=I$; in the second $f=h=1$ and $F=E'$. These are the only possibilities. Hence $E'$ is an even logical circuit.
 
 The circuit characterization gives $r(\widetilde{\mathcal C}_t)\leq m+1$. The invariant is even and is at least the ordinary distance $m$. Since $m=3^t$ is odd, every finite value of $r$ is at least $m+1$. Combining the bounds proves
 
-$$
+```math
 r(\widetilde{\mathcal C}_t)=m+1.
-$$
+```
 
 The axis rotations on the support of $E'$ give an exact witness, rather than only an asymptotic lower bound. Their recovered channel is a logical Pauli dephasing channel with rate $p_{m+1}(\sin^2(\theta/2))$, as proved in [Error exponent](error_exponent.md).
 
@@ -189,10 +189,10 @@ Here $g$ is a stabilizer, $L$ is a nontrivial logical Pauli, and $gL$ equals $E$
 
 Apply rotations of angle $\theta$ about $Z_0$, $Z_5$, $Y_6$, and $Y_9$, and leave the other qubits unchanged. For $q=\sin^2(\theta/2)\leq1/2$, the exact optimal entanglement infidelity and exact optimal half-diamond error are
 
-$$
+```math
 p_4(q)=3q^2-2q^3
 =\frac{3}{16}\theta^4+O(\theta^6).
-$$
+```
 
 The full physical calculation in [verify_physical_channel.py](../verification/verify_physical_channel.py) starts from a $1024\times4$ encoding isometry, applies the rotations, and projects all 256 signed syndrome sectors. It computes the singular values of each physical branch map to obtain the optimal fidelity. It also applies actual Pauli recovery to the projected states and checks that the resulting logical channel is the predicted dephasing channel. Thus the channel construction does not assume the repetition formula it is testing.
 

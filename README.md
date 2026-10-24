@@ -11,9 +11,9 @@ Let $S$ be the full stabilizer group, and let $N$ be its Pauli centralizer. Grou
 **Exact reversibility.** Every product unitary is perfectly recoverable after syndrome measurement if and only if no stabilizer and nontrivial logical Pauli have exactly the same physical support:
 
 ```math
-\{\operatorname{supp}(g):g\in S\}
+\{\mathrm{supp}(g):g\in S\}
 \cap
-\{\operatorname{supp}(L):L\in N\setminus S\}
+\{\mathrm{supp}(L):L\in N\setminus S\}
 =\varnothing.
 ```
 
@@ -21,8 +21,8 @@ Let $S$ be the full stabilizer group, and let $N$ be its Pauli centralizer. Grou
 
 ```math
 r(S)=\min_{\substack{g\in S,\ L\in N\setminus S\\
-\operatorname{supp}(g)=\operatorname{supp}(L)}}
-\operatorname{wt}(gL),
+\mathrm{supp}(g)=\mathrm{supp}(L)}}
+\mathrm{wt}(gL),
 \qquad \min\varnothing=\infty.
 ```
 
@@ -57,6 +57,14 @@ p_4(q)=3q^2-2q^3,
 | How are the finite examples reproduced? | [Verification](verification/README.md) |
 
 The general outcome-conditioned recovery criterion and optimal-fidelity formula are established results of Gregoratti and Werner. The even-repetition error mechanism is established in work of Huang, Doherty and Flammia. Their roles, and the connection to more recent coherent-error studies, are identified in the [attribution account](references/RELATED_WORK.md). The proofs here connect that recovery framework to the physical supports of arbitrary stabilizer codes.
+
+## Learn the project
+
+The single educational anchor is **Daniel Gottesman, _An Introduction to Quantum Error Correction and Fault-Tolerant Quantum Computation_** (2009 arXiv version; published 2010). The [Gottesman bridge](learning/GOTTESMAN_BRIDGE.md) gives the relevant sections, translates the notation, and develops the steps from stabilizer error correction to the support criterion and sharp recovery exponent.
+
+The [30-milestone map](learning/MILESTONES.md) provides one common route through the project: **12 background/preliminaries milestones** build the physical and mathematical framework, followed by **18 narrative/innovation milestones** that assemble the proof mechanisms and the code-family separation. Each milestone has an understanding target, earlier dependencies, a conceptual connection, and source pointers.
+
+Use the bridge alongside the milestones for self-directed study. The [LLM reading guide](llms.txt) maps questions to the authoritative scientific and learning files.
 
 ## Reproduce the checks
 

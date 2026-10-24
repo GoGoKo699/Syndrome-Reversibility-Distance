@@ -7,7 +7,7 @@ The [model](model.md) fixes a physical tensor-product structure, a stabilizer co
 After a known product unitary $U$, the syndrome probability for an encoded logical state $\rho$ is
 
 ```math
-\Pr(s\mid\rho)=\operatorname{Tr}(M_s\rho),
+\Pr(s\mid\rho)=\mathrm{Tr}(M_s\rho),
 \qquad M_s=V^\dagger U^\dagger\Pi_sUV.
 ```
 
