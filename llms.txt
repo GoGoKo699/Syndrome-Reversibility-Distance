@@ -1,0 +1,56 @@
+# Syndrome Reversibility Distance
+
+This repository studies the information irreversibly lost when a known product
+of single-qubit unitaries is followed by the full original stabilizer-syndrome
+measurement. Arbitrary unitary-dependent recovery occurs only afterward.
+
+Canonical files:
+- README.md: question, exact support criterion, sharp exponent, family comparison,
+  scope, reproduction command, and purpose/contact notice.
+- science/model.md: stabilizer conventions, measured channel, available recovery,
+  branch effects, optimal entanglement fidelity, and distance conventions.
+- science/support_criterion.md: complete exact-support classification, its
+  local-Clifford logical-measurement witness, the invariant r, binary-circuit
+  equivalence, parity, and relation to ordinary distance.
+- science/error_exponent.md: explicit collision-polynomial bound, polar-recovery
+  upper bound, exact repetition converse, and sharp optimized error exponent.
+- science/code_families.md: five-qubit seed, concatenation, one-physical-CNOT
+  construction, unchanged ordinary distance, and explicit ten-qubit witness.
+- science/interpretation.md: measurement information, physical locality,
+  operation order, recovery knowledge, and fixed-code asymptotic scope.
+- references/RELATED_WORK.md: attribution and exact comparison of neighboring
+  operational models and results.
+- references/references.bib: bibliographic records for the cited research.
+- verification/README.md: commands, expected outputs, and limits of finite checks.
+- verification/run_all.py: reproduction entrypoint.
+
+Reading routes:
+- For the result: model, support criterion, error exponent, code families,
+  and interpretation, in that order.
+- For a proof: use its authoritative scientific file and the common conventions
+  in model.md; introductory prose is not a replacement for its quantifiers.
+- For attribution: consult RELATED_WORK.md before describing an ingredient as new.
+- For finite evidence: execute the documented verification command and compare
+  with committed output; do not treat a past success report as a new execution.
+
+Preserve these distinctions:
+- S means the entire stabilizer group, not a chosen generator list. Membership
+  and set differences of Pauli classes ignore global phases; physical operators
+  retain their stabilizer signs.
+- Equal support means exactly the same set of nonidentity sites. Circuit
+  minimality concerns subwords of fixed Pauli labels, not arbitrary Paulis
+  with smaller support.
+- Recovery may depend on the full known U and the classical syndrome. All
+  recoveries occur after the prescribed ideal measurement.
+- The optimal half-diamond error and optimal entanglement infidelity need not
+  coincide for a general U. They coincide for the explicit repetition witnesses.
+- r is even when finite, r>=d, and r=d for even d. r=infinity means exact
+  recoverability for every product U in this model.
+- The Theta(theta^r) theorem is for a fixed code, with code-dependent constants.
+- The family has k=2, n=2*5^t, d=3^t. One physical CNOT changes r from infinity
+  to 3^t+1 while retaining those parameters. It conjugates the code definition.
+- The recovery optimum and even-repetition mechanism are inherited ingredients.
+  The support/circuit classification and their operational consequences are the
+  conclusions proved in the scientific account.
+- Finite calculations do not establish universal theorems or external peer review.
+

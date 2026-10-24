@@ -1,0 +1,45 @@
+{
+  "check": "concatenated_family_structure",
+  "checks_passed": true,
+  "levels": [
+    {
+      "circuit_syndrome_rank": 3,
+      "control": 0,
+      "distance_proved_in_text": 3,
+      "even_logical_circuit_weight": 4,
+      "k": 2,
+      "n": 10,
+      "stabilizer_rank": 8,
+      "support_collision_product_weight": 4,
+      "t": 1,
+      "target": 5,
+      "untouched_logical_weight": 3
+    },
+    {
+      "circuit_syndrome_rank": 9,
+      "control": 0,
+      "distance_proved_in_text": 9,
+      "even_logical_circuit_weight": 10,
+      "k": 2,
+      "n": 50,
+      "stabilizer_rank": 48,
+      "support_collision_product_weight": 10,
+      "t": 2,
+      "target": 25,
+      "untouched_logical_weight": 9
+    },
+    {
+      "circuit_syndrome_rank": 27,
+      "control": 0,
+      "distance_proved_in_text": 27,
+      "even_logical_circuit_weight": 28,
+      "k": 2,
+      "n": 250,
+      "stabilizer_rank": 248,
+      "support_collision_product_weight": 28,
+      "t": 3,
+      "target": 125,
+      "untouched_logical_weight": 27
+    }
+  ]
+}
