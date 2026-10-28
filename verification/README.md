@@ -13,7 +13,7 @@ python3 -m pip install -r verification/requirements.txt
 python3 verification/run_all.py
 ```
 
-The runner executes all four programs, checks their mathematical assertions, and compares their full results with the committed records in [expected/](expected/). The algebraic outputs are compared exactly. Numerical outputs use absolute tolerance $2\times10^{-12}$; runtime-version metadata is excluded from comparison. Success prints `"expected_records_matched": true` along with the results. Run Python normally so that assertions remain enabled.
+The runner executes all five programs, checks their mathematical assertions, and compares their full results with the committed records in [expected/](expected/). The algebraic outputs are compared exactly. Numerical outputs use absolute tolerance $2\times10^{-12}$; runtime-version metadata is excluded from comparison. Success prints `"expected_records_matched": true` along with the results. Run Python normally so that assertions remain enabled.
 
 To save a fresh set of output records separately:
 
@@ -31,6 +31,7 @@ The default command does not alter committed outputs. A failing assertion or an 
 | [verify_concatenated_family.py](verify_concatenated_family.py) | Builds recursive generators for levels $t=1,2,3$; checks rank, commutation, logical cosets, minimum-weight representatives, the unchanged logical, and the transformed circuit rank | [Family structure](expected/verify_concatenated_family.json) |
 | [verify_physical_channel.py](verify_physical_channel.py) | Builds physical code states, applies single-qubit rotations, projects all 256 signed syndrome sectors, computes branch singular values, and applies physical Pauli recovery | [Physical channel](expected/verify_physical_channel.json) |
 | [verify_gate_readout_tradeoff.py](verify_gate_readout_tradeoff.py) | Independently enumerates the nine-qubit protected-gate code, five-qubit code, and fixed-ancilla extension; verifies support collisions, logical-$Z$ circuit and all proper subwords, exact Hamiltonian coefficient identities, and the $p_4$ polynomial | [Gate/readout comparison](expected/verify_gate_readout_tradeoff.json) |
+| [verify_readout_safe_family.py](verify_readout_safe_family.py) | All three logical axes at concatenation depths one and two; exact signed logical membership, local-axis counts, full single-error intertwiners and resource recurrences; explicit two-error failure | [Concatenated gate family](expected/verify_readout_safe_family.json) |
 
 The helper [pauli_tools.py](pauli_tools.py) uses exact binary arithmetic and discards Pauli phases for support and commutation calculations. It represents physical qubit 0 by the leftmost printed character and the least significant computational-basis bit. The physical-channel program independently retains signs by applying the original generator matrices and conjugating their action with the actual CNOT permutation. It never constructs a physical projector from a signless Pauli label after entangling conjugation.
 
@@ -66,6 +67,8 @@ In the committed run, the largest absolute infidelity discrepancy is below $5\ti
 to a Frobenius residual below $1.3\times10^{-15}$. A generic set of nonidentical rotations on the original product code yields a maximum nonscalar-effect residual below $4.8\times10^{-16}$. Slight numerical excursions above unit fidelity in these records are floating-point roundoff and are retained without clipping.
 
 The [joint gate/readout theorem](../science/gate_readout_tradeoff.md) uses the last two entries to check its construction and its fixed-qubit caveat. The standalone script is identical in both companion repositories and requires only the standard library. For the nine-qubit witness $Z_{1368}$ (one-based indexing), it verifies all fourteen proper subwords have nonzero syndrome and the sixteen rotation subwords form eight complementary syndrome pairs. Its exact $p_4$ polynomial calculation checks the circuit formula algebraically; it is separate from the ten-qubit physical matrix calculation above.
+
+The [concatenated gate family](../science/minimum_readout_safe_gates.md) is verified separately in exact standard-library arithmetic. All 84,000 twenty-five-qubit terms across three axes have their signs and logical-coset membership checked by phase-aware binary elimination. The script then certifies each of the 76 identity/single-Pauli intertwiners per axis, the two weight-class counts and coupling budget, and recursive arithmetic through depth four. A direct two-error check gives logical rate $1/5$ for $X_1X_2$, confirming the stated single-fault scope. The code-distance and infinite-reversibility statements use their written inductive proofs rather than exhaustive large-code enumeration.
 
 ## What is analytical and what is numerical
 

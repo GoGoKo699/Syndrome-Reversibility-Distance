@@ -45,6 +45,8 @@ The construction is an unbounded-distance information-preservation separation. I
 
 The [joint gate/readout theorem](gate_readout_tradeoff.md) relates this invariant to exact error-transparent logical Hamiltonians. For odd $d$, attaining the interaction-order lower bound $\ell=d+t$ forces $r=d+1$, even for degenerate stabilizer codes with fixed ancillary qubits. Therefore $r>d+1$, including infinity, requires $\ell\ge d+t+1$. The nine-qubit four-body gate supplies an explicit $r=4$ example and a logical-$Z$ readout-loss witness. The five-qubit code attains the stronger five-body bound while keeping $r=\infty$. Higher-error attainability and a joint noise experiment require additional results.
 
+The [concatenated equality construction](minimum_readout_safe_gates.md) attains this stronger bound for one protected error at every distance $d=3^m$. Its codes retain $r=\infty$, while exact logical $X$, $Y$, and $Z$ generators use interaction order $d+2$ and coupling budget $d+1$ per unit logical half-splitting. The readout guarantee still permits recovery to know the product unitary. The Hamiltonian has exponentially many native Pauli terms; this construction establishes resource equalities within the declared model.
+
 ## Operational boundaries
 
 **Measurement order.** The question fixes recovery after syndrome readout. If the known inverse $U^\dagger$ could be applied beforehand, it would restore the code state directly. The present model isolates the information cost of committing to the original syndrome measurement before that reversal. One possible operational setting is a fixed extraction cycle with calibration information available only at recovery time; that motivation is an interpretation of the model, not a demonstrated hardware protocol.
