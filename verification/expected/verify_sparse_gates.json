@@ -1,0 +1,316 @@
+{
+  "checks_passed": true,
+  "closed_twenty_five_qubit_construction": [
+    {
+      "axis": "Z",
+      "common_coefficient_denominator": "50",
+      "coupling_budget_per_logical_half_splitting": "10",
+      "full_error_image_intertwiners_checked": 76,
+      "interaction_order": 11,
+      "largest_denominator_bit_length": 6,
+      "logical_weight_masses": {
+        "11": "-9/2",
+        "9": "11/2"
+      },
+      "native_pauli_terms": 75,
+      "orbits": [
+        {
+          "bare_coefficient_per_term": "2/25",
+          "logical_coset_sign": 1,
+          "orbit_size": 25,
+          "seed": "ZIYIZIIIIIIIIIIZIYIZZIXXI",
+          "weight": 9
+        },
+        {
+          "bare_coefficient_per_term": "7/50",
+          "logical_coset_sign": 1,
+          "orbit_size": 25,
+          "seed": "YXIIXIIIIIIIIIIYXIIXYIIYZ",
+          "weight": 9
+        },
+        {
+          "bare_coefficient_per_term": "9/50",
+          "logical_coset_sign": -1,
+          "orbit_size": 25,
+          "seed": "ZXXZYIIIIIIIIIIYXIIXYIIYZ",
+          "weight": 11
+        }
+      ],
+      "signed_coset_memberships_checked": 75
+    },
+    {
+      "axis": "X",
+      "common_coefficient_denominator": "50",
+      "coupling_budget_per_logical_half_splitting": "10",
+      "full_error_image_intertwiners_checked": 76,
+      "interaction_order": 11,
+      "largest_denominator_bit_length": 6,
+      "logical_weight_masses": {
+        "11": "-9/2",
+        "9": "11/2"
+      },
+      "native_pauli_terms": 75,
+      "orbits": [
+        {
+          "bare_coefficient_per_term": "2/25",
+          "logical_coset_sign": 1,
+          "orbit_size": 25,
+          "seed": "XIZIXIIIIIIIIIIXIZIXXIYYI",
+          "weight": 9
+        },
+        {
+          "bare_coefficient_per_term": "7/50",
+          "logical_coset_sign": 1,
+          "orbit_size": 25,
+          "seed": "ZYIIYIIIIIIIIIIZYIIYZIIZX",
+          "weight": 9
+        },
+        {
+          "bare_coefficient_per_term": "9/50",
+          "logical_coset_sign": -1,
+          "orbit_size": 25,
+          "seed": "XYYXZIIIIIIIIIIZYIIYZIIZX",
+          "weight": 11
+        }
+      ],
+      "signed_coset_memberships_checked": 75
+    },
+    {
+      "axis": "Y",
+      "common_coefficient_denominator": "50",
+      "coupling_budget_per_logical_half_splitting": "10",
+      "full_error_image_intertwiners_checked": 76,
+      "interaction_order": 11,
+      "largest_denominator_bit_length": 6,
+      "logical_weight_masses": {
+        "11": "-9/2",
+        "9": "11/2"
+      },
+      "native_pauli_terms": 75,
+      "orbits": [
+        {
+          "bare_coefficient_per_term": "2/25",
+          "logical_coset_sign": 1,
+          "orbit_size": 25,
+          "seed": "YIXIYIIIIIIIIIIYIXIYYIZZI",
+          "weight": 9
+        },
+        {
+          "bare_coefficient_per_term": "7/50",
+          "logical_coset_sign": 1,
+          "orbit_size": 25,
+          "seed": "XZIIZIIIIIIIIIIXZIIZXIIXY",
+          "weight": 9
+        },
+        {
+          "bare_coefficient_per_term": "9/50",
+          "logical_coset_sign": -1,
+          "orbit_size": 25,
+          "seed": "YZZYXIIIIIIIIIIXZIIZXIIXY",
+          "weight": 11
+        }
+      ],
+      "signed_coset_memberships_checked": 75
+    }
+  ],
+  "optional_native_incidence_reduction": {
+    "axis": "Z",
+    "common_coefficient_denominator": "10980868",
+    "coupling_budget_per_logical_half_splitting": "10",
+    "full_error_image_intertwiners_checked": 76,
+    "interaction_order": 11,
+    "largest_denominator_bit_length": 24,
+    "logical_weight_masses": {
+      "11": "-9/2",
+      "9": "11/2"
+    },
+    "native_pauli_terms": 76,
+    "signed_coset_memberships_checked": 76,
+    "three_n_plus_one_term_bound": 76
+  },
+  "recursive_sparse_constructions": [
+    {
+      "axes": [
+        {
+          "axis": "X",
+          "coefficient_denominator_bound": "10000",
+          "common_coefficient_denominator": "4",
+          "coupling_budget_per_logical_half_splitting": "4",
+          "four_n_term_bound": 20,
+          "full_error_image_intertwiners_checked": 16,
+          "interaction_order": 5,
+          "largest_denominator_bit_length": 3,
+          "logical_weight_masses": {
+            "3": "5/2",
+            "5": "-3/2"
+          },
+          "native_pauli_terms": 16,
+          "seed_orbits": 4,
+          "signed_coset_memberships_checked": 16
+        },
+        {
+          "axis": "Y",
+          "coefficient_denominator_bound": "10000",
+          "common_coefficient_denominator": "4",
+          "coupling_budget_per_logical_half_splitting": "4",
+          "four_n_term_bound": 20,
+          "full_error_image_intertwiners_checked": 16,
+          "interaction_order": 5,
+          "largest_denominator_bit_length": 3,
+          "logical_weight_masses": {
+            "3": "5/2",
+            "5": "-3/2"
+          },
+          "native_pauli_terms": 16,
+          "seed_orbits": 4,
+          "signed_coset_memberships_checked": 16
+        },
+        {
+          "axis": "Z",
+          "coefficient_denominator_bound": "10000",
+          "common_coefficient_denominator": "4",
+          "coupling_budget_per_logical_half_splitting": "4",
+          "four_n_term_bound": 20,
+          "full_error_image_intertwiners_checked": 16,
+          "interaction_order": 5,
+          "largest_denominator_bit_length": 3,
+          "logical_weight_masses": {
+            "3": "5/2",
+            "5": "-3/2"
+          },
+          "native_pauli_terms": 16,
+          "seed_orbits": 4,
+          "signed_coset_memberships_checked": 16
+        }
+      ],
+      "coordinate_shift_generators_checked": 1,
+      "depth": 1,
+      "distance_from_written_concatenation_proof": 3,
+      "even_stabilizer_odd_logical_parity_checked": true,
+      "physical_qubits": 5,
+      "signed_stabilizer_rank": 4
+    },
+    {
+      "axes": [
+        {
+          "axis": "X",
+          "coefficient_denominator_bound": "6250000",
+          "common_coefficient_denominator": "200",
+          "coupling_budget_per_logical_half_splitting": "10",
+          "four_n_term_bound": 100,
+          "full_error_image_intertwiners_checked": 76,
+          "interaction_order": 11,
+          "largest_denominator_bit_length": 8,
+          "logical_weight_masses": {
+            "11": "-9/2",
+            "9": "11/2"
+          },
+          "native_pauli_terms": 100,
+          "seed_orbits": 4,
+          "signed_coset_memberships_checked": 100
+        },
+        {
+          "axis": "Y",
+          "coefficient_denominator_bound": "6250000",
+          "common_coefficient_denominator": "100",
+          "coupling_budget_per_logical_half_splitting": "10",
+          "four_n_term_bound": 100,
+          "full_error_image_intertwiners_checked": 76,
+          "interaction_order": 11,
+          "largest_denominator_bit_length": 7,
+          "logical_weight_masses": {
+            "11": "-9/2",
+            "9": "11/2"
+          },
+          "native_pauli_terms": 100,
+          "seed_orbits": 4,
+          "signed_coset_memberships_checked": 100
+        },
+        {
+          "axis": "Z",
+          "coefficient_denominator_bound": "6250000",
+          "common_coefficient_denominator": "100",
+          "coupling_budget_per_logical_half_splitting": "10",
+          "four_n_term_bound": 100,
+          "full_error_image_intertwiners_checked": 76,
+          "interaction_order": 11,
+          "largest_denominator_bit_length": 7,
+          "logical_weight_masses": {
+            "11": "-9/2",
+            "9": "11/2"
+          },
+          "native_pauli_terms": 100,
+          "seed_orbits": 4,
+          "signed_coset_memberships_checked": 100
+        }
+      ],
+      "coordinate_shift_generators_checked": 2,
+      "depth": 2,
+      "distance_from_written_concatenation_proof": 9,
+      "even_stabilizer_odd_logical_parity_checked": true,
+      "physical_qubits": 25,
+      "signed_stabilizer_rank": 24
+    },
+    {
+      "axes": [
+        {
+          "axis": "X",
+          "coefficient_denominator_bound": "3906250000",
+          "common_coefficient_denominator": "1250",
+          "coupling_budget_per_logical_half_splitting": "28",
+          "four_n_term_bound": 500,
+          "full_error_image_intertwiners_checked": 376,
+          "interaction_order": 29,
+          "largest_denominator_bit_length": 11,
+          "logical_weight_masses": {
+            "27": "29/2",
+            "29": "-27/2"
+          },
+          "native_pauli_terms": 500,
+          "seed_orbits": 4,
+          "signed_coset_memberships_checked": 500
+        },
+        {
+          "axis": "Y",
+          "coefficient_denominator_bound": "3906250000",
+          "common_coefficient_denominator": "2500",
+          "coupling_budget_per_logical_half_splitting": "28",
+          "four_n_term_bound": 500,
+          "full_error_image_intertwiners_checked": 376,
+          "interaction_order": 29,
+          "largest_denominator_bit_length": 12,
+          "logical_weight_masses": {
+            "27": "29/2",
+            "29": "-27/2"
+          },
+          "native_pauli_terms": 500,
+          "seed_orbits": 4,
+          "signed_coset_memberships_checked": 500
+        },
+        {
+          "axis": "Z",
+          "coefficient_denominator_bound": "3906250000",
+          "common_coefficient_denominator": "2000",
+          "coupling_budget_per_logical_half_splitting": "28",
+          "four_n_term_bound": 500,
+          "full_error_image_intertwiners_checked": 376,
+          "interaction_order": 29,
+          "largest_denominator_bit_length": 11,
+          "logical_weight_masses": {
+            "27": "29/2",
+            "29": "-27/2"
+          },
+          "native_pauli_terms": 500,
+          "seed_orbits": 4,
+          "signed_coset_memberships_checked": 500
+        }
+      ],
+      "coordinate_shift_generators_checked": 3,
+      "depth": 3,
+      "distance_from_written_concatenation_proof": 27,
+      "even_stabilizer_odd_logical_parity_checked": true,
+      "physical_qubits": 125,
+      "signed_stabilizer_rank": 124
+    }
+  ]
+}

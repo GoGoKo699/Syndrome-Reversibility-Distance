@@ -1,0 +1,28 @@
+{
+  "construction": "Three coordinate-translation orbits for the depth-two logical Z Hamiltonian",
+  "physical_qubits": 25,
+  "logical_axis": "Z",
+  "axis_cycle": {"I": "I", "X": "Y", "Y": "Z", "Z": "X"},
+  "coordinate_group": "Shift the outer block index and the within-block site index independently modulo five",
+  "orbits": [
+    {
+      "seed": "ZIYIZIIIIIIIIIIZIYIZZIXXI",
+      "weight": 9,
+      "logical_coset_sign": 1,
+      "bare_coefficient_per_orbit_word": "2/25"
+    },
+    {
+      "seed": "YXIIXIIIIIIIIIIYXIIXYIIYZ",
+      "weight": 9,
+      "logical_coset_sign": 1,
+      "bare_coefficient_per_orbit_word": "7/50"
+    },
+    {
+      "seed": "ZXXZYIIIIIIIIIIYXIIXYIIYZ",
+      "weight": 11,
+      "logical_coset_sign": -1,
+      "bare_coefficient_per_orbit_word": "9/50"
+    }
+  ],
+  "other_axes": "Apply the axis_cycle once for X and twice for Y to every seed; coefficients are unchanged"
+}
