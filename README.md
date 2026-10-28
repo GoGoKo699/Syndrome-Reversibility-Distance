@@ -46,7 +46,7 @@ p_4(q)=3q^2-2q^3,
 
 For odd-distance stabilizer codes, attaining the minimum interaction order $\ell=d+t$ for a nontrivial Hamiltonian transparent to all Pauli errors of weight at most $t$ forces $r(S)=d+1$. Requiring $r(S)>d+1$, including infinity, therefore raises the necessary interaction order to at least $d+t+1$. The [joint theorem and proof](science/gate_readout_tradeoff.md) connect this invariant to [Error-Transparent Locality](https://github.com/GoGoKo699/Error-Transparent-Locality). Exact enumeration finds $r=4$ for that project's nine-qubit four-body construction and supplies a four-site rotation with optimal error $3q^2-2q^3$. The two operational noise models retain their separate assumptions.
 
-The [growing-distance equality family](science/minimum_readout_safe_gates.md) realizes $r(S)=\infty$ together with optimal single-error-transparent gates on each of three logical axes: $n=5^m$, $d=3^m$, interaction order $\ell=d+2$, and coupling budget $J/\omega=d+1$. The proof uses two signed logical-Pauli shells with uniform one-site axis counts. Pauli term counts grow exponentially with $d$, and the gate guarantee concerns one physical fault.
+The [growing-distance equality family](science/minimum_readout_safe_gates.md) realizes $r(S)=\infty$ together with optimal single-error-transparent gates on each of three logical axes: $n=5^m$, $d=3^m$, interaction order $\ell=d+2$, and coupling budget $J/\omega=d+1$. The proof uses two signed logical-Pauli shells with uniform one-site axis counts. The [sparse construction](science/sparse_protected_gates.md) uses at most $4n$ Pauli terms per axis with polynomially bounded rational denominators; at 25 qubits, an explicit form needs 75 terms. A separate existence argument gives at most $3n+1$ terms. The gate guarantee concerns one physical fault.
 
 ## Read the science
 
@@ -59,6 +59,7 @@ The [growing-distance equality family](science/minimum_readout_safe_gates.md) re
 | What does the result say about syndrome measurement and coherent errors? | [Physical interpretation](science/interpretation.md) |
 | What does optimal protected-gate locality force about readout? | [Joint gate/readout theorem](science/gate_readout_tradeoff.md) |
 | Can the stronger locality bound be attained at growing distance? | [Concatenated equality construction](science/minimum_readout_safe_gates.md) |
+| Can those protected gates use few Pauli terms? | [Sparse exact construction](science/sparse_protected_gates.md) |
 | Which ingredients are inherited, and how do nearby results compare? | [Related work](references/RELATED_WORK.md) and [bibliography](references/references.bib) |
 | How are the finite examples reproduced? | [Verification](verification/README.md) |
 

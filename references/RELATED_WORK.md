@@ -74,6 +74,10 @@ The family result in [code families](../science/code_families.md) proves the req
 
 The [concatenated equality construction](../science/minimum_readout_safe_gates.md) uses the existing five-qubit code and canonical error-transparent base Hamiltonians together with this project's support criterion. At unbounded distance $d=3^m$, its recursive signed Pauli classes attain single-error-transparent interaction order $d+2$ and native coupling budget $(d+1)\omega$ for each logical Pauli axis while preserving $r_S=\infty$. The code and general stabilizer-dressing framework are inherited; the supplied gate construction and resource proof are recorded in the companion [Error-Transparent Locality account](https://github.com/GoGoKo699/Error-Transparent-Locality/blob/main/science/minimum_readout_safe_gates.md). This is a mathematical coexistence statement for the declared gate and readout models, rather than a combined noise threshold or an exhaustive literature-priority claim.
 
+## Sparse protected-gate descriptions
+
+The [sparse gate account](../science/sparse_protected_gates.md) preserves the same infinite syndrome reversibility while replacing the dense protected-gate expansion with a linear number of native Pauli terms. Standard nonnegative support reduction gives at most $3n+1$ terms; a constructive cyclic-orbit recursion gives at most $4n$ with $O(\log n)$-bit coefficients. The linear-programming support principle is inherited (see [Hank Yang's background notes](https://hankyang.seas.harvard.edu/Semidefinite/background.html)); the exact count-vector reduction, recursive construction, and resource consequences are proved in the companion account. The code's original known-product-unitary readout assumptions remain part of the result.
+
 ## Reading the comparison
 
 The cited results support the recovery framework, parity examples, coherent-error estimates, and code constructions. The additional conclusions are stated and proved in the topic pages linked at the top. A bibliography comparison establishes the relationship to these specified sources; it is not a guarantee that every related formulation in the literature has been located.

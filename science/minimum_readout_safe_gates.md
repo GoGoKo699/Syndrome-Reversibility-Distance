@@ -7,7 +7,7 @@ The iterated five-qubit code admits exact single-error-transparent logical gates
 \ell=d+2,\qquad J=(d+1)\omega,\qquad r_S=\infty.}
 ```
 
-The locality and coupling equalities hold for each of the three logical Pauli axes. Linear combinations give arbitrary continuous control of the one encoded qubit while retaining exact transparency to every single-qubit error. The number of native Pauli terms grows exponentially with $d$; these resource equalities do not establish an economical hardware implementation.
+The locality and coupling equalities hold for each of the three logical Pauli axes. Linear combinations give arbitrary continuous control of the one encoded qubit while retaining exact transparency to every single-qubit error. The dense expansion below has exponentially many Pauli terms. The [sparse construction](sparse_protected_gates.md) attains the same resources with at most $4n$ terms and polynomially bounded rational denominators; hardware synthesis remains a separate resource.
 
 The five-qubit code, its canonical protected Hamiltonians, and the concatenated code family are inherited constructions. The result developed here is the recursive choice of two Pauli-weight classes and its exact gate-resource analysis. It extends the distance-three comparison in the [gate/readout tradeoff](gate_readout_tradeoff.md). Throughout this page, the protected error weight is **$t=1$**, including when the code distance is larger than three.
 
@@ -202,7 +202,7 @@ b_m=\frac d5a_m,\qquad
 | 2 | 25 | 9 | 11 | 10 | 28,000 |
 | 3 | 125 | 27 | 29 | 28 | 64,000,000,000,000 |
 
-The term count is exponential in $d$, even though the total absolute coupling sum is linear in $d$. The construction does not bound geometric range, control complexity, or the cost of synthesizing these native interactions.
+These counts describe the dense expansion. The [sparse construction](sparse_protected_gates.md) preserves its logical action, full single-error transparency, interaction order, and coupling budget using at most $4n$ terms by an exact recursion. The 25-qubit code has an explicit 75-term form. Neither representation bounds geometric range or the cost of synthesizing the native interactions.
 
 All terms for a fixed logical axis commute: they belong to one stabilizer coset. This does not make their sequential application transparent to faults during the sequence; the required cancellations must hold throughout the gate, as explained in [control robustness](https://github.com/GoGoKo699/Error-Transparent-Locality/blob/main/science/control_robustness.md).
 

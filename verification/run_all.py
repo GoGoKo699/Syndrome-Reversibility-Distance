@@ -19,6 +19,7 @@ PROGRAMS = (
     "verify_physical_channel.py",
     "verify_gate_readout_tradeoff.py",
     "verify_readout_safe_family.py",
+    "verify_sparse_gates.py",
 )
 
 
