@@ -1,0 +1,61 @@
+{
+  "checks_passed": true,
+  "five_qubit": {
+    "centralizer_count": 64,
+    "distance": 3,
+    "k": 1,
+    "n": 5,
+    "stabilizer_count": 16,
+    "support_collision_count": 0,
+    "syndrome_reversibility_distance": "infinity"
+  },
+  "five_qubit_with_fixed_ancilla": {
+    "centralizer_count": 128,
+    "distance": 3,
+    "k": 1,
+    "n": 6,
+    "proper_stabilizer_subword": "IIIIIZ",
+    "stabilizer_count": 32,
+    "support_collision_count": 0,
+    "syndrome_reversibility_distance": "infinity",
+    "weight_four_logical": "IYYIXZ",
+    "weight_four_word_is_a_circuit": false
+  },
+  "four_site_rotation_error": {
+    "q_polynomial_coefficients": [
+      0,
+      0,
+      3,
+      -2,
+      0
+    ],
+    "theta_fourth_order_coefficient": "3/16"
+  },
+  "nine_qubit": {
+    "centralizer_count": 1024,
+    "distance": 3,
+    "k": 1,
+    "n": 9,
+    "stabilizer_count": 256,
+    "support_collision_count": 2848,
+    "syndrome_reversibility_distance": 4
+  },
+  "nine_qubit_hamiltonian": {
+    "coupling_budget_per_logical_half_splitting": "7",
+    "logical_weight_masses": {
+      "3": "4",
+      "4": "-3"
+    },
+    "maximum_pauli_weight": 4,
+    "single_pauli_error_identities": 27
+  },
+  "nine_qubit_support_witness": {
+    "complementary_syndrome_pairs": 8,
+    "equal_support_logical": "YIYIXYIYI",
+    "literal_product_phase": "+1",
+    "logical_circuit": "ZIZIIZIZI",
+    "logical_class": "Z",
+    "proper_subwords_with_nonzero_syndrome": 14,
+    "stabilizer_witness": "XIXIXXIXI"
+  }
+}

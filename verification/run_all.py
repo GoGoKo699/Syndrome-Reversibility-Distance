@@ -17,6 +17,7 @@ PROGRAMS = (
     "verify_code_parameters.py",
     "verify_concatenated_family.py",
     "verify_physical_channel.py",
+    "verify_gate_readout_tradeoff.py",
 )
 
 
