@@ -48,6 +48,8 @@ For odd-distance stabilizer codes, attaining the minimum interaction order $\ell
 
 The [growing-distance equality family](science/minimum_readout_safe_gates.md) realizes $r(S)=\infty$ together with optimal single-error-transparent gates on each of three logical axes: $n=5^m$, $d=3^m$, interaction order $\ell=d+2$, and coupling budget $J/\omega=d+1$. The proof uses two signed logical-Pauli shells with uniform one-site axis counts. The [sparse construction](science/sparse_protected_gates.md) uses at most $4n$ Pauli terms per axis with polynomially bounded rational denominators; at 25 qubits, an explicit form needs 75 terms. A separate existence argument gives at most $3n+1$ terms. The gate guarantee concerns one physical fault.
 
+The [two-error gate construction](science/two_error_gates.md) also attains interaction order thirteen on the $[[25,1,9]]$ code, preserving $r(S)=\infty$. It protects every physical Pauli error of weight at most two. Its exact budget $J/\omega=521/8$ saturates a stronger code-specific block-moment bound.
+
 ## Read the science
 
 | Question | Authoritative account |
@@ -60,6 +62,7 @@ The [growing-distance equality family](science/minimum_readout_safe_gates.md) re
 | What does optimal protected-gate locality force about readout? | [Joint gate/readout theorem](science/gate_readout_tradeoff.md) |
 | Can the stronger locality bound be attained at growing distance? | [Concatenated equality construction](science/minimum_readout_safe_gates.md) |
 | Can those protected gates use few Pauli terms? | [Sparse exact construction](science/sparse_protected_gates.md) |
+| Can the twenty-five-qubit code protect two physical errors during a gate? | [Two-error equality construction and coupling optimum](science/two_error_gates.md) |
 | Which ingredients are inherited, and how do nearby results compare? | [Related work](references/RELATED_WORK.md) and [bibliography](references/references.bib) |
 | How are the finite examples reproduced? | [Verification](verification/README.md) |
 

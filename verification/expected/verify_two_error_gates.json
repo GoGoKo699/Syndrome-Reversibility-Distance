@@ -1,0 +1,222 @@
+{
+  "axes": [
+    {
+      "complete_low_weight_block_signatures_classified": 90,
+      "coupling_budget_per_logical_half_splitting": "521/8",
+      "dense_class_term_counts": {
+        "A0": 10000,
+        "A1": 18000,
+        "A2": 10800,
+        "B": 300000
+      },
+      "distinct_native_terms": 338800,
+      "error_pattern_counts": {
+        "identity": 1,
+        "single": 75,
+        "two_in_distinct_blocks": 2250,
+        "two_in_one_block": 450
+      },
+      "full_error_image_intertwiners_checked": 2776,
+      "logical_axis": "X",
+      "maximum_pauli_weight": 13,
+      "signed_logical_membership_certified_by_tensor_factors": true
+    },
+    {
+      "complete_low_weight_block_signatures_classified": 90,
+      "coupling_budget_per_logical_half_splitting": "521/8",
+      "dense_class_term_counts": {
+        "A0": 10000,
+        "A1": 18000,
+        "A2": 10800,
+        "B": 300000
+      },
+      "distinct_native_terms": 338800,
+      "error_pattern_counts": {
+        "identity": 1,
+        "single": 75,
+        "two_in_distinct_blocks": 2250,
+        "two_in_one_block": 450
+      },
+      "full_error_image_intertwiners_checked": 2776,
+      "logical_axis": "Y",
+      "maximum_pauli_weight": 13,
+      "signed_logical_membership_certified_by_tensor_factors": true
+    },
+    {
+      "complete_low_weight_block_signatures_classified": 90,
+      "coupling_budget_per_logical_half_splitting": "521/8",
+      "dense_class_term_counts": {
+        "A0": 10000,
+        "A1": 18000,
+        "A2": 10800,
+        "B": 300000
+      },
+      "distinct_native_terms": 338800,
+      "error_pattern_counts": {
+        "identity": 1,
+        "single": 75,
+        "two_in_distinct_blocks": 2250,
+        "two_in_one_block": 450
+      },
+      "full_error_image_intertwiners_checked": 2776,
+      "logical_axis": "Z",
+      "maximum_pauli_weight": 13,
+      "signed_logical_membership_certified_by_tensor_factors": true
+    }
+  ],
+  "base_identity_single_double_error_count": 106,
+  "base_normalizer_count": 64,
+  "base_physical_pauli_labels_enumerated": 1024,
+  "base_stabilizer_count": 16,
+  "checks_passed": true,
+  "class_response_table": {
+    "identity": [
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "single": [
+      "13/25",
+      "31/75",
+      "23/75",
+      "23/75"
+    ],
+    "two_in_distinct_blocks": [
+      "29/125",
+      "13/125",
+      "1/225",
+      "23/375"
+    ],
+    "two_in_one_block": [
+      "9/25",
+      "89/225",
+      "97/225",
+      "11/75"
+    ]
+  },
+  "distance_from_written_concatenation_proof": 9,
+  "encoded_qubits": 1,
+  "moment_certificate": {
+    "class_names": [
+      "A0",
+      "A1",
+      "A2",
+      "B"
+    ],
+    "code_specific_coupling_lower_bound": "521/8",
+    "dual_row_coefficients": [
+      "521/8",
+      "-12",
+      "1/2",
+      "1/8"
+    ],
+    "dual_values_on_classes": [
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "gap_to_scalar_bound": "45/8",
+    "row_meanings": [
+      "normalization",
+      "total_weight",
+      "total_weight_squared",
+      "sum_of_squared_inner_block_weights"
+    ],
+    "rows": [
+      [
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        9,
+        11,
+        13,
+        13
+      ],
+      [
+        81,
+        121,
+        169,
+        169
+      ],
+      [
+        27,
+        43,
+        59,
+        43
+      ]
+    ],
+    "scalar_weight_moment_lower_bound": "119/2",
+    "unique_class_logical_masses": [
+      "143/8",
+      "-117/4",
+      "243/16",
+      "-45/16"
+    ]
+  },
+  "physical_qubits": 25,
+  "protected_error_weight": 2,
+  "sparse_optimal_construction": {
+    "axes": [
+      {
+        "class_masses": {
+          "11": "-117/4",
+          "13A": "243/16",
+          "13B": "-45/16",
+          "9": "143/8"
+        },
+        "coefficient_denominator_bit_length": 125,
+        "common_coefficient_denominator": "24514728721268607479503834975115570000",
+        "coupling_budget_per_logical_half_splitting": "521/8",
+        "full_error_image_intertwiners_checked": 2776,
+        "interaction_order": 13,
+        "logical_axis": "Z",
+        "native_pauli_terms": 2575,
+        "orbit_size": 25,
+        "seed_orbits": 103,
+        "signed_coset_memberships_checked": 2575
+      },
+      {
+        "class_masses": {
+          "11": "-117/4",
+          "13A": "243/16",
+          "13B": "-45/16",
+          "9": "143/8"
+        },
+        "coefficient_denominator_bit_length": 125,
+        "common_coefficient_denominator": "24514728721268607479503834975115570000",
+        "coupling_budget_per_logical_half_splitting": "521/8",
+        "full_error_image_intertwiners_checked": 2776,
+        "interaction_order": 13,
+        "logical_axis": "X",
+        "native_pauli_terms": 2575,
+        "orbit_size": 25,
+        "seed_orbits": 103,
+        "signed_coset_memberships_checked": 2575
+      },
+      {
+        "class_masses": {
+          "11": "-117/4",
+          "13A": "243/16",
+          "13B": "-45/16",
+          "9": "143/8"
+        },
+        "coefficient_denominator_bit_length": 125,
+        "common_coefficient_denominator": "24514728721268607479503834975115570000",
+        "coupling_budget_per_logical_half_splitting": "521/8",
+        "full_error_image_intertwiners_checked": 2776,
+        "interaction_order": 13,
+        "logical_axis": "Y",
+        "native_pauli_terms": 2575,
+        "orbit_size": 25,
+        "seed_orbits": 103,
+        "signed_coset_memberships_checked": 2575
+      }
+    ],
+    "checks_passed": true
+  }
+}
