@@ -70,6 +70,10 @@ For the explicit stabilizer convention used here, see Table 4 and the binary sym
 
 The family result in [code families](../science/code_families.md) proves the required parity and distance properties, and then analyzes the change caused by one physical CNOT. It does not attribute novelty to the underlying five-qubit code or to concatenation.
 
+## Connection to protected logical generators
+
+The [concatenated equality construction](../science/minimum_readout_safe_gates.md) uses the existing five-qubit code and canonical error-transparent base Hamiltonians together with this project's support criterion. At unbounded distance $d=3^m$, its recursive signed Pauli classes attain single-error-transparent interaction order $d+2$ and native coupling budget $(d+1)\omega$ for each logical Pauli axis while preserving $r_S=\infty$. The code and general stabilizer-dressing framework are inherited; the supplied gate construction and resource proof are recorded in the companion [Error-Transparent Locality account](https://github.com/GoGoKo699/Error-Transparent-Locality/blob/main/science/minimum_readout_safe_gates.md). This is a mathematical coexistence statement for the declared gate and readout models, rather than a combined noise threshold or an exhaustive literature-priority claim.
+
 ## Reading the comparison
 
 The cited results support the recovery framework, parity examples, coherent-error estimates, and code constructions. The additional conclusions are stated and proved in the topic pages linked at the top. A bibliography comparison establishes the relationship to these specified sources; it is not a guarantee that every related formulation in the literature has been located.
