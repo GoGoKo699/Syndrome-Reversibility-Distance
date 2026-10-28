@@ -47,6 +47,8 @@ The [joint gate/readout theorem](gate_readout_tradeoff.md) relates this invarian
 
 The [concatenated equality construction](minimum_readout_safe_gates.md) attains this stronger bound for one protected error at every distance $d=3^m$. Its codes retain $r=\infty$, while exact logical $X$, $Y$, and $Z$ generators use interaction order $d+2$ and coupling budget $d+1$ per unit logical half-splitting. The readout guarantee still permits recovery to know the product unitary. The [sparse construction](sparse_protected_gates.md) retains these equalities with at most $4n$ native Pauli terms and polynomially bounded rational denominators; the 25-qubit example uses 75 terms.
 
+The [two-error gate construction](two_error_gates.md) strengthens this coexistence on the twenty-five-qubit code: all physical errors of weight at most two are transparent at interaction order thirteen, while $r=\infty$ remains unchanged. An inner-block moment proves the exact coupling optimum $521/8$ per unit logical half-splitting. The stored sparse form has 2,575 native terms per axis. This gate guarantee still shares the code with the prescribed-readout statement under their distinct operational assumptions.
+
 ## Operational boundaries
 
 **Measurement order.** The question fixes recovery after syndrome readout. If the known inverse $U^\dagger$ could be applied beforehand, it would restore the code state directly. The present model isolates the information cost of committing to the original syndrome measurement before that reversal. One possible operational setting is a fixed extraction cycle with calibration information available only at recovery time; that motivation is an interpretation of the model, not a demonstrated hardware protocol.

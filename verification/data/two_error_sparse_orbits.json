@@ -1,0 +1,628 @@
+{
+  "construction": "C5 outer x C5 shared inner orbit means",
+  "n": 25,
+  "axis": "Z",
+  "J": "521/8",
+  "orbits": [
+    {
+      "seed": "IIIIIIIZXZIYYIXIIIIIZIXXI",
+      "class": "9",
+      "logical_coset_sign": 1,
+      "orbit_mass": "94175695818280253206987618972456231/490294574425372149590076699502311400"
+    },
+    {
+      "seed": "IIIIIXYZZYXYZZYIIIIIZIXXI",
+      "class": "13A",
+      "logical_coset_sign": 1,
+      "orbit_mass": "15479628886279480249022899584601731/140084164121534899882879057000660400"
+    },
+    {
+      "seed": "IIIIIIIIIIIIXYXYZYIIYXIIX",
+      "class": "9",
+      "logical_coset_sign": 1,
+      "orbit_mass": "23782413838630482278555708853260987/24514728721268607479503834975115570"
+    },
+    {
+      "seed": "IIIIIIIIIIIYIZZZXYYXYXIIX",
+      "class": "11",
+      "logical_coset_sign": -1,
+      "orbit_mass": "-235067663405810490688700589122671431/122573643606343037397519174875577850"
+    },
+    {
+      "seed": "IIIIIIIIIIXXZYZXZXYYYXIIX",
+      "class": "13A",
+      "logical_coset_sign": 1,
+      "orbit_mass": "363242780900830617401458980892051871/980589148850744299180153399004622800"
+    },
+    {
+      "seed": "IIIIIIXIYYYYIXIIIIIIIZIXX",
+      "class": "9",
+      "logical_coset_sign": 1,
+      "orbit_mass": "43988544263050261630311218708117307/24514728721268607479503834975115570"
+    },
+    {
+      "seed": "IIIIIXXXXXIXIYYIIIIIIZIXX",
+      "class": "11",
+      "logical_coset_sign": -1,
+      "orbit_mass": "-116342213529632626383545726367431711/490294574425372149590076699502311400"
+    },
+    {
+      "seed": "IIIIIXYZZYIXIYYIIIIIIZIXX",
+      "class": "11",
+      "logical_coset_sign": -1,
+      "orbit_mass": "-239981496905712936344346496839049021/490294574425372149590076699502311400"
+    },
+    {
+      "seed": "IIIIIXYZZYYXYZZIIIIIIZIXX",
+      "class": "13A",
+      "logical_coset_sign": 1,
+      "orbit_mass": "24210393879428816977238441325858407/122573643606343037397519174875577850"
+    },
+    {
+      "seed": "IIIIIIIZXZXYZZYIIIIIIZIXX",
+      "class": "11",
+      "logical_coset_sign": -1,
+      "orbit_mass": "-2902801029550948388053013883299263/5160995520267075258842912626340120"
+    },
+    {
+      "seed": "IIIIIIIIIIXXZYZIZIXXXYXII",
+      "class": "11",
+      "logical_coset_sign": -1,
+      "orbit_mass": "-222379093776299662777712341841466539/122573643606343037397519174875577850"
+    },
+    {
+      "seed": "IIIIIIIIIIIIXYXXIZIXXYXII",
+      "class": "9",
+      "logical_coset_sign": 1,
+      "orbit_mass": "725922062485443528526795955479354681/980589148850744299180153399004622800"
+    },
+    {
+      "seed": "IIIIIIIIIIIIXYXYZYIIXYXII",
+      "class": "9",
+      "logical_coset_sign": 1,
+      "orbit_mass": "2077526792149292837386848277029196851/980589148850744299180153399004622800"
+    },
+    {
+      "seed": "IIIIIIXIYYIXIYYXYIYXIZIXX",
+      "class": "13B",
+      "logical_coset_sign": 1,
+      "orbit_mass": "-8472085638395787040983774233729609/490294574425372149590076699502311400"
+    },
+    {
+      "seed": "IIIIIIIIIIIYIZZIXXIZXYXII",
+      "class": "9",
+      "logical_coset_sign": 1,
+      "orbit_mass": "78074730504890106161091356174628421/61286821803171518698759587437788925"
+    },
+    {
+      "seed": "IIIIIIXIYYZIIZXIIIIIXIZIX",
+      "class": "9",
+      "logical_coset_sign": 1,
+      "orbit_mass": "76581821282315509913019090874893179/980589148850744299180153399004622800"
+    },
+    {
+      "seed": "IIIIIXYZZYYZZYXIIIIIXIZIX",
+      "class": "13A",
+      "logical_coset_sign": 1,
+      "orbit_mass": "542841696525983984841049541425327137/980589148850744299180153399004622800"
+    },
+    {
+      "seed": "IIIIIIIZXZIYYIXXZZXIXIZIX",
+      "class": "13B",
+      "logical_coset_sign": 1,
+      "orbit_mass": "-62585431304697713449897489407908397/980589148850744299180153399004622800"
+    },
+    {
+      "seed": "IIIIIIIIIIIYIZZZXYYXIXYXI",
+      "class": "11",
+      "logical_coset_sign": -1,
+      "orbit_mass": "-23699722522352495672909760585686681/140084164121534899882879057000660400"
+    },
+    {
+      "seed": "IIIIIIIIIIIIXYXIXXIZIXYXI",
+      "class": "9",
+      "logical_coset_sign": 1,
+      "orbit_mass": "31856811198568438125357862778229193/70042082060767449941439528500330200"
+    },
+    {
+      "seed": "IIIIIIXIYYXIYYIXXYIYXIZIX",
+      "class": "13B",
+      "logical_coset_sign": 1,
+      "orbit_mass": "-2576878738273289394287535699390701/25804977601335376294214563131700600"
+    },
+    {
+      "seed": "IIIIIIXIYYIZXZIIZYYZXIZIX",
+      "class": "13B",
+      "logical_coset_sign": 1,
+      "orbit_mass": "-53836718080792789902102120369982227/980589148850744299180153399004622800"
+    },
+    {
+      "seed": "IIIIIXYZZYYYIXIIIIIIYZYII",
+      "class": "11",
+      "logical_coset_sign": -1,
+      "orbit_mass": "-95555122088080108237638293348842293/490294574425372149590076699502311400"
+    },
+    {
+      "seed": "IIIIIXXXXXIIZXZIIIIIYZYII",
+      "class": "11",
+      "logical_coset_sign": -1,
+      "orbit_mass": "-4578113327420065614801221837474573/4902945744253721495900766995023114"
+    },
+    {
+      "seed": "IIIIIIIIIIXXZYZXXIZIZYZXX",
+      "class": "13A",
+      "logical_coset_sign": 1,
+      "orbit_mass": "190858010343501912078728812845552133/196117829770148859836030679800924560"
+    },
+    {
+      "seed": "IIIIIIIIIIIYIZZYYXZXZYZXX",
+      "class": "13A",
+      "logical_coset_sign": 1,
+      "orbit_mass": "90802431862340590081046548812760859/140084164121534899882879057000660400"
+    },
+    {
+      "seed": "IIIIIIXIYYXIYYIZYYZIYZYII",
+      "class": "13B",
+      "logical_coset_sign": 1,
+      "orbit_mass": "-1170310748819054597277290722461457/49029457442537214959007669950231140"
+    },
+    {
+      "seed": "IIIIIIIIIIIIXYXYXZXYZYZXX",
+      "class": "13A",
+      "logical_coset_sign": 1,
+      "orbit_mass": "11900757813370049043167338411054403/980589148850744299180153399004622800"
+    },
+    {
+      "seed": "IIIIIIIZXZIIZXZIIIIIXXIZI",
+      "class": "9",
+      "logical_coset_sign": 1,
+      "orbit_mass": "169419946889030623581659918215647737/980589148850744299180153399004622800"
+    },
+    {
+      "seed": "IIIIIXYZZYYXYZZIIIIIXXIZI",
+      "class": "13A",
+      "logical_coset_sign": 1,
+      "orbit_mass": "568106916048286198217940689744402127/980589148850744299180153399004622800"
+    },
+    {
+      "seed": "IIIIIIXIYYXYZZYIIIIIXXIZI",
+      "class": "11",
+      "logical_coset_sign": -1,
+      "orbit_mass": "-97310540293562011053039135869271667/980589148850744299180153399004622800"
+    },
+    {
+      "seed": "IIIIIIIIIIXXZYZYZYIIIIXYX",
+      "class": "11",
+      "logical_coset_sign": -1,
+      "orbit_mass": "-262374894762584550295416593953285891/196117829770148859836030679800924560"
+    },
+    {
+      "seed": "IIIIIIIIIIIIXYXIXXIZIIXYX",
+      "class": "9",
+      "logical_coset_sign": 1,
+      "orbit_mass": "5903558205397568823624207474544157/49029457442537214959007669950231140"
+    },
+    {
+      "seed": "IIIIIIIIIIXXZYZYXZXYIIXYX",
+      "class": "13A",
+      "logical_coset_sign": 1,
+      "orbit_mass": "150968898445354758608012950871782757/245147287212686074795038349751155700"
+    },
+    {
+      "seed": "IIIIIIIIIIIIXYXXYYXZIIXYX",
+      "class": "11",
+      "logical_coset_sign": -1,
+      "orbit_mass": "-1981428428341536349743812305802434371/980589148850744299180153399004622800"
+    },
+    {
+      "seed": "IXZZXIIIIIZZIYIYIIYZIIXYX",
+      "class": "13B",
+      "logical_coset_sign": 1,
+      "orbit_mass": "-1523886313920925907487526702015621/980589148850744299180153399004622800"
+    },
+    {
+      "seed": "IIIIIIIIIIYYYYYZZZZZIIXYX",
+      "class": "13A",
+      "logical_coset_sign": 1,
+      "orbit_mass": "163070807272607872536574885691986573/245147287212686074795038349751155700"
+    },
+    {
+      "seed": "IIIIIIXIYYXXXXXIIIIIYYXZX",
+      "class": "13A",
+      "logical_coset_sign": 1,
+      "orbit_mass": "120297153893704547146669109488440919/70042082060767449941439528500330200"
+    },
+    {
+      "seed": "IIIIIIIIIIIIXYXIZIXXZZIYI",
+      "class": "9",
+      "logical_coset_sign": 1,
+      "orbit_mass": "6647372939321470829044630987090857/19611782977014885983603067980092456"
+    },
+    {
+      "seed": "IIIIIIIIIIIYIZZXIZIXZZIYI",
+      "class": "9",
+      "logical_coset_sign": 1,
+      "orbit_mass": "25237596307509814104163296740729781/980589148850744299180153399004622800"
+    },
+    {
+      "seed": "IIIIIIIIIIIIXYXXXIZIZZIYI",
+      "class": "9",
+      "logical_coset_sign": 1,
+      "orbit_mass": "1274083866598532968358460141706749399/980589148850744299180153399004622800"
+    },
+    {
+      "seed": "IIIIIIIIIIXXZYZZXYYXZZIYI",
+      "class": "13A",
+      "logical_coset_sign": 1,
+      "orbit_mass": "304694832373458938987581808490054561/245147287212686074795038349751155700"
+    },
+    {
+      "seed": "IIIIIIXZZXIXYXIZYIIYZZIYI",
+      "class": "13B",
+      "logical_coset_sign": 1,
+      "orbit_mass": "-10456968154541112207339726876963227/980589148850744299180153399004622800"
+    },
+    {
+      "seed": "IIIIIIIIIIXXZYZXYYXZZZIYI",
+      "class": "13A",
+      "logical_coset_sign": 1,
+      "orbit_mass": "143213527272419551464049336047162147/490294574425372149590076699502311400"
+    },
+    {
+      "seed": "IIIIIIIIIIYYYYYXYYXZZZIYI",
+      "class": "13A",
+      "logical_coset_sign": 1,
+      "orbit_mass": "1620130896972159672223988100407944363/980589148850744299180153399004622800"
+    },
+    {
+      "seed": "IIIIIIIZXZYZZYXIIIIIZXYYX",
+      "class": "13A",
+      "logical_coset_sign": 1,
+      "orbit_mass": "767259654740513725141613729199946837/980589148850744299180153399004622800"
+    },
+    {
+      "seed": "IIIIIIIIIIIIXYXXXIZIYIZZI",
+      "class": "9",
+      "logical_coset_sign": 1,
+      "orbit_mass": "36968835097636107818134836008196449/140084164121534899882879057000660400"
+    },
+    {
+      "seed": "IIIIIIIIIIXXZYZYIIYZYIZZI",
+      "class": "11",
+      "logical_coset_sign": -1,
+      "orbit_mass": "-334291571001817304746183309010248849/490294574425372149590076699502311400"
+    },
+    {
+      "seed": "IIIIIIXIYYYYIXIIIIIIIYZYI",
+      "class": "9",
+      "logical_coset_sign": 1,
+      "orbit_mass": "1066090129387232727276405662694529/196117829770148859836030679800924560"
+    },
+    {
+      "seed": "IIIIIIIZXZXIYYIIIIIIIYZYI",
+      "class": "9",
+      "logical_coset_sign": 1,
+      "orbit_mass": "908450413724843342609684723154213/460803171452417433825260055923225"
+    },
+    {
+      "seed": "IIIIIIIIIIIYIZZXXIZIXZYZX",
+      "class": "11",
+      "logical_coset_sign": -1,
+      "orbit_mass": "-130176582269295714647174096024040193/490294574425372149590076699502311400"
+    },
+    {
+      "seed": "IIIIIIIIIIXXZYZZYIIYXZYZX",
+      "class": "13A",
+      "logical_coset_sign": 1,
+      "orbit_mass": "220064737856054219016389274096840771/980589148850744299180153399004622800"
+    },
+    {
+      "seed": "IIIIIXXXXXXXXXXIIIIIIXXIZ",
+      "class": "13A",
+      "logical_coset_sign": 1,
+      "orbit_mass": "48158707482604760457526439741344419/980589148850744299180153399004622800"
+    },
+    {
+      "seed": "IIIIIIIZXZXXXXXIIIIIIXXIZ",
+      "class": "11",
+      "logical_coset_sign": -1,
+      "orbit_mass": "-611419520649003291825584604217293663/490294574425372149590076699502311400"
+    },
+    {
+      "seed": "IIIIIIXIYYZXZIIIIIIIIXXIZ",
+      "class": "9",
+      "logical_coset_sign": 1,
+      "orbit_mass": "38362185277317628307549894249097471/140084164121534899882879057000660400"
+    },
+    {
+      "seed": "IIIIIXYZZYZIIZXIIIIIIXXIZ",
+      "class": "11",
+      "logical_coset_sign": -1,
+      "orbit_mass": "-35220672126216446209422645836010399/51609955202670752588429126263401200"
+    },
+    {
+      "seed": "IIIIIIIIIIXXZYZZIXXIXIIXY",
+      "class": "11",
+      "logical_coset_sign": -1,
+      "orbit_mass": "-281531356715408605838042707733157739/980589148850744299180153399004622800"
+    },
+    {
+      "seed": "IIIIIIIZXZIXIYYXZZXIIXXIZ",
+      "class": "13B",
+      "logical_coset_sign": 1,
+      "orbit_mass": "-1461114598877693043403602619630157/245147287212686074795038349751155700"
+    },
+    {
+      "seed": "IIIIIIIZXZZIIZXIIIIIZYIIY",
+      "class": "9",
+      "logical_coset_sign": 1,
+      "orbit_mass": "94674283847822630482672428733482443/70042082060767449941439528500330200"
+    },
+    {
+      "seed": "IIIIIIIZXZZYXYZIIIIIZYIIY",
+      "class": "11",
+      "logical_coset_sign": -1,
+      "orbit_mass": "-100273205657106532410640183833845817/122573643606343037397519174875577850"
+    },
+    {
+      "seed": "IIIIIIIZXZXIYYIXZZXIZYIIY",
+      "class": "13B",
+      "logical_coset_sign": 1,
+      "orbit_mass": "-21637379670638359650225157999269009/122573643606343037397519174875577850"
+    },
+    {
+      "seed": "IIIIIIIZXZIXIYYXZZXIZYIIY",
+      "class": "13B",
+      "logical_coset_sign": 1,
+      "orbit_mass": "-173087360093461987621784049046584641/980589148850744299180153399004622800"
+    },
+    {
+      "seed": "IIIIIIXIYYIIZXZIIIIIYXZXY",
+      "class": "11",
+      "logical_coset_sign": -1,
+      "orbit_mass": "-48321238406458784557583753262542351/122573643606343037397519174875577850"
+    },
+    {
+      "seed": "IIIIIIIZXZIXIYYIIIIIYXZXY",
+      "class": "11",
+      "logical_coset_sign": -1,
+      "orbit_mass": "-382781917674017300330774964550158169/980589148850744299180153399004622800"
+    },
+    {
+      "seed": "IIIIIIXIYYZYXYZIIIIIYXZXY",
+      "class": "13A",
+      "logical_coset_sign": 1,
+      "orbit_mass": "4962728467622837061500304155206741/140084164121534899882879057000660400"
+    },
+    {
+      "seed": "IIIIIIIIIIYYYYYIXXIZZIYIZ",
+      "class": "11",
+      "logical_coset_sign": -1,
+      "orbit_mass": "-74481508808001956521316817674517427/28016832824306979976575811400132080"
+    },
+    {
+      "seed": "IIIIIIIIIIIYIZZZZZZZZIYIZ",
+      "class": "11",
+      "logical_coset_sign": -1,
+      "orbit_mass": "-41736866042943857123375078988116111/61286821803171518698759587437788925"
+    },
+    {
+      "seed": "IIIIIIXIYYIZXZIIIIIIXYYXZ",
+      "class": "11",
+      "logical_coset_sign": -1,
+      "orbit_mass": "-1074838787242035527454998971419169399/980589148850744299180153399004622800"
+    },
+    {
+      "seed": "IIIIIIIZXZXIYYIIIIIIXYYXZ",
+      "class": "11",
+      "logical_coset_sign": -1,
+      "orbit_mass": "-671053974104824144826794499813309329/980589148850744299180153399004622800"
+    },
+    {
+      "seed": "IZYYZIIIIIIYIZZYZYIIIZZIY",
+      "class": "13B",
+      "logical_coset_sign": 1,
+      "orbit_mass": "-13119375797204095693168604716510113/49029457442537214959007669950231140"
+    },
+    {
+      "seed": "IYXXYIIIIIIXYXIIIYZYIZZIY",
+      "class": "13B",
+      "logical_coset_sign": 1,
+      "orbit_mass": "-71017189005923798904722214882948913/490294574425372149590076699502311400"
+    },
+    {
+      "seed": "IYXXYIIIIIYIZZIIIYZYIZZIY",
+      "class": "13B",
+      "logical_coset_sign": 1,
+      "orbit_mass": "-22944387862296084950792030365114149/245147287212686074795038349751155700"
+    },
+    {
+      "seed": "IXZZXXIYYIZXZIIIIIIIYIIYZ",
+      "class": "13B",
+      "logical_coset_sign": 1,
+      "orbit_mass": "-3880668482270710931041272142449684/61286821803171518698759587437788925"
+    },
+    {
+      "seed": "IYXXYIIZXZZXZIIIIIIIYIIYZ",
+      "class": "13B",
+      "logical_coset_sign": 1,
+      "orbit_mass": "-12708449352253114289854476470066917/140084164121534899882879057000660400"
+    },
+    {
+      "seed": "IXZZXIZXZIYIXIYIIIIIYIIYZ",
+      "class": "13B",
+      "logical_coset_sign": 1,
+      "orbit_mass": "-80243320126402753471555479218863171/245147287212686074795038349751155700"
+    },
+    {
+      "seed": "IIIIIIIZXZXZIIZIIIIIYIIYZ",
+      "class": "9",
+      "logical_coset_sign": 1,
+      "orbit_mass": "1114734422753059638106804338815464611/980589148850744299180153399004622800"
+    },
+    {
+      "seed": "IIIIIIXIYYXZIIZIIIIIYIIYZ",
+      "class": "9",
+      "logical_coset_sign": 1,
+      "orbit_mass": "88472536818537196431878754811795739/980589148850744299180153399004622800"
+    },
+    {
+      "seed": "IIIIIXYZZYZZYXYIIIIIYIIYZ",
+      "class": "13A",
+      "logical_coset_sign": 1,
+      "orbit_mass": "471310837634254696974876240230167383/980589148850744299180153399004622800"
+    },
+    {
+      "seed": "IIIIIIIIIIIIXYXIZIXXZXXZY",
+      "class": "11",
+      "logical_coset_sign": -1,
+      "orbit_mass": "-41279058003894148818136087105300464/61286821803171518698759587437788925"
+    },
+    {
+      "seed": "IIIIIIIIIIXXZYZIZIXXZXXZY",
+      "class": "13A",
+      "logical_coset_sign": 1,
+      "orbit_mass": "33528369755669079717678966234771619/39223565954029771967206135960184912"
+    },
+    {
+      "seed": "IIIIIIIIIIIYIZZXXIZIZXXZY",
+      "class": "11",
+      "logical_coset_sign": -1,
+      "orbit_mass": "-954968487227209041933301346455765917/980589148850744299180153399004622800"
+    },
+    {
+      "seed": "IIIIIIXIYYIXIYYIIIIIXZXYY",
+      "class": "11",
+      "logical_coset_sign": -1,
+      "orbit_mass": "-13557813809767133937264439491220481/17510520515191862485359882125082550"
+    },
+    {
+      "seed": "IIIIIIIZXZZYXYZIIIIIXZXYY",
+      "class": "13A",
+      "logical_coset_sign": 1,
+      "orbit_mass": "55731807466857880162164496449067101/245147287212686074795038349751155700"
+    },
+    {
+      "seed": "IIIIIIYXXYIYIZZZIXXIIYIZZ",
+      "class": "13B",
+      "logical_coset_sign": 1,
+      "orbit_mass": "-72384529452785409137339877260099449/245147287212686074795038349751155700"
+    },
+    {
+      "seed": "IIIIIIIIIIXXZYZYZYIIIYIZZ",
+      "class": "11",
+      "logical_coset_sign": -1,
+      "orbit_mass": "-846071682960224305263386153553231743/980589148850744299180153399004622800"
+    },
+    {
+      "seed": "IIIIIIIIIIIIXYXYYXZXIYIZZ",
+      "class": "11",
+      "logical_coset_sign": -1,
+      "orbit_mass": "-925495767990003782381665236121145611/980589148850744299180153399004622800"
+    },
+    {
+      "seed": "IIIIIIIIIIXXZYZIYZYIIYIZZ",
+      "class": "11",
+      "logical_coset_sign": -1,
+      "orbit_mass": "-114866679966557507356672434999788329/490294574425372149590076699502311400"
+    },
+    {
+      "seed": "IIIIIIIIIIIIXYXZYIIYIYIZZ",
+      "class": "9",
+      "logical_coset_sign": 1,
+      "orbit_mass": "173459222671549835847983934431759601/980589148850744299180153399004622800"
+    },
+    {
+      "seed": "IIIIIIYXXYZZIYIZYIIYIYIZZ",
+      "class": "13B",
+      "logical_coset_sign": 1,
+      "orbit_mass": "-96063785489225417612773255482653691/490294574425372149590076699502311400"
+    },
+    {
+      "seed": "IIIIIIIIIIIYIZZIIYZYIYIZZ",
+      "class": "9",
+      "logical_coset_sign": 1,
+      "orbit_mass": "1206122302008765997729932518244254661/980589148850744299180153399004622800"
+    },
+    {
+      "seed": "IZYYZYYIXIZIIZXIIIIIIIYZY",
+      "class": "13B",
+      "logical_coset_sign": 1,
+      "orbit_mass": "-3813630776620506478752459094851449/6451244400333844073553640782925150"
+    },
+    {
+      "seed": "IIIIIIXIYYXIYYIIIIIIIIYZY",
+      "class": "9",
+      "logical_coset_sign": 1,
+      "orbit_mass": "1116426892968471668788343974933569301/980589148850744299180153399004622800"
+    },
+    {
+      "seed": "IIIIIXYZZYYIXIYIIIIIIIYZY",
+      "class": "11",
+      "logical_coset_sign": -1,
+      "orbit_mass": "-18825445549038130688314445475360427/25804977601335376294214563131700600"
+    },
+    {
+      "seed": "IIIIIIIZXZIIZXZIIIIIIIYZY",
+      "class": "9",
+      "logical_coset_sign": 1,
+      "orbit_mass": "40247059599433371231032109733377113/61286821803171518698759587437788925"
+    },
+    {
+      "seed": "IXZZXIZXZIIXIYYIIIIIIIYZY",
+      "class": "13B",
+      "logical_coset_sign": 1,
+      "orbit_mass": "-15663029885484429019512439129434523/140084164121534899882879057000660400"
+    },
+    {
+      "seed": "IIIIIIIIIIIIXYXIIYZYXXZYZ",
+      "class": "11",
+      "logical_coset_sign": -1,
+      "orbit_mass": "-826353713368622269758560417140760953/980589148850744299180153399004622800"
+    },
+    {
+      "seed": "IIIIIIXIYYXXXXXIIIIIZZZZZ",
+      "class": "13A",
+      "logical_coset_sign": 1,
+      "orbit_mass": "4498590714930588350819801651569253/245147287212686074795038349751155700"
+    },
+    {
+      "seed": "IIIIIIXIYYZXZIIIIIIIZZZZZ",
+      "class": "11",
+      "logical_coset_sign": -1,
+      "orbit_mass": "-75013887946895914803521419101635224/61286821803171518698759587437788925"
+    },
+    {
+      "seed": "IIIIIXXXXXIIZXZIIIIIZZZZZ",
+      "class": "13A",
+      "logical_coset_sign": 1,
+      "orbit_mass": "207511783894266689403874373363808651/245147287212686074795038349751155700"
+    },
+    {
+      "seed": "IIIIIIIIIIYYYYYIXXIZYYYYY",
+      "class": "13A",
+      "logical_coset_sign": 1,
+      "orbit_mass": "484096238264407993465712367889660677/980589148850744299180153399004622800"
+    },
+    {
+      "seed": "IIIIIIIIIIIYIZZXZXYYYYYYY",
+      "class": "13A",
+      "logical_coset_sign": 1,
+      "orbit_mass": "1085220254933848742578736241722139953/980589148850744299180153399004622800"
+    },
+    {
+      "seed": "IIIIIIIIIIIIXYXIIYZYYYYYY",
+      "class": "11",
+      "logical_coset_sign": -1,
+      "orbit_mass": "-30036151287168539173810002959947691/12902488800667688147107281565850300"
+    },
+    {
+      "seed": "IIIIIIIIIIIYIZZZZZZZYYYYY",
+      "class": "13A",
+      "logical_coset_sign": 1,
+      "orbit_mass": "22577587269125645703369858633913283/51609955202670752588429126263401200"
+    }
+  ],
+  "conventions": "Leftmost character is physical site one; five consecutive blocks of five sites. Each orbit averages outer block shifts and shared within-block shifts independently modulo five. Orbit masses multiply signed representatives acting positively as the stated logical axis.",
+  "other_axes": "Apply X -> Y -> Z -> X once for logical X and twice for logical Y. The stored logical-coset signs remain unchanged and are independently verified."
+}

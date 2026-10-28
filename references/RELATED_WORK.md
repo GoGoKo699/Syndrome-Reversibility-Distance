@@ -78,6 +78,10 @@ The [concatenated equality construction](../science/minimum_readout_safe_gates.m
 
 The [sparse gate account](../science/sparse_protected_gates.md) preserves the same infinite syndrome reversibility while replacing the dense protected-gate expansion with a linear number of native Pauli terms. Standard nonnegative support reduction gives at most $3n+1$ terms; a constructive cyclic-orbit recursion gives at most $4n$ with $O(\log n)$-bit coefficients. The linear-programming support principle is inherited (see [Hank Yang's background notes](https://hankyang.seas.harvard.edu/Semidefinite/background.html)); the exact count-vector reduction, recursive construction, and resource consequences are proved in the companion account. The code's original known-product-unitary readout assumptions remain part of the result.
 
+## Two-error protected gates on the same reversible-readout code
+
+The [two-error account](../science/two_error_gates.md) gives exact protected gates for all Pauli errors through weight two on the $[[25,1,9]]$ code while keeping $r_S=\infty$. Its order-thirteen interaction and native budget $521\omega/8$ attain code-specific lower bounds. The code and protected-Hamiltonian framework are inherited; the four-class equality construction and inner-block moment refinement are the derived statements supplied here. The sparse rational witness is checked independently of the numerical search that selected its support.
+
 ## Reading the comparison
 
 The cited results support the recovery framework, parity examples, coherent-error estimates, and code constructions. The additional conclusions are stated and proved in the topic pages linked at the top. A bibliography comparison establishes the relationship to these specified sources; it is not a guarantee that every related formulation in the literature has been located.
