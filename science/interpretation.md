@@ -41,6 +41,10 @@ An entangling Clifford transformation preserves the stabilizer formalism but can
 
 The construction is an unbounded-distance information-preservation separation. It keeps $k=2$ as the block size grows. Its proof does not require a large simulation, an assumed decoder, or an asymptotic threshold estimate.
 
+## A constraint on protected-gate interaction order
+
+The [joint gate/readout theorem](gate_readout_tradeoff.md) relates this invariant to exact error-transparent logical Hamiltonians. For odd $d$, attaining the interaction-order lower bound $\ell=d+t$ forces $r=d+1$, even for degenerate stabilizer codes with fixed ancillary qubits. Therefore $r>d+1$, including infinity, requires $\ell\ge d+t+1$. The nine-qubit four-body gate supplies an explicit $r=4$ example and a logical-$Z$ readout-loss witness. The five-qubit code attains the stronger five-body bound while keeping $r=\infty$. Higher-error attainability and a joint noise experiment require additional results.
+
 ## Operational boundaries
 
 **Measurement order.** The question fixes recovery after syndrome readout. If the known inverse $U^\dagger$ could be applied beforehand, it would restore the code state directly. The present model isolates the information cost of committing to the original syndrome measurement before that reversal. One possible operational setting is a fixed extraction cycle with calibration information available only at recovery time; that motivation is an interpretation of the model, not a demonstrated hardware protocol.

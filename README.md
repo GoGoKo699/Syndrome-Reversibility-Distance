@@ -42,6 +42,10 @@ p_4(q)=3q^2-2q^3,
 \qquad q=\sin^2(\theta/2),\quad 0\le q\le\tfrac12.
 ```
 
+## Connection to protected gates
+
+For odd-distance stabilizer codes, attaining the minimum interaction order $\ell=d+t$ for a nontrivial Hamiltonian transparent to all Pauli errors of weight at most $t$ forces $r(S)=d+1$. Requiring $r(S)>d+1$, including infinity, therefore raises the necessary interaction order to at least $d+t+1$. The [joint theorem and proof](science/gate_readout_tradeoff.md) connect this invariant to [Error-Transparent Locality](https://github.com/GoGoKo699/Error-Transparent-Locality). Exact enumeration finds $r=4$ for that project's nine-qubit four-body construction and supplies a four-site rotation with optimal error $3q^2-2q^3$. The two operational noise models retain their separate assumptions.
+
 ## Read the science
 
 | Question | Authoritative account |
@@ -51,6 +55,7 @@ p_4(q)=3q^2-2q^3,
 | Why does the invariant give the optimal exponent, including rare syndromes? | [Sharp error exponent](science/error_exponent.md) |
 | How does one CNOT preserve distance while changing reversibility? | [Code families and the ten-qubit example](science/code_families.md) |
 | What does the result say about syndrome measurement and coherent errors? | [Physical interpretation](science/interpretation.md) |
+| What does optimal protected-gate locality force about readout? | [Joint gate/readout theorem](science/gate_readout_tradeoff.md) |
 | Which ingredients are inherited, and how do nearby results compare? | [Related work](references/RELATED_WORK.md) and [bibliography](references/references.bib) |
 | How are the finite examples reproduced? | [Verification](verification/README.md) |
 
