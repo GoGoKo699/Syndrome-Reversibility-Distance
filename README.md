@@ -50,6 +50,8 @@ The [growing-distance equality family](science/minimum_readout_safe_gates.md) re
 
 The [two-error gate construction](science/two_error_gates.md) also attains interaction order thirteen on the $[[25,1,9]]$ code, preserving $r(S)=\infty$. It protects every physical Pauli error of weight at most two. Its exact budget $J/\omega=521/8$ saturates a stronger code-specific block-moment bound.
 
+The [growing two-error family](science/growing_two_error_gates.md) attains the corresponding code-specific optima at every depth $m\ge2$: $\ell=d+4$ and $J/\omega=(4d^2+21d+8)/8$, with $d=3^m$ and unchanged $r(S)=\infty$. A correlated stabilizer-padding rule follows the concatenation tree; the proof covers all physical errors of weight at most two.
+
 ## Read the science
 
 | Question | Authoritative account |
@@ -63,6 +65,7 @@ The [two-error gate construction](science/two_error_gates.md) also attains inter
 | Can the stronger locality bound be attained at growing distance? | [Concatenated equality construction](science/minimum_readout_safe_gates.md) |
 | Can those protected gates use few Pauli terms? | [Sparse exact construction](science/sparse_protected_gates.md) |
 | Can the twenty-five-qubit code protect two physical errors during a gate? | [Two-error equality construction and coupling optimum](science/two_error_gates.md) |
+| Does the two-error optimum persist at growing distance? | [All-depth two-error family](science/growing_two_error_gates.md) |
 | Which ingredients are inherited, and how do nearby results compare? | [Related work](references/RELATED_WORK.md) and [bibliography](references/references.bib) |
 | How are the finite examples reproduced? | [Verification](verification/README.md) |
 

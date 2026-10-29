@@ -1,0 +1,489 @@
+{
+  "base_signed_pauli_checks": {
+    "all_inner_responses_checked": true,
+    "identity_single_double_errors": 106,
+    "logical_axes": [
+      "X",
+      "Y",
+      "Z"
+    ],
+    "normalizer_labels": 64,
+    "physical_five_qubit_labels_enumerated": 1024,
+    "signed_stabilizers": 16
+  },
+  "checks_passed": true,
+  "finite_hierarchy_instances": [
+    {
+      "block_moment_dual": [
+        "521/8",
+        "-12",
+        "1/2",
+        "1/8"
+      ],
+      "class_masses": [
+        "143/8",
+        "-117/4",
+        "243/16",
+        "-45/16"
+      ],
+      "coupling_budget_per_logical_half_splitting": "521/8",
+      "depth": 2,
+      "distinct_bottom_pair_hierarchy": [
+        {
+          "active_and_frontier_padding_probability": "3/20",
+          "bottom_block_pairs": 10,
+          "class_responses": [
+            "29/125",
+            "13/125",
+            "1/225",
+            "23/375"
+          ],
+          "first_divergence_depth": 1,
+          "joint_active_probability": "3/10",
+          "physical_two_error_labels": 2250
+        }
+      ],
+      "frontier_count": 2,
+      "frontiers_by_depth": [
+        2
+      ],
+      "interaction_order": 13,
+      "ordinary_distance_from_written_proof": 9,
+      "physical_qubits": 25,
+      "protected_error_weight": 2,
+      "same_bottom_pair_class_responses": [
+        "9/25",
+        "89/225",
+        "97/225",
+        "11/75"
+      ],
+      "single_error_class_responses": [
+        "13/25",
+        "31/75",
+        "23/75",
+        "23/75"
+      ],
+      "total_identity_single_double_errors": 2776
+    },
+    {
+      "block_moment_dual": [
+        "3491/8",
+        "-30",
+        "1/2",
+        "1/8"
+      ],
+      "class_masses": [
+        "899/8",
+        "-837/4",
+        "1701/16",
+        "-135/16"
+      ],
+      "coupling_budget_per_logical_half_splitting": "3491/8",
+      "depth": 3,
+      "distinct_bottom_pair_hierarchy": [
+        {
+          "active_and_frontier_padding_probability": "27/2000",
+          "bottom_block_pairs": 250,
+          "class_responses": [
+            "1541/3125",
+            "4319/9375",
+            "1341/3125",
+            "4039/9375"
+          ],
+          "first_divergence_depth": 1,
+          "joint_active_probability": "27/250",
+          "physical_two_error_labels": 56250
+        },
+        {
+          "active_and_frontier_padding_probability": "9/400",
+          "bottom_block_pairs": 50,
+          "class_responses": [
+            "337/625",
+            "321/625",
+            "2753/5625",
+            "923/1875"
+          ],
+          "first_divergence_depth": 2,
+          "joint_active_probability": "9/50",
+          "physical_two_error_labels": 11250
+        }
+      ],
+      "frontier_count": 8,
+      "frontiers_by_depth": [
+        2,
+        6
+      ],
+      "interaction_order": 31,
+      "ordinary_distance_from_written_proof": 27,
+      "physical_qubits": 125,
+      "protected_error_weight": 2,
+      "same_bottom_pair_class_responses": [
+        "77/125",
+        "701/1125",
+        "709/1125",
+        "43/75"
+      ],
+      "single_error_class_responses": [
+        "89/125",
+        "259/375",
+        "251/375",
+        "251/375"
+      ],
+      "total_identity_single_double_errors": 70126
+    },
+    {
+      "block_moment_dual": [
+        "27953/8",
+        "-84",
+        "1/2",
+        "1/8"
+      ],
+      "class_masses": [
+        "7055/8",
+        "-6885/4",
+        "13851/16",
+        "-405/16"
+      ],
+      "coupling_budget_per_logical_half_splitting": "27953/8",
+      "depth": 4,
+      "distinct_bottom_pair_hierarchy": [
+        {
+          "active_and_frontier_padding_probability": "243/162500",
+          "bottom_block_pairs": 6250,
+          "class_responses": [
+            "53069/78125",
+            "31499/46875",
+            "81011/121875",
+            "2025467/3046875"
+          ],
+          "first_divergence_depth": 1,
+          "joint_active_probability": "243/6250",
+          "physical_two_error_labels": 1406250
+        },
+        {
+          "active_and_frontier_padding_probability": "81/32500",
+          "bottom_block_pairs": 1250,
+          "class_responses": [
+            "10873/15625",
+            "6463/9375",
+            "5549/8125",
+            "416239/609375"
+          ],
+          "first_divergence_depth": 2,
+          "joint_active_probability": "81/1250",
+          "physical_two_error_labels": 281250
+        },
+        {
+          "active_and_frontier_padding_probability": "27/6500",
+          "bottom_block_pairs": 250,
+          "class_responses": [
+            "2261/3125",
+            "449/625",
+            "10433/14625",
+            "86963/121875"
+          ],
+          "first_divergence_depth": 3,
+          "joint_active_probability": "27/250",
+          "physical_two_error_labels": 56250
+        }
+      ],
+      "frontier_count": 26,
+      "frontiers_by_depth": [
+        2,
+        6,
+        18
+      ],
+      "interaction_order": 85,
+      "ordinary_distance_from_written_proof": 81,
+      "physical_qubits": 625,
+      "protected_error_weight": 2,
+      "same_bottom_pair_class_responses": [
+        "481/625",
+        "4337/5625",
+        "869/1125",
+        "1427/1875"
+      ],
+      "single_error_class_responses": [
+        "517/625",
+        "1543/1875",
+        "307/375",
+        "307/375"
+      ],
+      "total_identity_single_double_errors": 1756876
+    },
+    {
+      "block_moment_dual": [
+        "241307/8",
+        "-246",
+        "1/2",
+        "1/8"
+      ],
+      "class_masses": [
+        "60515/8",
+        "-60021/4",
+        "120285/16",
+        "-1215/16"
+      ],
+      "coupling_budget_per_logical_half_splitting": "241307/8",
+      "depth": 5,
+      "distinct_bottom_pair_hierarchy": [
+        {
+          "active_and_frontier_padding_probability": "2187/12500000",
+          "bottom_block_pairs": 156250,
+          "class_responses": [
+            "1565621/1953125",
+            "4687727/5859375",
+            "23392991/29296875",
+            "23393063/29296875"
+          ],
+          "first_divergence_depth": 1,
+          "joint_active_probability": "2187/156250",
+          "physical_two_error_labels": 35156250
+        },
+        {
+          "active_and_frontier_padding_probability": "729/2500000",
+          "bottom_block_pairs": 31250,
+          "class_responses": [
+            "315457/390625",
+            "944659/1171875",
+            "4714747/5859375",
+            "4714771/5859375"
+          ],
+          "first_divergence_depth": 2,
+          "joint_active_probability": "729/31250",
+          "physical_two_error_labels": 7031250
+        },
+        {
+          "active_and_frontier_padding_probability": "243/500000",
+          "bottom_block_pairs": 6250,
+          "class_responses": [
+            "63869/78125",
+            "191303/234375",
+            "318333/390625",
+            "955007/1171875"
+          ],
+          "first_divergence_depth": 3,
+          "joint_active_probability": "243/6250",
+          "physical_two_error_labels": 1406250
+        },
+        {
+          "active_and_frontier_padding_probability": "81/100000",
+          "bottom_block_pairs": 1250,
+          "class_responses": [
+            "13033/15625",
+            "13017/15625",
+            "585049/703125",
+            "195019/234375"
+          ],
+          "first_divergence_depth": 4,
+          "joint_active_probability": "81/1250",
+          "physical_two_error_labels": 281250
+        }
+      ],
+      "frontier_count": 80,
+      "frontiers_by_depth": [
+        2,
+        6,
+        18,
+        54
+      ],
+      "interaction_order": 247,
+      "ordinary_distance_from_written_proof": 243,
+      "physical_qubits": 3125,
+      "protected_error_weight": 2,
+      "same_bottom_pair_class_responses": [
+        "2693/3125",
+        "4849/5625",
+        "24253/28125",
+        "8063/9375"
+      ],
+      "single_error_class_responses": [
+        "2801/3125",
+        "1679/1875",
+        "8387/9375",
+        "8387/9375"
+      ],
+      "total_identity_single_double_errors": 43940626
+    },
+    {
+      "block_moment_dual": [
+        "2141081/8",
+        "-732",
+        "1/2",
+        "1/8"
+      ],
+      "class_masses": [
+        "535823/8",
+        "-534357/4",
+        "1069443/16",
+        "-3645/16"
+      ],
+      "coupling_budget_per_logical_half_splitting": "2141081/8",
+      "depth": 6,
+      "distinct_bottom_pair_hierarchy": [
+        {
+          "active_and_frontier_padding_probability": "19683/945312500",
+          "bottom_block_pairs": 3906250,
+          "class_responses": [
+            "42910589/48828125",
+            "128684359/146484375",
+            "3113014387/3544921875",
+            "15565073663/17724609375"
+          ],
+          "first_divergence_depth": 1,
+          "joint_active_probability": "19683/3906250",
+          "physical_two_error_labels": 878906250
+        },
+        {
+          "active_and_frontier_padding_probability": "6561/189062500",
+          "bottom_block_pairs": 781250,
+          "class_responses": [
+            "8603113/9765625",
+            "25800203/29296875",
+            "624143879/708984375",
+            "3120719971/3544921875"
+          ],
+          "first_divergence_depth": 2,
+          "joint_active_probability": "6561/781250",
+          "physical_two_error_labels": 175781250
+        },
+        {
+          "active_and_frontier_padding_probability": "2187/37812500",
+          "bottom_block_pairs": 156250,
+          "class_responses": [
+            "1727621/1953125",
+            "5181151/5859375",
+            "125342443/141796875",
+            "626712407/708984375"
+          ],
+          "first_divergence_depth": 3,
+          "joint_active_probability": "2187/156250",
+          "physical_two_error_labels": 35156250
+        },
+        {
+          "active_and_frontier_padding_probability": "729/7562500",
+          "bottom_block_pairs": 31250,
+          "class_responses": [
+            "347857/390625",
+            "1043267/1171875",
+            "8413237/9453125",
+            "126198619/141796875"
+          ],
+          "first_divergence_depth": 4,
+          "joint_active_probability": "729/31250",
+          "physical_two_error_labels": 7031250
+        },
+        {
+          "active_and_frontier_padding_probability": "243/1512500",
+          "bottom_block_pairs": 6250,
+          "class_responses": [
+            "70349/78125",
+            "70333/78125",
+            "15315049/17015625",
+            "25525103/28359375"
+          ],
+          "first_divergence_depth": 5,
+          "joint_active_probability": "243/6250",
+          "physical_two_error_labels": 1406250
+        }
+      ],
+      "frontier_count": 242,
+      "frontiers_by_depth": [
+        2,
+        6,
+        18,
+        54,
+        162
+      ],
+      "interaction_order": 733,
+      "ordinary_distance_from_written_proof": 729,
+      "physical_qubits": 15625,
+      "protected_error_weight": 2,
+      "same_bottom_pair_class_responses": [
+        "14329/15625",
+        "128969/140625",
+        "128977/140625",
+        "42971/46875"
+      ],
+      "single_error_class_responses": [
+        "14653/15625",
+        "43951/46875",
+        "43943/46875",
+        "43943/46875"
+      ],
+      "total_identity_single_double_errors": 1098609376
+    }
+  ],
+  "independent_depth_three_error_enumeration": {
+    "classification_complete": true,
+    "error_category_counts": {
+      "distinct_bottom_divergence_1": 56250,
+      "distinct_bottom_divergence_2": 11250,
+      "identity": 1,
+      "same_bottom_pair": 2250,
+      "single": 375
+    },
+    "identity_single_double_error_labels_enumerated": 70126,
+    "physical_qubits": 125
+  },
+  "independent_depth_three_support_enumeration": {
+    "frontier_probabilities_checked": true,
+    "minimum_support_patterns_enumerated": 10000,
+    "pair_cases": [
+      {
+        "active_and_padding_probability": "9/400",
+        "bottom_block_pair": [
+          0,
+          1
+        ],
+        "joint_active_probability": "9/50",
+        "uniform_inactive_padding_rate_negative_control": "581/500"
+      },
+      {
+        "active_and_padding_probability": "27/2000",
+        "bottom_block_pair": [
+          0,
+          5
+        ],
+        "joint_active_probability": "27/250",
+        "uniform_inactive_padding_rate_negative_control": "2419/2500"
+      }
+    ]
+  },
+  "symbolic_all_depth_response_identities": {
+    "bottom_block_squared_weight_moment": true,
+    "coupling_budget_polynomial_in_a": [
+      "1",
+      "63/8",
+      "9/2"
+    ],
+    "distinct_bottom_pair_rho_coefficient_zero": true,
+    "domain": "m >= 2, hence a >= 3",
+    "global_first_second_moments": true,
+    "mass_polynomials_in_a": [
+      [
+        "1",
+        "9/4",
+        "9/8"
+      ],
+      [
+        "0",
+        "-3",
+        "-9/4"
+      ],
+      [
+        "0",
+        "27/16",
+        "9/8"
+      ],
+      [
+        "0",
+        "-15/16"
+      ]
+    ],
+    "normalization_identity": true,
+    "polynomial_variable": "a = 3**(m-1), number of active bottom blocks",
+    "same_bottom_pair_inverse_N_coefficient_zero": true,
+    "single_error_inverse_N_coefficient_zero": true
+  }
+}

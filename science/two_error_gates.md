@@ -9,6 +9,8 @@ The twice-concatenated five-qubit code admits strict transparency to every Pauli
 
 Both interaction order and coupling budget are optimal under the declared fixed-code model. The coupling optimum is specific to this code at interaction order thirteen. It is stronger than the scalar weight-moment relaxation because it distinguishes two physically different kinds of weight-thirteen terms.
 
+The [growing two-error family](growing_two_error_gates.md) extends the optimal resource formula to every concatenation depth $m\ge2$, using a support-tree-correlated padding rule. The present account retains the explicit twenty-five-qubit construction and its sparse certificate.
+
 The code, its distance and readout property, and the canonical five-qubit Hamiltonian are inherited ingredients. The new construction combines four normalized Pauli classes; its optimality proof adds a moment of the interaction weights inside the five inner blocks. The [single-error family](minimum_readout_safe_gates.md) supplies the earlier construction and notation, while the [sparse gate account](sparse_protected_gates.md) treats a separate single-error description problem.
 
 ## 1. Model and the first lower bound
