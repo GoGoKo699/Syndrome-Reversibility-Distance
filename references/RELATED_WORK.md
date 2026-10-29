@@ -89,3 +89,7 @@ The [all-depth two-error account](../science/growing_two_error_gates.md) extends
 ## Reading the comparison
 
 The cited results support the recovery framework, parity examples, coherent-error estimates, and code constructions. The additional conclusions are stated and proved in the topic pages linked at the top. A bibliography comparison establishes the relationship to these specified sources; it is not a guarantee that every related formulation in the literature has been located.
+
+## Exact sparse two-error synthesis
+
+The [sparse synthesis account](../science/sparse_two_error_synthesis.md) combines standard positive-support reduction and pairwise-independent probability coupling with the signed concatenated-code construction. Rational torus polygon areas implement unequal pairwise marginals without a denominator-sized grid. The supplied positive component certificates, recursive orbit compiler and exact 125-qubit witness are the derived construction recorded here. Numerical optimization selects the finite witness's support; standard-library rational and integer checks establish its coefficients, signed logical action and complete protected-error responses. This is not a claim of hardware feasibility or exhaustive literature priority.

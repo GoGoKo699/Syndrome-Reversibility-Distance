@@ -1,0 +1,2145 @@
+{
+  "logical_axis": "Z",
+  "group": "coordinatewise_C5_squared",
+  "features": 112,
+  "classes": {
+    "A0": [
+      {
+        "pauli": "IIIIIZIIZXIYYIXIIIIIXXIZI",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "1755137904079/62223961442760"
+      },
+      {
+        "pauli": "IYIZZIIIIIIIIIIIYIZZIZIXX",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "528827114279/93335942164140"
+      },
+      {
+        "pauli": "YXIIXIXXIZIIXYXIIIIIIIIII",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "16456103147/37334376865656"
+      },
+      {
+        "pauli": "XZIIZXZIIZIIIIIXXIZIIIIII",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "2429078383067/186671884328280"
+      },
+      {
+        "pauli": "IIIIIYYIXIIYYIXIIIIIIXXIZ",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "68572438019/9333594216414"
+      },
+      {
+        "pauli": "ZZIYIIIIIIIIIIIIZZIYXXIZI",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "1094362325567/186671884328280"
+      },
+      {
+        "pauli": "XIIXYYZYIIYXIIXIIIIIIIIII",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "1732929844103/62223961442760"
+      },
+      {
+        "pauli": "IZXZIXZIIZIIIIIIZIXXIIIII",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "2782550153107/186671884328280"
+      },
+      {
+        "pauli": "IIIIIYIIYZIIIIIIYYIXIZXZI",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "3356482030607/186671884328280"
+      },
+      {
+        "pauli": "IIIIIIIIIIYIZZIYZYIIIZZIY",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "39959112107/2592665060115"
+      },
+      {
+        "pauli": "IIIIIIIIIIYXIIXXXIZIYXIIX",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "62738820167/6222396144276"
+      },
+      {
+        "pauli": "IIIIIIIIIIXIIXYIXXIZIXYXI",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "130168012577/7777995180345"
+      },
+      {
+        "pauli": "ZIYIZIZIXXXIIXYIIIIIIIIII",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "954178240121/46667971082070"
+      },
+      {
+        "pauli": "ZIXXIIIIIIXIYYIIIZXZIIIII",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "257626371539/14359375717560"
+      },
+      {
+        "pauli": "XIYYIYIXIYIIIIIIXXIZIIIII",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "2214426669181/186671884328280"
+      },
+      {
+        "pauli": "IIIIIIYZYIIIIIIZXZIIIIZXZ",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "1744934554553/186671884328280"
+      },
+      {
+        "pauli": "IYYIXIIIIIXIZIXIIIIIZXZII",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "1818036461587/62223961442760"
+      },
+      {
+        "pauli": "IIIIIYYIXIYYIXIIIIIIXXIZI",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "252302745307/46667971082070"
+      },
+      {
+        "pauli": "YIXIYIIIIIIIYZYIIIIIIYYIX",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "915657424141/46667971082070"
+      },
+      {
+        "pauli": "XYXIIIIIIIIIIIIXYXIIYZYII",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "126430835831/14359375717560"
+      },
+      {
+        "pauli": "IIIIIIZZIYYZYIIZIYIZIIIII",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "100596726394/7777995180345"
+      },
+      {
+        "pauli": "XIIXYIYZYIZZIYIIIIIIIIIII",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "2613954768173/186671884328280"
+      },
+      {
+        "pauli": "XIIXYIIIIIIIIIIIXYXIZYIIY",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "4159196391/6913773493640"
+      },
+      {
+        "pauli": "IIIIIYIXIYIXIYYIIIIIYIIYZ",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "1801736179613/93335942164140"
+      },
+      {
+        "pauli": "ZZIYIIIIIIIIIIIIYIZZZYIIY",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "59994457423/46667971082070"
+      },
+      {
+        "pauli": "IXYXIIYZYIIZZIYIIIIIIIIII",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "1332506731397/93335942164140"
+      },
+      {
+        "pauli": "IXYXIYIIYZXYXIIIIIIIIIIII",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "402458930039/93335942164140"
+      },
+      {
+        "pauli": "ZIIZXIZXZIIIIIIXIZIXIIIII",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "25460720651/7777995180345"
+      },
+      {
+        "pauli": "IIIIIIIYZYIIIIIZXZIIYYIXI",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "12620921789/14359375717560"
+      },
+      {
+        "pauli": "IYZYIIXYXIIIIIIIIIIIIIXYX",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "1848827995529/186671884328280"
+      },
+      {
+        "pauli": "YXIIXIIIIIIIIIIIZZIYIXXIZ",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "3526442503319/186671884328280"
+      },
+      {
+        "pauli": "XXIZIIIXYXIIIIIIIIIIXYXII",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "60576437530/4666797108207"
+      },
+      {
+        "pauli": "IIIIIIIIIIIYIZZXIZIXYIZZI",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "213819796783/20741320480920"
+      },
+      {
+        "pauli": "IIIIIYIIYZIIIIIIIZXZYYIXI",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "663606717119/186671884328280"
+      },
+      {
+        "pauli": "IXXIZIIIIIXIYYIZXZIIIIIII",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "451894321205/37334376865656"
+      },
+      {
+        "pauli": "IZZIYIIIIIIIIIIYIZZIZYIIY",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "77475190079/62223961442760"
+      },
+      {
+        "pauli": "IIIIIZIXXIIIIIIIYYIXIYYIX",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "840456884161/31111980721380"
+      },
+      {
+        "pauli": "IIIIIIYYIXYIXIYIIIIIIZIXX",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "785368064051/186671884328280"
+      },
+      {
+        "pauli": "YIXIYIIIIIYIIYZIIIIIIXIYY",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "1169438128363/62223961442760"
+      },
+      {
+        "pauli": "IIIIIYIIYZIIIIIZXZIIXIYYI",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "4929658724413/186671884328280"
+      },
+      {
+        "pauli": "IIIIIIIIIIZIYIZIIYZYZZIYI",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "1765676314021/93335942164140"
+      },
+      {
+        "pauli": "ZIXXIIZZIYIIIIIIIIIIZIYIZ",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "1911491014481/186671884328280"
+      },
+      {
+        "pauli": "IIIIIIYZYIIIIIIIZXZIZIIZX",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "51471388031/2592665060115"
+      },
+      {
+        "pauli": "ZZIYIIIIIIIIIIIYXIIXYIIYZ",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "96017341783/14359375717560"
+      },
+      {
+        "pauli": "IYIZZIIIIIIIIIIXYXIIIYZYI",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "954679799887/62223961442760"
+      },
+      {
+        "pauli": "IIIIIIZXZIIYYIXIIIIIYZYII",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "98331871933/46667971082070"
+      },
+      {
+        "pauli": "IIIIIIXXIZIIIIIZIIZXIZXZI",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "68624802677/31111980721380"
+      },
+      {
+        "pauli": "YIIYZIIIIIIXIYYIYYIXIIIII",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "213637332035/18667188432828"
+      },
+      {
+        "pauli": "XIIXYIIIIIIIIIIIYIZZZIXXI",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "663855686861/186671884328280"
+      },
+      {
+        "pauli": "ZIYIZZYIIYXYXIIIIIIIIIIII",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "381919657783/46667971082070"
+      },
+      {
+        "pauli": "XIYYIZXZIIIIIIIIYZYIIIIII",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "1335730581647/93335942164140"
+      },
+      {
+        "pauli": "IZIXXIIIIIIYYIXIIZXZIIIII",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "88574442335/18667188432828"
+      },
+      {
+        "pauli": "ZXZIIIIIIIIZIXXIIIIIYIXIY",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "222680045291/93335942164140"
+      },
+      {
+        "pauli": "ZIXXIIIIIIXZIIZZXZIIIIIII",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "2075916326873/186671884328280"
+      },
+      {
+        "pauli": "YIIYZIXYXIIIIIIIIIIIIYIZZ",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "4003736445119/186671884328280"
+      },
+      {
+        "pauli": "YIIYZIIIIIXZIIZZIIZXIIIII",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "8662450559/398871547710"
+      },
+      {
+        "pauli": "XIIXYIIIIIIIIIIIYIZZXIZIX",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "14297475065/691377349364"
+      },
+      {
+        "pauli": "IXXIZIYIZZIIIIIIIIIIIYIZZ",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "3288945077669/186671884328280"
+      },
+      {
+        "pauli": "ZIIZXIIIIIIYZYIIIIIIYYIXI",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "448721399671/46667971082070"
+      },
+      {
+        "pauli": "IIXYXXXIZIIZZIYIIIIIIIIII",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "119346138722/7777995180345"
+      },
+      {
+        "pauli": "IIIIIIYZYIIIIIIZIIZXXZIIZ",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "2816250410159/186671884328280"
+      },
+      {
+        "pauli": "YXIIXXXIZIZZIYIIIIIIIIIII",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "4392957507377/186671884328280"
+      },
+      {
+        "pauli": "IIZXZIIIIIIYZYIIIIIIIXIYY",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "2600366987221/186671884328280"
+      },
+      {
+        "pauli": "IIIIIIIIIIIYIZZIIYZYYXIIX",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "1313339511527/62223961442760"
+      },
+      {
+        "pauli": "IIIIIIZIXXIIIIIYYIXIXZIIZ",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "49627208581/2871875143512"
+      },
+      {
+        "pauli": "YIIYZIZZIYIIIIIIIIIIIIXYX",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "1037711524507/93335942164140"
+      },
+      {
+        "pauli": "ZIIZXIIIIIIZIXXIIIIIIYYIX",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "137265112675/9333594216414"
+      },
+      {
+        "pauli": "YIXIYIIIIIIIYZYIIIIIZXZII",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "854506173457/37334376865656"
+      },
+      {
+        "pauli": "IIIIIYIIYZIIIIIZIIZXZIIZX",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "196545998891/62223961442760"
+      },
+      {
+        "pauli": "IIIIIIIIIIIYIZZYIIYZXYXII",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "221691390221/20741320480920"
+      },
+      {
+        "pauli": "ZZIYIIIIIIIIIIIYXIIXXIZIX",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "21892642489/4786458572520"
+      },
+      {
+        "pauli": "IZZIYIIIIIIIIIIZZIYIZIXXI",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "168448100423/14359375717560"
+      },
+      {
+        "pauli": "ZIIZXIIIIIIXXIZIIIIIIZXZI",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "78253511299/6913773493640"
+      },
+      {
+        "pauli": "YYIXIIIIIIXXIZIIIIIIZXZII",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "2191266664231/186671884328280"
+      },
+      {
+        "pauli": "IIIIIZIYIZIYZYIYIZZIIIIII",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "285799542787/20741320480920"
+      },
+      {
+        "pauli": "ZYIIYXYXIIIIIIIIIIIIXYXII",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "86880571613/7179687858780"
+      },
+      {
+        "pauli": "ZIYIZIIIIIIIIIIYXIIXIXXIZ",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "1878125762219/93335942164140"
+      },
+      {
+        "pauli": "YXIIXIZIXXIXYXIIIIIIIIIII",
+        "coset_sign": 1,
+        "weight": 9,
+        "mass": "988780299757/46667971082070"
+      }
+    ],
+    "A1": [
+      {
+        "pauli": "IIIIIIIIIIYXIIXYIIYZXZYZX",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "607541507409592279639/29381137878771350567660"
+      },
+      {
+        "pauli": "IXXIZIYIZZIIIIIIIIIIZXXZY",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "439426268610773625139/66107560227235538777235"
+      },
+      {
+        "pauli": "IIIIIIIIIIIIXYXYXZXYXIIXY",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "4444174249652033503201/528860481817884310217880"
+      },
+      {
+        "pauli": "ZZYXYIIIIIZIXXIIIIIIIZXZI",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "244701897435417542597/22035853409078512925745"
+      },
+      {
+        "pauli": "XIZIXXXZYZIIIIIIIIIIZIYIZ",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "307309634360567211301/105772096363576862043576"
+      },
+      {
+        "pauli": "IYIZZZXYYXYIZZIIIIIIIIIII",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "84285211612971426979/52886048181788431021788"
+      },
+      {
+        "pauli": "XXIZIYYYYYIIIIIIIIIIIZZIY",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "256720662172944966755/35257365454525620681192"
+      },
+      {
+        "pauli": "IIIIIZZYXYZIIZXIIIIIXXIZI",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "1228584990119547263131/105772096363576862043576"
+      },
+      {
+        "pauli": "IIIIIIIIIIZZIYIYZYIIXZYZX",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "1667468167573516241227/132215120454471077554470"
+      },
+      {
+        "pauli": "ZIXXIXZYZXIIIIIIIIIIZIYIZ",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "7162702180594727372177/528860481817884310217880"
+      },
+      {
+        "pauli": "IIIIIIIIIIZZIYIZXYYXZZIYI",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "357962005470225941803/22035853409078512925745"
+      },
+      {
+        "pauli": "ZIIZXIIIIIXYYXZIIIIIZIIZX",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "143086641209461672221/58762275757542701135320"
+      },
+      {
+        "pauli": "IIIIIZYIIYIIIIIYYIXIXYZZY",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "7659209651082789517703/528860481817884310217880"
+      },
+      {
+        "pauli": "XZYZXZYIIYYIZZIIIIIIIIIII",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "799498831850366839369/58762275757542701135320"
+      },
+      {
+        "pauli": "ZIYIZIIIIIIIIIIZXXZYYIIYZ",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "6810946734925179369259/528860481817884310217880"
+      },
+      {
+        "pauli": "ZXXZYIIIIIIIIIIIIXYXYIIYZ",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "618363436223228273761/132215120454471077554470"
+      },
+      {
+        "pauli": "IYIZZIYZYIZXXZYIIIIIIIIII",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "2065006890660723585023/105772096363576862043576"
+      },
+      {
+        "pauli": "YZXXZIIIIIIIIIIIZZIYIYZYI",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "5239576495861215873229/528860481817884310217880"
+      },
+      {
+        "pauli": "XZIIZIIIIIZIXXIIIIIIXXXXX",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "5340162212843602543669/528860481817884310217880"
+      },
+      {
+        "pauli": "IIIIIIIZXZXXXXXIIIIIZIXXI",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "489547599628924932118/22035853409078512925745"
+      },
+      {
+        "pauli": "IIIIIXXXXXXZIIZIIIIIIYZYI",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "637193956718707061689/264430240908942155108940"
+      },
+      {
+        "pauli": "IIIIIZZIYIYYXZXIIXYXIIIII",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "912208081457501456591/264430240908942155108940"
+      },
+      {
+        "pauli": "IIIIIIXIYYIYYIXIIIIIZZZZZ",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "287010702084275750897/29381137878771350567660"
+      },
+      {
+        "pauli": "IIYZYIIIIIXYZZYIYYIXIIIII",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "6250498987121470360261/528860481817884310217880"
+      },
+      {
+        "pauli": "IIIIIIIIIIZXXZYXIZIXIXYXI",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "656530903379890552855/105772096363576862043576"
+      },
+      {
+        "pauli": "IYYIXXXXXXIIIIIYZYIIIIIII",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "1286218219457822081345/105772096363576862043576"
+      },
+      {
+        "pauli": "YIIYZIIIIIIZXZIZZYXYIIIII",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "12914176490284843037039/528860481817884310217880"
+      },
+      {
+        "pauli": "XYXIIIIIIIIIIIIXYXIIYXZXY",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "7429815006310050221561/528860481817884310217880"
+      },
+      {
+        "pauli": "ZXYYXIIIIIIXIYYZIIZXIIIII",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "16069059135648620757437/528860481817884310217880"
+      },
+      {
+        "pauli": "IIIIIXYZZYZXZIIIIIIIIIYZY",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "83612645759339387825/17628682727262810340596"
+      },
+      {
+        "pauli": "IZIXXZXXZYIIIIIIIIIIXYXII",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "3998465211423229503289/264430240908942155108940"
+      },
+      {
+        "pauli": "IYZYIYZXXZIIIIIIIIIIXIIXY",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "73770521633792780407/66107560227235538777235"
+      },
+      {
+        "pauli": "ZYIIYIIIIIZYXYZZXZIIIIIII",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "345750237741700355/5876227575754270113532"
+      },
+      {
+        "pauli": "XYXIIIIIIIIIIIIZXXZYZYIIY",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "293381597004208266236/66107560227235538777235"
+      },
+      {
+        "pauli": "IIIIIIIYZYIIIIIYZZYXZXZII",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "3960046806674986984693/176286827272628103405960"
+      },
+      {
+        "pauli": "ZZZZZYXIIXIIIIIIIIIIIXYXI",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "7709666378715119791/8814341363631405170298"
+      },
+      {
+        "pauli": "XIYYIZYXYZIIIIIIZIXXIIIII",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "1680535917957074769521/264430240908942155108940"
+      },
+      {
+        "pauli": "IIIIIIIIIIYYYYYYIIYZIIXYX",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "3885489008309126658689/176286827272628103405960"
+      },
+      {
+        "pauli": "ZXZIIIIIIIYYXZXIIIIIZXZII",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "3627578176183732861901/264430240908942155108940"
+      },
+      {
+        "pauli": "XIZIXIIIIIYZZYXIYYIXIIIII",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "4365262775798733042827/528860481817884310217880"
+      },
+      {
+        "pauli": "IXXIZIIIIIZZYXYXIYYIIIIII",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "109632378847517528698/7345284469692837641915"
+      },
+      {
+        "pauli": "IIIIIYIZZIXXIZIXZYZXIIIII",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "5371198425478002269917/264430240908942155108940"
+      },
+      {
+        "pauli": "IZZIYZIXXIZXXZYIIIIIIIIII",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "1242331763340738199633/88143413636314051702980"
+      },
+      {
+        "pauli": "IIIIIIIIIIXIIXYIZIXXXZYZX",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "4438949576893404926609/528860481817884310217880"
+      },
+      {
+        "pauli": "IIIIIXZYZXYZYIIYIZZIIIIII",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "2445388125739704224729/528860481817884310217880"
+      },
+      {
+        "pauli": "IIIIIIYYIXZZYXYIIIIIIZIXX",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "823368866083251180211/105772096363576862043576"
+      },
+      {
+        "pauli": "IZXZIIIIIIXZXYYIIIIIZXZII",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "5117399390570306448929/264430240908942155108940"
+      },
+      {
+        "pauli": "IIIIIYIIYZIIIIIXZIIZYXYZZ",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "955628206180087768519/88143413636314051702980"
+      },
+      {
+        "pauli": "IIIIIXYYXZIIIIIYIXIYIZXZI",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "1021902048331686458687/105772096363576862043576"
+      },
+      {
+        "pauli": "IIIIIYIXIYZYXYZIIIIIXIZIX",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "367544226366606787201/66107560227235538777235"
+      },
+      {
+        "pauli": "ZYIIYIIIIIXIYYIYXYZZIIIII",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "330144904802008759967/58762275757542701135320"
+      },
+      {
+        "pauli": "ZIIZXZXZIIIIIIIZZZZZIIIII",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "79445372952432265654/13221512045447107755447"
+      },
+      {
+        "pauli": "ZIYIZYYXZXXYXIIIIIIIIIIII",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "175745331414105197125/52886048181788431021788"
+      },
+      {
+        "pauli": "XIZIXIIIIIZYXYZZXZIIIIIII",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "1384800702006921666509/132215120454471077554470"
+      },
+      {
+        "pauli": "IIIIIZIXXIIIIIIZYXYZIYYIX",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "5367213338984471329567/528860481817884310217880"
+      },
+      {
+        "pauli": "IIIIIZIYIZYYXZXIZZIYIIIII",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "400257892713055560143/528860481817884310217880"
+      },
+      {
+        "pauli": "YYIXIIXIYYIIIIIXYYXZIIIII",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "85740740626629375056/66107560227235538777235"
+      },
+      {
+        "pauli": "ZYIIYIIIIIXXXXXIYYIXIIIII",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "573294283013378140382/66107560227235538777235"
+      },
+      {
+        "pauli": "IYIZZIIIIIIIIIIYYYYYZIXXI",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "59078327405567496367/66107560227235538777235"
+      },
+      {
+        "pauli": "YXIIXIIIIIIIIIIXXZYZIXXIZ",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "1210993325636177762429/88143413636314051702980"
+      },
+      {
+        "pauli": "IYYIXIIIIIZYIIYIIIIIYZZYX",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "3734417032565413063417/264430240908942155108940"
+      },
+      {
+        "pauli": "IYIZZYYXZXYIZZIIIIIIIIIII",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "115370006026933243757/105772096363576862043576"
+      },
+      {
+        "pauli": "IIIIIXYZZYYYIXIIIIIIZIXXI",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "1297482311492325404818/66107560227235538777235"
+      },
+      {
+        "pauli": "IIIIIIIIIIIZZIYYIIYZXXZYZ",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "1161114069699780947993/176286827272628103405960"
+      },
+      {
+        "pauli": "IIIIIIIXYXYYXZXZZIYIIIIII",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "2730549119151828547799/132215120454471077554470"
+      },
+      {
+        "pauli": "YIXIYYIXIYIIIIIXYYXZIIIII",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "3285970762352834583793/176286827272628103405960"
+      },
+      {
+        "pauli": "IIIIIIYZYIIIIIIIZXZIZYXYZ",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "1563411768934296271523/176286827272628103405960"
+      },
+      {
+        "pauli": "IIIIIXIZIXIIIIIZZYXYIYYIX",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "240554629412354412751/44071706818157025851490"
+      },
+      {
+        "pauli": "ZZZZZIZZIYIIIIIIIIIIYXIIX",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "12240045666666422915609/528860481817884310217880"
+      },
+      {
+        "pauli": "IIIIIYIXIYIYYIXIIIIIZXYYX",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "48383080964223188897/22035853409078512925745"
+      },
+      {
+        "pauli": "IIXYXIIYZYZXXZYIIIIIIIIII",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "11521785877600983004/7345284469692837641915"
+      },
+      {
+        "pauli": "IIIIIZZZZZIIIIIXZIIZYYIXI",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "3464471474765718275279/264430240908942155108940"
+      },
+      {
+        "pauli": "IIXYXYXZXYYIZZIIIIIIIIIII",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "12781699831347753047/22035853409078512925745"
+      },
+      {
+        "pauli": "XXIZIIIIIIZIIZXZYXYZIIIII",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "9194172433795106084011/528860481817884310217880"
+      },
+      {
+        "pauli": "IIIIIXXZYZYZYIIYIZZIIIIII",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "375689393186152361638/66107560227235538777235"
+      },
+      {
+        "pauli": "IXYXIXXIZIYYYYYIIIIIIIIII",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "2575058458804090655467/176286827272628103405960"
+      },
+      {
+        "pauli": "YIXIYYYIXIIIIIIYYXZXIIIII",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "346110158953805421937/52886048181788431021788"
+      },
+      {
+        "pauli": "YZYIIIIIIIZYXYZIZXZIIIIII",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "776167691128212960757/66107560227235538777235"
+      },
+      {
+        "pauli": "YIXIYIIIIIYXZXYIIIIIIIZXZ",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "49119831959896235269/29381137878771350567660"
+      },
+      {
+        "pauli": "IIIIIIIIIIYXIIXXZXYYIIXYX",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "145971617243446808887/264430240908942155108940"
+      },
+      {
+        "pauli": "YYIXIIIIIIXXIZIIIIIIZYXYZ",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "3506949542164572329/664397590223472751530"
+      },
+      {
+        "pauli": "IIIIIIYYIXIXIYYIIIIIXYYXZ",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "517272250365925034273/58762275757542701135320"
+      },
+      {
+        "pauli": "IIXYXXZXYYYIZZIIIIIIIIIII",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "2803401148567987687073/132215120454471077554470"
+      },
+      {
+        "pauli": "ZZZZZIYIZZIIIIIIIIIIZZIYI",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "1405561724236329771727/528860481817884310217880"
+      },
+      {
+        "pauli": "IIIIIIIZXZXIYYIIIIIIXYYXZ",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "1945116862035388807429/132215120454471077554470"
+      },
+      {
+        "pauli": "YXZXYIIIIIZIIZXIZXZIIIIII",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "2095642323743142839033/528860481817884310217880"
+      },
+      {
+        "pauli": "XYXIIIIIIIIIIIIIZZIYZXYYX",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "7007687211639739170583/528860481817884310217880"
+      },
+      {
+        "pauli": "IIXYXIIIIIIIIIIXIIXYXZXYY",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "1505651956254393339803/105772096363576862043576"
+      },
+      {
+        "pauli": "IIIIIIIIIIXXZYZZYIIYIXYXI",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "13668318585449736944827/528860481817884310217880"
+      },
+      {
+        "pauli": "XYZZYIIIIIIIYZYIIIIIIXIYY",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "7737213689519598194417/528860481817884310217880"
+      },
+      {
+        "pauli": "ZXYYXZIYIZIIIIIIIIIIIYIZZ",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "2724466816294296016753/132215120454471077554470"
+      },
+      {
+        "pauli": "XYXIIIIYZYZYZXXIIIIIIIIII",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "26483624202631709681/52886048181788431021788"
+      },
+      {
+        "pauli": "IIIIIIIIIIIYIZZIZIXXYYYYY",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "2035554414411212691/5876227575754270113532"
+      },
+      {
+        "pauli": "IIIIIIIIIIYYYYYIZIXXIYIZZ",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "1830953009431991670247/176286827272628103405960"
+      },
+      {
+        "pauli": "ZXYYXIIIIIXIYYIZXZIIIIIII",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "388718017376828195137/88143413636314051702980"
+      },
+      {
+        "pauli": "YZXXZZIXXIYXIIXIIIIIIIIII",
+        "coset_sign": -1,
+        "weight": 11,
+        "mass": "17225840431717630430579/528860481817884310217880"
+      }
+    ],
+    "A2": [
+      {
+        "pauli": "IIIIIYXZXYIIIIIZYXYZYIXIY",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "15449965583308439/875263974687602280"
+      },
+      {
+        "pauli": "YYIXIYZZYXIIIIIYXZXYIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "204676201749457231/8752639746876022800"
+      },
+      {
+        "pauli": "YZZYXIIIIIIXXIZIIIIIXYZZY",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "42697390451149327/4376319873438011400"
+      },
+      {
+        "pauli": "IIIIIZZYXYZIIZXIIIIIZXYYX",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "5898537670469501/1750527949375204560"
+      },
+      {
+        "pauli": "YXZXYIIIIIXZIIZXXXXXIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "220832523584422177/8752639746876022800"
+      },
+      {
+        "pauli": "IIXYXZXYYXXZYZXIIIIIIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "378341301934043/39784726122163740"
+      },
+      {
+        "pauli": "YXYZZIIIIIIIYZYIIIIIYXYZZ",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "64406719409766631/2188159936719005700"
+      },
+      {
+        "pauli": "ZYZXXIYZYIZXXZYIIIIIIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "383071970718193/116701863291680304"
+      },
+      {
+        "pauli": "XYZZYIIIIIXIZIXIIIIIYZZYX",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "9223921242741011/8752639746876022800"
+      },
+      {
+        "pauli": "XZXYYIYIZZIIIIIIIIIIYZXXZ",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "132666874537968319/8752639746876022800"
+      },
+      {
+        "pauli": "YZYIIZXXZYIIIIIIIIIIXXZYZ",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "315248054222891/397847261221637400"
+      },
+      {
+        "pauli": "IIIIIXYZZYXYZZYIIIIIZIXXI",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "97463439697595333/8752639746876022800"
+      },
+      {
+        "pauli": "IIIIIZXYYXIIIIIIIZXZZYXYZ",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "32569075465133/5056406555098800"
+      },
+      {
+        "pauli": "ZZYXYIIIIIXIZIXIIIIIXYZZY",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "10363305314535891/486257763715334600"
+      },
+      {
+        "pauli": "IIIIIZZZZZIIIIIYYIXIZYXYZ",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "4352132777494237/795694522443274800"
+      },
+      {
+        "pauli": "XZXYYIIIIIIZXZIYZZYXIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "13779008593148291/8752639746876022800"
+      },
+      {
+        "pauli": "YXIIXIIIIIIIIIIZXXZYYYXZX",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "48197692293084607/4376319873438011400"
+      },
+      {
+        "pauli": "IIIIIYYXZXIIIIIZIIZXYZZYX",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "34989027926217229/2917546582292007600"
+      },
+      {
+        "pauli": "IIIIIIIIIIXZYZXIXXIZYZXXZ",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "6715795965320507/729386645573001900"
+      },
+      {
+        "pauli": "ZZYXYIIIIIYXZXYIIIIIXZIIZ",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "371785292700413/109407996835950285"
+      },
+      {
+        "pauli": "IIIIIXXZYZIIYZYZYZXXIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "21259378635220729/2188159936719005700"
+      },
+      {
+        "pauli": "IIIIIZYZXXZIXXIYZXXZIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "948446702207173/350105589875040912"
+      },
+      {
+        "pauli": "ZZZZZZYZXXIIIIIIIIIIXIIXY",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "18690540647896481/729386645573001900"
+      },
+      {
+        "pauli": "IYIZZIIIIIIIIIIXXZYZXYYXZ",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "20678125258574461/4376319873438011400"
+      },
+      {
+        "pauli": "IIIIIIIIIIZXXZYYXZXYXYXII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "10142238042108023/486257763715334600"
+      },
+      {
+        "pauli": "IIIIIXZYZXZXYYXIYIZZIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "41430267167443849/8752639746876022800"
+      },
+      {
+        "pauli": "XXXXXXZIIZIIIIIZZZZZIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "160029652652874283/8752639746876022800"
+      },
+      {
+        "pauli": "IIIIIIIIIIXZYZXZZZZZIXYXI",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "1154203278661731/243128881857667300"
+      },
+      {
+        "pauli": "YXYZZZYXYZIIIIIZYIIYIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "3819643496856637/145877329114600380"
+      },
+      {
+        "pauli": "IIIIIZXXZYZXYYXIIXYXIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "176852825959214/16576969217568225"
+      },
+      {
+        "pauli": "YXZXYYYYYYIIIIIIIIIIIYIZZ",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "165343107616162549/4376319873438011400"
+      },
+      {
+        "pauli": "XXZYZIIIIIIIIIIZXXZYIXXIZ",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "214299879100560197/8752639746876022800"
+      },
+      {
+        "pauli": "IIIIIXXXXXXXXXXIIIIIZYIIY",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "17968079591558771/8752639746876022800"
+      },
+      {
+        "pauli": "IIIIIIIXYXYYXZXXZYZXIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "2159684820718369/972515527430669200"
+      },
+      {
+        "pauli": "ZZYXYIIIIIYXZXYIIIIIZIIZX",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "6410582799505079/875263974687602280"
+      },
+      {
+        "pauli": "YZZYXIIIIIXIZIXIIIIIYXYZZ",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "102077719673233151/8752639746876022800"
+      },
+      {
+        "pauli": "IIIIIIIIIIIYIZZZZZZZYZXXZ",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "9727973536372469/4376319873438011400"
+      },
+      {
+        "pauli": "XXXXXIIIIIZZZZZIIIIIIXIYY",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "732588465737611/218815993671900570"
+      },
+      {
+        "pauli": "XYXIIZXYYXXZYZXIIIIIIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "957149278951379/109407996835950285"
+      },
+      {
+        "pauli": "XYXIIIIIIIIIIIIZXXZYYYXZX",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "1798835055324415/116701863291680304"
+      },
+      {
+        "pauli": "IIIIIZYIIYIIIIIZYXYZZZYXY",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "32116770752977099/8752639746876022800"
+      },
+      {
+        "pauli": "IIIIIIIIIIXIIXYYYXZXXZYZX",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "7521878798546329/875263974687602280"
+      },
+      {
+        "pauli": "IIIIIIIIIIZIYIZYXZXYYYYYY",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "3160050801364827/486257763715334600"
+      },
+      {
+        "pauli": "ZZYXYXZIIZIIIIIZZZZZIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "1552829463780469/99461815305409350"
+      },
+      {
+        "pauli": "IIIIIZXYYXIIIIIYZZYXYIXIY",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "15775900088016943/4376319873438011400"
+      },
+      {
+        "pauli": "ZIXXIIIIIIYZZYXXYZZYIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "94173693412121/291754658229200760"
+      },
+      {
+        "pauli": "ZYIIYZXXZYIIIIIIIIIIYYYYY",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "11618512581101119/547039984179751425"
+      },
+      {
+        "pauli": "IIIIIZXYYXIIIIIIZXZIZZYXY",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "3967416371907971/291754658229200760"
+      },
+      {
+        "pauli": "XXXXXIIIIIXZXYYIIIIIYYIXI",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "19935523723786157/583509316458401520"
+      },
+      {
+        "pauli": "IIIIIIIIIIXZYZXYZYIIXZYZX",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "3426017263907939/795694522443274800"
+      },
+      {
+        "pauli": "IIIIIXZXYYIIIIIXIYYIXYZZY",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "44136170755552753/2917546582292007600"
+      },
+      {
+        "pauli": "XYYXZIIIIIIYYIXZYXYZIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "1017905435255207/53046301496218320"
+      },
+      {
+        "pauli": "XXXXXIYYIXIIIIIZZZZZIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "7466786109609503/2917546582292007600"
+      },
+      {
+        "pauli": "IIIIIXXXXXXIYYIIIIIIXZXYY",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "8403402138719081/795694522443274800"
+      },
+      {
+        "pauli": "ZXZIIIIIIIXZXYYIIIIIYXYZZ",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "6763962411355309/729386645573001900"
+      },
+      {
+        "pauli": "ZZIYIXZXYYZYZXXIIIIIIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "11433739266872759/2917546582292007600"
+      },
+      {
+        "pauli": "ZZYXYIIIIIYZYIIIIIIIYXYZZ",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "4521959727995063/1458773291146003800"
+      },
+      {
+        "pauli": "IIIIIYYYYYIXXIZXZYZXIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "190787330752518119/4376319873438011400"
+      },
+      {
+        "pauli": "IIIIIZZZZZIIIIIXZIIZZZYXY",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "150114499860591877/8752639746876022800"
+      },
+      {
+        "pauli": "IIIIIXYZZYIIZXZIIIIIYYXZX",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "28106770590683/7293866455730019"
+      },
+      {
+        "pauli": "IIIIIIIXYXYYXZXXXZYZIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "21423554158906937/2917546582292007600"
+      },
+      {
+        "pauli": "IIIIIYIIYZIIIIIXYZZYXXXXX",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "10968975443431/1896152458162050"
+      },
+      {
+        "pauli": "YXZXYIIIIIXIYYIYXYZZIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "58973000354137/2652315074810916"
+      },
+      {
+        "pauli": "IIIIIZXXZYZIXXIZYZXXIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "3134523417878881/291754658229200760"
+      },
+      {
+        "pauli": "IIIIIIIXYXYXZXYYYYYYIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "1350094105407259/2917546582292007600"
+      },
+      {
+        "pauli": "IXXIZXZYZXIIIIIIIIIIZYZXX",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "1919899858213727/547039984179751425"
+      },
+      {
+        "pauli": "IIIIIIIIIIZXXZYYXZXYIIXYX",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "842652482119429/39784726122163740"
+      },
+      {
+        "pauli": "IIIIIYZXXZIYZYIXZYZXIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "44566686074556031/4376319873438011400"
+      },
+      {
+        "pauli": "XYZZYIXIYYIIIIIYXZXYIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "16374836150625617/4376319873438011400"
+      },
+      {
+        "pauli": "YZXXZXZXYYIIXYXIIIIIIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "25074757410900803/1750527949375204560"
+      },
+      {
+        "pauli": "ZZYXYXZIIZIIIIIYXZXYIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "2039731034695481/116701863291680304"
+      },
+      {
+        "pauli": "XYZZYIIIIIXIZIXIIIIIZZYXY",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "990849552986717/60782220464416825"
+      },
+      {
+        "pauli": "IIIIIZZYXYXYZZYIIIIIYIIYZ",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "5172483489318373/486257763715334600"
+      },
+      {
+        "pauli": "ZZIYIIIIIIIIIIIZYZXXZXYYX",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "3568641857288913/194503105486133840"
+      },
+      {
+        "pauli": "IIIIIYZZYXYXYZZIIIIIYZYII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "29846470713378857/8752639746876022800"
+      },
+      {
+        "pauli": "IIIIIYZZYXYZZYXIIIIIXXIZI",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "7637027523630829/8752639746876022800"
+      },
+      {
+        "pauli": "IIIIIIIIIIXZYZXXYYXZZIYIZ",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "5358797569130339/265231507481091600"
+      },
+      {
+        "pauli": "ZZIYIIIIIIIIIIIXXZYZZZZZZ",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "14158224339947321/972515527430669200"
+      },
+      {
+        "pauli": "IIIIIIYIZZXZXYYXZYZXIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "1327983187540651/364693322786500950"
+      },
+      {
+        "pauli": "ZZYXYIZXZIIIIIIYYXZXIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "8774980608646327/1750527949375204560"
+      },
+      {
+        "pauli": "XYXIIIIIIIIIIIIYYYYYZZZZZ",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "4475750884967099/2917546582292007600"
+      },
+      {
+        "pauli": "ZZIYIIIIIIIIIIIZXXZYXZXYY",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "17144674321118417/2188159936719005700"
+      },
+      {
+        "pauli": "ZZYXYXIYYIIIIIIXYYXZIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "49274513940285743/8752639746876022800"
+      },
+      {
+        "pauli": "YIZZIIIIIIIIIIIZYZXXXZXYY",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "39448681364818343/1458773291146003800"
+      },
+      {
+        "pauli": "IIIIIXXXXXIZXZIIIIIIZXYYX",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "20636741674114169/2917546582292007600"
+      },
+      {
+        "pauli": "IIIIIYZZYXZZYXYIIIIIIIYZY",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "87323299681449847/8752639746876022800"
+      },
+      {
+        "pauli": "YZXXZIYZYIYZXXZIIIIIIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "100212399123113803/4376319873438011400"
+      },
+      {
+        "pauli": "IIIIIIIIIIIXYXIXYYXZXXZYZ",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "2420024003585206/547039984179751425"
+      }
+    ],
+    "F": [
+      {
+        "pauli": "IZIXXIIIIIIYYIXIZXZIZXIXZ",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "20039442109436494818993085467345191/1928529948082451698662915682827840840"
+      },
+      {
+        "pauli": "ZIZYYZYIIYIIIIIZXZIIIXIYY",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "8711940321167577533066219791548013/1446397461061838773997186762120880630"
+      },
+      {
+        "pauli": "XIIXYIIIIIZYYZIIZZIYIYZYI",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "1268708516513886911057195712870926711/75212667975215616247853711630285792760"
+      },
+      {
+        "pauli": "XXYIYIZIXXIIIIIYIXIYYIXIY",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "5206725640312714054650332499327429/288171141667492782558826481342091160"
+      },
+      {
+        "pauli": "IIXYXIIIIIZIZYYXYXIIZYIIY",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "22238363849183848942458403848493858/1880316699380390406196342790757144819"
+      },
+      {
+        "pauli": "IIIIIYXIIXXIZIXYXIIXYZIZY",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "202852600057212746374098391911546121/15042533595043123249570742326057158552"
+      },
+      {
+        "pauli": "ZIIZXZIIZXIIIIIYIIYZYIYXX",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "101630016932491563278001540575280983/8356963108357290694205967958920643640"
+      },
+      {
+        "pauli": "IIIIIZYYZIIIXYXXXIZIIXYXI",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "1191578150168362221654218324526109/5785589844247355095988747048483522520"
+      },
+      {
+        "pauli": "XIIXYIXZZXIIIIIIIXYXYZYII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "68916319527060416187216680865986553/8356963108357290694205967958920643640"
+      },
+      {
+        "pauli": "ZZIYIIIIIIIYXXYIZZIYYZYII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "281847859418117482939242715953549352/9401583496901952030981713953785724095"
+      },
+      {
+        "pauli": "XZIIZXZZXIYZYIIIIIIIIXIYY",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "30932903914489355694454544188755817/8356963108357290694205967958920643640"
+      },
+      {
+        "pauli": "ZYIIYXIIXYYIYXXIIIIIYIZZI",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "6028758154427574010511592105241489/4178481554178645347102983979460321820"
+      },
+      {
+        "pauli": "ZIYIZYIIYZZZIYIIIIIIIZYYZ",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "79817583025421992686896554738566701/15042533595043123249570742326057158552"
+      },
+      {
+        "pauli": "XXIZIIIIIIYYIXIXIYYIZYYZI",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "214087123032217013576065711182182147/37606333987607808123926855815142896380"
+      },
+      {
+        "pauli": "ZIYIZXIZIXXIIXYIIIIIZXIXZ",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "2930802958385655175984034146704358/626772233126796802065447596919048273"
+      },
+      {
+        "pauli": "XIZIXIIIIIZXZIIZXZIIXXYIY",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "6792089291904873742270364394889153/2892794922123677547994373524241761260"
+      },
+      {
+        "pauli": "IYXXYYZYIIIIIIIXIYYIZXZII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "140807083885820424294673067839077671/25070889325071872082617903876761930920"
+      },
+      {
+        "pauli": "YYIXIIIIIIIZIXXXZZXIYYIXI",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "111368972281072907462335971332307563/9401583496901952030981713953785724095"
+      },
+      {
+        "pauli": "YZYIIIXYXIZIZYYIIIIIIIXYX",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "11629352776248172469711787221713613/1296770137503717521514719166039410220"
+      },
+      {
+        "pauli": "YYIXIXZZXIYZYIIIIIIIYIXIY",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "14375609463128659761761578608444269/3133861165633984010327237984595241365"
+      },
+      {
+        "pauli": "ZIZYYXIIXYXXIZIYXIIXIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "41925706004142046757509394378688129/1671392621671458138841193591784128728"
+      },
+      {
+        "pauli": "IIXYXIIIIIXIXZZYIZZIIYZYI",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "909173624594768025595976201339636717/75212667975215616247853711630285792760"
+      },
+      {
+        "pauli": "IIIIIIZZIYIZIXXIZZIYYZIZY",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "167822749710226606242870510400479433/25070889325071872082617903876761930920"
+      },
+      {
+        "pauli": "IIIIIXYIYXZZIYIIIYZYZIYIZ",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "223236372061732829643570253088969503/25070889325071872082617903876761930920"
+      },
+      {
+        "pauli": "IZIXXYIZZIIIIIIXYIYXIYIZZ",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "36746311509216175277122332425056261/3760633398760780812392685581514289638"
+      },
+      {
+        "pauli": "XZZXIYIIYZIIIIIZXZIIIIZXZ",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "2768656309795745456084079709026276401/75212667975215616247853711630285792760"
+      },
+      {
+        "pauli": "IIXYXIIIIIYIYXXIYIZZZIXXI",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "25615706535648530859248253263731087/1928529948082451698662915682827840840"
+      },
+      {
+        "pauli": "IZZIYIIIIIXZZXIZZIYIIXXIZ",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "12149590205900056140569401770912035/835696310835729069420596795892064364"
+      },
+      {
+        "pauli": "IIIIIXZIIZZXZIIYXXYIXXIZI",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "290092090379676753559425675356964611/18803166993803904061963427907571448190"
+      },
+      {
+        "pauli": "XXYIYYZYIIIIIIIXIYYIIIZXZ",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "351417303883794047467775549637230873/37606333987607808123926855815142896380"
+      },
+      {
+        "pauli": "ZYIIYIXZZXXZIIZIIZXZIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "4578953825918810012937503376720697/3133861165633984010327237984595241365"
+      },
+      {
+        "pauli": "IXZZXXZIIZIIZXZIIIIIIXXIZ",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "39687394290220321928874652945142189/8356963108357290694205967958920643640"
+      },
+      {
+        "pauli": "IYIZZXXIZIYIZZIIIIIIXIXZZ",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "17873417802538155010253312760052919/1253544466253593604130895193838096546"
+      },
+      {
+        "pauli": "YZYIIIIIIIIZXZIYYIXIIXZZX",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "37660488038357342922748484209335919/7521266797521561624785371163028579276"
+      },
+      {
+        "pauli": "IXZZXIIIIIIXYXIIZIXXYXIIX",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "230532580484291984233392222863933093/37606333987607808123926855815142896380"
+      },
+      {
+        "pauli": "IXIYYIIZXZIIIIIIIYZYXYIYX",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "1380273730608535717558040136444414569/75212667975215616247853711630285792760"
+      },
+      {
+        "pauli": "IXIYYZIZYYXIZIXIIIIIXZIIZ",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "774275027225177111717263493757739/2892794922123677547994373524241761260"
+      },
+      {
+        "pauli": "IZZIYIIIIIZXIXZXIIXYIXXIZ",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "94650092162045211105496344466705853/18803166993803904061963427907571448190"
+      },
+      {
+        "pauli": "XXYIYXIYYIXZIIZIIIIIIXXIZ",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "9919934334462033570376726994567446/3133861165633984010327237984595241365"
+      },
+      {
+        "pauli": "IIIIIXZIIZIIZXZIYXXYIZIXX",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "76401525432479603705539293552283495/15042533595043123249570742326057158552"
+      },
+      {
+        "pauli": "YZYIIXZZXIIYYIXYIXIYIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "2507570871227631760553703352104557/964264974041225849331457841413920420"
+      },
+      {
+        "pauli": "IIIIIXIYYIIYYIXXZZXIIXXIZ",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "569452826787503788895194159954185761/37606333987607808123926855815142896380"
+      },
+      {
+        "pauli": "YYIXIZXZIIZIZYYXXIZIIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "85946108614817574972129834826766551/7521266797521561624785371163028579276"
+      },
+      {
+        "pauli": "IYZYIYXIIXIIIIIIZYYZIXYXI",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "1347854614669952077660321303837666441/75212667975215616247853711630285792760"
+      },
+      {
+        "pauli": "XIYYIIYYIXYIYXXYZYIIIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "147294594941637053921699067584691371/6267722331267968020654475969190482730"
+      },
+      {
+        "pauli": "IXIYYIZYYZIYZYIIIIIIZIIZX",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "46803004593837559029159064983881491/37606333987607808123926855815142896380"
+      },
+      {
+        "pauli": "IYYIXIIIIIIXXIZZIZYYIIZXZ",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "11017170473704303027233394758566149/964264974041225849331457841413920420"
+      },
+      {
+        "pauli": "IIIIIIZXZIXZIIZZZXIXYIIYZ",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "122240992445752434074991597969503809/25070889325071872082617903876761930920"
+      },
+      {
+        "pauli": "IIIIIYIYXXXIIXYIIYZYZZIYI",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "104894713987913784724108739616145427/7521266797521561624785371163028579276"
+      },
+      {
+        "pauli": "IIIIIZIZYYXIIXYIIYZYIIXYX",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "40203314579652973143545279120229717/8356963108357290694205967958920643640"
+      },
+      {
+        "pauli": "ZIIZXYYIXIIIIIIZIXXIYIYXX",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "699436067013406073515153686144985067/75212667975215616247853711630285792760"
+      },
+      {
+        "pauli": "YXIIXIXXIZZIYIZIIIIIZZXIX",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "180897982322464291293905908582644389/75212667975215616247853711630285792760"
+      },
+      {
+        "pauli": "IZYYZXIYYIIXIYYIIIIIXXIZI",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "164521880731813042866015680021670957/8356963108357290694205967958920643640"
+      },
+      {
+        "pauli": "IZXZIIXZZXYIIYZIIIIIXIYYI",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "62951513489515324180403456242250797/7521266797521561624785371163028579276"
+      },
+      {
+        "pauli": "YXIIXYIIYZYIZZIXXYIYIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "16570048803668559373504798250549528/9401583496901952030981713953785724095"
+      },
+      {
+        "pauli": "ZYYZIIIIIIZIYIZYZYIIZZIYI",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "157829075818275627907176128453659321/75212667975215616247853711630285792760"
+      },
+      {
+        "pauli": "YZYIIIIIIIIYYIXIXIYYYZIZY",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "189145107734258622326999313564177463/37606333987607808123926855815142896380"
+      },
+      {
+        "pauli": "XZIIZIIZXZIXZZXYZYIIIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "31452382983368357856940249626316069/2593540275007435043029438332078820440"
+      },
+      {
+        "pauli": "IIIIIIXYXIZIXXIIZZIYXZZXI",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "5822463220484142438263586152836793/9401583496901952030981713953785724095"
+      },
+      {
+        "pauli": "IIYZYIYIZZIIIIIYYZIZZIYIZ",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "258530336313809740609317895034856599/15042533595043123249570742326057158552"
+      },
+      {
+        "pauli": "XIIXYIZIXXZIYIZIXZZXIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "17706944743280625904213982483621911/1928529948082451698662915682827840840"
+      },
+      {
+        "pauli": "ZXZIIXIYYIIIIIIIIYZYIZYYZ",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "495104531308590520057053391724996351/75212667975215616247853711630285792760"
+      },
+      {
+        "pauli": "IZIXXYXXYIIYYIXIXIYYIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "75196326466731972334455162507143251/18803166993803904061963427907571448190"
+      },
+      {
+        "pauli": "IXXIZXYXIIIIIIIYYZIZIIXYX",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "129539074917736151331468231174992769/4178481554178645347102983979460321820"
+      },
+      {
+        "pauli": "IIIIIIIZXZIXIYYZYYZIIXXIZ",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "937497389559308347759564330786642411/37606333987607808123926855815142896380"
+      },
+      {
+        "pauli": "ZYIIYXYIYXIZXZIIXIYYIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "1057286008311003214531203712806519787/75212667975215616247853711630285792760"
+      },
+      {
+        "pauli": "IIXYXIIYZYIIXYXXIXZZIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "5031997460597475918398744173574527/2089240777089322673551491989730160910"
+      },
+      {
+        "pauli": "IIIIIXXIZIIYXXYIXIYYZIIZX",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "47147392958371030864205459917674773/7521266797521561624785371163028579276"
+      },
+      {
+        "pauli": "IXIYYYZIZYYIIYZIIIIIXIYYI",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "5799667108191194190821467057829542/9401583496901952030981713953785724095"
+      },
+      {
+        "pauli": "XIXZZZXZIIXZIIZIIIIIIYZYI",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "42224495197516590079402063528901479/5014177865014374416523580775352386184"
+      },
+      {
+        "pauli": "IYIZZZXIXZIIIIIIZZIYIYZYI",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "1782723647564047996651394984056550317/75212667975215616247853711630285792760"
+      },
+      {
+        "pauli": "YZYIIIYIZZIIIIIXXYIYXYXII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "43743608396097208602099317312450651/4178481554178645347102983979460321820"
+      },
+      {
+        "pauli": "IZYYZIZZIYYZYIIXYXIIIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "502605673043060971446090309127430251/18803166993803904061963427907571448190"
+      },
+      {
+        "pauli": "XZIIZIZXZIIIIIIXXIZIIYXXY",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "488747022645163428255110863563461677/75212667975215616247853711630285792760"
+      },
+      {
+        "pauli": "IXYXIIIYZYZZIYIIIIIIXIXZZ",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "1409821074871965465497094624689078563/75212667975215616247853711630285792760"
+      },
+      {
+        "pauli": "ZZXIXXYXIIXIZIXIIXYXIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "843527765119625218044495034419512539/37606333987607808123926855815142896380"
+      },
+      {
+        "pauli": "YXXYIYIZZIIZIXXZZIYIIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "1302086731129755380794059377272625153/75212667975215616247853711630285792760"
+      },
+      {
+        "pauli": "YIIYZZZIYIIIIIIXYIYXXYXII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "19156851242919496446627384999213397/1446397461061838773997186762120880630"
+      },
+      {
+        "pauli": "IXIYYYYIXIIIIIIXIZIXIXZZX",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "138676077132658911209035649521732429/5785589844247355095988747048483522520"
+      },
+      {
+        "pauli": "XYIYXIIIIIIZZIYYZYIIYIZZI",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "7813642755999279135207105510915638/3133861165633984010327237984595241365"
+      },
+      {
+        "pauli": "IIXYXXIZIXZZIYIIXZZXIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "13534693157023267632157807740628231/1880316699380390406196342790757144819"
+      },
+      {
+        "pauli": "IIIIIXYIYXXIIXYIZIXXXYXII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "138740422155693460357320764948830691/9401583496901952030981713953785724095"
+      },
+      {
+        "pauli": "ZIYIZIIYZYZZIYIIIIIIZIZYY",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "299906427105826593703284216011333561/37606333987607808123926855815142896380"
+      },
+      {
+        "pauli": "IIIIIIXXIZYXXYIIXIYYZIIZX",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "69950689820922508106957229251326887/8356963108357290694205967958920643640"
+      },
+      {
+        "pauli": "IZIXXZIZYYZXZIIIIZXZIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "20894207618393443861895223800978197/1253544466253593604130895193838096546"
+      },
+      {
+        "pauli": "YIZZIIXXIZYIZZIXXYIYIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "176934653168865814464814864122887773/25070889325071872082617903876761930920"
+      },
+      {
+        "pauli": "XIXZZIZIXXIIIIIZIIZXIZXZI",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "291538983598782900859392041864371/289279492212367754799437352424176126"
+      },
+      {
+        "pauli": "IIIIIIZXZIIXIYYXZZXIIIYZY",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "177207087641064033718410498841126309/9401583496901952030981713953785724095"
+      },
+      {
+        "pauli": "ZXZIIIYXXYXIZIXIIIIIIXIYY",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "611638308000015315401629855213826291/37606333987607808123926855815142896380"
+      },
+      {
+        "pauli": "IIIIIIXXIZXXYIYIZXZIZXZII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "166850099127590249268579559290477397/15042533595043123249570742326057158552"
+      },
+      {
+        "pauli": "YIZZIZYIIYXIIXYZXIXZIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "72917531438427354048296814658597763/9401583496901952030981713953785724095"
+      },
+      {
+        "pauli": "XZIIZZXZIIYZIZYIXXIZIIIII",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "177425262855859462608553456700460733/15042533595043123249570742326057158552"
+      },
+      {
+        "pauli": "YYZIZIXIYYYIXIYIIIIIIIYZY",
+        "coset_sign": 1,
+        "weight": 13,
+        "mass": "237415599644047481513060606347732339/15042533595043123249570742326057158552"
+      }
+    ]
+  }
+}

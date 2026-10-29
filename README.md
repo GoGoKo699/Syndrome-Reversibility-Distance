@@ -52,6 +52,8 @@ The [two-error gate construction](science/two_error_gates.md) also attains inter
 
 The [growing two-error family](science/growing_two_error_gates.md) attains the corresponding code-specific optima at every depth $m\ge2$: $\ell=d+4$ and $J/\omega=(4d^2+21d+8)/8$, with $d=3^m$ and unchanged $r(S)=\infty$. A correlated stabilizer-padding rule follows the concatenation tree; the proof covers all physical errors of weight at most two.
 
+The [exact sparse synthesis](science/sparse_two_error_synthesis.md) supplies positive sparse component classes, a rational pairwise coupling method, and a general reference compiler. An explicit 125-qubit gate uses 69,125 native Pauli terms per axis at interaction order 31 and the optimal budget $J/\omega=3491/8$. Exact integer orbit equations cover every one of the 70,126 protected errors; all three expanded logical axes are checked. The native coefficients have a 1,458-bit common denominator, so term count and exact description size remain separate resources.
+
 ## Read the science
 
 | Question | Authoritative account |
@@ -66,6 +68,7 @@ The [growing two-error family](science/growing_two_error_gates.md) attains the c
 | Can those protected gates use few Pauli terms? | [Sparse exact construction](science/sparse_protected_gates.md) |
 | Can the twenty-five-qubit code protect two physical errors during a gate? | [Two-error equality construction and coupling optimum](science/two_error_gates.md) |
 | Does the two-error optimum persist at growing distance? | [All-depth two-error family](science/growing_two_error_gates.md) |
+| Can the 125-qubit optimum be written explicitly? | [Exact sparse two-error synthesis](science/sparse_two_error_synthesis.md) |
 | Which ingredients are inherited, and how do nearby results compare? | [Related work](references/RELATED_WORK.md) and [bibliography](references/references.bib) |
 | How are the finite examples reproduced? | [Verification](verification/README.md) |
 

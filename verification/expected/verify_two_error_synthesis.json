@@ -1,0 +1,346 @@
+{
+  "checks_passed": true,
+  "executed_reference_compiler": {
+    "J_per_logical_half_splitting": "521/8",
+    "distinct_native_words": 2575,
+    "exact_integer_response_equations": 112,
+    "interaction_order": 13,
+    "level": 2,
+    "logical_axis": "Z",
+    "n": 25,
+    "orbit_atoms": 103,
+    "reference_end_to_end_compiler_executed": true,
+    "represented_physical_errors": 2776,
+    "signed_native_coset_memberships": 2575
+  },
+  "native_depth_three_certificate": {
+    "all_three_axes_verified": true,
+    "axes": [
+      {
+        "J_per_logical_half_splitting": "3491/8",
+        "distinct_native_words": 69125,
+        "exact_integer_response_equations": 562,
+        "interaction_order": 31,
+        "literal_character_columns_checked": [
+          "A0",
+          "A1",
+          "A2",
+          "F"
+        ],
+        "logical_axis": "X",
+        "native_coefficient_common_denominator_bits": 1458,
+        "orbit_atoms": 553,
+        "orbit_mass_common_denominator_bits": 1451,
+        "represented_physical_errors": 70126,
+        "signed_class_masses": {
+          "A0": "899/8",
+          "A1": "-837/4",
+          "A2": "1701/16",
+          "F": "-135/16"
+        },
+        "signed_native_coset_memberships": 69125
+      },
+      {
+        "J_per_logical_half_splitting": "3491/8",
+        "distinct_native_words": 69125,
+        "exact_integer_response_equations": 562,
+        "interaction_order": 31,
+        "literal_character_columns_checked": [
+          "A0",
+          "A1",
+          "A2",
+          "F"
+        ],
+        "logical_axis": "Y",
+        "native_coefficient_common_denominator_bits": 1458,
+        "orbit_atoms": 553,
+        "orbit_mass_common_denominator_bits": 1451,
+        "represented_physical_errors": 70126,
+        "signed_class_masses": {
+          "A0": "899/8",
+          "A1": "-837/4",
+          "A2": "1701/16",
+          "F": "-135/16"
+        },
+        "signed_native_coset_memberships": 69125
+      },
+      {
+        "J_per_logical_half_splitting": "3491/8",
+        "distinct_native_words": 69125,
+        "exact_integer_response_equations": 562,
+        "interaction_order": 31,
+        "literal_character_columns_checked": [
+          "A0",
+          "A1",
+          "A2",
+          "F"
+        ],
+        "logical_axis": "Z",
+        "native_coefficient_common_denominator_bits": 1458,
+        "orbit_atoms": 553,
+        "orbit_mass_common_denominator_bits": 1451,
+        "represented_physical_errors": 70126,
+        "signed_class_masses": {
+          "A0": "899/8",
+          "A1": "-837/4",
+          "A2": "1701/16",
+          "F": "-135/16"
+        },
+        "signed_native_coset_memberships": 69125
+      }
+    ],
+    "full_error_coverage": {
+      "counts_by_pattern": {
+        "different_middle_blocks": 56250,
+        "identity": 1,
+        "same_bottom_block": 2250,
+        "same_middle_block": 11250,
+        "single": 375
+      },
+      "nonidentity_error_orbit_size": 125,
+      "physical_error_labels": 70126,
+      "translation_orbits": 562
+    }
+  },
+  "pairwise_coupling": {
+    "deterministic_factor_and_wrap_boundary_cases": 2,
+    "exact_pairwise_coupling_verified": true,
+    "one_and_two_factor_cases": true,
+    "unequal_laws": [
+      {
+        "factors": 3,
+        "input_support_sizes": [
+          2,
+          3,
+          2
+        ],
+        "joint_support": 11,
+        "largest_input_denominator_bits": 127,
+        "pair_marginal_entries_checked": 16,
+        "physical_tensor_response_equations": 154,
+        "two_errors_in_same_factor_equations": 27
+      },
+      {
+        "factors": 4,
+        "input_support_sizes": [
+          2,
+          3,
+          2,
+          3
+        ],
+        "joint_support": 27,
+        "largest_input_denominator_bits": 127,
+        "pair_marginal_entries_checked": 37,
+        "physical_tensor_response_equations": 277,
+        "two_errors_in_same_factor_equations": 36
+      }
+    ]
+  },
+  "positive_depth_two_classes": {
+    "axes": [
+      {
+        "classes": {
+          "A0": {
+            "full_response_equations_checked": 2776,
+            "native_terms": 1950,
+            "orbit_coefficient_denominator_bits": 48,
+            "orbit_seeds": 78,
+            "response_by_error_pattern": {
+              "different_blocks": "29/125",
+              "identity": "1",
+              "same_block": "9/25",
+              "single": "13/25"
+            },
+            "signed_native_memberships_checked": 1950
+          },
+          "A1": {
+            "full_response_equations_checked": 2776,
+            "native_terms": 2400,
+            "orbit_coefficient_denominator_bits": 79,
+            "orbit_seeds": 96,
+            "response_by_error_pattern": {
+              "different_blocks": "13/125",
+              "identity": "1",
+              "same_block": "89/225",
+              "single": "31/75"
+            },
+            "signed_native_memberships_checked": 2400
+          },
+          "A2": {
+            "full_response_equations_checked": 2776,
+            "native_terms": 2200,
+            "orbit_coefficient_denominator_bits": 63,
+            "orbit_seeds": 88,
+            "response_by_error_pattern": {
+              "different_blocks": "1/225",
+              "identity": "1",
+              "same_block": "97/225",
+              "single": "23/75"
+            },
+            "signed_native_memberships_checked": 2200
+          },
+          "F": {
+            "full_response_equations_checked": 2776,
+            "native_terms": 2325,
+            "orbit_coefficient_denominator_bits": 126,
+            "orbit_seeds": 93,
+            "response_by_error_pattern": {
+              "different_blocks": "23/375",
+              "identity": "1",
+              "same_block": "11/75",
+              "single": "23/75"
+            },
+            "signed_native_memberships_checked": 2325
+          }
+        },
+        "logical_axis": "X"
+      },
+      {
+        "classes": {
+          "A0": {
+            "full_response_equations_checked": 2776,
+            "native_terms": 1950,
+            "orbit_coefficient_denominator_bits": 48,
+            "orbit_seeds": 78,
+            "response_by_error_pattern": {
+              "different_blocks": "29/125",
+              "identity": "1",
+              "same_block": "9/25",
+              "single": "13/25"
+            },
+            "signed_native_memberships_checked": 1950
+          },
+          "A1": {
+            "full_response_equations_checked": 2776,
+            "native_terms": 2400,
+            "orbit_coefficient_denominator_bits": 79,
+            "orbit_seeds": 96,
+            "response_by_error_pattern": {
+              "different_blocks": "13/125",
+              "identity": "1",
+              "same_block": "89/225",
+              "single": "31/75"
+            },
+            "signed_native_memberships_checked": 2400
+          },
+          "A2": {
+            "full_response_equations_checked": 2776,
+            "native_terms": 2200,
+            "orbit_coefficient_denominator_bits": 63,
+            "orbit_seeds": 88,
+            "response_by_error_pattern": {
+              "different_blocks": "1/225",
+              "identity": "1",
+              "same_block": "97/225",
+              "single": "23/75"
+            },
+            "signed_native_memberships_checked": 2200
+          },
+          "F": {
+            "full_response_equations_checked": 2776,
+            "native_terms": 2325,
+            "orbit_coefficient_denominator_bits": 126,
+            "orbit_seeds": 93,
+            "response_by_error_pattern": {
+              "different_blocks": "23/375",
+              "identity": "1",
+              "same_block": "11/75",
+              "single": "23/75"
+            },
+            "signed_native_memberships_checked": 2325
+          }
+        },
+        "logical_axis": "Y"
+      },
+      {
+        "classes": {
+          "A0": {
+            "full_response_equations_checked": 2776,
+            "native_terms": 1950,
+            "orbit_coefficient_denominator_bits": 48,
+            "orbit_seeds": 78,
+            "response_by_error_pattern": {
+              "different_blocks": "29/125",
+              "identity": "1",
+              "same_block": "9/25",
+              "single": "13/25"
+            },
+            "signed_native_memberships_checked": 1950
+          },
+          "A1": {
+            "full_response_equations_checked": 2776,
+            "native_terms": 2400,
+            "orbit_coefficient_denominator_bits": 79,
+            "orbit_seeds": 96,
+            "response_by_error_pattern": {
+              "different_blocks": "13/125",
+              "identity": "1",
+              "same_block": "89/225",
+              "single": "31/75"
+            },
+            "signed_native_memberships_checked": 2400
+          },
+          "A2": {
+            "full_response_equations_checked": 2776,
+            "native_terms": 2200,
+            "orbit_coefficient_denominator_bits": 63,
+            "orbit_seeds": 88,
+            "response_by_error_pattern": {
+              "different_blocks": "1/225",
+              "identity": "1",
+              "same_block": "97/225",
+              "single": "23/75"
+            },
+            "signed_native_memberships_checked": 2200
+          },
+          "F": {
+            "full_response_equations_checked": 2776,
+            "native_terms": 2325,
+            "orbit_coefficient_denominator_bits": 126,
+            "orbit_seeds": 93,
+            "response_by_error_pattern": {
+              "different_blocks": "23/375",
+              "identity": "1",
+              "same_block": "11/75",
+              "single": "23/75"
+            },
+            "signed_native_memberships_checked": 2325
+          }
+        },
+        "logical_axis": "Z"
+      }
+    ],
+    "n": 25,
+    "orbit_response_coordinates": 112,
+    "positive_class_profiles_verified": true
+  },
+  "recursive_class_profiles": {
+    "levels": [
+      {
+        "exact_class_response_equations": 20,
+        "level": 3,
+        "n": 125,
+        "uniform_promotion_pair_and_frontier_laws": true
+      },
+      {
+        "exact_class_response_equations": 24,
+        "level": 4,
+        "n": 625,
+        "uniform_promotion_pair_and_frontier_laws": true
+      },
+      {
+        "exact_class_response_equations": 28,
+        "level": 5,
+        "n": 3125,
+        "uniform_promotion_pair_and_frontier_laws": true
+      },
+      {
+        "exact_class_response_equations": 32,
+        "level": 6,
+        "n": 15625,
+        "uniform_promotion_pair_and_frontier_laws": true
+      }
+    ],
+    "recurrence_profiles_verified": true
+  }
+}

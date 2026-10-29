@@ -51,6 +51,8 @@ The [two-error gate construction](two_error_gates.md) strengthens this coexisten
 
 The [growing two-error family](growing_two_error_gates.md) extends this result to every depth $m\ge2$: $\ell=d+4$ and $J/\omega=(4d^2+21d+8)/8$ remain optimal for the stated code family, with $r=\infty$. The proof correlates stabilizer padding with the inactive frontier of the minimum logical-support tree, preserving every two-error hierarchy class. This extends the protected-gate guarantee to larger codes while retaining the same known-product-unitary readout assumptions.
 
+The [sparse two-error synthesis](sparse_two_error_synthesis.md) turns the growing-family result into an explicit 125-qubit certificate: 69,125 native terms per logical axis, interaction order 31, and optimal $J/\omega=3491/8$. Separate positive 25-qubit component certificates preserve full two-error profiles for recursion. Exact pairwise child coupling suffices because a protected error touches at most two child factors. The 1,458-bit common coefficient denominator and the reference compiler's high polynomial degree are description and synthesis costs beyond the native absolute coupling budget.
+
 ## Operational boundaries
 
 **Measurement order.** The question fixes recovery after syndrome readout. If the known inverse $U^\dagger$ could be applied beforehand, it would restore the code state directly. The present model isolates the information cost of committing to the original syndrome measurement before that reversal. One possible operational setting is a fixed extraction cycle with calibration information available only at recovery time; that motivation is an interpretation of the model, not a demonstrated hardware protocol.
@@ -66,4 +68,3 @@ The [growing two-error family](growing_two_error_gates.md) extends this result t
 The branch recovery framework, its optimal entanglement fidelity, and the even-repetition mechanism retain their original attribution. The present results combine the physical-support classification, circuit equivalence, optimized exponent, and same-parameter construction into one code-level account. The [source comparison](../references/RELATED_WORK.md) states the operational differences from prior symmetry criteria, coherent-error analyses, enumerators, and threshold theorems.
 
 The [verification suite](../verification/README.md) checks concrete Pauli identities, distances and circuit witnesses, and the full physical measurement calculation for the ten-qubit instance. These computations support their finite assertions. The general conclusions rest on the proofs in the linked scientific pages.
-
