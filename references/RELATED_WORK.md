@@ -82,6 +82,10 @@ The [sparse gate account](../science/sparse_protected_gates.md) preserves the sa
 
 The [two-error account](../science/two_error_gates.md) gives exact protected gates for all Pauli errors through weight two on the $[[25,1,9]]$ code while keeping $r_S=\infty$. Its order-thirteen interaction and native budget $521\omega/8$ attain code-specific lower bounds. The code and protected-Hamiltonian framework are inherited; the four-class equality construction and inner-block moment refinement are the derived statements supplied here. The sparse rational witness is checked independently of the numerical search that selected its support.
 
+## Growing two-error gates with unchanged readout reversibility
+
+The [all-depth two-error account](../science/growing_two_error_gates.md) extends the protected-gate equality to every concatenation depth $m\ge2$ without changing the code's infinite syndrome reversibility. The new construction uses correlated inactive-frontier padding; its resource lower bound uses squared bottom-block interaction weights. The concatenated code and the original support criterion remain inherited ingredients, and the gate and readout noise assumptions remain distinct.
+
 ## Reading the comparison
 
 The cited results support the recovery framework, parity examples, coherent-error estimates, and code constructions. The additional conclusions are stated and proved in the topic pages linked at the top. A bibliography comparison establishes the relationship to these specified sources; it is not a guarantee that every related formulation in the literature has been located.

@@ -49,6 +49,8 @@ The [concatenated equality construction](minimum_readout_safe_gates.md) attains 
 
 The [two-error gate construction](two_error_gates.md) strengthens this coexistence on the twenty-five-qubit code: all physical errors of weight at most two are transparent at interaction order thirteen, while $r=\infty$ remains unchanged. An inner-block moment proves the exact coupling optimum $521/8$ per unit logical half-splitting. The stored sparse form has 2,575 native terms per axis. This gate guarantee still shares the code with the prescribed-readout statement under their distinct operational assumptions.
 
+The [growing two-error family](growing_two_error_gates.md) extends this result to every depth $m\ge2$: $\ell=d+4$ and $J/\omega=(4d^2+21d+8)/8$ remain optimal for the stated code family, with $r=\infty$. The proof correlates stabilizer padding with the inactive frontier of the minimum logical-support tree, preserving every two-error hierarchy class. This extends the protected-gate guarantee to larger codes while retaining the same known-product-unitary readout assumptions.
+
 ## Operational boundaries
 
 **Measurement order.** The question fixes recovery after syndrome readout. If the known inverse $U^\dagger$ could be applied beforehand, it would restore the code state directly. The present model isolates the information cost of committing to the original syndrome measurement before that reversal. One possible operational setting is a fixed extraction cycle with calibration information available only at recovery time; that motivation is an interpretation of the model, not a demonstrated hardware protocol.
