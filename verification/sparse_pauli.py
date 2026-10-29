@@ -47,8 +47,9 @@ class _ExactConicBasis:
 
     The inverse uses a nonsingular square row restriction of the kept columns.
     Zero-weight basis columns are retained internally to handle degeneracy;
-    they are omitted from the output. This implementation is used only in
-    dimensions three and four in the sparse Pauli construction.
+    they are omitted from the output. The single-error construction uses
+    dimensions three and four; the two-error orbit compiler also uses this
+    general reducer in larger response dimensions.
     """
 
     def __init__(self, dimension):
