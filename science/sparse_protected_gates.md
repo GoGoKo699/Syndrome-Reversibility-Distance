@@ -90,7 +90,7 @@ For a signed seed word $Q$, write its global axis-count vector as
 
 ```math
 c(Q)=(c_X(Q),c_Y(Q),c_Z(Q)),
-\qquad c_X+c_Y+c_Z=\operatorname{wt}(Q),
+\qquad c_X+c_Y+c_Z=\mathrm{wt}(Q),
 ```
 
 and define its orbit average

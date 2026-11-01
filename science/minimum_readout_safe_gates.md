@@ -81,7 +81,7 @@ For the second sum, choose one of the three active child blocks and use its seco
 ```math
 T_{m,\alpha}^{(1)}
 =\frac1{30}\sum_{Q\in\mathcal C_{\alpha,3}}s_Q
-\sum_{a\in\operatorname{supp}(Q)}
+\sum_{a\in\mathrm{supp}(Q)}
 \bigotimes_{j=1}^{5} B_j^{(a)}(Q),
 ```
 
@@ -191,7 +191,7 @@ The outer logical labels distinguish different outer choices. In the second sum,
 \boxed{
 a_m=10^{(d-1)/2},\qquad
 b_m=\frac d5a_m,\qquad
-\#\operatorname{terms}(H_{m,\alpha})
+\#\mathrm{terms}(H_{m,\alpha})
 =\left(1+\frac d5\right)10^{(d-1)/2}.
 }
 ```

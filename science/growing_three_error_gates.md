@@ -18,7 +18,7 @@ Suppose a child code with distance $D$ has strict logical Pauli Hamiltonians $L_
 
 ```math
 L_{s,\beta}EV=EV\beta
-\quad\text{whenever }\operatorname{wt}(E)\le s,
+\quad\text{whenever }\mathrm{wt}(E)\le s,
 \qquad
 \ell(L_{s,\beta})\le D+2s.
 ```
@@ -29,7 +29,7 @@ Put $L_{-1,\beta}=0$ and define increments
 \Delta_{a,\beta}=L_{a,\beta}-L_{a-1,\beta}.
 ```
 
-For $a>\operatorname{wt}(E)$, both Hamiltonians have the same full action on $EV$, and therefore
+For $a>\mathrm{wt}(E)$, both Hamiltonians have the same full action on $EV$, and therefore
 
 ```math
 \Delta_{a,\beta}EV=0.
@@ -61,7 +61,7 @@ These are finite operator identities. The word “truncated” refers to the inc
 
 ### Full error-image proof
 
-Let a physical Pauli $E$ have total weight at most $t$, and write $E_i$ for its restriction to child $i$, with $s_i=\operatorname{wt}(E_i)$. For a fixed root representative, first consider the full tensor product of the three $L_{t,\beta_i}$ factors. Each child factor acts strictly as $\beta_i$ on its error image. Errors in inactive children commute with their identity factors. The full product therefore implements the root logical representative on the complete parent error image.
+Let a physical Pauli $E$ have total weight at most $t$, and write $E_i$ for its restriction to child $i$, with $s_i=\mathrm{wt}(E_i)$. For a fixed root representative, first consider the full tensor product of the three $L_{t,\beta_i}$ factors. Each child factor acts strictly as $\beta_i$ on its error image. Errors in inactive children commute with their identity factors. The full product therefore implements the root logical representative on the complete parent error image.
 
 Expand that product using $L_{t,\beta_i}=\sum_{a=0}^t\Delta_{a,\beta_i}$. Every omitted term in (T2) has $\sum_i a_i>t$. It cannot have $a_i\le s_i$ for all active children, since $\sum_i s_i\le t$. Thus at least one factor has $a_i>s_i$ and vanishes on $E_iV$ by (T1). Dropping the omitted terms changes no protected error image. Averaging the positive signed outer representatives then gives
 

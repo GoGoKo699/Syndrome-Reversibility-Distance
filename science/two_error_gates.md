@@ -21,7 +21,7 @@ We require a Hermitian code-preserving Hamiltonian with nonscalar logical genera
 
 ```math
 HEV=EV(h_L+\lambda_E I)
-\qquad (\operatorname{wt}(E)\le2),
+\qquad (\mathrm{wt}(E)\le2),
 ```
 
 where the consistent real scalar sector shifts permitted by the [gate model](https://github.com/GoGoKo699/Error-Transparent-Locality/blob/main/science/model.md) are allowed in the lower bound. The construction below has every $\lambda_E=0$. Interaction order $\ell$ is maximum native Pauli weight, and $J$ is the absolute sum of nonidentity Pauli coefficients. Write $\omega$ for half the spectral width of $h_L$.
@@ -125,7 +125,7 @@ The four masses sum to one, and their dot product with every row of the response
 
 ```math
 \boxed{H_\alpha EV=EV\alpha
-\quad\text{for every Pauli }E\text{ with }\operatorname{wt}(E)\le2.}
+\quad\text{for every Pauli }E\text{ with }\mathrm{wt}(E)\le2.}
 ```
 
 These are full physical-space identities, not only compressed energies. They include preservation of each protected error image. Linearity covers arbitrary operators supported on at most two physical qubits. Pointwise transparency also gives the intended logical evolution through up to two physical faults at unknown times, followed by ideal recovery, since every cumulative Pauli error during the trajectory has weight at most two.

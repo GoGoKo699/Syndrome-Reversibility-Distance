@@ -27,7 +27,7 @@ Let $V_m$ encode $Q_m=[[5^m,1,3^m]]$, and use the product encoding $V=V_m^{\otim
 ```math
 H_PEV=EVP
 \qquad\text{for every physical tensor Pauli }E
-\text{ with }\operatorname{wt}(E)\le3.
+\text{ with }\mathrm{wt}(E)\le3.
 \tag{E2}
 ```
 
@@ -49,7 +49,7 @@ If a physical Pauli $E_i$ in that block has weight smaller than $a$, both terms 
 
 ```math
 \Delta_{a,\beta}E_iV_m=0
-\qquad(a>\operatorname{wt}(E_i)).
+\qquad(a>\mathrm{wt}(E_i)).
 \tag{E3}
 ```
 
@@ -68,7 +68,7 @@ with physical identity factors on inactive encoded blocks. Only increment indice
 
 Start from the full tensor product of the active $L_{3,P_i}$ factors. For any physical Pauli of total weight at most three, every active block restriction has weight at most three. The full product therefore has the desired strict logical action $P$ on the whole product-code error image, including entangled logical inputs. Inactive encoded blocks have identity factors and their physical errors pass through unchanged.
 
-Expand each active $L_{3,P_i}$ as $\sum_{a=0}^3\Delta_{a,P_i}$. An omitted term from (E4) has $\sum_i a_i>3$. Since $\sum_i\operatorname{wt}(E_i)\le3$, at least one active factor has $a_i>\operatorname{wt}(E_i)$ and vanishes by (E3). Removing every omitted term changes no protected error image. Thus (E4) proves (E2) as a physical-space operator identity.
+Expand each active $L_{3,P_i}$ as $\sum_{a=0}^3\Delta_{a,P_i}$. An omitted term from (E4) has $\sum_i a_i>3$. Since $\sum_i\mathrm{wt}(E_i)\le3$, at least one active factor has $a_i>\mathrm{wt}(E_i)$ and vanishes by (E3). Removing every omitted term changes no protected error image. Thus (E4) proves (E2) as a physical-space operator identity.
 
 Each retained tensor term has interaction order at most
 
@@ -120,7 +120,7 @@ The matching arbitrary-Hamiltonian lower bound below proves equality. Thus the c
 For a logical operator $A$, let
 
 ```math
-\pi_P(A)=2^{-M}\operatorname{Tr}(PA).
+\pi_P(A)=2^{-M}\mathrm{Tr}(PA).
 ```
 
 This selects its coefficient along the target Pauli $P$. Detectable physical Paulis have zero compression; stabilizers and other logical cosets have zero $\pi_P$. A physical Pauli in the target coset has $\pi_P=+1$ or $-1$.

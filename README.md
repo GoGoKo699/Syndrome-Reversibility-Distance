@@ -11,9 +11,9 @@ Let $S$ be the full stabilizer group and $N$ its Pauli centralizer, with members
 **Exact reversibility.** Every product unitary is perfectly recoverable after the prescribed measurement if and only if no stabilizer and nontrivial logical Pauli have exactly the same physical support:
 
 ```math
-\{\operatorname{supp}(g):g\in S\}
+\{\mathrm{supp}(g):g\in S\}
 \cap
-\{\operatorname{supp}(L):L\in N\setminus S\}
+\{\mathrm{supp}(L):L\in N\setminus S\}
 =\varnothing.
 ```
 
@@ -21,8 +21,8 @@ Let $S$ be the full stabilizer group and $N$ its Pauli centralizer, with members
 
 ```math
 r(S)=\min_{\substack{g\in S,\ L\in N\setminus S\\
-\operatorname{supp}(g)=\operatorname{supp}(L)}}
-\operatorname{wt}(gL),
+\mathrm{supp}(g)=\mathrm{supp}(L)}}
+\mathrm{wt}(gL),
 \qquad \min\varnothing=\infty.
 ```
 

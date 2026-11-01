@@ -8,7 +8,7 @@ Let $S$ be the phase-free stabilizer label space and $N$ its Pauli centralizer. 
 
 ```math
 r_S=\min_{\substack{g\in S,\ L\in N\setminus S\\
-\operatorname{supp}(g)=\operatorname{supp}(L)}}\operatorname{wt}(gL),
+\mathrm{supp}(g)=\mathrm{supp}(L)}}\mathrm{wt}(gL),
 \qquad \min\varnothing=\infty.
 ```
 

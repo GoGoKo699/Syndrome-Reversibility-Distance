@@ -333,7 +333,7 @@ Use one exact response equation for each of these errors, nonnegative absolute c
 The exponential candidate list can also be avoided in principle. Maintain a separate positive normalized Pauli distribution for each of $A_0,A_1,A_2,F$ and each logical axis. Preserve its complete response vector
 
 ```math
-\bigl(\mathbb E[\chi(E,Q)]\bigr)_{\operatorname{wt}(E)\le2}
+\bigl(\mathbb E[\chi(E,Q)]\bigr)_{\mathrm{wt}(E)\le2}
 \in\mathbb Q^{D_2(n)}.
 ```
 

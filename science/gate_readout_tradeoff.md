@@ -26,7 +26,7 @@ Independently, the readout experiment applies a specified product unitary, measu
 
 ```math
 r_S=\min_{\substack{g\in S,\ L\in N\setminus S\\
-\operatorname{supp}(g)=\operatorname{supp}(L)}}\operatorname{wt}(gL),
+\mathrm{supp}(g)=\mathrm{supp}(L)}}\mathrm{wt}(gL),
 \qquad \min\varnothing=\infty.
 ```
 
@@ -99,7 +99,7 @@ In particular, $A_{d+1}\ne0$. A physical Pauli outside $N$ compresses to zero, a
 
 ### Step 3: that logical operator is an even circuit
 
-Suppose $E$ has a proper nonempty normalizer subword $F$. If $F$ is a stabilizer, then $\operatorname{wt}(F)\ge2$, because fixed qubits were removed. The complementary subword $EF$ would be a nontrivial logical Pauli of weight at most $d-1$, contradicting distance.
+Suppose $E$ has a proper nonempty normalizer subword $F$. If $F$ is a stabilizer, then $\mathrm{wt}(F)\ge2$, because fixed qubits were removed. The complementary subword $EF$ would be a nontrivial logical Pauli of weight at most $d-1$, contradicting distance.
 
 If $F$ is a nontrivial logical, its weight is at least $d$. Since it is proper in a word of weight $d+1$, its complementary subword has weight one and lies in $N$. Distance excludes a weight-one logical, while the reduction excludes a weight-one stabilizer. This is again impossible.
 
@@ -126,7 +126,7 @@ g=X_{1246}X_{23458}=X_{13568},\qquad
 L=gE=Y_1Y_3X_5Y_6Y_8.
 ```
 
-Here $g$ is a stabilizer, $E$ is a representative of logical $Z$, and $L$ is a nontrivial logical Pauli. The displayed product has positive phase because four local $XZ=-iY$ factors occur. The supports of $g$ and $L$ are both $\{1,3,5,6,8\}$, while $\operatorname{wt}(gL)=4$. Thus this is a direct support-collision witness for $r_S=4$. Checking all fourteen proper nonempty subwords of $E$ also verifies the circuit condition.
+Here $g$ is a stabilizer, $E$ is a representative of logical $Z$, and $L$ is a nontrivial logical Pauli. The displayed product has positive phase because four local $XZ=-iY$ factors occur. The supports of $g$ and $L$ are both $\{1,3,5,6,8\}$, while $\mathrm{wt}(gL)=4$. Thus this is a direct support-collision witness for $r_S=4$. Checking all fourteen proper nonempty subwords of $E$ also verifies the circuit condition.
 
 | Code and protected gate | $\ell$ | $J/\omega$ | $r_S$ |
 |---|---:|---:|---:|

@@ -31,7 +31,7 @@ For a Pauli word $Q$ and physical Pauli error $E$, let $\chi(E,Q)\in\{+1,-1\}$ b
 
 ```math
 f_T(E)=\mathbb E_{Q\sim T}[\chi(E,Q)]
-\qquad (\operatorname{wt}(E)\le2)
+\qquad (\mathrm{wt}(E)\le2)
 ```
 
 for every class $T$. A translation-invariant twenty-five-qubit distribution has only
@@ -60,7 +60,7 @@ Fix one outer signed minimum logical representative and one choice of child clas
 =\prod_{j=1}^s\chi(E_j,Q_j).
 ```
 
-If $\operatorname{wt}(E)\le2$, at most two child restrictions are nonidentity. Two errors in one child require its marginal response vector through weight two. Errors in two different children require the corresponding product of single-child responses. Consequently, preserving each child marginal and every pairwise product marginal preserves the complete parent response vector through weight two. Full joint independence of the child choices is unnecessary.
+If $\mathrm{wt}(E)\le2$, at most two child restrictions are nonidentity. Two errors in one child require its marginal response vector through weight two. Errors in two different children require the corresponding product of single-child responses. Consequently, preserving each child marginal and every pairwise product marginal preserves the complete parent response vector through weight two. Full joint independence of the child choices is unnecessary.
 
 Apply the coupling separately after fixing the root representative and child-class mixture. Every output atom is still a tensor product of allowed signed child words. Its logical coset, physical class pattern and interaction order are preserved. The argument uses only response vectors and signed logical membership; it does not require sparse child words to carry an auxiliary sample of the original active support tree.
 
@@ -104,7 +104,7 @@ At each depth, maintain a separate positive normalized sparse distribution for e
 The full response vector is
 
 ```math
-\left(\mathbb E[\chi(E,Q)]\right)_{\operatorname{wt}(E)\le2}
+\left(\mathbb E[\chi(E,Q)]\right)_{\mathrm{wt}(E)\le2}
 \in\mathbb Q^{D_2(n)},\qquad
 D_2(n)=1+3n+9\binom n2.
 ```
