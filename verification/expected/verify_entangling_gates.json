@@ -1,0 +1,625 @@
+{
+  "budget_semigroup": {
+    "bivariate_semigroup_checked_coefficientwise": true,
+    "examples": [
+      {
+        "active_logical_blocks": 1,
+        "interaction_order": 15,
+        "level": 2,
+        "native_budget_per_target_half_splitting": "2867/8",
+        "target_coset_distance": 9
+      },
+      {
+        "active_logical_blocks": 2,
+        "interaction_order": 24,
+        "level": 2,
+        "native_budget_per_target_half_splitting": "1789",
+        "target_coset_distance": 18
+      },
+      {
+        "active_logical_blocks": 3,
+        "interaction_order": 33,
+        "level": 2,
+        "native_budget_per_target_half_splitting": "40175/8",
+        "target_coset_distance": 27
+      },
+      {
+        "active_logical_blocks": 4,
+        "interaction_order": 42,
+        "level": 2,
+        "native_budget_per_target_half_splitting": "10786",
+        "target_coset_distance": 36
+      },
+      {
+        "active_logical_blocks": 5,
+        "interaction_order": 51,
+        "level": 2,
+        "native_budget_per_target_half_splitting": "158483/8",
+        "target_coset_distance": 45
+      },
+      {
+        "active_logical_blocks": 1,
+        "interaction_order": 33,
+        "level": 3,
+        "native_budget_per_target_half_splitting": "40175/8",
+        "target_coset_distance": 27
+      },
+      {
+        "active_logical_blocks": 2,
+        "interaction_order": 60,
+        "level": 3,
+        "native_budget_per_target_half_splitting": "32824",
+        "target_coset_distance": 54
+      },
+      {
+        "active_logical_blocks": 3,
+        "interaction_order": 87,
+        "level": 3,
+        "native_budget_per_target_half_splitting": "824723/8",
+        "target_coset_distance": 81
+      },
+      {
+        "active_logical_blocks": 4,
+        "interaction_order": 114,
+        "level": 3,
+        "native_budget_per_target_half_splitting": "235504",
+        "target_coset_distance": 108
+      },
+      {
+        "active_logical_blocks": 5,
+        "interaction_order": 141,
+        "level": 3,
+        "native_budget_per_target_half_splitting": "3597983/8",
+        "target_coset_distance": 135
+      },
+      {
+        "active_logical_blocks": 1,
+        "interaction_order": 87,
+        "level": 4,
+        "native_budget_per_target_half_splitting": "824723/8",
+        "target_coset_distance": 81
+      },
+      {
+        "active_logical_blocks": 2,
+        "interaction_order": 168,
+        "level": 4,
+        "native_budget_per_target_half_splitting": "765505",
+        "target_coset_distance": 162
+      },
+      {
+        "active_logical_blocks": 3,
+        "interaction_order": 249,
+        "level": 4,
+        "native_budget_per_target_half_splitting": "20149487/8",
+        "target_coset_distance": 243
+      },
+      {
+        "active_logical_blocks": 4,
+        "interaction_order": 330,
+        "level": 4,
+        "native_budget_per_target_half_splitting": "5894074",
+        "target_coset_distance": 324
+      },
+      {
+        "active_logical_blocks": 5,
+        "interaction_order": 411,
+        "level": 4,
+        "native_budget_per_target_half_splitting": "91384883/8",
+        "target_coset_distance": 405
+      },
+      {
+        "active_logical_blocks": 1,
+        "interaction_order": 249,
+        "level": 5,
+        "native_budget_per_target_half_splitting": "20149487/8",
+        "target_coset_distance": 243
+      },
+      {
+        "active_logical_blocks": 2,
+        "interaction_order": 492,
+        "level": 5,
+        "native_budget_per_target_half_splitting": "19637236",
+        "target_coset_distance": 486
+      },
+      {
+        "active_logical_blocks": 3,
+        "interaction_order": 735,
+        "level": 5,
+        "native_budget_per_target_half_splitting": "525636467/8",
+        "target_coset_distance": 729
+      },
+      {
+        "active_logical_blocks": 4,
+        "interaction_order": 978,
+        "level": 5,
+        "native_budget_per_target_half_splitting": "155069560",
+        "target_coset_distance": 972
+      },
+      {
+        "active_logical_blocks": 5,
+        "interaction_order": 1221,
+        "level": 5,
+        "native_budget_per_target_half_splitting": "2416649183/8",
+        "target_coset_distance": 1215
+      }
+    ]
+  },
+  "checks_passed": true,
+  "constructor": {
+    "collected_seed_pair_tables_checked": 4,
+    "native_iterator_prefix_memberships": 72,
+    "prefixes_are_not_full_native_expansions": true,
+    "recursive_constructor_examples": [
+      {
+        "actual_recursive_response_checks": 6,
+        "interaction_order": 24,
+        "level": 2,
+        "logical_word": "ZZ",
+        "native_budget": "1789",
+        "target_coset_distance": 18
+      },
+      {
+        "actual_recursive_response_checks": 6,
+        "interaction_order": 24,
+        "level": 2,
+        "logical_word": "XY",
+        "native_budget": "1789",
+        "target_coset_distance": 18
+      },
+      {
+        "actual_recursive_response_checks": 7,
+        "interaction_order": 24,
+        "level": 2,
+        "logical_word": "ZIZ",
+        "native_budget": "1789",
+        "target_coset_distance": 18
+      },
+      {
+        "actual_recursive_response_checks": 7,
+        "interaction_order": 24,
+        "level": 2,
+        "logical_word": "IXY",
+        "native_budget": "1789",
+        "target_coset_distance": 18
+      },
+      {
+        "actual_recursive_response_checks": 7,
+        "interaction_order": 33,
+        "level": 2,
+        "logical_word": "XYZ",
+        "native_budget": "40175/8",
+        "target_coset_distance": 27
+      },
+      {
+        "actual_recursive_response_checks": 7,
+        "interaction_order": 15,
+        "level": 2,
+        "logical_word": "IYI",
+        "native_budget": "2867/8",
+        "target_coset_distance": 9
+      },
+      {
+        "actual_recursive_response_checks": 6,
+        "interaction_order": 60,
+        "level": 3,
+        "logical_word": "ZZ",
+        "native_budget": "32824",
+        "target_coset_distance": 54
+      },
+      {
+        "actual_recursive_response_checks": 6,
+        "interaction_order": 60,
+        "level": 3,
+        "logical_word": "XY",
+        "native_budget": "32824",
+        "target_coset_distance": 54
+      },
+      {
+        "actual_recursive_response_checks": 7,
+        "interaction_order": 60,
+        "level": 3,
+        "logical_word": "ZIZ",
+        "native_budget": "32824",
+        "target_coset_distance": 54
+      },
+      {
+        "actual_recursive_response_checks": 7,
+        "interaction_order": 60,
+        "level": 3,
+        "logical_word": "IXY",
+        "native_budget": "32824",
+        "target_coset_distance": 54
+      },
+      {
+        "actual_recursive_response_checks": 7,
+        "interaction_order": 87,
+        "level": 3,
+        "logical_word": "XYZ",
+        "native_budget": "824723/8",
+        "target_coset_distance": 81
+      },
+      {
+        "actual_recursive_response_checks": 7,
+        "interaction_order": 33,
+        "level": 3,
+        "logical_word": "IYI",
+        "native_budget": "40175/8",
+        "target_coset_distance": 27
+      },
+      {
+        "actual_recursive_response_checks": 6,
+        "interaction_order": 168,
+        "level": 4,
+        "logical_word": "ZZ",
+        "native_budget": "765505",
+        "target_coset_distance": 162
+      },
+      {
+        "actual_recursive_response_checks": 6,
+        "interaction_order": 168,
+        "level": 4,
+        "logical_word": "XY",
+        "native_budget": "765505",
+        "target_coset_distance": 162
+      },
+      {
+        "actual_recursive_response_checks": 7,
+        "interaction_order": 168,
+        "level": 4,
+        "logical_word": "ZIZ",
+        "native_budget": "765505",
+        "target_coset_distance": 162
+      },
+      {
+        "actual_recursive_response_checks": 7,
+        "interaction_order": 168,
+        "level": 4,
+        "logical_word": "IXY",
+        "native_budget": "765505",
+        "target_coset_distance": 162
+      },
+      {
+        "actual_recursive_response_checks": 7,
+        "interaction_order": 249,
+        "level": 4,
+        "logical_word": "XYZ",
+        "native_budget": "20149487/8",
+        "target_coset_distance": 243
+      },
+      {
+        "actual_recursive_response_checks": 7,
+        "interaction_order": 87,
+        "level": 4,
+        "logical_word": "IYI",
+        "native_budget": "824723/8",
+        "target_coset_distance": 81
+      }
+    ],
+    "weak_composition_enumerations_checked": 72
+  },
+  "fifty_qubit_certificate": {
+    "actual_distinct_physical_errors_enumerated": 540376,
+    "axis_independence_reuses_the_complete_child_certificate": true,
+    "child_profile_certificate": {
+      "axis_independent_character_signatures": 116,
+      "logical_axes": [
+        "X",
+        "Y",
+        "Z"
+      ],
+      "physical_child_errors_checked": 64876,
+      "profiles": 7
+    },
+    "counts_by_physical_weight": {
+      "0": 1,
+      "1": 150,
+      "2": 11025,
+      "3": 529200
+    },
+    "full_native_hamiltonian_expanded": false,
+    "logical_axis_products_certified": [
+      "XX",
+      "XY",
+      "XZ",
+      "YX",
+      "YY",
+      "YZ",
+      "ZX",
+      "ZY",
+      "ZZ"
+    ],
+    "ordered_child_profile_pairs": 18,
+    "physical_errors_per_axis_product": 540376,
+    "profile_counts": [
+      {
+        "left": "identity",
+        "physical_errors": 1,
+        "right": "identity"
+      },
+      {
+        "left": "identity",
+        "physical_errors": 375,
+        "right": "single_equivalent"
+      },
+      {
+        "left": "identity",
+        "physical_errors": 1350,
+        "right": "double_in_one_block_equivalent"
+      },
+      {
+        "left": "identity",
+        "physical_errors": 2250,
+        "right": "two_distinct_blocks"
+      },
+      {
+        "left": "identity",
+        "physical_errors": 150,
+        "right": "normalizer_triple_in_one_block"
+      },
+      {
+        "left": "identity",
+        "physical_errors": 27000,
+        "right": "two_plus_one_blocks"
+      },
+      {
+        "left": "identity",
+        "physical_errors": 33750,
+        "right": "three_distinct_blocks"
+      },
+      {
+        "left": "single_equivalent",
+        "physical_errors": 375,
+        "right": "identity"
+      },
+      {
+        "left": "single_equivalent",
+        "physical_errors": 5625,
+        "right": "single_equivalent"
+      },
+      {
+        "left": "single_equivalent",
+        "physical_errors": 33750,
+        "right": "double_in_one_block_equivalent"
+      },
+      {
+        "left": "single_equivalent",
+        "physical_errors": 168750,
+        "right": "two_distinct_blocks"
+      },
+      {
+        "left": "double_in_one_block_equivalent",
+        "physical_errors": 1350,
+        "right": "identity"
+      },
+      {
+        "left": "double_in_one_block_equivalent",
+        "physical_errors": 33750,
+        "right": "single_equivalent"
+      },
+      {
+        "left": "two_distinct_blocks",
+        "physical_errors": 2250,
+        "right": "identity"
+      },
+      {
+        "left": "two_distinct_blocks",
+        "physical_errors": 168750,
+        "right": "single_equivalent"
+      },
+      {
+        "left": "normalizer_triple_in_one_block",
+        "physical_errors": 150,
+        "right": "identity"
+      },
+      {
+        "left": "two_plus_one_blocks",
+        "physical_errors": 27000,
+        "right": "identity"
+      },
+      {
+        "left": "three_distinct_blocks",
+        "physical_errors": 33750,
+        "right": "identity"
+      }
+    ]
+  },
+  "finite_target_configurations": {
+    "collected_native_common_denominator": "32000000000",
+    "collected_native_common_denominator_bits": 35,
+    "complete_allowed_shell_configurations_per_target": 7120,
+    "configuration_counts_by_pattern": {
+      "A0": 100,
+      "A1": 600,
+      "A2": 1500,
+      "A3": 2000,
+      "B5": 120,
+      "F0": 400,
+      "F1": 2400
+    },
+    "dense_native_expansion_enumerated": false,
+    "dense_native_terms_specified_per_target": 41032000000,
+    "nonzero_disjoint_tensor_class_pairs": 18,
+    "ordinary_product_code_distance": 9,
+    "signed_pattern_masses": {
+      "A0": "220",
+      "A1": "-594",
+      "A2": "1215/2",
+      "A3": "-459/2",
+      "B5": "-3",
+      "F0": "-135/2",
+      "F1": "135/2"
+    },
+    "target_ZZ_coset_distance": 18,
+    "target_logical_axis_products_classified": 9
+  },
+  "product_readout": {
+    "even_global_ZZ_weight_does_not_give_support_collision": true,
+    "known_product_unitary_and_ideal_original_syndrome_assumptions_retained": true,
+    "product_support_criterion": "A nontrivial logical word has an odd-weight restriction on at least one code block; every stabilizer restriction there has even weight, so their exact supports differ.",
+    "seed_normalizer_parity_product_identities": 4096,
+    "seed_stabilizer_even_logical_odd_parity_verified": true,
+    "syndrome_reversibility_distance": "infinity"
+  },
+  "projected_coset_lower_bound": {
+    "examples": [
+      {
+        "native_budget_lower_bound": "2867/8",
+        "projected_pattern_masses": [
+          "715/16",
+          "-1755/16",
+          "3645/32",
+          "-1485/32",
+          "-675/32",
+          "675/32",
+          "-3/2"
+        ],
+        "target_coset_distance": 9
+      },
+      {
+        "native_budget_lower_bound": "1789",
+        "projected_pattern_masses": [
+          "220",
+          "-594",
+          "1215/2",
+          "-459/2",
+          "-135/2",
+          "135/2",
+          "-3"
+        ],
+        "target_coset_distance": 18
+      },
+      {
+        "native_budget_lower_bound": "40175/8",
+        "projected_pattern_masses": [
+          "9889/16",
+          "-27621/16",
+          "56133/32",
+          "-20493/32",
+          "-4455/32",
+          "4455/32",
+          "-9/2"
+        ],
+        "target_coset_distance": 27
+      },
+      {
+        "native_budget_lower_bound": "10786",
+        "projected_pattern_masses": [
+          "1330",
+          "-3780",
+          "15309/4",
+          "-5481/4",
+          "-945/4",
+          "945/4",
+          "-6"
+        ],
+        "target_coset_distance": 36
+      },
+      {
+        "native_budget_lower_bound": "32824",
+        "projected_pattern_masses": [
+          "4060",
+          "-11745",
+          "47385/4",
+          "-16605/4",
+          "-2025/4",
+          "2025/4",
+          "-9"
+        ],
+        "target_coset_distance": 54
+      },
+      {
+        "native_budget_lower_bound": "824723/8",
+        "projected_pattern_masses": [
+          "204595/16",
+          "-598995/16",
+          "1205037/32",
+          "-415773/32",
+          "-35235/32",
+          "35235/32",
+          "-27/2"
+        ],
+        "target_coset_distance": 81
+      },
+      {
+        "native_budget_lower_bound": "235504",
+        "projected_pattern_masses": [
+          "29260",
+          "-86184",
+          "346275/4",
+          "-118503/4",
+          "-7695/4",
+          "7695/4",
+          "-18"
+        ],
+        "target_coset_distance": 108
+      },
+      {
+        "native_budget_lower_bound": "765505",
+        "projected_pattern_masses": [
+          "95284",
+          "-282366",
+          "566433/2",
+          "-192213/2",
+          "-8505/2",
+          "8505/2",
+          "-27"
+        ],
+        "target_coset_distance": 162
+      }
+    ],
+    "generic_moment_mass_and_dual_identities_checked_coefficientwise": true,
+    "moment_rows": [
+      "1",
+      "W",
+      "W^2",
+      "W^3",
+      "R",
+      "W*R",
+      "S"
+    ],
+    "ordinary_code_distance_used_as_target_distance": false,
+    "target_pauli_coefficient_isolated_from_other_logical_cosets": true,
+    "two_logical_pauli_projection_orthogonality_checks": 144
+  },
+  "universal_control": {
+    "ZZ_pi_over_four_maps_plus_plus_to_maximally_entangled_state": true,
+    "exact_reduced_density_matrix": [
+      [
+        "1/2",
+        "0"
+      ],
+      [
+        "0",
+        "1/2"
+      ]
+    ],
+    "lie_algebra_dimension": 15,
+    "logical_control_generators": [
+      "IX",
+      "IY",
+      "IZ",
+      "XI",
+      "YI",
+      "ZI",
+      "ZZ"
+    ],
+    "noise_threshold_claimed": false,
+    "nonidentity_pauli_lie_basis": [
+      "IX",
+      "IY",
+      "IZ",
+      "XI",
+      "XX",
+      "XY",
+      "XZ",
+      "YI",
+      "YX",
+      "YY",
+      "YZ",
+      "ZI",
+      "ZX",
+      "ZY",
+      "ZZ"
+    ]
+  }
+}

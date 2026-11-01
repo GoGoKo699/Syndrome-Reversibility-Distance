@@ -101,3 +101,7 @@ The [three-error account](../science/three_error_gates.md) uses the inherited fi
 ## Growing three-error lifting
 
 The [all-depth account](../science/growing_three_error_gates.md) applies a total-degree truncated tensor combination to nested strict protected-gate hierarchies. The zero-factor argument establishes the full error-image identity after concatenation; cubic block moments and the inherited Pauli-coset structure give the exact native coupling optimum for this code family. The classical algebraic combination principle, stabilizer code and concatenation are inherited ingredients. The supplied protected-gate lifting, resource certificate and three-error equality family are the results recorded here; no general literature-priority claim is made.
+
+## Protected entanglers on product codes
+
+The [logical-string account](../science/protected_entangling_gates.md) combines the strict increment hierarchy with a projected logical-Pauli coefficient of the moment equations. The inherited ingredients include tensor products, the Pauli Lie-algebra criterion for encoded control and the fixed-code syndrome support criterion. The derived resource statement is the exact pure-string law $\ell=pd+6$ and $J/\omega=J_3(pd)$ on unchanged product codes, including a strict protected entangler and its complete finite certificate. Universality concerns complete protected Hamiltonians in the native model; the result does not supply a small physical interaction synthesis or a joint noisy threshold.

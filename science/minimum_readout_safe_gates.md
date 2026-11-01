@@ -212,7 +212,7 @@ Each of the three axes has the same construction. Therefore any pointwise combin
 H(t)=\sum_{\alpha=X,Y,Z}\Omega_\alpha(t)H_{m,\alpha}
 ```
 
-satisfies the full transparency equations with logical generator $\sum_\alpha\Omega_\alpha(t)\alpha$. This gives arbitrary continuous control of the single encoded qubit. It does not supply entangling gates between encoded qubits or establish multiqubit computational universality.
+satisfies the full transparency equations with logical generator $\sum_\alpha\Omega_\alpha(t)\alpha$. This gives arbitrary continuous control of the single encoded qubit. This single-block construction is supplemented by the [protected logical-string extension](protected_entangling_gates.md), which supplies entangling gates on fixed product blocks and universal encoded control in the declared native model.
 
 The three logical cosets are disjoint, so the combined native budget is
 
