@@ -1,6 +1,6 @@
 # Three-error optima at every concatenation depth
 
-The depth-$m$ concatenated five-qubit code $Q_m$ has parameters $[[5^m,1,3^m]]$. For every $m\ge2$, each logical Pauli axis admits a strict Hamiltonian transparent to every physical Pauli error of weight at most three, with
+The depth $m$ concatenated five-qubit code $Q_m$ has parameters $[[5^m,1,3^m]]$. For every $m\ge2$, each logical Pauli axis admits a strict Hamiltonian transparent to every physical Pauli error of weight at most three, with
 
 ```math
 \boxed{n=5^m,\qquad d=3^m,\qquad
@@ -18,7 +18,7 @@ Suppose a child code with distance $D$ has strict logical Pauli Hamiltonians $L_
 
 ```math
 L_{s,\beta}EV=EV\beta
-\quad\text{whenever }\operatorname{wt}(E)\le s,
+\quad\text{whenever }\mathrm{wt}(E)\le s,
 \qquad
 \ell(L_{s,\beta})\le D+2s.
 ```
@@ -29,7 +29,7 @@ Put $L_{-1,\beta}=0$ and define increments
 \Delta_{a,\beta}=L_{a,\beta}-L_{a-1,\beta}.
 ```
 
-For $a>\operatorname{wt}(E)$, both Hamiltonians have the same full action on $EV$, and therefore
+For $a>\mathrm{wt}(E)$, both Hamiltonians have the same full action on $EV$, and therefore
 
 ```math
 \Delta_{a,\beta}EV=0.
@@ -61,7 +61,7 @@ These are finite operator identities. The word “truncated” refers to the inc
 
 ### Full error-image proof
 
-Let a physical Pauli $E$ have total weight at most $t$, and write $E_i$ for its restriction to child $i$, with $s_i=\operatorname{wt}(E_i)$. For a fixed root representative, first consider the full tensor product of the three $L_{t,\beta_i}$ factors. Each child factor acts strictly as $\beta_i$ on its error image. Errors in inactive children commute with their identity factors. The full product therefore implements the root logical representative on the complete parent error image.
+Let a physical Pauli $E$ have total weight at most $t$, and write $E_i$ for its restriction to child $i$, with $s_i=\mathrm{wt}(E_i)$. For a fixed root representative, first consider the full tensor product of the three $L_{t,\beta_i}$ factors. Each child factor acts strictly as $\beta_i$ on its error image. Errors in inactive children commute with their identity factors. The full product therefore implements the root logical representative on the complete parent error image.
 
 Expand that product using $L_{t,\beta_i}=\sum_{a=0}^t\Delta_{a,\beta_i}$. Every omitted term in (T2) has $\sum_i a_i>t$. It cannot have $a_i\le s_i$ for all active children, since $\sum_i s_i\le t$. Thus at least one factor has $a_i>s_i$ and vanishes on $E_iV$ by (T1). Dropping the omitted terms changes no protected error image. Averaging the positive signed outer representatives then gives
 
@@ -196,7 +196,7 @@ Let $A=[V^\dagger HV]_0$ and let $C_j$ be the scalar-free contribution from phys
 
 Detectable Pauli terms have zero code compression, and stabilizer terms contribute only scalars. They do not invalidate the system and add nonnegative native budget. Consistent scalar shifts between protected error sectors likewise disappear on taking the scalar-free part.
 
-For one logical Pauli axis, the absolute native coefficient sum in a class is at least $\|C_j\|_\infty=|m_j|\omega$. Hence every allowed Hamiltonian satisfies
+For one logical Pauli axis, the absolute native coefficient sum in a class is at least $\lVert C_j\rVert_\infty=|m_j|\omega$. Hence every allowed Hamiltonian satisfies
 
 ```math
 J\ge\sum_j|m_j(d)|\,\omega=J_3(d)\omega.
@@ -273,6 +273,6 @@ D_3(n)=1+3n+9\binom n2+27\binom n3,
 
 the full transparency equations for an axis have $D_3(n)$ character coordinates. Use the prescribed class signs and nonnegative absolute coefficients. The construction is feasible; eliminating dependent response columns leaves at most $D_3(n)=O(n^3)$ native Pauli terms. The same block moments force the same class masses and therefore preserve the optimum. Integer sign columns give polynomial-bit rational coefficients for an independent support by Cramer's rule and the Hadamard bound. This is a support-existence statement. A practical native sparse compiler or explicit sparse 125-qubit three-error word list is not supplied here.
 
-The [growing verifier](../verification/verify_growing_three_error.py) checks the exact polynomial moments and dual, the increment cost recurrence, the forced pattern masses at finite depths, and the signed increment base. At depth three, eleven complete child-error response profiles cover all 8,649,376 physical Pauli errors of weight at most three on 125 qubits. The computation evaluates these exact profiles and their coverage; it does not multiply a $2^{125}$-dimensional matrix or claim to enumerate a dense native Hamiltonian term by term. The arbitrary-depth physical-space conclusion follows from the lifting proof.
+The [growing verifier](../verification/verify_growing_three_error.py) checks the exact polynomial moments and dual, the increment cost recurrence, the forced pattern masses at finite depths, and the signed increment base. At depth three, eleven complete child-error response profiles cover all 8,649,376 physical Pauli errors of weight at most three on 125 qubits. The computation evaluates these exact profiles and their coverage; it does not multiply a matrix of dimension $2^{125}$ or claim to enumerate a dense native Hamiltonian term by term. The arbitrary-depth physical-space conclusion follows from the lifting proof.
 
 All three axes have the same construction. The gate guarantee remains fixed at three physical Pauli errors even when the code can correct more. The infinite syndrome-reversibility claim still allows recovery to know the specified product unitary and assumes ideal full original-syndrome measurement. State preparation, noisy recovery, geometric range, many-body interaction synthesis and a joint noisy gate/readout threshold remain outside the declared model.

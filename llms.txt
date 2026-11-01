@@ -1,71 +1,92 @@
 # Syndrome Reversibility Distance
 
-This repository studies the information irreversibly lost when a known product
-of single-qubit unitaries is followed by the full original stabilizer-syndrome
-measurement. Arbitrary unitary-dependent recovery occurs only afterward.
+Purpose: classify information irreversibly lost when a known product of
+single-qubit unitaries is followed by the full original stabilizer-syndrome
+measurement. Recovery knows U, receives syndrome and remaining quantum state,
+and occurs only after that measurement.
 
-Canonical files:
-- README.md: question, exact support criterion, sharp exponent, family comparison,
-  scope, reproduction command, and purpose/contact notice.
-- science/model.md: stabilizer conventions, measured channel, available recovery,
-  branch effects, optimal entanglement fidelity, and distance conventions.
-- science/support_criterion.md: complete exact-support classification, its
-  local-Clifford logical-measurement witness, the invariant r, binary-circuit
-  equivalence, parity, and relation to ordinary distance.
-- science/error_exponent.md: explicit collision-polynomial bound, polar-recovery
-  upper bound, exact repetition converse, and sharp optimized error exponent.
+Start here:
+- README.md: main support criterion, sharp exponent, code-family separation,
+  protected-control coexistence, learning route and reproduction command.
+- science/README.md: topic-based proof route, complete protected-control catalog,
+  finite-certificate scope and links to every authoritative science file.
+
+Readout science:
+- science/model.md: conventions, measured channel, branch effects, recovery
+  quantifiers, optimal entanglement fidelity and error measures.
+- science/support_criterion.md: exact-support equivalence, constructive witness,
+  r(S), minimal even logical circuits, parity and ordinary-distance relation.
+- science/error_exponent.md: collision-polynomial bound, polar recovery,
+  exact even-repetition converse and fixed-code optimized exponent.
 - science/code_families.md: five-qubit seed, concatenation, one-physical-CNOT
-  construction, unchanged ordinary distance, and explicit ten-qubit witness.
-- science/interpretation.md: measurement information, physical locality,
-  operation order, recovery knowledge, and fixed-code asymptotic scope.
-- references/RELATED_WORK.md: attribution and exact comparison of neighboring
-  operational models and results.
-- references/references.bib: bibliographic records for the cited research.
-- verification/README.md: commands, expected outputs, and limits of finite checks.
-- verification/run_all.py: reproduction entrypoint.
+  code conjugation, preserved parameters and ten-qubit physical witness.
+- science/interpretation.md: tensor factors, operation order and physical scope.
 
-Learning files:
+Protected-control coexistence, shared with Error-Transparent Locality:
+- science/gate_readout_tradeoff.md: minimum general order forces r(S)=d+1;
+  stronger readout separation needs more order; ancilla and circuit caveats.
+- science/minimum_readout_safe_gates.md: Q_m one-error optimum on all axes.
+- science/sparse_protected_gates.md: explicit <=4n one-error construction,
+  <=3n+1 existence bound and coefficient-size distinctions.
+- science/two_error_gates.md: 25-qubit two-error primal/dual certificate.
+- science/growing_two_error_gates.md: all-depth two-error optimum and correlated
+  padding; do not confuse it with independent uniform inactive-leaf padding.
+- science/sparse_two_error_synthesis.md: positive sparse component certificates,
+  exact pairwise coupling and reference compiler, including 125-qubit example.
+- science/three_error_gates.md: 25-qubit seven-pattern three-error optimum.
+- science/growing_three_error_gates.md: strict truncated-tensor lifting,
+  all-depth three-error optimum, coefficient bounds and exact response profiles.
+- science/protected_entangling_gates.md: fixed product-code Pauli strings,
+  target-coset lower bound, tensor-budget composition and universal control.
+
+Sources and verification:
+- references/RELATED_WORK.md: attribution, neighboring models and source limits.
+- references/references.bib: bibliographic records and versions.
+- verification/README.md: all 12 programs, expected checks and their limits.
+- verification/run_all.py: reproduction entrypoint; run it for fresh evidence.
+
+Learning:
+- learning/README.md: how to use the single anchor, bridge and common map.
+- learning/GOTTESMAN_BRIDGE.md: Daniel Gottesman, An Introduction to Quantum
+  Error Correction and Fault-Tolerant Quantum Computation, arXiv:0904.2557v1
+  (2009; published 2010); actual sections, notation translation, worked
+  measurement example and additional project-specific recovery derivations.
 - learning/MILESTONES.md: exactly M01-M30, with 12 background/preliminaries
-  milestones and 18 narrative/innovation milestones; each has a central question,
-  understanding target, earlier dependencies, conceptual connection and sources.
-- learning/GOTTESMAN_BRIDGE.md: the single selected educational anchor, Daniel
-  Gottesman's An Introduction to Quantum Error Correction and Fault-Tolerant
-  Quantum Computation (arXiv:0904.2557v1, 2009; published 2010), with source sections,
-  notation translation, worked measurement example and project-specific derivations.
-
-Reading routes:
-- For the result: model, support criterion, error exponent, code families,
-  and interpretation, in that order.
-- For a proof: use its authoritative scientific file and the common conventions
-  in model.md; introductory prose is not a replacement for its quantifiers.
-- For attribution: consult RELATED_WORK.md before describing an ingredient as new.
-- For finite evidence: execute the documented verification command and compare
-  with committed output; do not treat a past success report as a new execution.
-- For self-directed learning: read the Gottesman bridge alongside M01-M30.
-  The map is common to all readers and is determined by the scientific project.
-  The bridge supplies the recovery and channel-norm material beyond the anchor.
+  milestones and 18 narrative/innovation milestones. Each includes a central
+  question, target, earlier dependencies, conceptual connection and sources.
 
 Preserve these distinctions:
-- S means the entire stabilizer group, not a chosen generator list. Membership
-  and set differences of Pauli classes ignore global phases; physical operators
-  retain their stabilizer signs.
-- Equal support means exactly the same set of nonidentity sites. Circuit
-  minimality concerns subwords of fixed Pauli labels, not arbitrary Paulis
-  with smaller support.
-- Recovery may depend on the full known U and the classical syndrome. All
-  recoveries occur after the prescribed ideal measurement.
-- The optimal half-diamond error and optimal entanglement infidelity need not
-  coincide for a general U. They coincide for the explicit repetition witnesses.
-- r is even when finite, r>=d, and r=d for even d. r=infinity means exact
-  recoverability for every product U in this model.
-- The Theta(theta^r) theorem is for a fixed code, with code-dependent constants.
-- The family has k=2, n=2*5^t, d=3^t. One physical CNOT changes r from infinity
-  to 3^t+1 while retaining those parameters. It conjugates the code definition.
-- The recovery optimum and even-repetition mechanism are inherited ingredients.
-  The support/circuit classification and their operational consequences are the
-  conclusions proved in the scientific account.
-- Finite calculations do not establish universal theorems or external peer review.
-- The selected anchor supplies foundations. Primary research citations remain
-  necessary for attribution; they are not additional assigned textbooks. Use
-  the bridge to distinguish source material from the project's own conclusions.
-
+- S is the entire stabilizer group, not a generator list. Phase-free membership
+  and physical signed operators have different roles.
+- Equal support means exactly equal nonidentity sites. A circuit has no proper
+  nonempty zero-syndrome subword of its fixed Pauli labels. An arbitrary even
+  logical word need not be a circuit.
+- r(S) and r_S denote the same invariant. Finite r is even and >=d; even d
+  implies r=d. Infinity means exact recoverability for every product U.
+- Half-diamond error and entanglement infidelity need not coincide for general U.
+  They coincide for the explicit repetition witnesses. Both worst-case optimized
+  errors have exponent r for a fixed code; constants may depend on that code.
+- The family comparison has n=2*5^m, k=2, d=3^m. A physical CNOT conjugates
+  the code and changes r from infinity to 3^m+1. The protected logical entangler
+  instead keeps the product code and its original syndrome measurement fixed.
+- The gate model demands exact full-sector intertwining for every Pauli error
+  of the stated weight, up to consistent scalar shifts. Native coupling cost
+  is the sum of absolute nonidentity bare Hermitian Pauli coefficients, not
+  operator norm. omega is half the logical spectral width.
+- On Q_m, d=3^m and one/two/three-error minimum orders are d+2t, with
+  family-specific coupling optima at those orders. t=1 requires m>=1; t=2,3
+  require m>=2. Readout remains r_S=infinity.
+- For product Q_m blocks with m>=2, target h_L=Omega P+cI, Omega!=0 and
+  nonidentity logical Pauli string P of weight p>=1, the three-error string
+  cost is |Omega| J_3(p*d). Target coset minimum p*d
+  differs from ordinary code distance d. The pure-string optimum does not give
+  an optimal arbitrary mixed-Hamiltonian budget at one common locality cap.
+- Compact dense specification, sparse existence, explicit sparse synthesis,
+  term count and coefficient bit size are separate resources.
+- Readout and protected-gate noise assumptions are separate; universal encoded
+  control here does not assert a joint threshold or efficient hardware synthesis.
+- General outcome-conditioned recovery and the even-repetition mechanism are
+  inherited ingredients. Consult RELATED_WORK before assigning novelty.
+- Finite checks do not replace general proofs, peer review or source attribution.
+- The selected educational anchor supplies foundations. Research citations are
+  necessary attribution, not additional assigned educational anchors.

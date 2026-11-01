@@ -21,7 +21,7 @@ We require a Hermitian code-preserving Hamiltonian with nonscalar logical genera
 
 ```math
 HEV=EV(h_L+\lambda_E I)
-\qquad (\operatorname{wt}(E)\le2),
+\qquad (\mathrm{wt}(E)\le2),
 ```
 
 where the consistent real scalar sector shifts permitted by the [gate model](https://github.com/GoGoKo699/Error-Transparent-Locality/blob/main/science/model.md) are allowed in the lower bound. The construction below has every $\lambda_E=0$. Interaction order $\ell$ is maximum native Pauli weight, and $J$ is the absolute sum of nonidentity Pauli coefficients. Write $\omega$ for half the spectral width of $h_L$.
@@ -125,7 +125,7 @@ The four masses sum to one, and their dot product with every row of the response
 
 ```math
 \boxed{H_\alpha EV=EV\alpha
-\quad\text{for every Pauli }E\text{ with }\operatorname{wt}(E)\le2.}
+\quad\text{for every Pauli }E\text{ with }\mathrm{wt}(E)\le2.}
 ```
 
 These are full physical-space identities, not only compressed energies. They include preservation of each protected error image. Linearity covers arbitrary operators supported on at most two physical qubits. Pointwise transparency also gives the intended logical evolution through up to two physical faults at unknown times, followed by ideal recovery, since every cumulative Pauli error during the trajectory has weight at most two.
@@ -145,7 +145,7 @@ The construction applies separately to $X,Y,Z$. Real linear combinations preserv
 
 ### An exact sparse representation
 
-The dense expansion is not needed to specify the gate. The [stored sparse certificate](../verification/data/two_error_sparse_orbits.json) gives 103 signed logical-$Z$ orbit seeds under independent cyclic shifts of the outer block index and the shared within-block index. This is the same transitive 25-element coordinate-translation group used in the [single-error sparse account](sparse_protected_gates.md). Each stored orbit has 25 distinct words, and the 103 orbits are disjoint, giving 2,575 native Pauli terms. Cycling physical labels $X\mapsto Y\mapsto Z\mapsto X$ produces the other two logical axes, whose signs and identities are independently checked.
+The dense expansion is not needed to specify the gate. The [stored sparse certificate](../verification/data/two_error_sparse_orbits.json) gives 103 signed logical $Z$ orbit seeds under independent cyclic shifts of the outer block index and the shared within-block index. This is the same transitive 25-element coordinate-translation group used in the [single-error sparse account](sparse_protected_gates.md). Each stored orbit has 25 distinct words, and the 103 orbits are disjoint, giving 2,575 native Pauli terms. Cycling physical labels $X\mapsto Y\mapsto Z\mapsto X$ produces the other two logical axes, whose signs and identities are independently checked.
 
 The sparse relative coefficients have the same four class signs and exact total masses as the displayed construction. Their absolute sum is $521/8$, their interaction order is thirteen, and their conjugation response is one for each of the 2,776 protected errors. A numerical search selected the orbit support; the stored rational coefficients and every full error-image identity are checked independently without an optimizer. The collected native coefficients have a 125-bit common denominator. Thus this representation reduces support at the cost of more complicated coefficients; it is not asserted to minimize term count or denominator size.
 
@@ -215,7 +215,7 @@ C_B=-\frac{45}{16}A.
 
 ### From operator masses to coupling budget
 
-For this one-logical-qubit code, the traceless generator $A$ has operator norm $\omega$. If $J_j$ is the sum of absolute native coefficients in type $j$, then $\|C_j\|_\infty\le J_j$: every contributing compressed Hermitian logical Pauli has norm one, and the triangle inequality applies. Terms in the four types are disjoint. Any additional stabilizer or detectable terms can only add to the native budget. Consequently
+For this one-logical-qubit code, the traceless generator $A$ has operator norm $\omega$. If $J_j$ is the sum of absolute native coefficients in type $j$, then $\lVert C_j\rVert_\infty\le J_j$: every contributing compressed Hermitian logical Pauli has norm one, and the triangle inequality applies. Terms in the four types are disjoint. Any additional stabilizer or detectable terms can only add to the native budget. Consequently
 
 ```math
 J\ge\sum_jJ_j
@@ -239,4 +239,4 @@ Its values on the four class columns are $(+1,-1,+1,-1)$, precisely the signs of
 
 The result establishes exact two-error transparency for this fixed twenty-five-qubit code with native Pauli interactions, and retains its infinite known-product-unitary syndrome reversibility. The code can correct errors through weight four, but this Hamiltonian is proved transparent only through weight two. The resource theorem does not apply to arbitrary distance-nine codes or arbitrary moving-code circuits. No claim is made about geometric locality, efficient many-body synthesis, noisy recovery, or a joint noise threshold.
 
-The [verification guide](../verification/README.md) records the exact certificates. Independent factorized signed-Pauli calculations evaluate all 2,776 errors of weight at most two for each logical axis without constructing a $2^{25}$-dimensional matrix. A separate sparse verifier expands all 2,575 stored native terms per axis, checks signed logical membership, and evaluates every protected error response by integer contraction. Signed logical membership ensures that exact conjugation responses certify full error-image identities. The finite checks support the supplied code and constructions; the all-Hamiltonian lower bound is the operator-moment proof above.
+The [verification guide](../verification/README.md) records the exact certificates. Independent factorized signed-Pauli calculations evaluate all 2,776 errors of weight at most two for each logical axis without constructing a matrix of dimension $2^{25}$. A separate sparse verifier expands all 2,575 stored native terms per axis, checks signed logical membership, and evaluates every protected error response by integer contraction. Signed logical membership ensures that exact conjugation responses certify full error-image identities. The finite checks support the supplied code and constructions; the all-Hamiltonian lower bound is the operator-moment proof above.

@@ -81,7 +81,7 @@ For the second sum, choose one of the three active child blocks and use its seco
 ```math
 T_{m,\alpha}^{(1)}
 =\frac1{30}\sum_{Q\in\mathcal C_{\alpha,3}}s_Q
-\sum_{a\in\operatorname{supp}(Q)}
+\sum_{a\in\mathrm{supp}(Q)}
 \bigotimes_{j=1}^{5} B_j^{(a)}(Q),
 ```
 
@@ -191,7 +191,7 @@ The outer logical labels distinguish different outer choices. In the second sum,
 \boxed{
 a_m=10^{(d-1)/2},\qquad
 b_m=\frac d5a_m,\qquad
-\#\operatorname{terms}(H_{m,\alpha})
+\#\mathrm{terms}(H_{m,\alpha})
 =\left(1+\frac d5\right)10^{(d-1)/2}.
 }
 ```
@@ -226,7 +226,7 @@ Thus the coupling optimum stated above is attained separately for each Pauli axi
 
 ## 6. Scope and verification
 
-The construction protects one arbitrary single-qubit fault at an unknown time. Although the depth-$m$ code corrects all errors of weight at most $(3^m-1)/2$, this Hamiltonian construction proves only $t=1$ transparency. A higher-error gate must satisfy additional multisite identities. For $m=2$ and $E=X_1X_2$ within the first bottom block (one-based indices), direct signed-term enumeration gives the two class responses $9/25$ and $89/225$. Therefore
+The construction protects one arbitrary single-qubit fault at an unknown time. Although the depth $m$ code corrects all errors of weight at most $(3^m-1)/2$, this Hamiltonian construction proves only $t=1$ transparency. A higher-error gate must satisfy additional multisite identities. For $m=2$ and $E=X_1X_2$ within the first bottom block (one-based indices), direct signed-term enumeration gives the two class responses $9/25$ and $89/225$. Therefore
 
 ```math
 H_{2,Z}EV_2=\left(\frac{11}{2}\frac9{25}-\frac92\frac{89}{225}\right)EV_2Z
@@ -235,7 +235,7 @@ H_{2,Z}EV_2=\left(\frac{11}{2}\frac9{25}-\frac92\frac{89}{225}\right)EV_2Z
 
 which exhibits failure of transparency to this correctable weight-two fault.
 
-**Higher-error obstruction for this family.** If a nontrivial Hamiltonian on the depth-$m$ code is transparent to every Pauli error of weight at most $t$, where $1\le t$ and $2t+1\le d$, then
+**Higher-error obstruction for this family.** If a nontrivial Hamiltonian on the depth $m$ code is transparent to every Pauli error of weight at most $t$, where $1\le t$ and $2t+1\le d$, then
 
 ```math
 \boxed{\ell\ge d+2t.}

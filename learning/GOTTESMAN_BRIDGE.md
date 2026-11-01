@@ -1,43 +1,45 @@
 # From Gottesman's stabilizer tutorial to syndrome reversibility
 
-An error syndrome is useful because it can reveal what happened to a physical system while preserving the quantum information encoded in it. This project asks exactly when that separation survives coherent rotations on every physical qubit. The answer depends on how stabilizer supports and logical-operator supports fit together.
+An error syndrome is useful because it can reveal what happened to a physical system while preserving the quantum information encoded in it. This project asks exactly when that separation survives coherent rotations on every physical qubit. The answer depends on how stabilizer supports and logical-operator supports fit together. The final sections connect that readout property to protected logical control on the same code.
 
 This bridge follows the [30-milestone map](MILESTONES.md). It develops the connections needed to read the complete proofs under [science/](../science/model.md), with a small measurement calculation before the general theorems. The scientific pages remain the authoritative statements of assumptions, quantifiers, and proofs.
 
 ## 1. The single educational anchor
 
-**Daniel Gottesman, *An Introduction to Quantum Error Correction and Fault-Tolerant Quantum Computation*.** We use [arXiv:0904.2557v1](https://arxiv.org/abs/0904.2557v1), dated 16 April 2009, published as a chapter in *Quantum Information Science and Its Contributions to Mathematics*, Proceedings of Symposia in Applied Mathematics **68**, 13–58 (2010). The [author's text](https://arxiv.org/pdf/0904.2557) supplies the stabilizer foundation.
+**Daniel Gottesman, *An Introduction to Quantum Error Correction and Fault-Tolerant Quantum Computation*.** We use [arXiv:0904.2557v1](https://arxiv.org/abs/0904.2557v1), dated 16 April 2009, published as a chapter in *Quantum Information Science and Its Contributions to Mathematics*, Proceedings of Symposia in Applied Mathematics **68**, 13–58 (2010). The [author's text](https://arxiv.org/pdf/0904.2557v1) supplies the stabilizer foundation.
 
 The source route is selective:
 
-| Source section | Relevant foundation | Where it enters this project |
+| Verified source location | Relevant foundation | Where it enters this project |
 |---|---|---|
-| §2.1 | Pauli expansions and coherent errors | Physical rotations and their error paths |
-| §2.2 | Error-correction conditions | Preserving arbitrary encoded states |
-| §2.3 | Stabilizers, syndrome measurement, distance | The fixed code and readout |
-| §3.1, especially Table 4 | Five-qubit code and binary representation | Explicit families and syndrome columns |
-| §3.4 | Logical Pauli quotient | Distinguishing detectable, trivial, and logical operators |
-| §3.5 | Clifford conjugation | Local axis changes and the physical CNOT |
-| §5.2, concatenation discussion | Repeated encoding | The growing-distance construction |
+| §2.1, “The nine-qubit code,” including Table 1 | Pauli operators, coherent errors and linearity | Physical rotations and their error paths |
+| §2.2, “General properties of quantum error-correcting codes” | General correction conditions and distance | Preserving arbitrary encoded states |
+| §2.3, “Stabilizer codes” | Checks, syndrome measurement and code subspaces | The fixed code and readout |
+| §3.1, “Some other important codes,” especially Table 4, Eq. (56) and Lemma 1 | Five-qubit code, binary symplectic representation and syndrome existence | Explicit families and syndrome columns |
+| §3.4, “The logical Pauli group” | Logical Pauli quotient | Detectable, trivial and logical operators |
+| §3.5, “The Clifford group” | Clifford conjugation | Local axis changes and the physical CNOT |
+| §5.2, “Level reduction,” concatenation discussion | Repeated encoding | The growing-distance construction |
 
 The general fault-tolerance proof in §5 is not needed for the present result. Our measurement is ideal, and our small-angle bound is for a fixed code.
 
-Three additions are supplied here rather than assigned to the anchor: the precise optimization over recovery after a recorded measurement; the fidelity and diamond-distance estimates needed for that optimization; and the support/circuit theorems proved in this repository. The first addition uses established results of Gregoratti and Werner. The even-repetition mechanism used later is due to earlier coherent-error work, including Huang, Doherty and Flammia. These primary research sources are attributed in [Related work](../references/RELATED_WORK.md); they do not constitute additional educational anchors.
+The following additions are supplied here rather than assigned to the anchor: the precise optimization over recovery after a recorded measurement; the fidelity and diamond-distance estimates needed for that optimization; the support/circuit theorems proved in this repository; and the Hamiltonian resource and tensor-increment arguments connecting readout to protected gates. The first addition uses established results of Gregoratti and Werner. The even-repetition mechanism used later is due to earlier coherent-error work, including Huang, Doherty and Flammia. These primary research sources are attributed in [Related work](../references/RELATED_WORK.md); they do not constitute additional educational anchors.
 
 ## 2. Route through the milestones
 
-The map has 12 background/preliminaries milestones and 18 narrative/innovation milestones. The first phase combines individual physical and mathematical objects into the complete operational question. The second combines the proof mechanisms into the code-family separation and its interpretation.
+The map has 12 background/preliminaries milestones and 18 narrative/innovation milestones. The first phase combines individual physical and mathematical objects into the complete operational question. Most of the second phase develops the support classification, sharp exponent and same-parameter family separation. Its final milestones connect those results to gate-resource constraints and fixed-code coexistence.
 
 | Milestones | Connection developed here |
 |---|---|
-| M01–M06 | Encoding, Pauli labels, checks, logical operators, and coherent rotations: §§3–5 |
-| M07–M12 | Recorded measurements, recovery, and performance measures: §§4–6 |
-| M13–M17 | From measured checks to the exact support theorem: §7 |
-| M18–M20 | From a support collision to an even logical circuit: §8 |
-| M21–M22 | A uniform bound that includes rare outcomes: §9 |
-| M23–M25 | The exact repetition witness and matching exponent: §10 |
-| M26–M29 | Five-qubit blocks, concatenation, and one CNOT: §11 |
-| M30 | The complete claim, its attribution, and its limits: §12 |
+| M01–M06 | Encoding, Pauli labels, checks, logical operators and coherent rotations: §§3–5 |
+| M07–M12 | Recorded measurements, recovery and performance measures: §§4–6 |
+| M13–M14 | From the full syndrome to the exact support theorem: §7 |
+| M15–M16 | From support collisions to even logical circuits: §8 |
+| M17 | A uniform bound that includes rare outcomes: §9 |
+| M18–M19 | Exact repetition witness and matching exponent: §10 |
+| M20–M24 | Five-qubit blocks, concatenation, one physical CNOT and its finite channel: §11 |
+| M25–M26 | Separate gate/readout models and their joint locality theorem: §§12–13 |
+| M27–M29 | Optimal protected axes, fixed-code entanglers and resource scope: §14 |
+| M30 | The complete scientific account: §15 |
 
 ## 3. Translate the notation before comparing statements
 
@@ -377,11 +379,147 @@ For $t=1$, the explicit ten-qubit rotation gives the exact error $3q^2-2q^3$. Th
 
 The CNOT changes the code and the observables measured afterward. It is not an additional error in the product-unitary noise model. An entangling Clifford can change support relative to physical qubits, so it can change this invariant even when the conventional parameters are preserved.
 
-## 12. Assemble the complete statement
+## 12. Two tasks on the same code
 
-The conceptual chain is now explicit: the prescribed readout induces logical effects; their scalarity decides exact reversibility; product conjugation restricts the possible nonscalar terms to exact support orbits; the smallest even circuit identifies the first unavoidable weak-rotation loss; and the CNOT construction separates that property from ordinary distance.
+The readout experiment has no Hamiltonian implementing a logical gate: a specified product unitary acts, the original checks are measured, and an informed recovery follows. A protected-gate experiment instead specifies a physical Hamiltonian $H$ with logical generator $h_L=V^\dagger HV$. It requires
 
-Use the [map's final synthesis](MILESTONES.md) alongside [physical interpretation](../science/interpretation.md) to retain the operational boundaries. The code, physical tensor-product structure, and ideal full measurement are fixed. Recovery knows the specified unitary and acts afterward with unrestricted resources. The asymptotic theorem fixes the code before taking $\theta\to0$. The growing family encodes two logical qubits and supplies exact values of $r$, with no claim of a constant-rate family or uniform threshold.
+```math
+HEV=EV(h_L+\lambda_E I)
+\quad\text{for every tensor Pauli }E
+\text{ with }\mathrm{wt}(E)\le t,
+\qquad \lambda_I=0.
+```
 
-The single anchor supplies the language of stabilizer quantum error correction. Established research supplies the outcome-assisted recovery optimum and the even-repetition mechanism. This repository proves the exact support classification, its circuit and exponent consequences, and the equal-parameter family. The [related-work account](../references/RELATED_WORK.md) records those boundaries, while the topic-based [scientific reading route](../README.md#read-the-science) leads directly to every complete proof.
+The equality is in the full physical Hilbert space, so it includes absence of leakage from the protected error image $EV\mathcal H_L$. The real scalars $\lambda_E$ permit consistent energy shifts of error sectors. The constructions below satisfy the stronger, strict identity with every shift zero.
 
+To see the operational role, suppose one of the protected errors occurs at an unknown time $u$ in a gate of duration $\tau$. The identity gives
+
+```math
+e^{-iH(\tau-u)}E e^{-iHu}V
+=e^{-i\lambda_E(\tau-u)}EVe^{-ih_L\tau}.
+```
+
+After ideal correction of $E$, the intended logical evolution remains, apart from an overall phase for that error. For multiple faults and time-dependent controls, the corresponding identity must hold at every instant and the accumulated physical error must stay in the protected set. The complete hypotheses are in the [gate model](https://github.com/GoGoKo699/Error-Transparent-Locality/blob/main/science/model.md) and [control account](https://github.com/GoGoKo699/Error-Transparent-Locality/blob/main/science/control_robustness.md).
+
+The native resource model expands $H$ in the fixed bare Hermitian tensor-Pauli basis:
+
+```math
+H=\sum_Q h_QQ,\qquad
+\ell=\max_{h_Q\ne0}\mathrm{wt}(Q),\qquad
+J=\sum_{Q\ne I}|h_Q|.
+```
+
+Thus $\ell$ counts how many physical qubits one interaction term can involve, while $J$ counts the total absolute strength of nonidentity native interactions. The symbol $\ell$ avoids confusing gate interaction order with the readout distance $r(S)$, also written $r_S$. For a pure logical Pauli generator $h_L=\Omega P+cI$, its logical half-splitting is $\omega=|\Omega|$.
+
+These definitions extend the anchor's language of encoded operators. The Hamiltonian identities and native coefficient bounds are supplied by the scientific sources. Two properties of one code can now be compared without substituting gate faults for the known-product-unitary readout channel.
+
+## 13. Why minimum gate order forces readout loss
+
+The [joint theorem](../science/gate_readout_tradeoff.md#2-joint-theorem) assumes odd detection distance $d\ge3$, a nonscalar protected logical generator, and protection through weight $t$ with $t\ge1$ and $2t+1\le d$. It permits the scalar error-sector shifts above. Its conclusion is
+
+```math
+\ell=d+t\quad\Longrightarrow\quad r_S=d+1.
+```
+
+The gate theorem supplies the general interaction bound $\ell\ge d+t$. Equality has a consequence beyond resource use: it forces an even logical circuit and therefore a weak-rotation readout witness.
+
+First remove physically fixed qubits. A weight-one stabilizer fixes its site in a Pauli eigenstate. Local Clifford changes and permutations put all such sites into a product state $|a\rangle$, leaving a reduced code with the same distance and $r_S$. In any equal-support pair, the fixed-site factors agree and cancel from $gL$, so they cannot change the readout invariant. Taking the partial matrix element $\langle a|H|a\rangle$ preserves the logical generator and transparency on the retained sites and cannot increase interaction order. The reduced code has no weight-one stabilizer.
+
+Group the reduced Hamiltonian by physical Pauli weight and remove scalar parts after logical compression. If $A_w$ is its traceless logical component at weight $w$ and $A=[h_L]_0\ne0$, the gate's operator moment identities read
+
+```math
+A_w=0\quad(w<d),\qquad
+\sum_wA_w=A,\qquad
+\sum_ww^jA_w=0\quad(1\le j\le t).
+```
+
+At order $d+t$, only the $t+1$ weights $d,\ldots,d+t$ can contribute. If at most $t$ of those components were nonzero, the polynomial $q(x)=\prod_{w\in\mathcal W}(1-x/w)$ over their weights would have degree at most $t$ and constant term one. The moments would give $\sum_wq(w)A_w=A$, although every term on the left vanishes. Therefore every allowed weight contributes, including $d+1$. A nonzero traceless compression at that weight requires a nontrivial logical Pauli $E$ of weight $d+1$.
+
+Distance and the removal of weight-one stabilizers make $E$ a logical circuit. A proper stabilizer subword would remove at least two sites and leave a logical below distance. A proper nontrivial logical subword already needs at least $d$ sites and would leave a weight-one normalizer, which the reduced code excludes. No proper normalizer subword remains. Since $d+1$ is even, the circuit theorem gives $r_S\le d+1$; parity and distance give the reverse bound.
+
+Consequently,
+
+```math
+r_S>d+1\quad\Longrightarrow\quad\ell\ge d+t+1,
+```
+
+including the case $r_S=\infty$. This is a necessary resource constraint. It does not construct a gate at the next order. For even $d$, the readout theorem already gives $r_S=d$ independently of any Hamiltonian. The complete joint account also resolves which logical components of a protected generator admit witnesses; different components can require different product rotations.
+
+## 14. Protected control with the original readout unchanged
+
+### Exact protected axes on the concatenated family
+
+The family $Q_m=[[5^m,1,3^m]]$ from §11 has only odd-weight nontrivial logical representatives. Writing $d=3^m$, this removes alternating interaction weights from the moment problem and strengthens the necessary gate order to $d+2t$. Exact constructions attain the following one-axis resources:
+
+| Protected error weight $t$ | Depth | Minimum order $\ell$ | Minimum $J/\omega$ at that order |
+|---:|---|---:|---|
+| $1$ | $m\ge1$ | $d+2$ | $J_1(d)=d+1$ |
+| $2$ | $m\ge2$ | $d+4$ | $J_2(d)=(4d^2+21d+8)/8$ |
+| $3$ | $m\ge2$ | $d+6$ | $J_3(d)=(4d^3+51d^2+170d+24)/24$ |
+
+The sources prove the strict identities and matching resource lower bounds in the declared native model: [one-error gates](../science/minimum_readout_safe_gates.md), [two-error gates](../science/growing_two_error_gates.md), and [three-error gates](../science/growing_three_error_gates.md). The budget optimum is at the specified minimum order. It does not exclude a smaller budget if higher-order interactions are allowed.
+
+A useful common mechanism is the nested hierarchy of strict gates $L_{a,\beta}$ for a logical axis $\beta$ and protection orders $a=0,1,2,3$. Put $L_{-1,\beta}=0$ and
+
+```math
+\Delta_{a,\beta}=L_{a,\beta}-L_{a-1,\beta}.
+```
+
+On an error image lighter than $a$, the two gates have identical action. Their difference therefore obeys
+
+```math
+\Delta_{a,\beta}EV=0
+\qquad\text{if }\mathrm{wt}(E)<a.
+```
+
+This is a full error-image identity, rather than a scalar expectation-value condition. It makes high total-degree terms vanish when the total physical error weight is small. The three-error construction lifts the complete hierarchy by tensoring increments whose index sum is at most three. The proof tracks coefficient signs to attain the coupling bound after collecting native words; arbitrary independently chosen optimal gates need not supply that sign compatibility.
+
+### Logical entanglement on fixed product blocks
+
+Take $M$ unchanged $Q_m$ blocks with $m\ge2$. A pure logical Pauli string $P$ of logical weight $p\ge1$ has minimum physical representative weight
+
+```math
+D=pd.
+```
+
+Every active block must carry a nontrivial logical representative of weight at least $d$, and tensor products of minimum representatives attain the bound. The ordinary distance of the product code remains $d$, since a logical can act on only one block. Here $D$ denotes a target-coset weight; earlier sections used $D=2^k$ for logical Hilbert-space dimension. The target-specific weight must not be substituted for the code distance.
+
+For the active encoded blocks $A(P)$, define
+
+```math
+H_P=
+\sum_{\substack{a_i\ge0\ (i\in A(P))\\\sum_i a_i\le3}}
+\bigotimes_{i\in A(P)}\Delta_{a_i,P_i},
+```
+
+with identity factors on inactive encoded blocks. The full tensor product of the $L_{3,P_i}$ gates has the desired logical action. An omitted term has $\sum_i a_i>3$, whereas every protected physical error has total weight at most three. At least one factor then has $a_i>\mathrm{wt}(E_i)$ and vanishes. Truncation therefore preserves the full strict identity $H_PEV=EVP$ for every protected error, including entangled logical inputs.
+
+Each retained term has order at most $pd+2\sum_i a_i\le D+6$. Compatible signs make its native budget exactly $J_3(D)$. The [target-coset moment lower bound](../science/protected_entangling_gates.md#4-exact-coupling-lower-bound-at-that-order) permits arbitrary physical Hamiltonians, including other logical cosets and scalar sector shifts, and proves
+
+```math
+h_L=\Omega P+cI,\quad\Omega\ne0:
+\qquad\ell_{\min}=D+6,\qquad
+J_{\min}(\ell=D+6)=|\Omega|J_3(D).
+```
+
+For $m=2$ and $P=ZZ$, two blocks form a $[[50,2,9]]$ code. The target minimum is $D=18$, the optimal order is $24$, and $J/\omega=1789$. The logical unitary $e^{-i\pi Z_L\otimes Z_L/4}$ sends $|++\rangle_L$ to a maximally entangled state. Together with the six local logical Pauli directions, this generator yields all fifteen nonidentity two-qubit Pauli directions under commutators, giving $\mathfrak{su}(4)$ control. Protection of a time-dependent combination requires the strict identity at every instant, as in §12.
+
+Every stabilizer still has an even-weight restriction in every encoded block. Every nontrivial product-code logical has an odd-weight restriction in at least one block. Hence their supports cannot match and $r_S=\infty$, even when the target $ZZ$ string has even global weight. A protected logical gate preserves this codespace and its original checks. The physical CNOT in §11 instead changed the code and checks, which is why the two entangling operations have different consequences for the readout invariant.
+
+### Certificates, native resources and operational boundaries
+
+The finite 50-qubit construction has eighteen ordered class pairs, but its dense expansion has 41,032,000,000 distinct native Pauli words. The exact verifier covers all 540,376 physical Pauli errors through weight three using complete response profiles; it does not enumerate that dense interaction list. Compact class descriptions, native term count, coefficient bit length and many-body interaction synthesis are separate resources. The [construction and finite certificate](../science/protected_entangling_gates.md#5-the-first-protected-entangler) state each count and its verification scope.
+
+The pure-string formula is a target-specific optimum. It does not give an optimal weighted sum for an arbitrary mixture of logical Pauli terms at one common interaction cap: components of lower target weight may use the additional allowed locality. The [target-specific scope statement](../science/protected_entangling_gates.md#4-exact-coupling-lower-bound-at-that-order) retains this distinction between axis constructions and a broader optimization problem.
+
+These constructions establish coexistence of exact protected control and $r_S=\infty$ on the same fixed code. The gate statements use their protected-fault and ideal-recovery assumptions. The readout theorem separately uses each specified known product unitary, full ideal original-syndrome measurement and informed post-measurement recovery. They do not establish a joint noisy gate/readout threshold, noisy extraction tolerance, efficient recovery or geometric hardware locality. The native Hamiltonians must satisfy the operator identity during evolution; a large exact interaction sum does not justify replacing it by an arbitrary sequence of native pulses while faults can occur.
+
+## 15. Assemble the complete statement
+
+The main readout chain is now explicit: the prescribed measurement induces logical effects; their scalarity decides exact reversibility; product conjugation restricts nonscalar terms to exact-support orbits; the minimum even circuit identifies the unavoidable weak-rotation exponent; and one physical CNOT separates this property from ordinary code parameters at arbitrarily large distance.
+
+The joint consequence uses that circuit theorem with the gate's operator moments. At odd distance, saturation of the general protected-gate order forces the smallest finite readout distance. The concatenated five-qubit family instead has $r_S=\infty$ and attains its stronger family-specific orders for one, two and three protected errors. Tensor increments then produce optimal pure-string gates, including logical entanglers, while keeping the code and its original syndrome measurement fixed.
+
+The [map's final synthesis](MILESTONES.md#m30-the-complete-scientific-account) and [physical interpretation](../science/interpretation.md) retain the operational boundaries. In the readout theorem, recovery knows the specified product unitary and acts only after the fixed ideal full measurement. The asymptotic theorem fixes the code before taking $\theta\to0$; its constants can depend on that code. The same-parameter family encodes two logical qubits and supplies exact values of $r$, without a constant-rate or uniform-threshold claim. Gate coexistence retains the independent error-transparent Hamiltonian model.
+
+The single anchor supplies the stabilizer language. Established research supplies the outcome-assisted recovery optimum and even-repetition mechanism. The scientific pages prove the support classification, circuit and exponent consequences, equal-parameter family, and shared gate-resource and coexistence results. [Related work](../references/RELATED_WORK.md) records the attribution boundaries; the [learning route](README.md) points directly to the relevant explanations and proofs.

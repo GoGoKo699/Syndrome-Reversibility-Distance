@@ -24,10 +24,10 @@ Use the [fixed-code model](https://github.com/GoGoKo699/Error-Transparent-Locali
 
 ```math
 HEV=EV(h_L+c_E I)
-\qquad\text{for every tensor Pauli }E\text{ with }\operatorname{wt}(E)\le3,
+\qquad\text{for every tensor Pauli }E\text{ with }\mathrm{wt}(E)\le3,
 ```
 
-with consistent real sector shifts $c_E$. The explicit Hamiltonians below satisfy the stronger equations with every $c_E=0$. Let $\ell$ be the largest nonzero native Pauli weight in $H$, and let $J$ be the sum of absolute nonidentity bare Hermitian Pauli coefficients. Write $A=[h_L]_0$ for the traceless logical generator and $\omega=\|A\|_\infty$ for its half-splitting.
+with consistent real sector shifts $c_E$. The explicit Hamiltonians below satisfy the stronger equations with every $c_E=0$. Let $\ell$ be the largest nonzero native Pauli weight in $H$, and let $J$ be the sum of absolute nonidentity bare Hermitian Pauli coefficients. Write $`A=[h_L]_0`$ for the traceless logical generator and $`\omega=\lVert A\rVert_\infty`$ for its half-splitting.
 
 The [odd-weight obstruction for this code family](minimum_readout_safe_gates.md#6-scope-and-verification) gives $\ell\ge d+2t$. Here $d=9$ and $t=3$, so
 
@@ -83,7 +83,7 @@ H_\alpha=
 \tag{T1}
 ```
 
-The seven signed masses sum to one. Every signed atom $P_Q$ belongs to the same positive logical-$\alpha$ coset, so for every physical Pauli $E$,
+The seven signed masses sum to one. Every signed atom $P_Q$ belongs to the same positive logical $\alpha$ coset, so for every physical Pauli $E$,
 
 ```math
 P_QEV=\chi(E,Q)EV\alpha,
@@ -129,7 +129,7 @@ It follows that
 
 ```math
 H_\alpha EV=EV\alpha
-\qquad(\operatorname{wt}(E)\le3).
+\qquad(\mathrm{wt}(E)\le3).
 \tag{T2}
 ```
 
@@ -217,7 +217,7 @@ This integer matrix has determinant 2,949,120. Its unique solution is
 -\frac{1485}{32},-\frac{675}{32},\frac{675}{32},-\frac32\right)A.
 ```
 
-Let $J_j$ be the absolute bare coefficient sum of all nontrivial logical words in pattern $j$. Each compressed nontrivial logical Pauli has norm one, so $J_j\ge\|C_j\|_\infty$. Other native terms only add nonnegative budget. Hence every allowed $H$ satisfies
+Let $J_j$ be the absolute bare coefficient sum of all nontrivial logical words in pattern $j$. Each compressed nontrivial logical Pauli has norm one, so $J_j\ge\lVert C_j\rVert_\infty$. Other native terms only add nonnegative budget. Hence every allowed $H$ satisfies
 
 ```math
 \boxed{J\ge\sum_j\|C_j\|_\infty
@@ -251,7 +251,7 @@ where $a_j$ is the corresponding forced mass from (T3). Stabilizer, detectable a
 J\ge\frac{2867}{8}\sum_\beta|\Omega_\beta|.
 ```
 
-Conversely, $H=\sum_\beta\Omega_\beta H_\beta+cI$ is strictly transparent by (T2). The three axes use disjoint nontrivial logical cosets, so its native absolute budget is exactly the right-hand side. This proves the stated all-direction optimum at order fifteen. Its basis dependence is physical: the budget is defined in the prescribed native tensor-Pauli basis, whose normalizer cosets select this logical frame. In terms of half-splitting $\omega=\sqrt{\Omega_X^2+\Omega_Y^2+\Omega_Z^2}$, the ratio is $J_{\min}/\omega=(2867/8)\|\Omega\|_1/\|\Omega\|_2$. The axis value in (T4) is the case with one nonzero component.
+Conversely, $H=\sum_\beta\Omega_\beta H_\beta+cI$ is strictly transparent by (T2). The three axes use disjoint nontrivial logical cosets, so its native absolute budget is exactly the right-hand side. This proves the stated all-direction optimum at order fifteen. Its basis dependence is physical: the budget is defined in the prescribed native tensor-Pauli basis, whose normalizer cosets select this logical frame. In terms of half-splitting $\omega=\sqrt{\Omega_X^2+\Omega_Y^2+\Omega_Z^2}$, the ratio is $J_{\min}/\omega=(2867/8)\lVert \Omega\rVert_1/\lVert \Omega\rVert_2$. The axis value in (T4) is the case with one nonzero component.
 
 ### Why the outer weight-five branch is unavoidable
 
@@ -281,7 +281,7 @@ The [exact verifier](../verification/verify_three_error_gates.py) reconstructs t
 1+3(25)+9\binom{25}{2}+27\binom{25}{3}=64,876
 ```
 
-physical Pauli errors, separately for $X,Y,Z$. It also checks the pattern counts, moment matrix, forced masses and exact dual certificate. Tensor-factor multiplication and signed logical replacement establish the action of every class atom. The verifier uses this factorization rather than multiplying a $2^{25}$-dimensional matrix or claiming a separate full native-word expansion for every error. All certificate arithmetic is integer or rational; no numerical optimization is needed.
+physical Pauli errors, separately for $X,Y,Z$. It also checks the pattern counts, moment matrix, forced masses and exact dual certificate. Tensor-factor multiplication and signed logical replacement establish the action of every class atom. The verifier uses this factorization rather than multiplying a matrix of dimension $2^{25}$ or claiming a separate full native-word expansion for every error. All certificate arithmetic is integer or rational; no numerical optimization is needed.
 
 The code itself has not changed. Its $r_S=\infty$ property still concerns each specified known product unitary followed by full ideal original-syndrome measurement and an informed recovery, as proved for the [underlying concatenated family](minimum_readout_safe_gates.md). The protected-gate guarantee concerns errors through weight three during the declared Hamiltonian evolution with ideal final recovery. These remain distinct noise models; their coexistence does not supply a joint fault-tolerance threshold.
 

@@ -90,7 +90,7 @@ For a signed seed word $Q$, write its global axis-count vector as
 
 ```math
 c(Q)=(c_X(Q),c_Y(Q),c_Z(Q)),
-\qquad c_X+c_Y+c_Z=\operatorname{wt}(Q),
+\qquad c_X+c_Y+c_Z=\mathrm{wt}(Q),
 ```
 
 and define its orbit average
@@ -178,7 +178,7 @@ Thus all 76 no-error/single-Pauli intertwining identities hold exactly. Because 
 
 The two weight classes in this example are not individually isotropic. Their signed global count vectors cancel in the displayed combination, which is sufficient by (S5). The recursive class invariant (S6) is a device for producing feasible orbit candidates; it need not survive the final joint reduction.
 
-Uniformly cycling physical labels $X\mapsto Y\mapsto Z\mapsto X$ preserves the signed five-qubit stabilizer and its concatenation. It maps this logical-$Z$ example into logical-$X$ and logical-$Y$ examples with the same resources. The finite verification checks these signs and identities for each axis independently. The recursive four-orbit algorithm need not choose these particular three orbits; its worst-case bound is $4n$, or 100 terms at $n=25$.
+Uniformly cycling physical labels $X\mapsto Y\mapsto Z\mapsto X$ preserves the signed five-qubit stabilizer and its concatenation. It maps this logical $Z$ example into logical $X$ and logical $Y$ examples with the same resources. The finite verification checks these signs and identities for each axis independently. The recursive four-orbit algorithm need not choose these particular three orbits; its worst-case bound is $4n$, or 100 terms at $n=25$.
 
 ## 6. Scope and verification
 

@@ -120,7 +120,7 @@ F_{\mathrm{opt}}(U)
 
 A syndrome-dependent polar recovery attains this value and has logical Kraus operators $A_s=\sqrt{M_s}$.
 
-**Proof.** Take a polar decomposition $K_s=Q_sA_s$. Since $K_s$ is square, its polar partial isometry can be extended to a unitary $Q_s$ on the whole $D$-dimensional space. This extension is arbitrary on the kernel of $A_s$ and does not change $K_s=Q_sA_s$. When $K_s=0$, any unitary extension is suitable.
+**Proof.** Take a polar decomposition $K_s=Q_sA_s$. Since $K_s$ is square, its polar partial isometry can be extended to a unitary $Q_s$ on the whole space of dimension $D$. This extension is arbitrary on the kernel of $A_s$ and does not change $K_s=Q_sA_s$. When $K_s=0$, any unitary extension is suitable.
 
 Applying $Q_s^\dagger$ after outcome $s$ produces the channel
 

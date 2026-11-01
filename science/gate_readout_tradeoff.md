@@ -26,7 +26,7 @@ Independently, the readout experiment applies a specified product unitary, measu
 
 ```math
 r_S=\min_{\substack{g\in S,\ L\in N\setminus S\\
-\operatorname{supp}(g)=\operatorname{supp}(L)}}\operatorname{wt}(gL),
+\mathrm{supp}(g)=\mathrm{supp}(L)}}\mathrm{wt}(gL),
 \qquad \min\varnothing=\infty.
 ```
 
@@ -70,7 +70,7 @@ H_{\mathrm{red}}=\langle a|H|a\rangle.
 
 Each Pauli term either vanishes or becomes a term of no greater weight. Taking $\langle a|$ in the transparency identity for any error on the retained sites proves full transparency of $H_{\mathrm{red}}$ with the same $h_L$ and scalar shifts. Thus the reduction preserves the relevant hypotheses and has interaction order at most $d+t$.
 
-### Step 2: minimum interaction order forces a weight-$(d+1)$ logical
+### Step 2: minimum interaction order forces a logical operator of weight $(d+1)$
 
 Write the reduced Hamiltonian as $\sum_w H_w$, and remove scalar parts after compression:
 
@@ -99,7 +99,7 @@ In particular, $A_{d+1}\ne0$. A physical Pauli outside $N$ compresses to zero, a
 
 ### Step 3: that logical operator is an even circuit
 
-Suppose $E$ has a proper nonempty normalizer subword $F$. If $F$ is a stabilizer, then $\operatorname{wt}(F)\ge2$, because fixed qubits were removed. The complementary subword $EF$ would be a nontrivial logical Pauli of weight at most $d-1$, contradicting distance.
+Suppose $E$ has a proper nonempty normalizer subword $F$. If $F$ is a stabilizer, then $\mathrm{wt}(F)\ge2$, because fixed qubits were removed. The complementary subword $EF$ would be a nontrivial logical Pauli of weight at most $d-1$, contradicting distance.
 
 If $F$ is a nontrivial logical, its weight is at least $d$. Since it is proper in a word of weight $d+1$, its complementary subword has weight one and lies in $N$. Distance excludes a weight-one logical, while the reduction excludes a weight-one stabilizer. This is again impossible.
 
@@ -114,7 +114,7 @@ A_{d+1}=\alpha_1 A,\qquad
 \alpha_1=-\frac{d(d+1)\cdots(d+t)}{(d+1)(t-1)!}\ne0.
 ```
 
-Fix logical Pauli generators from $N/S$ and their resulting operator basis. Every nonzero Pauli component of $A$ therefore has a weight-$(d+1)$ representative in the reduced Hamiltonian. Each such representative is an even circuit by Step 3 and extends by identity to the original code. Thus every logical Pauli component present in the protected generator admits its own readout-loss witness. Different components can require different product rotations; this does not assert that one rotation measures all components or that every logical axis admits a protected gate.
+Fix logical Pauli generators from $N/S$ and their resulting operator basis. Every nonzero Pauli component of $A$ therefore has a representative of weight $(d+1)$ in the reduced Hamiltonian. Each such representative is an even circuit by Step 3 and extends by identity to the original code. Thus every logical Pauli component present in the protected generator admits its own readout-loss witness. Different components can require different product rotations; this does not assert that one rotation measures all components or that every logical axis admits a protected gate.
 
 ## 3. The distance-three comparison
 
@@ -126,7 +126,7 @@ g=X_{1246}X_{23458}=X_{13568},\qquad
 L=gE=Y_1Y_3X_5Y_6Y_8.
 ```
 
-Here $g$ is a stabilizer, $E$ is a representative of logical $Z$, and $L$ is a nontrivial logical Pauli. The displayed product has positive phase because four local $XZ=-iY$ factors occur. The supports of $g$ and $L$ are both $\{1,3,5,6,8\}$, while $\operatorname{wt}(gL)=4$. Thus this is a direct support-collision witness for $r_S=4$. Checking all fourteen proper nonempty subwords of $E$ also verifies the circuit condition.
+Here $g$ is a stabilizer, $E$ is a representative of logical $Z$, and $L$ is a nontrivial logical Pauli. The displayed product has positive phase because four local $XZ=-iY$ factors occur. The supports of $g$ and $L$ are both $\{1,3,5,6,8\}$, while $\mathrm{wt}(gL)=4$. Thus this is a direct support-collision witness for $r_S=4$. Checking all fourteen proper nonempty subwords of $E$ also verifies the circuit condition.
 
 | Code and protected gate | $\ell$ | $J/\omega$ | $r_S$ |
 |---|---:|---:|---:|
@@ -162,4 +162,8 @@ Append a fixed $|0\rangle$ qubit to the five-qubit code. Multiplying a weight-th
 
 [verify_gate_readout_tradeoff.py](../verification/verify_gate_readout_tradeoff.py) independently enumerates the complete stabilizer and centralizer of the nine-qubit, five-qubit, and fixed-ancilla codes. It computes $d$ and $r_S$ from their definitions and checks the explicit witness, its logical class, and the padding counterexample. The [verification guide](../verification/README.md) links the committed exact output and the existing full-Hamiltonian transparency checks. Identical copies of the standalone comparison script are included in both projects. Finite enumeration supports these examples; the all-code theorem is the proof above.
 
-The [concatenated equality family](minimum_readout_safe_gates.md) attains the stronger bound for $t=1$ at all distances $d=3^m$, with each logical Pauli axis available and optimal coupling budget $J/\omega=d+1$. The [two-error construction](two_error_gates.md) also attains $\ell=13$ on the $[[25,1,9]]$ code, with exact coupling optimum $J/\omega=521/8$. The [growing two-error family](growing_two_error_gates.md) attains $\ell=d+4$ and the exact coupling optimum $(4d^2+21d+8)\omega/8$ at every depth $m\ge2$. Open directions include protected error weight at least three (the same family obeys $\ell\ge d+2t$), other code families, and an explicitly specified experiment combining gate faults with subsequent coherent rotations and readout. The present theorem does not combine those noise processes, constrain arbitrary circuits or changing encodings, or establish a decoder-efficiency or hardware advantage. Its readout asymptotics apply to each fixed code, with constants allowed to depend on the code.
+The concatenated five-qubit family $Q_m=[[5^m,1,3^m]]$ retains $r_S=\infty$ and admits each logical Pauli axis. Its [single-error gates](minimum_readout_safe_gates.md) attain the stronger bound $\ell=d+2$ with optimal budget $J/\omega=d+1$. For $m\ge2$, the [two-error family](growing_two_error_gates.md) attains $\ell=d+4$ and $J/\omega=(4d^2+21d+8)/8$, while the [three-error hierarchy](growing_three_error_gates.md) attains $\ell=d+6$ and $J/\omega=J_3(d)=(4d^3+51d^2+170d+24)/24$. These budgets are exact optima at their stated minimum orders. The [twenty-five-qubit two-error instance](two_error_gates.md) has $\ell=13$ and $J/\omega=521/8$. Thus the family bound $\ell\ge d+2t$ is attained through $t=3$.
+
+The [pure logical-string theorem](protected_entangling_gates.md) gives a further coexistence statement on unchanged product codes $Q_m^{\otimes M}$, with $m\ge2$. A specified nonidentity logical Pauli string $P$ of logical weight $p$ has target coset minimum $D=pd$, while ordinary distance remains $d$. For generator $\Omega P+cI$ with $\Omega\ne0$, its three-error optima are $\ell=D+6$ and $J=|\Omega|J_3(D)$ at that order. These complete protected generators supply encoded entanglers and universal control without changing the code or its original syndrome measurement. This pure-string law does not give a common weighted-sum optimum for arbitrary mixed logical Hamiltonians at one locality cap.
+
+Remaining questions include exact resource optima beyond three protected errors, other code families, and an explicitly specified experiment combining gate faults with subsequent coherent rotations and readout. The present theorem does not combine those noise processes, constrain arbitrary circuits or changing encodings, or establish a decoder-efficiency or hardware advantage. Encoded control uses complete protected Hamiltonians and does not provide a physical many-body synthesis or a joint noisy threshold. The readout experiment still assumes a known product unitary, full ideal original-syndrome measurement, and recovery informed of that unitary. Its asymptotics apply to each fixed code, with constants allowed to depend on the code.
