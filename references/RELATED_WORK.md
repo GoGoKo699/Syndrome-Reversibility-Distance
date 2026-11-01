@@ -93,3 +93,11 @@ The cited results support the recovery framework, parity examples, coherent-erro
 ## Exact sparse two-error synthesis
 
 The [sparse synthesis account](../science/sparse_two_error_synthesis.md) combines standard positive-support reduction and pairwise-independent probability coupling with the signed concatenated-code construction. Rational torus polygon areas implement unequal pairwise marginals without a denominator-sized grid. The supplied positive component certificates, recursive orbit compiler and exact 125-qubit witness are the derived construction recorded here. Numerical optimization selects the finite witness's support; standard-library rational and integer checks establish its coefficients, signed logical action and complete protected-error responses. This is not a claim of hardware feasibility or exhaustive literature priority.
+
+## Three-error protected gates
+
+The [three-error account](../science/three_error_gates.md) uses the inherited five-qubit stabilizer code and error-transparent Hamiltonian framework. The supplied seven-class construction, exhaustive order-fifteen block-pattern classification, cubic block-moment coupling certificate and forced outer weight-five branch extend the fixed-code comparison to all physical Pauli errors through weight three. The exact budget for arbitrary logical directions follows by partitioning the prescribed native Pauli basis into its three nontrivial logical cosets. These are code-specific resource statements; they do not establish an experimental implementation or an unrestricted literature-priority claim.
+
+## Growing three-error lifting
+
+The [all-depth account](../science/growing_three_error_gates.md) applies a total-degree truncated tensor combination to nested strict protected-gate hierarchies. The zero-factor argument establishes the full error-image identity after concatenation; cubic block moments and the inherited Pauli-coset structure give the exact native coupling optimum for this code family. The classical algebraic combination principle, stabilizer code and concatenation are inherited ingredients. The supplied protected-gate lifting, resource certificate and three-error equality family are the results recorded here; no general literature-priority claim is made.

@@ -1,0 +1,300 @@
+{
+  "axes": [
+    {
+      "complete_logical_block_configurations": 166,
+      "distinct_response_profiles": 7,
+      "full_code_configuration_sign_spot_checks": 166,
+      "local_character_signatures_evaluated": 116,
+      "logical_axis": "X",
+      "native_expansion_enumerated": false,
+      "native_terms_specified_by_disjoint_factor_classes": 1480960,
+      "physical_error_identities_checked": 64876,
+      "profile_counts": {
+        "double_in_one_block_equivalent": 1350,
+        "identity": 1,
+        "normalizer_triple_in_one_block": 150,
+        "single_equivalent": 375,
+        "three_distinct_blocks": 33750,
+        "two_distinct_blocks": 2250,
+        "two_plus_one_blocks": 27000
+      },
+      "same_bottom_block_triple_profile_counts": {
+        "double_in_one_block_equivalent": 900,
+        "normalizer_triple_in_one_block": 150,
+        "single_equivalent": 300
+      }
+    },
+    {
+      "complete_logical_block_configurations": 166,
+      "distinct_response_profiles": 7,
+      "full_code_configuration_sign_spot_checks": 166,
+      "local_character_signatures_evaluated": 116,
+      "logical_axis": "Y",
+      "native_expansion_enumerated": false,
+      "native_terms_specified_by_disjoint_factor_classes": 1480960,
+      "physical_error_identities_checked": 64876,
+      "profile_counts": {
+        "double_in_one_block_equivalent": 1350,
+        "identity": 1,
+        "normalizer_triple_in_one_block": 150,
+        "single_equivalent": 375,
+        "three_distinct_blocks": 33750,
+        "two_distinct_blocks": 2250,
+        "two_plus_one_blocks": 27000
+      },
+      "same_bottom_block_triple_profile_counts": {
+        "double_in_one_block_equivalent": 900,
+        "normalizer_triple_in_one_block": 150,
+        "single_equivalent": 300
+      }
+    },
+    {
+      "complete_logical_block_configurations": 166,
+      "distinct_response_profiles": 7,
+      "full_code_configuration_sign_spot_checks": 166,
+      "local_character_signatures_evaluated": 116,
+      "logical_axis": "Z",
+      "native_expansion_enumerated": false,
+      "native_terms_specified_by_disjoint_factor_classes": 1480960,
+      "physical_error_identities_checked": 64876,
+      "profile_counts": {
+        "double_in_one_block_equivalent": 1350,
+        "identity": 1,
+        "normalizer_triple_in_one_block": 150,
+        "single_equivalent": 375,
+        "three_distinct_blocks": 33750,
+        "two_distinct_blocks": 2250,
+        "two_plus_one_blocks": 27000
+      },
+      "same_bottom_block_triple_profile_counts": {
+        "double_in_one_block_equivalent": 900,
+        "normalizer_triple_in_one_block": 150,
+        "single_equivalent": 300
+      }
+    }
+  ],
+  "checks_passed": true,
+  "complete_inner_normalizer_size": 64,
+  "d": 9,
+  "fixed_frame_mixed_axis_budget": {
+    "bloch_frame_invariance_claimed": false,
+    "canonical_logical_frame": "transversal X^25,Y^25,Z^25",
+    "error_identity_extension": "linearity of the three separately verified full error-image identities",
+    "exact_budget_formula": "(2867/8)*(abs(Omega_X)+abs(Omega_Y)+abs(Omega_Z))",
+    "example_axis_coefficients": [
+      "3/5",
+      "0",
+      "4/5"
+    ],
+    "example_logical_half_splitting_squared": "1",
+    "example_native_budget": "20069/40",
+    "normalizer_cosets_disjoint": true
+  },
+  "inner_error_character_tables_checked": 376,
+  "interaction_order": 15,
+  "literal_signed_base_group_size": 16,
+  "moment_certificate": {
+    "bare_coefficient_convention": "relative coefficient times signed logical-coset sign",
+    "block_moment_improvement": "675/8",
+    "dual_column_values": [
+      1,
+      -1,
+      1,
+      -1,
+      -1,
+      1,
+      -1
+    ],
+    "dual_row": [
+      "2867/8",
+      "-2375/24",
+      "7",
+      "-1/6",
+      "47/8",
+      "-1/8",
+      "-1/2"
+    ],
+    "moment_columns": [
+      [
+        1,
+        9,
+        81,
+        729,
+        27,
+        243,
+        81
+      ],
+      [
+        1,
+        11,
+        121,
+        1331,
+        43,
+        473,
+        179
+      ],
+      [
+        1,
+        13,
+        169,
+        2197,
+        59,
+        767,
+        277
+      ],
+      [
+        1,
+        15,
+        225,
+        3375,
+        75,
+        1125,
+        375
+      ],
+      [
+        1,
+        13,
+        169,
+        2197,
+        43,
+        559,
+        145
+      ],
+      [
+        1,
+        15,
+        225,
+        3375,
+        59,
+        885,
+        243
+      ],
+      [
+        1,
+        15,
+        225,
+        3375,
+        45,
+        675,
+        135
+      ]
+    ],
+    "moment_matrix_determinant": 2949120,
+    "moment_rows": [
+      "1",
+      "W",
+      "W^2",
+      "W^3",
+      "R2",
+      "W*R2",
+      "R3"
+    ],
+    "native_coefficient_common_denominator": 3200000,
+    "native_coefficient_denominator_bits": 22,
+    "native_counts_by_class": {
+      "A0": 10000,
+      "A1": 18000,
+      "A2": 10800,
+      "A3": 2160,
+      "B5": 600000,
+      "F0": 300000,
+      "F1": 540000
+    },
+    "optimal_native_budget_per_logical_half_splitting": "2867/8",
+    "relative_native_coefficients_by_class": {
+      "A0": "143/32000",
+      "A1": "-39/6400",
+      "A2": "27/2560",
+      "A3": "-11/512",
+      "B5": "-1/400000",
+      "F0": "-9/128000",
+      "F1": "1/25600"
+    },
+    "scalar_shell_relaxation": "274",
+    "signed_class_masses": {
+      "A0": "715/16",
+      "A1": "-1755/16",
+      "A2": "3645/32",
+      "A3": "-1485/32",
+      "B5": "-3/2",
+      "F0": "-675/32",
+      "F1": "675/32"
+    }
+  },
+  "n": 25,
+  "physical_error_pattern_counts": {
+    "()": 1,
+    "(1, 1)": 2250,
+    "(1, 1, 1)": 33750,
+    "(1, 2)": 27000,
+    "(1,)": 75,
+    "(2,)": 450,
+    "(3,)": 1350
+  },
+  "profile_response_vectors": {
+    "double_in_one_block_equivalent": [
+      "9/25",
+      "89/225",
+      "97/225",
+      "7/15",
+      "11/75",
+      "41/225",
+      "-1/15"
+    ],
+    "identity": [
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1",
+      "1"
+    ],
+    "normalizer_triple_in_one_block": [
+      "1/5",
+      "1/5",
+      "1/5",
+      "1/5",
+      "1/5",
+      "1/5",
+      "-1/3"
+    ],
+    "single_equivalent": [
+      "13/25",
+      "31/75",
+      "23/75",
+      "1/5",
+      "23/75",
+      "1/5",
+      "1/5"
+    ],
+    "three_distinct_blocks": [
+      "53/625",
+      "-1/75",
+      "-11/225",
+      "-1/27",
+      "1/125",
+      "-59/5625",
+      "1/125"
+    ],
+    "two_distinct_blocks": [
+      "29/125",
+      "13/125",
+      "1/225",
+      "-1/15",
+      "23/375",
+      "-11/1125",
+      "1/25"
+    ],
+    "two_plus_one_blocks": [
+      "17/125",
+      "121/1125",
+      "47/675",
+      "1/45",
+      "1/125",
+      "-1/675",
+      "-1/75"
+    ]
+  },
+  "protected_error_weight": 3
+}

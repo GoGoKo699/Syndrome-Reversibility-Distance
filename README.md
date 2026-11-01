@@ -54,6 +54,10 @@ The [growing two-error family](science/growing_two_error_gates.md) attains the c
 
 The [exact sparse synthesis](science/sparse_two_error_synthesis.md) supplies positive sparse component classes, a rational pairwise coupling method, and a general reference compiler. An explicit 125-qubit gate uses 69,125 native Pauli terms per axis at interaction order 31 and the optimal budget $J/\omega=3491/8$. Exact integer orbit equations cover every one of the 70,126 protected errors; all three expanded logical axes are checked. The native coefficients have a 1,458-bit common denominator, so term count and exact description size remain separate resources.
 
+The [three-error construction](science/three_error_gates.md) attains minimum interaction order $\ell=15$ on the $[[25,1,9]]$ code, with exact axis budget $J/\omega=2867/8$ and unchanged $r_S=\infty$. A complete seven-pattern block-moment certificate proves optimality for arbitrary allowed Hamiltonians. In the fixed canonical logical Pauli frame the exact all-direction budget is $(2867/8)\sum_\beta|\Omega_\beta|$. The explicit dense construction has 1,480,960 terms per axis and a 22-bit common coefficient denominator; all 64,876 protected errors are verified exactly on each axis.
+
+The [all-depth three-error theorem](science/growing_three_error_gates.md) extends these optima to every $m\ge2$: $\ell=d+6$ and $J/\omega=(4d^3+51d^2+170d+24)/24$, with $r_S=\infty$. A strict truncated-tensor lifting rule combines the zero- through three-error hierarchy and preserves the optimal native budget. At 125 qubits it gives order 33 and $J/\omega=40175/8$; eleven exact response profiles cover all 8,649,376 protected errors. The recursion specifies a dense Hamiltonian and does not assert efficient native expansion or physical synthesis.
+
 ## Read the science
 
 | Question | Authoritative account |
@@ -69,6 +73,8 @@ The [exact sparse synthesis](science/sparse_two_error_synthesis.md) supplies pos
 | Can the twenty-five-qubit code protect two physical errors during a gate? | [Two-error equality construction and coupling optimum](science/two_error_gates.md) |
 | Does the two-error optimum persist at growing distance? | [All-depth two-error family](science/growing_two_error_gates.md) |
 | Can the 125-qubit optimum be written explicitly? | [Exact sparse two-error synthesis](science/sparse_two_error_synthesis.md) |
+| Can the twenty-five-qubit code protect three physical errors? | [Three-error equality and coupling optimum](science/three_error_gates.md) |
+| Do these three-error optima persist at growing distance? | [Strict lifting and all-depth equality](science/growing_three_error_gates.md) |
 | Which ingredients are inherited, and how do nearby results compare? | [Related work](references/RELATED_WORK.md) and [bibliography](references/references.bib) |
 | How are the finite examples reproduced? | [Verification](verification/README.md) |
 

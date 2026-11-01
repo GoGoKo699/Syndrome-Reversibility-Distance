@@ -23,6 +23,8 @@ PROGRAMS = (
     "verify_two_error_gates.py",
     "verify_growing_two_error.py",
     "verify_two_error_synthesis.py",
+    "verify_three_error_gates.py",
+    "verify_growing_three_error.py",
 )
 
 
