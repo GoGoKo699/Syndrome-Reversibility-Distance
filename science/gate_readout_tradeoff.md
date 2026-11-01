@@ -70,7 +70,7 @@ H_{\mathrm{red}}=\langle a|H|a\rangle.
 
 Each Pauli term either vanishes or becomes a term of no greater weight. Taking $\langle a|$ in the transparency identity for any error on the retained sites proves full transparency of $H_{\mathrm{red}}$ with the same $h_L$ and scalar shifts. Thus the reduction preserves the relevant hypotheses and has interaction order at most $d+t$.
 
-### Step 2: minimum interaction order forces a weight-$(d+1)$ logical
+### Step 2: minimum interaction order forces a logical operator of weight $(d+1)$
 
 Write the reduced Hamiltonian as $\sum_w H_w$, and remove scalar parts after compression:
 
@@ -114,7 +114,7 @@ A_{d+1}=\alpha_1 A,\qquad
 \alpha_1=-\frac{d(d+1)\cdots(d+t)}{(d+1)(t-1)!}\ne0.
 ```
 
-Fix logical Pauli generators from $N/S$ and their resulting operator basis. Every nonzero Pauli component of $A$ therefore has a weight-$(d+1)$ representative in the reduced Hamiltonian. Each such representative is an even circuit by Step 3 and extends by identity to the original code. Thus every logical Pauli component present in the protected generator admits its own readout-loss witness. Different components can require different product rotations; this does not assert that one rotation measures all components or that every logical axis admits a protected gate.
+Fix logical Pauli generators from $N/S$ and their resulting operator basis. Every nonzero Pauli component of $A$ therefore has a representative of weight $(d+1)$ in the reduced Hamiltonian. Each such representative is an even circuit by Step 3 and extends by identity to the original code. Thus every logical Pauli component present in the protected generator admits its own readout-loss witness. Different components can require different product rotations; this does not assert that one rotation measures all components or that every logical axis admits a protected gate.
 
 ## 3. The distance-three comparison
 

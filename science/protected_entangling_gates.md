@@ -144,7 +144,7 @@ For the 50-qubit $ZZ$ target, this uses the target minimum $D=18$. Applying only
 
 Partition the physical qubits into bottom five-qubit blocks. Every physical Pauli with nonzero target compression is an inner normalizer on every such block. Its bottom weight is zero or four for an inner stabilizer and three or five for an inner nontrivial logical.
 
-After replacing each bottom word by its logical label, the induced word lies in the target $P$ coset of the product of the depth-$(m-1)$ codes. Its total induced weight is at least $q=pd/3=D/3$ and has the same parity as $q$. Since every nonidentity induced label costs at least three physical qubits, total physical order $D+6$ permits only induced weight $q$ or $q+2$. This reasoning allows arbitrary stabilizer factors on encoded blocks where the target is identity.
+After replacing each bottom word by its logical label, the induced word lies in the target $P$ coset of the product of the depth $(m-1)$ codes. Its total induced weight is at least $q=pd/3=D/3$ and has the same parity as $q$. Since every nonidentity induced label costs at least three physical qubits, total physical order $D+6$ permits only induced weight $q$ or $q+2$. This reasoning allows arbitrary stabilizer factors on encoded blocks where the target is identity.
 
 At induced weight $q$, weight-five promotions cost two and inactive weight-four stabilizers cost four. At induced weight $q+2$, every active bottom factor must have weight three and no additional factor can occur. Thus exactly the same seven global bottom-weight patterns arise as in the [single-block coupling proof](growing_three_error_gates.md#4-the-arbitrary-hamiltonian-lower-bound), with $d$ there replaced by $D$:
 
@@ -198,7 +198,7 @@ This theorem concerns one specified logical Pauli string. It does not assign a g
 
 ## 5. The first protected entangler
 
-At $m=2$ and $P=ZZ$, the [seven seed classes](three_error_gates.md) give a compact explicit description of the 50-qubit gate. Write $T_i\otimes T_j$ for the products of their normalized positive signed logical-$Z$ classes. The following table specifies all nonzero class-pair masses. An orientation count of two includes both $T_i\otimes T_j$ and $T_j\otimes T_i$, each with the listed mass.
+At $m=2$ and $P=ZZ$, the [seven seed classes](three_error_gates.md) give a compact explicit description of the 50-qubit gate. Write $T_i\otimes T_j$ for the products of their normalized positive signed logical $Z$ classes. The following table specifies all nonzero class-pair masses. An orientation count of two includes both $T_i\otimes T_j$ and $T_j\otimes T_i$, each with the listed mass.
 
 | Class pair | Mass per orientation | Orientations |
 |---|---:|---:|

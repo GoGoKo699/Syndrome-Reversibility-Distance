@@ -6,7 +6,7 @@ The operational order is the one in [Model and recovery](model.md): a known prod
 
 ## 1. The family separation
 
-Let $Q_t$ be the $t$-fold concatenated five-qubit code, with $t\geq 1$, and put
+Let $Q_t$ be the five-qubit code concatenated to depth $t$, with $t\geq 1$, and put
 
 ```math
 N_t=5^t,\qquad m_t=3^t.

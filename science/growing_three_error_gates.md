@@ -1,6 +1,6 @@
 # Three-error optima at every concatenation depth
 
-The depth-$m$ concatenated five-qubit code $Q_m$ has parameters $[[5^m,1,3^m]]$. For every $m\ge2$, each logical Pauli axis admits a strict Hamiltonian transparent to every physical Pauli error of weight at most three, with
+The depth $m$ concatenated five-qubit code $Q_m$ has parameters $[[5^m,1,3^m]]$. For every $m\ge2$, each logical Pauli axis admits a strict Hamiltonian transparent to every physical Pauli error of weight at most three, with
 
 ```math
 \boxed{n=5^m,\qquad d=3^m,\qquad
@@ -273,6 +273,6 @@ D_3(n)=1+3n+9\binom n2+27\binom n3,
 
 the full transparency equations for an axis have $D_3(n)$ character coordinates. Use the prescribed class signs and nonnegative absolute coefficients. The construction is feasible; eliminating dependent response columns leaves at most $D_3(n)=O(n^3)$ native Pauli terms. The same block moments force the same class masses and therefore preserve the optimum. Integer sign columns give polynomial-bit rational coefficients for an independent support by Cramer's rule and the Hadamard bound. This is a support-existence statement. A practical native sparse compiler or explicit sparse 125-qubit three-error word list is not supplied here.
 
-The [growing verifier](../verification/verify_growing_three_error.py) checks the exact polynomial moments and dual, the increment cost recurrence, the forced pattern masses at finite depths, and the signed increment base. At depth three, eleven complete child-error response profiles cover all 8,649,376 physical Pauli errors of weight at most three on 125 qubits. The computation evaluates these exact profiles and their coverage; it does not multiply a $2^{125}$-dimensional matrix or claim to enumerate a dense native Hamiltonian term by term. The arbitrary-depth physical-space conclusion follows from the lifting proof.
+The [growing verifier](../verification/verify_growing_three_error.py) checks the exact polynomial moments and dual, the increment cost recurrence, the forced pattern masses at finite depths, and the signed increment base. At depth three, eleven complete child-error response profiles cover all 8,649,376 physical Pauli errors of weight at most three on 125 qubits. The computation evaluates these exact profiles and their coverage; it does not multiply a matrix of dimension $2^{125}$ or claim to enumerate a dense native Hamiltonian term by term. The arbitrary-depth physical-space conclusion follows from the lifting proof.
 
 All three axes have the same construction. The gate guarantee remains fixed at three physical Pauli errors even when the code can correct more. The infinite syndrome-reversibility claim still allows recovery to know the specified product unitary and assumes ideal full original-syndrome measurement. State preparation, noisy recovery, geometric range, many-body interaction synthesis and a joint noisy gate/readout threshold remain outside the declared model.

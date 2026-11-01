@@ -83,7 +83,7 @@ H_\alpha=
 \tag{T1}
 ```
 
-The seven signed masses sum to one. Every signed atom $P_Q$ belongs to the same positive logical-$\alpha$ coset, so for every physical Pauli $E$,
+The seven signed masses sum to one. Every signed atom $P_Q$ belongs to the same positive logical $\alpha$ coset, so for every physical Pauli $E$,
 
 ```math
 P_QEV=\chi(E,Q)EV\alpha,
@@ -281,7 +281,7 @@ The [exact verifier](../verification/verify_three_error_gates.py) reconstructs t
 1+3(25)+9\binom{25}{2}+27\binom{25}{3}=64,876
 ```
 
-physical Pauli errors, separately for $X,Y,Z$. It also checks the pattern counts, moment matrix, forced masses and exact dual certificate. Tensor-factor multiplication and signed logical replacement establish the action of every class atom. The verifier uses this factorization rather than multiplying a $2^{25}$-dimensional matrix or claiming a separate full native-word expansion for every error. All certificate arithmetic is integer or rational; no numerical optimization is needed.
+physical Pauli errors, separately for $X,Y,Z$. It also checks the pattern counts, moment matrix, forced masses and exact dual certificate. Tensor-factor multiplication and signed logical replacement establish the action of every class atom. The verifier uses this factorization rather than multiplying a matrix of dimension $2^{25}$ or claiming a separate full native-word expansion for every error. All certificate arithmetic is integer or rational; no numerical optimization is needed.
 
 The code itself has not changed. Its $r_S=\infty$ property still concerns each specified known product unitary followed by full ideal original-syndrome measurement and an informed recovery, as proved for the [underlying concatenated family](minimum_readout_safe_gates.md). The protected-gate guarantee concerns errors through weight three during the declared Hamiltonian evolution with ideal final recovery. These remain distinct noise models; their coexistence does not supply a joint fault-tolerance threshold.
 

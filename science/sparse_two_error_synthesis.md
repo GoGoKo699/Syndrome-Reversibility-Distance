@@ -1,6 +1,6 @@
 # Exact sparse synthesis for two-error gates
 
-The [growing-distance construction](growing_two_error_gates.md) proves that the depth-$m$ concatenated five-qubit code admits a two-error-transparent logical Pauli gate with
+The [growing-distance construction](growing_two_error_gates.md) proves that the depth $m$ concatenated five-qubit code admits a two-error-transparent logical Pauli gate with
 
 ```math
 n=5^m,\qquad d=3^m,\qquad
@@ -16,7 +16,7 @@ The model is the [fixed-code full error-image transparency model](https://github
 
 Write $A_0,A_1,A_2,F$ for the four normalized classes in the [all-depth construction](growing_two_error_gates.md#2-four-classes-and-the-frontier-padding-rule). Every atom is an actual Hermitian signed Pauli that acts as the prescribed positive logical axis on the code. Within each class the masses are strictly positive and sum to one. The negative signs in the final Hamiltonian enter only when these normalized classes are combined.
 
-The [stored positive certificates](../verification/data/two_error_positive_classes.json) give the logical-$Z$ classes as orbit averages under the coordinate translations $C_5\times C_5$. Global cyclic relabeling $X\mapsto Y\mapsto Z\mapsto X$ supplies the other axes. The [loader and independent checker](../verification/positive_two_error.py) retain the actual Hermitian coset signs, expand the orbits, and check each signed logical membership.
+The [stored positive certificates](../verification/data/two_error_positive_classes.json) give the logical $Z$ classes as orbit averages under the coordinate translations $C_5\times C_5$. Global cyclic relabeling $X\mapsto Y\mapsto Z\mapsto X$ supplies the other axes. The [loader and independent checker](../verification/positive_two_error.py) retain the actual Hermitian coset signs, expand the orbits, and check each signed logical membership.
 
 | Class | Stored orbit seeds | Expanded native terms | Common denominator bits of orbit masses |
 |---|---:|---:|---:|

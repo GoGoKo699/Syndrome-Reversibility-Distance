@@ -326,7 +326,7 @@ Each milestone gives a central question, an understanding target, earlier depend
 
 **Central question.** What does attaining the general protected-gate interaction bound imply for readout reversibility?
 
-**Understanding target.** Under odd $d\ge3$, $t\ge1$ and $2t+1\le d$, explain the implication $\ell=d+t\Rightarrow r_S=d+1$. Follow the weight-one-stabilizer reduction, operator weight moments, forced weight-$(d+1)$ logical term and even-circuit argument. Deduce $\ell\ge d+t+1$ whenever $r_S>d+1$, including infinity, without treating this necessary condition as an existence result.
+**Understanding target.** Under odd $d\ge3$, $t\ge1$ and $2t+1\le d$, explain the implication $\ell=d+t\Rightarrow r_S=d+1$. Follow the weight-one-stabilizer reduction, operator weight moments, forced logical term of weight $(d+1)$, and even-circuit argument. Deduce $\ell\ge d+t+1$ whenever $r_S>d+1$, including infinity, without treating this necessary condition as an existence result.
 
 **Dependencies and story role.** M15, M16, M25. The readout characterization now constrains an independently defined gate task.
 
