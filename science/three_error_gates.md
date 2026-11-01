@@ -27,7 +27,7 @@ HEV=EV(h_L+c_E I)
 \qquad\text{for every tensor Pauli }E\text{ with }\mathrm{wt}(E)\le3,
 ```
 
-with consistent real sector shifts $c_E$. The explicit Hamiltonians below satisfy the stronger equations with every $c_E=0$. Let $\ell$ be the largest nonzero native Pauli weight in $H$, and let $J$ be the sum of absolute nonidentity bare Hermitian Pauli coefficients. Write $A=[h_L]_0$ for the traceless logical generator and $\omega=\lVert A\rVert_\infty$ for its half-splitting.
+with consistent real sector shifts $c_E$. The explicit Hamiltonians below satisfy the stronger equations with every $c_E=0$. Let $\ell$ be the largest nonzero native Pauli weight in $H$, and let $J$ be the sum of absolute nonidentity bare Hermitian Pauli coefficients. Write $`A=[h_L]_0`$ for the traceless logical generator and $`\omega=\lVert A\rVert_\infty`$ for its half-splitting.
 
 The [odd-weight obstruction for this code family](minimum_readout_safe_gates.md#6-scope-and-verification) gives $\ell\ge d+2t$. Here $d=9$ and $t=3$, so
 
