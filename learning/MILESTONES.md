@@ -1,26 +1,26 @@
 # Thirty milestones for Syndrome Reversibility Distance
 
-This map follows the scientific structure of the project. It is a common route for any reader: individual Pauli operators and measurements lead to the precise recovery question, then local proof mechanisms join into the classification, sharp error law, and code-family separation. The complete proofs remain in the authoritative [scientific pages](../README.md#read-the-science).
+A prescribed error-syndrome measurement can reveal logical information after an otherwise reversible physical rotation. This map follows the objects and proof mechanisms that decide when that happens, quantify the unavoidable loss, and distinguish it from ordinary code distance. Its final part connects the readout invariant to protected logical Hamiltonians on the same code.
 
-The map has **12 background/preliminaries milestones** and **18 narrative/innovation milestones**. The first phase builds the operational framework from its component objects. The second phase starts with the support mechanism, establishes its quantitative consequence, and ends with the growing-distance construction and the meaning of the combined result. Inherited ingredients, such as polar recovery and the five-qubit code, appear where the argument needs them; placement in the second phase does not claim that those ingredients are new.
+The map has **12 background/preliminaries milestones** and **18 narrative/innovation milestones**. The background joins physical Paulis, stabilizer measurements, logical channels and recovery into the complete experiment. The narrative joins exact-support orbits, logical circuits, recovery bounds and code constructions into the main readout results, then derives their consequences for protected control. The allocation gives most of the second phase to the readout classification and sharp exponent. The gate results enter as consequences and coexistence constructions, with their separate operational assumptions intact. The milestones supply global understanding, while the [scientific pages](../science/model.md) retain the complete specialist arguments.
 
-The single educational anchor is **Daniel Gottesman, *An Introduction to Quantum Error Correction and Fault-Tolerant Quantum Computation***, [arXiv:0904.2557v1](https://arxiv.org/abs/0904.2557v1), the 2009 preprint of the chapter published in 2010. Below, **G** denotes this version. Use the [Gottesman bridge](GOTTESMAN_BRIDGE.md) for notation, explanations and the steps supplied by this project. The bridge develops the channel metrics and optimized branch recovery beyond the anchor's treatment; it does not attribute those results to Gottesman.
+The single educational anchor is **Daniel Gottesman, *An Introduction to Quantum Error Correction and Fault-Tolerant Quantum Computation***, [arXiv:0904.2557v1](https://arxiv.org/abs/0904.2557v1), the 2009 preprint of the chapter published in 2010. Below, **G** denotes that version. The [Gottesman bridge](GOTTESMAN_BRIDGE.md) translates notation and develops the missing operator, recovery, metric and control steps locally. Those additions are not assigned as theorems in Gottesman's tutorial.
 
-| Anchor location | Role in this route |
+| Verified anchor location | Foundation used here |
 |---|---|
-| G §2.1 | Pauli operators, coherent error expansions, and linearity of correction |
-| G §2.2 | General error-correction conditions and code distance |
-| G §2.3 | Stabilizer checks, syndrome measurement, and the codespace |
-| G §3.1, including Table 4 and Eq. (56) | Five-qubit construction and binary symplectic representation |
-| G §3.4 | Logical Pauli operators and the quotient by stabilizers |
-| G §3.5 | Clifford conjugation, including local changes of axis and CNOT |
-| G §5.2, concatenation discussion | Recursive encoding; the project's family proof supplies its specific distance and parity claims |
+| G §2.1, “The nine-qubit code,” including Table 1 | Pauli operators, coherent-error expansions and linearity of correction |
+| G §2.2, “General properties of quantum error-correcting codes” | Error-correction conditions and distance |
+| G §2.3, “Stabilizer codes” | Checks, syndrome measurement and code subspaces |
+| G §3.1, “Some other important codes,” including Table 4, Eq. (56) and Lemma 1 | Five-qubit stabilizer, binary symplectic representation and syndrome existence |
+| G §3.4, “The logical Pauli group” | Logical Pauli operators and the quotient by stabilizers |
+| G §3.5, “The Clifford group” | Local axis changes and physical CNOT conjugation |
+| G §5.2, “Level reduction,” concatenation discussion | Recursive encoding as context; this project's proofs supply the exact family properties |
 
-Each milestone states a central question, an understanding target, earlier dependencies and its role in the story, a conceptual connection, and source pointers. These targets cover the connected argument without replacing every specialist calculation.
+Each milestone gives a central question, an understanding target, earlier dependencies and its role in the story, a conceptual connection, and source pointers. Research-level recovery results and prior coherent-error mechanisms retain their separate attribution in [related work](../references/RELATED_WORK.md).
 
-## Phase I — Background and preliminaries
+## Phase I: Background and preliminaries
 
-### M01 — Physical and logical quantum information
+### M01: Physical and logical quantum information
 
 **Central question.** What is being preserved when several physical qubits encode fewer logical qubits?
 
@@ -32,7 +32,7 @@ Each milestone states a central question, an understanding target, earlier depen
 
 **Source pointers.** G §§2.1–2.2 for code subspaces and encoded states; [Model §1](../science/model.md#1-code-phases-and-syndrome) and [Model §3](../science/model.md#3-performance-measures) for this project's spaces and reference convention.
 
-### M02 — Pauli labels, physical signs and support
+### M02: Pauli labels, physical signs and support
 
 **Central question.** Which features of a Pauli operator survive when its overall phase is ignored?
 
@@ -44,7 +44,7 @@ Each milestone states a central question, an understanding target, earlier depen
 
 **Source pointers.** G §2.1, Table 1, and §3.1 for the binary representation; [Model §1](../science/model.md#1-code-phases-and-syndrome).
 
-### M03 — A code as a common eigenspace
+### M03: A code as a common eigenspace
 
 **Central question.** How do commuting Pauli checks specify an encoded quantum system?
 
@@ -56,7 +56,7 @@ Each milestone states a central question, an understanding target, earlier depen
 
 **Source pointers.** G §2.3; [Model §1](../science/model.md#1-code-phases-and-syndrome) and the full-group qualification in [Support criterion §1](../science/support_criterion.md#1-the-support-criterion).
 
-### M04 — Syndrome sectors and error labels
+### M04: Syndrome sectors and error labels
 
 **Central question.** What does the full syndrome measure, and what quantum state remains afterward?
 
@@ -68,7 +68,7 @@ Each milestone states a central question, an understanding target, earlier depen
 
 **Source pointers.** G §2.3 and §3.1, Lemma 1; [Model §§1–2](../science/model.md).
 
-### M05 — Logical operators and ordinary distance
+### M05: Logical operators and ordinary distance
 
 **Central question.** Which undetected Pauli actions change the encoded information?
 
@@ -80,7 +80,7 @@ Each milestone states a central question, an understanding target, earlier depen
 
 **Source pointers.** G §§2.2–2.3 and §3.4; [Model §1](../science/model.md#1-code-phases-and-syndrome) and [Support criterion §5](../science/support_criterion.md#5-relation-to-ordinary-distance).
 
-### M06 — Coherent rotations as Pauli amplitudes
+### M06: Coherent rotations as Pauli amplitudes
 
 **Central question.** How does a reversible local rotation produce several possible syndrome paths?
 
@@ -92,7 +92,7 @@ Each milestone states a central question, an understanding target, earlier depen
 
 **Source pointers.** G §2.1, especially the rotation and error-expansion discussion; [Model §2](../science/model.md#2-the-prescribed-order-of-operations) and [Error exponent §3](../science/error_exponent.md#3-an-embedded-even-repetition-witness).
 
-### M07 — The recorded measurement instrument
+### M07: The recorded measurement instrument
 
 **Central question.** How is a full syndrome measurement represented as a channel on the logical input?
 
@@ -104,7 +104,7 @@ Each milestone states a central question, an understanding target, earlier depen
 
 **Source pointers.** G §§2.1–2.3 for operations and syndrome measurement; the explicit instrument is developed in [Model §2](../science/model.md#2-the-prescribed-order-of-operations) and the [Gottesman bridge](GOTTESMAN_BRIDGE.md).
 
-### M08 — Scalar effects and reversible branches
+### M08: Scalar effects and reversible branches
 
 **Central question.** When can knowing a measurement outcome allow perfect restoration?
 
@@ -116,7 +116,7 @@ Each milestone states a central question, an understanding target, earlier depen
 
 **Source pointers.** G §2.2 for the no-logical-information principle behind correction; [Model §5](../science/model.md#5-exact-reversibility-and-logical-information-in-the-syndrome) for the precise branch theorem and its attribution.
 
-### M09 — Polar recovery and the fidelity optimum
+### M09: Polar recovery and the fidelity optimum
 
 **Central question.** Which part of a known branch map can recovery undo?
 
@@ -128,7 +128,7 @@ Each milestone states a central question, an understanding target, earlier depen
 
 **Source pointers.** G §2.2 supplies correction context. The polar optimization is an additional project derivation of the attributed Gregoratti–Werner result, supplied in [Model §4](../science/model.md#4-exact-optimal-entanglement-fidelity) and the [bridge](GOTTESMAN_BRIDGE.md); it is not assigned as a theorem in Gottesman.
 
-### M10 — Errors that include a reference system
+### M10: Errors that include a reference system
 
 **Central question.** How should recovery error be measured when the logical system may be entangled with something else?
 
@@ -140,7 +140,7 @@ Each milestone states a central question, an understanding target, earlier depen
 
 **Source pointers.** G §2.2 gives the correction setting. The reference-system metrics and their comparison are project-supplied background in [Model §3](../science/model.md#3-performance-measures) and the [bridge](GOTTESMAN_BRIDGE.md), beyond the anchor's treatment.
 
-### M11 — Clifford changes and physical locality
+### M11: Clifford changes and physical locality
 
 **Central question.** Which changes of Pauli basis preserve the physical support structure?
 
@@ -152,7 +152,7 @@ Each milestone states a central question, an understanding target, earlier depen
 
 **Source pointers.** G §3.5; [Support criterion §§2 and 5](../science/support_criterion.md) and [Interpretation: the CNOT comparison](../science/interpretation.md#why-the-cnot-comparison-is-consequential).
 
-### M12 — The complete operational question
+### M12: The complete operational question
 
 **Central question.** What is optimized, what is fixed, and what must the code preserve?
 
@@ -164,221 +164,220 @@ Each milestone states a central question, an understanding target, earlier depen
 
 **Source pointers.** G §§2.1–2.3 for the QEC framework; [Model §§2 and 6](../science/model.md) and [Interpretation: operational boundaries](../science/interpretation.md#operational-boundaries) for the project's exact assumptions.
 
-## Phase II — Narrative and innovation
+## Phase II: Narrative and innovation
 
-### M13 — From syndrome effects to the full stabilizer group
+### M13: From the recorded syndrome to exact-support orbits
 
-**Central question.** Why can all syndrome effects be analyzed through conjugated stabilizers?
+**Central question.** How can a condition on every measurement branch become a condition on physical Pauli supports?
 
-**Understanding target.** Explain the binary Fourier relation between the syndrome projectors and the full stabilizer group. Use its inverse to see that scalarity of every $M_s$ is equivalent to scalar compression of every conjugated stabilizer. Identify why checking only independent generators would leave the argument incomplete.
+**Understanding target.** Use Fourier inversion between the full syndrome projectors and the full stabilizer group to replace scalarity of every $M_s$ by scalarity of every $V^\dagger U^\dagger gUV$. Explain why product conjugation spans precisely the tensor Paulis with the same exact support as $g$.
 
-**Dependencies and story role.** M04, M12. This is the first reduction of the global recovery question to algebraic components.
+**Dependencies and story role.** M02–M08, M11, M12. This first narrative step connects the operational recovery test to a local algebraic mechanism.
 
-**Conceptual connection.** The project uses the completeness of the measured record to translate an operational condition into a condition on a basis of commuting observables.
+**Conceptual connection.** The complete measurement contains information from every stabilizer product. Local rotations can vary the axes on active sites while preserving the set of active sites.
 
-**Source pointers.** G §2.3 provides the stabilizer measurement basis; the Fourier reduction is proved in [Support criterion §1](../science/support_criterion.md#1-the-support-criterion).
+**Source pointers.** G §§2.3, 3.1 and 3.5 provide the stabilizer and conjugation foundations; [Support criterion §1](../science/support_criterion.md#1-the-support-criterion) and [Bridge §7](GOTTESMAN_BRIDGE.md#7-why-exact-physical-support-classifies-reversibility) supply the orbit argument.
 
-### M14 — The orbit of one physical support
+### M14: The exact classification and its measurement witness
 
-**Central question.** Which Pauli directions can a product unitary generate from one stabilizer?
+**Central question.** Which codes admit exact restoration after this readout for every specified product unitary?
 
-**Understanding target.** Explain why conjugation rotates a nonidentity local axis within the span of $X,Y,Z$ and leaves an identity factor unchanged. Show that the linear span of the product-unitary orbit is exactly the Pauli space with the original support, with local Cliffords reaching its Pauli basis elements.
+**Understanding target.** Combine the support orbit with the three compression cases: a detectable Pauli gives zero, a stabilizer gives a scalar, and a nontrivial logical Pauli gives a nonscalar logical action. State the if-and-only-if absence of equal exact support between the full stabilizer group and any nontrivial logical Pauli. Explain the product-Clifford witness and its bounds $F_{\mathrm{opt}}\le1/2$ and $\varepsilon_{\mathrm{opt}}\ge1/2$ when a collision exists.
 
-**Dependencies and story role.** M02, M06, M11. This identifies the local geometric restriction that makes the classification possible.
+**Dependencies and story role.** M05, M08–M10, M13. The local mechanism now yields the complete exact-reversibility theorem.
 
-**Conceptual connection.** Product noise explores all axis choices on an existing support. The theorem can therefore use exact support equality, rather than only operator weight or support containment.
+**Conceptual connection.** A matching support lets local basis changes turn one measured stabilizer into a logical observable. Recording its eigenvalue destroys coherence between the logical eigenspaces even when the rotation is known.
 
-**Source pointers.** G §§2.1 and 3.5 supply Pauli and Clifford foundations; [Support criterion §1](../science/support_criterion.md#1-the-support-criterion) proves the orbit statement.
+**Source pointers.** G §§2.2–2.3 and 3.4 supply correction and logical-operator context; [Support criterion §§1–2](../science/support_criterion.md) proves the classification and finite-angle witness. [Related work](../references/RELATED_WORK.md) separates the classification from inherited branch-recovery and logical-projection facts.
 
-### M15 — Compression into the logical space
+### M15: The distance that counts changed local axes
 
-**Central question.** What can a Pauli operator become when restricted to the codespace?
+**Central question.** What quantitative invariant is hidden in an exact-support collision?
 
-**Understanding target.** Derive the three possibilities for $V^\dagger QV$: zero for a detectable Pauli, a signed identity for a stabilizer label, and a traceless nontrivial logical Pauli otherwise. Explain the role of anticommutation in the zero case and in proving that a nontrivial logical action cannot be scalar.
+**Understanding target.** Define $r(S)=\min\mathrm{wt}(gL)$ over pairs $g\in S$, $L\in N\setminus S$ with equal exact support, with an empty minimum equal to infinity. Translate it into a logical Pauli $E$ that anticommutes locally with one stabilizer at every active site. Derive that finite $r$ is even and at least the ordinary distance $d$.
 
-**Dependencies and story role.** M03, M05, M14. This converts the support orbit into a statement about logical information.
+**Dependencies and story role.** M02, M05, M14. This turns an existence classification into a candidate measure of weak-rotation sensitivity.
 
-**Conceptual connection.** The first two compression outcomes cannot reveal a logical observable. The third is the precise obstruction to scalar syndrome effects.
+**Conceptual connection.** The weight being minimized counts differing local axes within a matching-support pair. It is neither their common support size nor the minimum weight of an arbitrary logical operator.
 
-**Source pointers.** G §§2.3 and 3.4 for detectable and logical actions; [Support criterion §1](../science/support_criterion.md#1-the-support-criterion), Eq. (4), for the trichotomy used here.
+**Source pointers.** G §§2.1, 2.3 and 3.4 supply Pauli commutation and logical classes; [Support criterion §3](../science/support_criterion.md#3-syndrome-reversibility-distance) and [Bridge §8](GOTTESMAN_BRIDGE.md#8-from-a-support-collision-to-a-logical-circuit) define and interpret $r$.
 
-### M16 — The exact support classification
+### M16: Minimal syndrome dependencies and even logical circuits
 
-**Central question.** Which stabilizer codes remain reversible after every product rotation and the prescribed syndrome readout?
+**Central question.** How does a minimal dependence among local syndrome columns characterize $r$?
 
-**Understanding target.** Combine the previous reductions to prove both directions: exact recovery for every product unitary is equivalent to disjoint support sets of stabilizers and nontrivial logical Paulis. Keep the universal unitary quantifier, exact support equality, and full stabilizer group visible in the statement.
+**Understanding target.** Define a logical circuit using a fixed Pauli word and the absence of a proper nonempty normalizer subword. Explain why a minimum local-anticommutation witness is a circuit and why an even circuit supplies a stabilizer witness by binary row-space/kernel duality. Conclude that $r$ is the minimum even logical-circuit weight and that even ordinary distance forces $r=d$.
 
-**Dependencies and story role.** M08, M13, M14, M15. The local reductions now form the first complete global theorem.
+**Dependencies and story role.** M04, M05, M15. This identifies the minimal interference structure that the quantitative proof will use.
 
-**Conceptual connection.** A recovery condition expressed in channels becomes a finite property of the code's Pauli support structure, valid at all rotation angles.
+**Conceptual connection.** A circuit means a minimal binary dependence here, rather than a sequence of quantum gates. Global even weight alone does not guarantee the required minimality or a readout-loss witness.
 
-**Source pointers.** G §§2.3, 3.4 and 3.5 are prerequisite background; [Support criterion §1, Theorem 1](../science/support_criterion.md#1-the-support-criterion) is the authoritative new classification.
+**Source pointers.** G §3.1, Eq. (56) and Lemma 1 provide binary syndrome foundations; [Support criterion §§4–5](../science/support_criterion.md#4-equivalent-characterization-by-even-logical-circuits) supplies the circuit theorem and distance comparison; [Bridge §8](GOTTESMAN_BRIDGE.md#8-from-a-support-collision-to-a-logical-circuit) develops the missing linear-algebra connection.
 
-### M17 — A support collision becomes a logical measurement
+### M17: A uniform upper bound without discarding rare branches
 
-**Central question.** What physical loss witnesses failure of the support condition?
+**Central question.** Why does an outcome with very small probability not spoil the weak-angle exponent?
 
-**Understanding target.** Map a colliding stabilizer to a nontrivial logical Pauli using local Cliffords. Explain why each reached syndrome branch then has logical rank at most $D/2$, so optimal entanglement fidelity is at most one half and optimal half-diamond error is at least one half.
+**Understanding target.** Form the collision polynomial $B_S(x)=\sum_{(g,L)}x^{\mathrm{wt}(gL)}$. For bounded local generators, relate the sum of nonscalar branch effects to $B_S(|\theta|)$. Explain how polar recovery, the double-commutator channel identity and a square-root norm estimate bound the error without division by a branch probability. Obtain $e_{\mathrm{opt}}\le\varepsilon_{\mathrm{opt}}\le\min\{1,B_S(|\theta|)\}$ for $|\theta|\le1$.
 
-**Dependencies and story role.** M09, M10, M11, M16. This turns necessity of the criterion into an operationally substantial finite-angle witness.
+**Dependencies and story role.** M06, M09, M10, M13, M15. This establishes the uniform half of the quantitative theorem before choosing any adverse rotation.
 
-**Conceptual connection.** The syndrome learns a logical eigenvalue. Keeping that classical answer cannot reconstruct the coherence lost between the eigenvalue sectors.
+**Conceptual connection.** A small effect may be highly state dependent after normalization. Bounding the unnormalized recovered channel keeps rare outcomes at their correct total weight and preserves the exponent.
 
-**Source pointers.** G §§2.3 and 3.5 for measurement and conjugation; [Support criterion §2](../science/support_criterion.md#2-a-collision-exposes-a-logical-observable), with the logical-projection attribution in [Related work](../references/RELATED_WORK.md).
+**Source pointers.** G §2.1 motivates coherent Pauli amplitudes. The recovery and channel-norm proof is supplied locally in [Error exponent §2](../science/error_exponent.md#2-a-finite-code-collision-polynomial) and [Bridge §9](GOTTESMAN_BRIDGE.md#9-why-rare-syndrome-outcomes-do-not-weaken-the-upper-exponent), beyond the anchor.
 
-### M18 — The reversibility distance and local anticommutation
+### M18: Complementary paths give an all-recovery converse
 
-**Central question.** How many local axis changes are needed before a support collision can expose a logical operator?
+**Central question.** Which physical rotation forces every recovery to lose the same leading-order information?
 
-**Understanding target.** Define $r$ as the minimum weight of $gL$ over equal-support stabilizer/logical pairs, with an empty minimum equal to infinity. Translate that definition into a logical Pauli $E$ and a stabilizer that anticommutes with every active local factor of $E$. Explain why finite $r$ is even and at least $d$.
+**Understanding target.** Rotate about the fixed labels of a minimum even circuit. Show that only complementary Pauli subwords share a syndrome, and reduce each branch to $aI\pm b\overline E$. Use the two singular values and the exact fidelity optimum to identify the smaller complementary probability as irrecoverable. Explain why this constrains arbitrary quantum recovery rather than only Pauli decoding.
 
-**Dependencies and story role.** M05, M16. The exact yes-or-no classification acquires a quantity that can control weak-noise sensitivity.
+**Dependencies and story role.** M06, M09, M10, M16. This supplies the lower-bound mechanism matching the uniform upper bound.
 
-**Conceptual connection.** Global commutation forces an even number of local anticommutations. The physical arrangement of those local factors adds a restriction absent from ordinary distance.
+**Conceptual connection.** Even circuit length makes complementary amplitudes interfere with a real relative phase. The resulting singular-value imbalance is a logical measurement, and cannot be removed by reversing a branch unitary.
 
-**Source pointers.** G §§2.3, 3.1 and 3.4 for commutation and logical classes; [Support criterion §3](../science/support_criterion.md#3-syndrome-reversibility-distance) defines and analyzes $r$.
+**Source pointers.** G §§2.1–2.2 supply coherent-error and correction context; [Error exponent §3](../science/error_exponent.md#3-an-embedded-even-repetition-witness), [Bridge §10](GOTTESMAN_BRIDGE.md#10-why-the-exponent-is-attained-against-every-recovery) and [related work](../references/RELATED_WORK.md) develop and attribute the repetition mechanism and code-wide converse.
 
-### M19 — Syndrome columns and logical circuits
+### M19: The exact tail and sharp fixed-code error law
 
-**Central question.** When does a fixed Pauli word contain a smaller undetectable subword?
+**Central question.** How do the upper and lower mechanisms combine into the operational meaning of $r$?
 
-**Understanding target.** Associate a binary syndrome column to each active local Pauli factor. Identify subwords with subsets of columns and zero syndrome with a binary dependence. Define a logical circuit by the absence of proper nonempty normalizer subwords, retaining the original local Pauli labels.
+**Understanding target.** Interpret the exact even-repetition tail $p_r(q)$, including the half-weighted tie at $r/2$, with $q=\sin^2(\theta/2)\le1/2$. Explain why a recovered dephasing channel makes both optimized errors equal to that tail for the witness. State the worst-case laws $\mathcal E_S(\theta),\mathcal D_S(\theta)=\Theta(|\theta|^r)$ for finite $r$ and exact zero for $r=\infty$, with the code fixed and recovery optimized separately for each known rotation.
 
-**Dependencies and story role.** M04, M05, M18. This gives the combinatorial language that identifies irreducible witnesses.
+**Dependencies and story role.** M10, M12, M17, M18. This assembles the quantitative result as a theorem with its complete quantifiers.
 
-**Conceptual connection.** A circuit is a minimal dependence in a binary matrix, rather than a sequence of quantum gates. Its minimality controls exactly which coherent error paths can share a syndrome.
+**Conceptual connection.** The metrics coincide for the witness while remaining different optimization problems in general. Code-dependent constants and a fixed-code limit do not establish a uniform threshold for a growing family.
 
-**Source pointers.** G §3.1, Eq. (56) and the syndrome linear-algebra discussion; [Support criterion §4](../science/support_criterion.md#4-equivalent-characterization-by-even-logical-circuits).
+**Source pointers.** G §2.2 supplies the arbitrary-input correction setting; [Error exponent §§1, 3–5](../science/error_exponent.md) and [Bridge §§9–10](GOTTESMAN_BRIDGE.md#9-why-rare-syndrome-outcomes-do-not-weaken-the-upper-exponent) provide the locally developed metric argument, exact tail and scope.
 
-### M20 — Why even circuits determine the invariant
+### M20: The five-qubit seed as a complete parity statement
 
-**Central question.** Why are the support-collision minimum and the even-circuit minimum identical?
+**Central question.** Which properties of the standard five-qubit code will protect it against this measurement loss?
 
-**Understanding target.** Explain both directions: a minimum local-anticommutation witness cannot contain a proper normalizer subword, and an even logical circuit supplies the required stabilizer through binary row-space orthogonality. Deduce $r=d$ for even-distance codes while preserving the distinction between a circuit and an arbitrary even-weight logical Pauli.
+**Understanding target.** Relate the four displayed stabilizer generators to the complete stabilizer group, single-qubit syndromes and minimum logical representatives. Establish that every stabilizer has even weight and every representative of every nontrivial logical Pauli has odd weight. Keep this full-coset statement separate from a check of selected generators.
 
-**Dependencies and story role.** M18, M19. This completes the combinatorial characterization needed for a sharp lower bound.
+**Dependencies and story role.** M03–M05, M14. This begins the construction that separates the new invariant from ordinary code parameters.
 
-**Conceptual connection.** Minimum distance already gives a logical circuit. Its parity decides whether it directly provides the stabilizer witness for measurement-induced irreversibility.
+**Conceptual connection.** A parity difference excludes exact-support equality. The construction uses the familiar five-qubit code as a verified ingredient in a new support-sensitive comparison.
 
-**Source pointers.** G §§3.1 and 3.4 supply binary and logical foundations; [Support criterion §§4–5](../science/support_criterion.md) proves the equivalence and distance corollary.
+**Source pointers.** G §3.1, especially Table 4 and Eq. (56), supplies the seed and binary language; [Code families §2](../science/code_families.md#2-the-five-qubit-building-block) proves the exact distance and parity facts; [Bridge §11](GOTTESMAN_BRIDGE.md#11-from-the-five-qubit-code-to-the-one-cnot-separation) joins them to the support theorem.
 
-### M21 — Counting the powers of a small rotation
+### M21: Concatenation and blockwise exact reversibility
 
-**Central question.** Why can no nonscalar syndrome contribution appear below order $r$?
+**Central question.** Why do the seed's distance and support separation persist at arbitrary depth and on two blocks?
 
-**Understanding target.** Bound each changed local Pauli-axis coefficient by the rotation scale. Apply the support and compression structure to bound the nonscalar part $M_s-p_sI$. Interpret the collision polynomial $B_S(x)$ as an explicit finite-code upper certificate and identify its lowest nonzero power as $r$.
+**Understanding target.** Explain the recursive family $Q_m=[[5^m,1,3^m]]$, the matching distance lower and upper bounds, and the parity induction for full stabilizer and logical cosets. On $Q_m\otimes Q_m$, use parity inside each encoded block to exclude every stabilizer/logical support collision, including logical operators of even total weight. Conclude $r=\infty$.
 
-**Dependencies and story role.** M06, M13, M15, M18. This connects the combinatorial invariant to perturbation order without choosing a decoder.
+**Dependencies and story role.** M14, M20. A local seed now gives an unbounded-distance family with exact readout recovery.
 
-**Conceptual connection.** A logical contribution needs a permitted pattern of local axis changes. The polynomial records those patterns and makes the code dependence of the prefactor visible.
+**Conceptual connection.** The decisive partition is into physical encoded blocks. A logical acting on both blocks may be globally even, while its odd restriction in a nontrivial block still forbids a matching stabilizer support.
 
-**Source pointers.** G §2.1 for local error expansions; the quantitative coefficient and polynomial bounds are in [Error exponent §2](../science/error_exponent.md#2-a-finite-code-collision-polynomial).
+**Source pointers.** G §5.2's concatenation discussion supplies recursive-code context; [Code families §§3–4](../science/code_families.md#3-concatenation-preserves-the-required-properties) proves this family's distance and blockwise readout property, beyond the anchor's general discussion.
 
-### M22 — A recovery bound that includes rare outcomes
+### M22: One physical CNOT changes the code without changing distance
 
-**Central question.** How can square-root branch maps retain the exponent when syndrome probabilities are small?
+**Central question.** How can an entangling Clifford alter readout reversibility while leaving $[[n,k,d]]$ unchanged?
 
-**Understanding target.** Use the positive Kraus operators of polar recovery and the double-commutator identity for the corrected channel. Explain why subtracting scalar square roots and then squaring the operator-norm deviation yields a bound in terms of $\sum_s\Vert M_s-p_sI\Vert$, without dividing by $p_s$.
+**Understanding target.** Conjugate both the product codespace and its full stabilizer group by one physical CNOT between blocks. Follow a minimum logical that avoids the control to preserve an upper bound on distance. Use inverse conjugation and the minimum-weight product-code structure to exclude a shorter logical. Explain why each resulting code is measured with its own original checks.
 
-**Dependencies and story role.** M09, M10, M21. This supplies the uniform-in-axis recovery upper bound and closes the rare-syndrome issue.
+**Dependencies and story role.** M11, M20, M21. This introduces the physical transformation used to compare two codes with equal conventional parameters.
 
-**Conceptual connection.** The cancellation imposed by trace preservation matters at the channel level. Estimating each square root in isolation would obscure the full error exponent.
+**Conceptual connection.** Abstract unitary equivalence does not preserve the tensor-product structure of the allowed rotations. The CNOT belongs to the definition of the second code; the readout experiment still uses product-unitary noise.
 
-**Source pointers.** G §2.2 is the correction context. The additional operator-norm argument is developed in [Error exponent §2.3](../science/error_exponent.md#23-polar-recovery-without-loss-of-exponent) and the [bridge](GOTTESMAN_BRIDGE.md).
+**Source pointers.** G §3.5 supplies CNOT conjugation; [Code families §5](../science/code_families.md#5-one-cnot-preserves-the-distance) and [Bridge §11](GOTTESMAN_BRIDGE.md#11-from-the-five-qubit-code-to-the-one-cnot-separation) supply the distance-preservation proof.
 
-### M23 — Complementary coherent error paths
+### M23: The new even circuit and the same-parameter separation
 
-**Central question.** Why does a minimum circuit turn a general code into a repetition-type instrument?
+**Central question.** What readout-loss structure does that single physical CNOT introduce?
 
-**Understanding target.** Rotate about the local factors of a minimum even logical circuit. Show that two error subsets have the same syndrome exactly when they coincide or complement one another. Derive the resulting two-term logical branch and explain why even circuit weight makes its relative amplitude real.
+**Understanding target.** Construct the transformed logical of weight $3^m+1$ and explain why no proper nonempty fixed-label subword normalizes the transformed stabilizer. Combine its even circuit with parity and distance to obtain $r=3^m+1$. Assemble the pair of $[[2\cdot5^m,2,3^m]]$ families with $r=\infty$ and $r=3^m+1$.
 
-**Dependencies and story role.** M06, M19, M20. This constructs an explicit physical witness for the recovery lower bound.
+**Dependencies and story role.** M15, M16, M19, M21, M22. This completes the growing-distance separation and attaches its sharp weak-angle error law.
 
-**Conceptual connection.** Circuit minimality fixes the entire interference pattern, so the witness can be analyzed exactly without simulating every code state.
+**Conceptual connection.** Ordinary distance fixes the smallest undetected Pauli weight. It does not fix whether a prescribed syndrome measurement can expose a coherent logical observable after local rotations.
 
-**Source pointers.** G §2.1 for coherent Pauli expansion and §3.1 for syndrome addition; [Error exponent §§3–3.1](../science/error_exponent.md#3-an-embedded-even-repetition-witness).
+**Source pointers.** G §§3.4–3.5 and §5.2 supply logical, Clifford and concatenation context; [Code families §§1 and 6](../science/code_families.md) and [Error exponent §1](../science/error_exponent.md#1-statement-and-quantifiers) give the project theorem and its quantitative consequence.
 
-### M24 — The exact repetition tail and recovery converse
+### M24: A physical ten-qubit channel checks the construction
 
-**Central question.** What loss remains even after the best possible recovery of the circuit witness?
+**Central question.** How does the smallest pair realize the abstract circuit mechanism in the full physical channel?
 
-**Understanding target.** Compute the optimal fidelity contribution of a two-term branch, count complementary pairs including equal-weight ties, and obtain $p_r(q)$. Explain how majority Pauli recovery realizes a dephasing channel and why the fidelity lower bound proves that arbitrary CPTP recovery cannot achieve a smaller half-diamond error.
+**Understanding target.** At $m=1$, connect the weight-four circuit to the exact error $p_4(q)=3q^2-2q^3$. Explain what constructing all signed syndrome sectors and the recovered channel checks beyond a support enumeration. Distinguish this finite certificate from the analytical all-depth proof and from a check of arbitrary noisy extraction circuits.
 
-**Dependencies and story role.** M09, M10, M23. The witness provides an exact optimized loss, not merely a failure of one selected decoder.
+**Dependencies and story role.** M07, M09, M18, M19, M23. This makes the core theorem concrete before connecting it to a second physical task.
 
-**Conceptual connection.** The established even-repetition mechanism becomes a universal embedded witness for every code with finite $r$. Equality of the two optimized error metrics is proved for this witness; it is not assumed for all instruments.
+**Conceptual connection.** A support witness, a physical projective measurement and a logical recovered channel are three representations of the same experiment. Their agreement checks signs and phases that a phase-free support calculation omits.
 
-**Source pointers.** G §§2.1–2.2 provide the correction background; [Error exponent §3.2](../science/error_exponent.md#32-exact-optimal-error) gives the calculation and all-recovery converse. [Related work](../references/RELATED_WORK.md#huangdohertyflammia-coherent-error-scaling) credits the repetition mechanism.
+**Source pointers.** G §§2.1, 2.3 and 3.1 supply the physical syndrome foundations; [Code families §7](../science/code_families.md#7-the-ten-qubit-example-and-its-physical-channel) and [Verification](../verification/README.md) specify the finite certificate, while [Error exponent §3](../science/error_exponent.md#3-an-embedded-even-repetition-witness) proves its all-recovery meaning.
 
-### M25 — The sharp error law as one theorem
+### M25: Two operational experiments on one stabilizer code
 
-**Central question.** How do the upper certificate and exact witness establish the worst-case exponent?
+**Central question.** What additional assumptions are needed to relate the readout invariant to protected logical gates?
 
-**Understanding target.** Combine the uniform upper bound with the positive leading coefficient of the repetition tail to derive $\Theta(|\theta|^r)$ in both optimized metrics. State the supremum over bounded local Hamiltonians and the separate optimization of recovery for each unitary. Distinguish the fixed-code limit from uniform large-code estimates.
+**Understanding target.** State the error-transparent Hamiltonian identity $HEV=EV(h_L+\lambda_E I)$ for every Pauli of weight at most $t$, allowing consistent scalar error-sector shifts. Distinguish it from strict transparency with zero shifts. Define the maximum native Pauli interaction order $\ell$ and coefficient budget $J$. Keep faults during protected evolution and ideal final recovery separate from the known-product-unitary, prescribed-readout experiment.
 
-**Dependencies and story role.** M20, M21, M22, M23, M24. This joins the quantitative mechanisms into the second central theorem.
+**Dependencies and story role.** M01, M05, M12, M19, M23. This supplies the operator framework needed for consequences involving the same code, without changing the main readout model.
 
-**Conceptual connection.** The support invariant simultaneously classifies exact reversibility through $r=\infty$ and measures the first unavoidable order of loss when $r$ is finite.
+**Conceptual connection.** A code can be evaluated for two tasks. An operator identity protecting an error image during a gate and an information-preserving measurement condition after a rotation are compatible properties with distinct hypotheses.
 
-**Source pointers.** G §2.1 supplies the local-rotation context; [Error exponent §§1 and 4–5](../science/error_exponent.md) states the sharp law, its limits and the finite-angle consequence.
+**Source pointers.** G §§2.2, 3.4–3.5 supplies correction and encoded-operation foundations; [Gate/readout theorem §1](../science/gate_readout_tradeoff.md#1-notation-and-hypotheses) and [Bridge §12](GOTTESMAN_BRIDGE.md#12-two-tasks-on-the-same-code) supply the additional Hamiltonian model and resources locally.
 
-### M26 — The five-qubit seed and useful logical representatives
+### M26: Minimum gate locality forces a readout witness
 
-**Central question.** Which concrete properties of the five-qubit code make the family construction possible?
+**Central question.** What does attaining the general protected-gate interaction bound imply for readout reversibility?
 
-**Understanding target.** Use its fifteen distinct nonzero single-site syndromes to exclude normalizers of weight one or two. Identify minimum representatives of all three logical classes. Prove that stabilizers have even weight and every nontrivial logical representative has odd weight, and retain the chosen logical supports needed at the CNOT endpoints.
+**Understanding target.** Under odd $d\ge3$, $t\ge1$ and $2t+1\le d$, explain the implication $\ell=d+t\Rightarrow r_S=d+1$. Follow the weight-one-stabilizer reduction, operator weight moments, forced weight-$(d+1)$ logical term and even-circuit argument. Deduce $\ell\ge d+t+1$ whenever $r_S>d+1$, including infinity, without treating this necessary condition as an existence result.
 
-**Dependencies and story role.** M02, M05, M11, M16. This introduces the established code as the concrete ingredient of the project's separation.
+**Dependencies and story role.** M15, M16, M25. The readout characterization now constrains an independently defined gate task.
 
-**Conceptual connection.** Blockwise parity excludes matching supports, while carefully chosen minimum representatives make a later entangling deformation fully explicit.
+**Conceptual connection.** Saturating the gate's moment constraints forces an even logical representative that distance makes minimal after fixed qubits are removed. That representative is precisely a circuit capable of exposing logical information to readout.
 
-**Source pointers.** G §3.1, Table 4, for the five-qubit stabilizer; [Code families §2](../science/code_families.md#2-the-five-qubit-building-block) for the required parity, distance and endpoint arguments. The underlying code is attributed in [Related work](../references/RELATED_WORK.md#five-qubit-code-and-stabilizer-foundations).
+**Source pointers.** G §§2.3, 3.1 and 3.4 provide stabilizer and logical foundations. The moment theorem and fixed-qubit proof are supplied in [Gate/readout theorem §2](../science/gate_readout_tradeoff.md#2-joint-theorem) and [Bridge §13](GOTTESMAN_BRIDGE.md#13-why-minimum-gate-order-forces-readout-loss), beyond the educational anchor.
 
-### M27 — Concatenation and blockwise reversibility
+### M27: Optimal one-, two- and three-error gates coexist with $r_S=\infty$
 
-**Central question.** How do the seed properties survive while the ordinary distance grows?
+**Central question.** How can the readout-safe concatenated family support exact protected gates at its own minimum interaction order?
 
-**Understanding target.** Lift outer logical operators through inner blocks to prove the parameters $[[5^t,1,3^t]]$ and preserve odd logical/even stabilizer parity. Explain why two such blocks have $r=\infty$ by comparing supports within a block on which a logical operator is nontrivial. Recognize why total parity alone is insufficient for the two-block code.
+**Understanding target.** Explain why its odd logical-coset weights strengthen the gate bound to $\ell\ge d+2t$. Identify the attained one-axis orders and budgets: $d+2,d+1$ for $t=1$; $d+4,J_2(d)$ for $t=2$; and $d+6,J_3(d)$ for $t=3$, with $m\ge1$ for $t=1$ and $m\ge2$ for $t=2,3$. Connect strict lower-order increments and their vanishing action on lighter error images to recursive lifting. Interpret coupling optimality at the stated minimum order.
 
-**Dependencies and story role.** M20, M26. This turns the finite seed into the exactly reversible side of an unbounded-distance comparison.
+**Dependencies and story role.** M20, M21, M25, M26. This gives constructive coexistence results on the readout-safe family rather than only an obstruction to equality in the general bound.
 
-**Conceptual connection.** Recursive encoding transfers local properties to a family, while tensor-product structure preserves a stronger blockwise obstruction to support collisions.
+**Conceptual connection.** Parity both protects readout and removes candidate interaction weights. Exact gate constructions attain the stronger family-specific bound, while native term count and coefficient size remain separate resources.
 
-**Source pointers.** G §5.2, its concatenation discussion, and §3.4 for logical classes; [Code families §§3–4](../science/code_families.md) supplies the family's specific proofs.
+**Source pointers.** G §§3.1, 3.4 and §5.2 supply code and concatenation context; [One-error gates](../science/minimum_readout_safe_gates.md), [Two-error gates](../science/growing_two_error_gates.md), [Three-error hierarchy](../science/growing_three_error_gates.md) and [Bridge §14](GOTTESMAN_BRIDGE.md#14-protected-control-with-the-original-readout-unchanged) supply the additional constructions, exact $J_2,J_3$ formulas and lower bounds.
 
-### M28 — Preserving distance with one physical CNOT
+### M28: Protected entanglers preserve the product code and its checks
 
-**Central question.** Why does this particular entangling deformation leave ordinary distance unchanged?
+**Central question.** Can encoded entanglement coexist with exact product-rotation readout recovery on the unchanged code?
 
-**Understanding target.** Follow a hypothetical shorter logical operator backward through the CNOT. Use its at-most-one weight change and the product-code distance to obtain the contradiction that a minimum logical must both touch and avoid the other block. Exhibit the untouched minimum logical for the matching upper bound.
+**Understanding target.** On unchanged $Q_m$ product blocks with $m\ge2$, take a nonidentity pure logical Pauli string of logical weight $p\ge1$. Distinguish its minimum physical coset weight $D=pd$ from the product code's ordinary distance $d$. Explain the total-degree-three tensor-increment construction and its optimum $\ell=D+6$, $J=|\Omega|J_3(D)$. Relate the fixed-code $ZZ$ entangler and local logical axes to universal two-qubit control while retaining $r_S=\infty$ block by block.
 
-**Dependencies and story role.** M11, M27. This holds the conventional parameters fixed before comparing the new invariant.
+**Dependencies and story role.** M11, M21, M25, M27. The coexistence statement extends from separate encoded axes to entangling encoded dynamics.
 
-**Conceptual connection.** General Clifford equivalence alone does not preserve physical weight. The construction needs its explicit endpoint choices and a dedicated distance argument.
+**Conceptual connection.** A protected logical entangler preserves the codespace and stabilizer measurement. The earlier physical CNOT conjugated the code and checks. Their different actions on the fixed physical code explain their different readout consequences.
 
-**Source pointers.** G §3.5 for CNOT conjugation; [Code families §5](../science/code_families.md#5-one-cnot-preserves-the-distance) for the exact lower and upper distance bounds.
+**Source pointers.** G §§3.4–3.5 supply encoded Pauli and gate foundations. The new tensor construction, target-coset lower bound and control argument are supplied in [Protected entangling gates §§1–7](../science/protected_entangling_gates.md) and [Bridge §14](GOTTESMAN_BRIDGE.md#14-protected-control-with-the-original-readout-unchanged), beyond the anchor.
 
-### M29 — The new even circuit and the family separation
+### M29: What exact certificates and resource optima establish
 
-**Central question.** How does the same CNOT create the smallest finite reversibility distance allowed by odd $d$?
+**Central question.** Which parts of the combined account are analytical theorems, finite certificates, and native-model resource statements?
 
-**Understanding target.** Show that a minimum odd target-block logical becomes an even logical of weight $3^t+1$. Analyze each possible subword under inverse CNOT to prove circuit minimality. Combine that witness with parity and the preserved distance to obtain $r=3^t+1$, and apply the exact repetition formula at every level.
+**Understanding target.** Distinguish the general support/exponent proofs, all-depth code and gate recursions, finite physical-channel checks, exact rational class certificates and profile-based error coverage. Explain why compact class descriptions do not make the dense native expansion small. Restrict the pure-string budget optimum to its specified target and minimum order; do not infer an optimum for an arbitrary mixture of logical Pauli terms at one common cap.
 
-**Dependencies and story role.** M20, M25, M27, M28. This completes the same-parameter separation and its operational error consequence.
+**Dependencies and story role.** M17–M19, M23, M24, M27, M28. This fixes the evidential and resource meaning of every ingredient before the final synthesis.
 
-**Conceptual connection.** A single physical entangling change can create a new way for the prescribed readout to learn logical information, while $n$, $k$ and $d$ remain identical.
+**Conceptual connection.** Verification can check all error profiles in a finite construction without enumerating its native interaction list. Neither exact arithmetic nor Hamiltonian locality establishes hardware realizability or a joint noisy gate/readout threshold.
 
-**Source pointers.** G §§3.4–3.5 provide logical and conjugation background; [Code families §§6–7](../science/code_families.md) and [Error exponent §3](../science/error_exponent.md#3-an-embedded-even-repetition-witness) establish the circuit and its exact error law.
+**Source pointers.** G §2.2 and §5.2 provide correction and threshold context, while the present claims use different assumptions. [Verification](../verification/README.md), [Three-error examples](../science/growing_three_error_gates.md#5-examples-description-size-and-verification), [Entangler examples and scope](../science/protected_entangling_gates.md#5-the-first-protected-entangler) and [Bridge §§14–15](GOTTESMAN_BRIDGE.md#14-protected-control-with-the-original-readout-unchanged) give the exact local verification and scope statements.
 
-### M30 — The complete scientific conclusion
+### M30: The complete scientific account
 
-**Central question.** What does syndrome reversibility distance add to the understanding of a quantum code?
+**Central question.** What new information about a stabilizer code is obtained by combining the readout theorem, sharp error law, same-parameter family and gate consequences?
 
-**Understanding target.** Connect the information leaked by syndrome readout, the exact support criterion, the even-circuit invariant, the sharp optimal error exponent, and the growing-distance CNOT pair. Separate inherited recovery and repetition results from the additional code-level conclusions. State the assumptions about known noise, fixed measurement order, ideal readout, unrestricted recovery and code-dependent constants.
+**Understanding target.** Connect logical effects, exact-support separation, even circuits, all-recovery weak-angle loss and the physical-CNOT family into the main readout result. Then explain the joint locality obstruction and the protected one-, two-, three-error and entangling coexistence constructions on unchanged readout-safe codes. State which ingredients are inherited, which are proved here, and which assumptions belong to each operational task.
 
-**Dependencies and story role.** M12, M17, M25, M29. This completes the second phase by integrating the local mechanisms into the scope and significance of the whole project.
+**Dependencies and story role.** M12–M29. This completes the narrative by integrating its local mechanisms into their global meaning, significance and limits.
 
-**Conceptual connection.** The result identifies an information-preservation property of a prescribed measurement relative to physical locality. Finite calculations support the specified examples; the universal classification and asymptotic conclusions rest on their proofs. The shared conventional code parameters do not determine this property.
+**Conceptual connection.** Conventional code parameters leave out how the original syndrome measurement responds to coherent local rotations. The new invariant captures that response, constrains equality in a gate-resource theorem, and still permits exact protected encoded control under its separate model.
 
-**Source pointers.** G §§2.2–2.3 for the foundational information-preservation question, with §5.2 as context for the distinct fault-tolerance setting; [Interpretation](../science/interpretation.md), [Related work](../references/RELATED_WORK.md), and [Verification](../verification/README.md) provide the final synthesis, attribution and evidence boundaries.
-
+**Source pointers.** G §§2.1–2.3, 3.1, 3.4–3.5 and the concatenation discussion in §5.2 supply the single stabilizer foundation. [Interpretation](../science/interpretation.md), [Gate/readout theorem](../science/gate_readout_tradeoff.md), [Protected entanglers](../science/protected_entangling_gates.md), [Related work](../references/RELATED_WORK.md) and [Bridge §15](GOTTESMAN_BRIDGE.md#15-assemble-the-complete-statement) give the authoritative synthesis, attribution and operational boundaries.

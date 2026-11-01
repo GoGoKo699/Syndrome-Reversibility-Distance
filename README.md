@@ -1,95 +1,81 @@
 # Syndrome Reversibility Distance
 
-**When does an error-syndrome measurement irreversibly reveal encoded quantum information?** This project gives an exact answer for stabilizer codes exposed to known products of single-qubit rotations. It identifies a code invariant that controls the best possible recovery after the prescribed measurement and is not determined by the usual code parameters.
+**When does an error-syndrome measurement irreversibly reveal encoded quantum information?** This project gives an exact answer for stabilizer codes exposed to known products of single-qubit rotations. A support invariant determines exact reversibility and the sharp small-angle recovery exponent. Codes with identical ordinary parameters can have different values of this invariant.
 
-The operation order is part of the question: encode, apply the physical product unitary, measure the full original stabilizer syndrome, then recover. Recovery may depend on the unitary and has access to the complete syndrome and remaining quantum state.
+The operation order is fixed: encode, apply the physical product unitary, measure the full **original** stabilizer syndrome, then recover. Recovery may know the entire unitary and receives both the syndrome and the remaining quantum state.
 
 ## Main results
 
-Let $S$ be the full stabilizer group, and let $N$ be its Pauli centralizer. Group membership below ignores overall Pauli phases. A nontrivial logical Pauli is an element of $N\setminus S$.
+Let $S$ be the full stabilizer group and $N$ its Pauli centralizer, with membership understood modulo global Pauli phases. A nontrivial logical Pauli belongs to $N\setminus S$.
 
-**Exact reversibility.** Every product unitary is perfectly recoverable after syndrome measurement if and only if no stabilizer and nontrivial logical Pauli have exactly the same physical support:
+**Exact reversibility.** Every product unitary is perfectly recoverable after the prescribed measurement if and only if no stabilizer and nontrivial logical Pauli have exactly the same physical support:
 
 ```math
-\{\mathrm{supp}(g):g\in S\}
+\{\operatorname{supp}(g):g\in S\}
 \cap
-\{\mathrm{supp}(L):L\in N\setminus S\}
+\{\operatorname{supp}(L):L\in N\setminus S\}
 =\varnothing.
 ```
 
-**Sharp error exponent.** Let $\mathcal C_S$ be the set of pairs $(g,L)$ with $g\in S$, $L\in N\setminus S$, and exactly equal support. Define the syndrome reversibility distance by
+**Sharp recovery exponent.** Define the syndrome reversibility distance by
 
 ```math
-r(S)=\min_{(g,L)\in\mathcal C_S}\mathrm{wt}(gL),
+r(S)=\min_{\substack{g\in S,\ L\in N\setminus S\\
+\operatorname{supp}(g)=\operatorname{supp}(L)}}
+\operatorname{wt}(gL),
 \qquad \min\varnothing=\infty.
 ```
 
-For a fixed code with finite $r$, the worst-case optimal half-diamond error after bounded local rotations of angle scale $\theta$ is $\Theta(\theta^r)$. The matching converse permits every syndrome-dependent quantum recovery. An equivalent description is the minimum even weight of a nontrivial logical Pauli whose proper nonempty Pauli subwords all have nonzero syndrome. In particular, finite $r$ is even and satisfies $r\ge d$; every even-distance code has $r=d$.
+For each fixed code with finite $r$, the worst-case optimal half-diamond error and the worst-case optimal entanglement infidelity under bounded local rotations of angle scale $\theta$ are both $\Theta(\theta^r)$. The converse allows every syndrome-dependent quantum recovery. Equivalently, $r$ is the minimum even weight of a nontrivial logical Pauli whose proper nonempty Pauli subwords all have nonzero syndrome. Thus finite $r$ is even, $r\ge d$, and even ordinary distance implies $r=d$. An arbitrary even logical word need not be such a circuit.
 
-**Identical code parameters, different reversibility.** For every integer $t\ge1$, two families have the same parameters $[[2\cdot5^t,2,3^t]]$:
+**Same code parameters, different reversibility.** For every concatenation depth $m\ge1$, the following codes have parameters $[[2\cdot5^m,2,3^m]]$:
 
 | Code | Syndrome reversibility distance |
 |---|---:|
-| Two independent, $t$-fold concatenated five-qubit blocks | $\infty$ |
-| The same code conjugated by one physical CNOT between the blocks | $3^t+1$ |
+| Two independent concatenated five-qubit blocks | $\infty$ |
+| The same code conjugated by one physical CNOT between blocks | $3^m+1$ |
 
-The CNOT changes the code's position relative to the physical tensor-product structure. The number of physical qubits, number of encoded qubits, and ordinary distance remain unchanged.
-
-The smallest pair consists of two $[[10,2,3]]$ codes. For an explicit four-site rotation on the CNOT-conjugated code, both optimal entanglement infidelity and optimal half-diamond error are exactly
+The CNOT changes the code's position relative to the physical tensor-product structure while retaining its length, encoded dimension and ordinary distance. In the smallest ten-qubit example, an explicit four-site rotation has optimal entanglement infidelity and optimal half-diamond error
 
 ```math
 p_4(q)=3q^2-2q^3,
-\qquad q=\sin^2(\theta/2),\quad 0\le q\le\tfrac12.
+\qquad q=\sin^2(\theta/2),\quad 0\le\theta\le\pi/2.
 ```
 
-## Connection to protected gates
+## Protected gates with the same readout
 
-For odd-distance stabilizer codes, attaining the minimum interaction order $\ell=d+t$ for a nontrivial Hamiltonian transparent to all Pauli errors of weight at most $t$ forces $r(S)=d+1$. Requiring $r(S)>d+1$, including infinity, therefore raises the necessary interaction order to at least $d+t+1$. The [joint theorem and proof](science/gate_readout_tradeoff.md) connect this invariant to [Error-Transparent Locality](https://github.com/GoGoKo699/Error-Transparent-Locality). Exact enumeration finds $r=4$ for that project's nine-qubit four-body construction and supplies a four-site rotation with optimal error $3q^2-2q^3$. The two operational noise models retain their separate assumptions.
+The sister project [Error-Transparent Locality](https://github.com/GoGoKo699/Error-Transparent-Locality) asks how much native interaction order and coupling an exact protected Hamiltonian requires. Their [joint theorem](science/gate_readout_tradeoff.md) states that, for odd $d\ge3$, $t\ge1$ and $d\ge2t+1$, a nontrivial gate transparent to every Pauli error of weight at most $t$ at interaction order $\ell=d+t$ forces $r(S)=d+1$. Hence $r(S)>d+1$, including infinity, requires $\ell\ge d+t+1$.
 
-The [growing-distance equality family](science/minimum_readout_safe_gates.md) realizes $r(S)=\infty$ together with optimal single-error-transparent gates on each of three logical axes: $n=5^m$, $d=3^m$, interaction order $\ell=d+2$, and coupling budget $J/\omega=d+1$. The proof uses two signed logical-Pauli shells with uniform one-site axis counts. The [sparse construction](science/sparse_protected_gates.md) uses at most $4n$ Pauli terms per axis with polynomially bounded rational denominators; at 25 qubits, an explicit form needs 75 terms. A separate existence argument gives at most $3n+1$ terms. The gate guarantee concerns one physical fault.
+The concatenated five-qubit family $Q_m=[[5^m,1,3^m]]$ has $r(S)=\infty$ and nevertheless supports exact protected local gates and entanglers. With $d=3^m$, its family-specific minimum orders and native coupling optima are:
 
-The [two-error gate construction](science/two_error_gates.md) also attains interaction order thirteen on the $[[25,1,9]]$ code, preserving $r(S)=\infty$. It protects every physical Pauli error of weight at most two. Its exact budget $J/\omega=521/8$ saturates a stronger code-specific block-moment bound.
+| Protected physical error weight | Minimum interaction order | Optimal axis budget $J/\omega$ | Depth |
+|---|---:|---:|---|
+| One | $d+2$ | $d+1$ | $m\ge1$ |
+| Two | $d+4$ | $(4d^2+21d+8)/8$ | $m\ge2$ |
+| Three | $d+6$ | $J_3(d)=(4d^3+51d^2+170d+24)/24$ | $m\ge2$ |
 
-The [growing two-error family](science/growing_two_error_gates.md) attains the corresponding code-specific optima at every depth $m\ge2$: $\ell=d+4$ and $J/\omega=(4d^2+21d+8)/8$, with $d=3^m$ and unchanged $r(S)=\infty$. A correlated stabilizer-padding rule follows the concatenation tree; the proof covers all physical errors of weight at most two.
+Here $\omega$ is half the logical spectral width and $J$ is the sum of absolute nonidentity bare Hermitian Pauli coefficients. These statements use exact sector intertwining. They concern the stated orders; they do not claim optimality at every larger order. The [science guide](science/README.md#protected-control-with-infinite-reversibility-distance) separates the dense constructions, sparse synthesis, coupling certificates and finite checks.
 
-The [exact sparse synthesis](science/sparse_two_error_synthesis.md) supplies positive sparse component classes, a rational pairwise coupling method, and a general reference compiler. An explicit 125-qubit gate uses 69,125 native Pauli terms per axis at interaction order 31 and the optimal budget $J/\omega=3491/8$. Exact integer orbit equations cover every one of the 70,126 protected errors; all three expanded logical axes are checked. The native coefficients have a 1,458-bit common denominator, so term count and exact description size remain separate resources.
+On a fixed product of $Q_m$ blocks with $m\ge2$, prescribe $h_L=\Omega P+cI$ with $\Omega\ne0$ and a nonidentity logical Pauli string $P$ of weight $p\ge1$. It has a three-error-transparent realization at minimum order $pd+6$ with optimal budget $|\Omega|J_3(pd)$. The target coset minimum $pd$ differs from ordinary code distance $d$. In particular, a protected logical $ZZ$ gate on two 25-qubit blocks attains order 24 and budget $1789|\Omega|$. Protected single-block controls and this entangler give universal encoded control in the native Hamiltonian model, while the product code and original syndrome measurement retain $r(S)=\infty$.
 
-The [three-error construction](science/three_error_gates.md) attains minimum interaction order $\ell=15$ on the $[[25,1,9]]$ code, with exact axis budget $J/\omega=2867/8$ and unchanged $r_S=\infty$. A complete seven-pattern block-moment certificate proves optimality for arbitrary allowed Hamiltonians. In the fixed canonical logical Pauli frame the exact all-direction budget is $(2867/8)\sum_\beta|\Omega_\beta|$. The explicit dense construction has 1,480,960 terms per axis and a 22-bit common coefficient denominator; all 64,876 protected errors are verified exactly on each axis.
+The physical CNOT used for the code-family separation **conjugates the code**. The protected logical entangler **keeps the product code fixed**. The readout experiment and protected-gate noise model have separate assumptions; no joint threshold or hardware-efficiency claim is made.
 
-The [all-depth three-error theorem](science/growing_three_error_gates.md) extends these optima to every $m\ge2$: $\ell=d+6$ and $J/\omega=(4d^3+51d^2+170d+24)/24$, with $r_S=\infty$. A strict truncated-tensor lifting rule combines the zero- through three-error hierarchy and preserves the optimal native budget. At 125 qubits it gives order 33 and $J/\omega=40175/8$; eleven exact response profiles cover all 8,649,376 protected errors. The recursion specifies a dense Hamiltonian and does not assert efficient native expansion or physical synthesis.
+## Read and learn
 
-The [protected entangler](science/protected_entangling_gates.md) keeps the product code and its original syndrome measurement fixed. On two 25-qubit blocks, it implements a three-error-transparent logical $ZZ$ generator at optimal order 24 and exact budget $J/\omega=1789$, while $r_S=\infty$. More generally, a specified logical Pauli string of weight $p$ attains $\ell=pd+6$ and $J/\omega=J_3(pd)$. The target coset minimum $pd$ differs from the ordinary code distance $d$. Together with protected local controls this gives universal encoded control in the native Hamiltonian model. The finite certificate covers all 540,376 protected errors for all nine logical axis products; its compact dense specification has 41,032,000,000 native terms.
-
-## Read the science
+Start with the [science guide](science/README.md) for a topic-based proof route, the full result catalog and the limits of each construction.
 
 | Question | Authoritative account |
 |---|---|
-| What is retained, what can recovery do, and which errors are optimized? | [Model and recovery](science/model.md) |
-| Why is equality of exact supports the criterion? | [Support classification](science/support_criterion.md) |
-| Why does the invariant give the optimal exponent, including rare syndromes? | [Sharp error exponent](science/error_exponent.md) |
-| How does one CNOT preserve distance while changing reversibility? | [Code families and the ten-qubit example](science/code_families.md) |
-| What does the result say about syndrome measurement and coherent errors? | [Physical interpretation](science/interpretation.md) |
-| What does optimal protected-gate locality force about readout? | [Joint gate/readout theorem](science/gate_readout_tradeoff.md) |
-| Can the stronger locality bound be attained at growing distance? | [Concatenated equality construction](science/minimum_readout_safe_gates.md) |
-| Can those protected gates use few Pauli terms? | [Sparse exact construction](science/sparse_protected_gates.md) |
-| Can the twenty-five-qubit code protect two physical errors during a gate? | [Two-error equality construction and coupling optimum](science/two_error_gates.md) |
-| Does the two-error optimum persist at growing distance? | [All-depth two-error family](science/growing_two_error_gates.md) |
-| Can the 125-qubit optimum be written explicitly? | [Exact sparse two-error synthesis](science/sparse_two_error_synthesis.md) |
-| Can the twenty-five-qubit code protect three physical errors? | [Three-error equality and coupling optimum](science/three_error_gates.md) |
-| Do these three-error optima persist at growing distance? | [Strict lifting and all-depth equality](science/growing_three_error_gates.md) |
-| Can protected entanglers keep the product code and readout fixed? | [Optimal logical Pauli strings and universal encoded control](science/protected_entangling_gates.md) |
-| Which ingredients are inherited, and how do nearby results compare? | [Related work](references/RELATED_WORK.md) and [bibliography](references/references.bib) |
-| How are the finite examples reproduced? | [Verification](verification/README.md) |
+| What channel is measured, and what may recovery use? | [Model and recovery](science/model.md) |
+| Why do exact supports and minimal logical circuits classify reversibility? | [Support criterion](science/support_criterion.md) |
+| Why is the optimized exponent sharp, including rare syndromes? | [Error exponent](science/error_exponent.md) |
+| How can one physical CNOT preserve distance but change reversibility? | [Code families](science/code_families.md) |
+| What does the ordering mean physically? | [Interpretation](science/interpretation.md) |
+| Which ingredients come from prior research? | [Related work](references/RELATED_WORK.md) and [bibliography](references/references.bib) |
 
-The general outcome-conditioned recovery criterion and optimal-fidelity formula are established results of Gregoratti and Werner. The even-repetition error mechanism is established in work of Huang, Doherty and Flammia. Their roles, and the connection to more recent coherent-error studies, are identified in the [attribution account](references/RELATED_WORK.md). The proofs here connect that recovery framework to the physical supports of arbitrary stabilizer codes.
+The selected educational anchor is **Daniel Gottesman, _An Introduction to Quantum Error Correction and Fault-Tolerant Quantum Computation_**, arXiv:0904.2557v1 (2009; published 2010). The [Gottesman bridge](learning/GOTTESMAN_BRIDGE.md) maps the source sections and notation to this project and supplies the additional channel-recovery arguments. The [30-milestone map](learning/MILESTONES.md) has 12 background/preliminaries milestones followed by 18 narrative/innovation milestones, each with an understanding target, earlier dependencies, a conceptual connection and source pointers. Use the [learning guide](learning/README.md) to enter this common route. The [LLM guide](llms.txt) identifies the authoritative files and distinctions to preserve.
 
-## Learn the project
-
-The single educational anchor is **Daniel Gottesman, _An Introduction to Quantum Error Correction and Fault-Tolerant Quantum Computation_** (2009 arXiv version; published 2010). The [Gottesman bridge](learning/GOTTESMAN_BRIDGE.md) gives the relevant sections, translates the notation, and develops the steps from stabilizer error correction to the support criterion and sharp recovery exponent.
-
-The [30-milestone map](learning/MILESTONES.md) provides one common route through the project: **12 background/preliminaries milestones** build the physical and mathematical framework, followed by **18 narrative/innovation milestones** that assemble the proof mechanisms and the code-family separation. Each milestone has an understanding target, earlier dependencies, a conceptual connection, and source pointers.
-
-Use the bridge alongside the milestones for self-directed study. The [LLM reading guide](llms.txt) maps questions to the authoritative scientific and learning files.
+The general outcome-conditioned recovery criterion and optimal-fidelity formula are established results of Gregoratti and Werner. The even-repetition mechanism is established in work of Huang, Doherty and Flammia. The [attribution account](references/RELATED_WORK.md) distinguishes these ingredients from the support/circuit classification and its operational consequences proved here.
 
 ## Reproduce the checks
 
@@ -100,13 +86,12 @@ python3 -m pip install -r verification/requirements.txt
 python3 verification/run_all.py
 ```
 
-The checks include exact binary Pauli calculations and a direct physical-Hilbert-space calculation for all syndrome sectors of the ten-qubit example. The universal classification and growing-distance family are established by the written proofs; finite computations check their specified instances.
+The [verification guide](verification/README.md) describes all 12 programs, their exact algebraic certificates, numerical physical-channel checks and limits. These include direct physical-Hilbert-space recovery calculations for the ten-qubit example, binary Pauli calculations, protected-gate response checks and optimality certificates. The universal classification and growing families rely on the written proofs.
 
 ## Scope
 
-The syndrome measurement is full, ideal, and fixed to the original stabilizer code. Recovery occurs afterward, may depend on the full physical unitary, and has unrestricted computational and quantum-processing resources. The small-angle estimates hold for each fixed code; their constants are not asserted to remain uniform over a growing family. The [interpretation](science/interpretation.md) explains how these assumptions enter the result.
+The syndrome measurement is full, ideal and fixed to the original stabilizer code. Recovery occurs afterward, may depend on the complete physical unitary, and has unrestricted computational and quantum-processing resources. Small-angle constants may depend on the fixed code. Exact protected Hamiltonians use native Pauli order and coefficient cost, without a geometric layout, efficient synthesis or fault-tolerant threshold assumption.
 
 ## Purpose and contact
 
 This repository serves as a record of the work and a guide for the author’s self-directed learning. For discussion or potential collaboration, please contact Ruge Lin at [gogoko699@gmail.com](mailto:gogoko699@gmail.com).
-
