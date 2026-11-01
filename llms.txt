@@ -46,14 +46,19 @@ Sources and verification:
 - verification/run_all.py: reproduction entrypoint; run it for fresh evidence.
 
 Learning:
-- learning/README.md: how to use the single anchor, bridge and common map.
-- learning/GOTTESMAN_BRIDGE.md: Daniel Gottesman, An Introduction to Quantum
-  Error Correction and Fault-Tolerant Quantum Computation, arXiv:0904.2557v1
-  (2009; published 2010); actual sections, notation translation, worked
-  measurement example and additional project-specific recovery derivations.
+- learning/README.md: how to use the shared anchor with this project's own
+  Preskill bridge and 30-milestone map.
+- learning/PRESKILL_BRIDGE.md: John Preskill, Quantum Information, Chapter 7,
+  Quantum Error Correction, author-hosted draft updated March 2026. This is
+  the single educational anchor shared with Error-Transparent Locality.
+  This project's bridge selects chapter sections, translates notation and
+  develops the additional syndrome-measurement and recovery arguments.
 - learning/MILESTONES.md: exactly M01-M30, with 12 background/preliminaries
   milestones and 18 narrative/innovation milestones. Each includes a central
   question, target, earlier dependencies, conceptual connection and sources.
+- [Sister project's Preskill bridge](https://github.com/GoGoKo699/Error-Transparent-Locality/blob/main/learning/PRESKILL_BRIDGE.md):
+  the same chapter supports a distinct protected-gate bridge and milestone map.
+  Keep its unknown-time fault model separate from prescribed syndrome readout.
 
 Preserve these distinctions:
 - S is the entire stabilizer group, not a generator list. Phase-free membership
@@ -88,5 +93,6 @@ Preserve these distinctions:
 - General outcome-conditioned recovery and the even-repetition mechanism are
   inherited ingredients. Consult RELATED_WORK before assigning novelty.
 - Finite checks do not replace general proofs, peer review or source attribution.
-- The selected educational anchor supplies foundations. Research citations are
+- The common Preskill educational anchor supplies foundations. Each project
+  retains its own bridge and 30-milestone map. Research citations are
   necessary attribution, not additional assigned educational anchors.

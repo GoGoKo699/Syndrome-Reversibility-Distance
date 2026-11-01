@@ -1,4 +1,4 @@
-# From Gottesman's stabilizer tutorial to syndrome reversibility
+# From Preskill's QEC foundations to syndrome reversibility
 
 An error syndrome is useful because it can reveal what happened to a physical system while preserving the quantum information encoded in it. This project asks exactly when that separation survives coherent rotations on every physical qubit. The answer depends on how stabilizer supports and logical-operator supports fit together. The final sections connect that readout property to protected logical control on the same code.
 
@@ -6,21 +6,22 @@ This bridge follows the [30-milestone map](MILESTONES.md). It develops the conne
 
 ## 1. The single educational anchor
 
-**Daniel Gottesman, *An Introduction to Quantum Error Correction and Fault-Tolerant Quantum Computation*.** We use [arXiv:0904.2557v1](https://arxiv.org/abs/0904.2557v1), dated 16 April 2009, published as a chapter in *Quantum Information Science and Its Contributions to Mathematics*, Proceedings of Symposia in Applied Mathematics **68**, 13–58 (2010). The [author's text](https://arxiv.org/pdf/0904.2557v1) supplies the stabilizer foundation.
+This project and [Error-Transparent Locality](https://github.com/GoGoKo699/Error-Transparent-Locality) use one common educational anchor: **John Preskill, *Quantum Information*, Chapter 7, “Quantum Error Correction,” updated March 2026**. The [author's course index](https://preskill.caltech.edu/ph229/index.html) links the [official chapter](https://www.preskill.caltech.edu/ph219/chap7_26_6A.pdf). Printed page numbers below are six smaller than PDF viewer page numbers.
 
-The source route is selective:
+The common foundation starts with exact correction, information leakage and a reference system, then develops stabilizers, logical operators, the five-qubit code and concatenation. This bridge follows those ideas into the readout experiment; the [companion gate bridge](https://github.com/GoGoKo699/Error-Transparent-Locality/blob/main/learning/PRESKILL_BRIDGE.md) follows them into protected dynamics.
 
-| Verified source location | Relevant foundation | Where it enters this project |
-|---|---|---|
-| §2.1, “The nine-qubit code,” including Table 1 | Pauli operators, coherent errors and linearity | Physical rotations and their error paths |
-| §2.2, “General properties of quantum error-correcting codes” | General correction conditions and distance | Preserving arbitrary encoded states |
-| §2.3, “Stabilizer codes” | Checks, syndrome measurement and code subspaces | The fixed code and readout |
-| §3.1, “Some other important codes,” especially Table 4, Eq. (56) and Lemma 1 | Five-qubit code, binary symplectic representation and syndrome existence | Explicit families and syndrome columns |
-| §3.4, “The logical Pauli group” | Logical Pauli quotient | Detectable, trivial and logical operators |
-| §3.5, “The Clifford group” | Clifford conjugation | Local axis changes and the physical CNOT |
-| §5.2, “Level reduction,” concatenation discussion | Repeated encoding | The growing-distance construction |
+| Verified chapter location | Printed pages | Foundation used here |
+|---|---:|---|
+| [§7.2, “Conditions for quantum error correction”](https://www.preskill.caltech.edu/ph219/chap7_26_6A.pdf#page=10), including Eq. (7.17) | 4–7 | Correctable error spans, recovery and degeneracy |
+| [§§7.3.1–7.3.3](https://www.preskill.caltech.edu/ph219/chap7_26_6A.pdf#page=14) | 8–10 | Distinguishability, leakage of logical information and reference decoupling |
+| [§7.4, “Some general properties of QECC's”](https://www.preskill.caltech.edu/ph219/chap7_26_6A.pdf#page=18), especially §§7.4.1 and 7.4.3 | 12–14 | Pauli expansions, weight, distance and detection |
+| [§§7.6–7.8](https://www.preskill.caltech.edu/ph219/chap7_26_6A.pdf#page=24) | 18–24 | Classical linear codes, CSS checks and encoded superpositions |
+| [§§7.10.1–7.10.2](https://www.preskill.caltech.edu/ph219/chap7_26_6A.pdf#page=33), including Eqs. (7.116) and (7.129)–(7.132) | 27–31 | Stabilizers, the real-Pauli convention and binary symplectic notation |
+| [§7.10.4, “Encoded qubits”](https://www.preskill.caltech.edu/ph219/chap7_26_6A.pdf#page=39) | 33–34 | The logical Pauli quotient and encoded operators |
+| [§7.11, “The 5-Qubit Code”](https://www.preskill.caltech.edu/ph219/chap7_26_6A.pdf#page=40), including Eq. (7.150) | 34–37 | The standard five-qubit seed and syndrome measurement |
+| [§7.17, “Concatenated codes”](https://www.preskill.caltech.edu/ph219/chap7_26_6A.pdf#page=54) | 48–50 | Inner and outer encoding and multiplicative distance bounds |
 
-The general fault-tolerance proof in §5 is not needed for the present result. Our measurement is ideal, and our small-angle bound is for a fixed code.
+The chapter's fault-tolerance discussions are background context. The present readout measurement is ideal, and the weak-angle limit fixes the code before taking the angle to zero. The local Clifford and CNOT rules needed below are derived in §3; channel metrics and the record-assisted recovery optimizer are supplied in §§4–6. The chapter is not assigned as a source for those additional theorems.
 
 The following additions are supplied here rather than assigned to the anchor: the precise optimization over recovery after a recorded measurement; the fidelity and diamond-distance estimates needed for that optimization; the support/circuit theorems proved in this repository; and the Hamiltonian resource and tensor-increment arguments connecting readout to protected gates. The first addition uses established results of Gregoratti and Werner. The even-repetition mechanism used later is due to earlier coherent-error work, including Huang, Doherty and Flammia. These primary research sources are attributed in [Related work](../references/RELATED_WORK.md); they do not constitute additional educational anchors.
 
@@ -48,13 +49,27 @@ A code stores $k$ logical qubits inside $n$ physical qubits. Its logical Hilbert
 | Concept | Convention in this repository |
 |---|---|
 | Stabilizer | The actual physical group consists of signed Hermitian Paulis fixing the code. For support counting, $S$ denotes its labels modulo global phases. |
-| Centralizer | $N$ is the phase-free set of Paulis commuting with every stabilizer, corresponding to the anchor's $N(S)$. |
+| Centralizer | $N$ is the phase-free set of Paulis commuting with every stabilizer, corresponding to the anchor's symplectic orthogonal space $S^\perp$. |
 | Logical Pauli | A label in $N\setminus S$ acts nontrivially on the code. A bar denotes its induced logical operator. |
 | Support and weight | Support is the set of nonidentity sites; weight is its size. Equal weight does not imply equal support. |
 | Syndrome | $s$ is a binary string recording the eigenvalues of the independent checks. The actual projectors retain the physical signs. |
 | Rotation scale | A local rotation is $\exp(-i\theta h_j/2)$. For a Pauli axis, its error amplitude is $\sin(\theta/2)$. |
 | Recovery information | Each specified physical unitary may have its own recovery, applied after the prescribed measurement. |
 | Error convention | Diamond error means one half of the diamond norm of the difference from the identity channel. |
+
+### Convert the real-Pauli convention before forming observables
+
+Preskill changes convention in §7.10.1: Eq. (7.116) uses the real, anti-Hermitian matrix $`Y_{\mathrm{P}}=ZX=i\sigma_y`$, whose square is $-I$. This repository uses the Hermitian Pauli $Y=\sigma_y$, with $Y^2=I$. The support and symplectic labels survive this conversion, but physical operator signs and phases must be translated.
+
+In the chapter's binary notation, a representative is $Z(\alpha)X(\beta)$. If $\nu$ sites have both bits set, the canonical Hermitian tensor with the same labels is
+
+```math
+Q_{\mathrm{H}}=(-i)^\nu Z(\alpha)X(\beta).
+```
+
+Every overlapping site contributes $ZX=iY$, so multiplication by $(-i)^\nu$ converts all of them to Hermitian $Y$ factors. For a signed chapter word $\epsilon Z(\alpha)X(\beta)$, the same physical operator is $`\epsilon i^\nu Q_{\mathrm{H}}`$. A chapter stabilizer has even $\nu$, so this factor supplies a real physical sign. This sign must be retained before defining its stabilizer eigenspace. Binary support alone cannot supply the physical sign. Conjugation before conversion is always $E^\dagger B E$; the abbreviated $EBE$ is valid for the Hermitian Pauli errors used here, whose squares are identity.
+
+Preskill's code projector is $\Pi$, whereas this repository writes $P=VV^\dagger$. The symbol $V$ is our encoding isometry; in §7.2 of the chapter it denotes a recovery isometry. The chapter's phase-free space $S^\perp$ is our centralizer $N$, and its quotient $S^\perp/S$ gives the logical Pauli labels $N/S$. The companion gate bridge uses $K$ where this bridge initially uses $D=2^k$ for logical dimension; both use the same Hermitian physical tensors, encoding isometry and code projector.
 
 Discarding phases is legitimate for support and binary commutation calculations because those calculations retain the symplectic commutation relation separately. It is not legitimate when forming the physical projectors. For example, $+XX$ and $-XX$ specify different positive-eigenvalue codespaces even though their phase-free support labels agree. The [model](../science/model.md#1-code-phases-and-syndrome) keeps these two roles separate.
 
@@ -66,6 +81,26 @@ The measurement order is fixed throughout: encode, apply $U=\bigotimes_jU_j$, me
 ```
 
 The quantifier does not supply one universal decoder for an unknown rotation. It also places recovery after readout. Applying a known $U^\dagger$ before readout would answer a different, immediate reversal problem.
+
+### Local derivation of the Clifford and CNOT rules
+
+The support argument needs only a few concrete Pauli conjugations. Let $F=(X+Z)/\sqrt2$ be the Hadamard matrix and $R=\mathrm{diag}(1,i)$. Matrix multiplication gives
+
+```math
+FXF^\dagger=Z,\qquad FZF^\dagger=X,
+\qquad RXR^\dagger=Y,\qquad RZR^\dagger=Z.
+```
+
+Together with $Y=iXZ$, these rules determine the conjugation of every Pauli and allow any nonidentity one-qubit axis to be sent to any other, up to sign. A unitary that maps Pauli operators to Pauli operators under conjugation is called a Clifford unitary. Products of the one-qubit changes above preserve each physical support. This is the only local-Clifford fact needed in the support classification.
+
+For a control $c$ and target $t$, define CNOT by $C\lvert a,b\rangle=\lvert a,a\mathbin\oplus b\rangle$. Its action on the computational basis gives $C=C^\dagger$ and
+
+```math
+CX_cC^\dagger=X_cX_t,\qquad CZ_cC^\dagger=Z_c,
+\qquad CX_tC^\dagger=X_t,\qquad CZ_tC^\dagger=Z_cZ_t.
+```
+
+Unlike a product of one-qubit changes, this two-qubit conjugation can change support. In §11 it conjugates the code and checks to define a second code. In §14 a protected *logical* entangler instead preserves the original codespace and checks. The two operations have different roles. These explicit rules supplement the chapter's stabilizer and encoding examples; no additional educational source is required.
 
 ## 4. The syndrome induces a measurement on the logical state
 
@@ -358,9 +393,9 @@ For $r=\infty$, both errors vanish exactly for every product unitary. At $r=2$ t
 
 ## 11. From the five-qubit code to the one-CNOT separation
 
-The source's Table 4 supplies the standard five-qubit stabilizer. The [family proof](../science/code_families.md#2-the-five-qubit-building-block) checks its distance and the required parity properties directly. Its stabilizers all have even weight, while every representative of a nontrivial logical Pauli has odd weight. These are properties of complete stabilizer and logical cosets, not only their displayed generators.
+Preskill §7.11, Eq. (7.150), supplies the standard five-qubit stabilizer. The [family proof](../science/code_families.md#2-the-five-qubit-building-block) checks its distance and the required parity properties directly. Its stabilizers all have even weight, while every representative of a nontrivial logical Pauli has odd weight. These are properties of complete stabilizer and logical cosets, not only their displayed generators.
 
-Concatenation replaces each outer physical qubit by an inner encoded qubit. A nontrivial outer logical must act on at least three inner blocks; each such action costs the inner distance. Minimum representatives attain that product, yielding $[[5^t,1,3^t]]$ for every integer $t\ge1$. The parity property also persists: an even number of odd-weight inner logical factors produces an even-weight outer stabilizer, and odd logical representatives remain odd. These familiar coding ingredients support the new comparison.
+Preskill §7.17 defines concatenation by replacing each outer physical qubit with an inner encoded qubit. A nontrivial outer logical must act on at least three inner blocks; each such action costs the inner distance. Minimum representatives attain that product, yielding $[[5^t,1,3^t]]$ for every integer $t\ge1$. The parity property also persists: an even number of odd-weight inner logical factors produces an even-weight outer stabilizer, and odd logical representatives remain odd. These familiar coding ingredients support the new comparison.
 
 Now take two such blocks. A matching stabilizer/logical support would need to match separately inside each block. On at least one block the logical is nontrivial and has odd weight, whereas the stabilizer restriction has even weight. This is impossible, giving $r=\infty$. Total parity alone would be insufficient: a logical acting nontrivially on both blocks can have even total weight.
 
