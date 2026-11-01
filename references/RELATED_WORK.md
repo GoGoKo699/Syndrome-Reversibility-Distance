@@ -2,6 +2,8 @@
 
 This project asks whether a prescribed stabilizer syndrome measurement preserves the information in a code after a known product unitary. The product of physical single-qubit unitaries acts first, the original full syndrome is measured ideally next, and arbitrary recovery follows with knowledge of the unitary and the outcome. The recovery is optimized separately for each specified unitary. This is the channel and ordering fixed in [the model](../science/model.md).
 
+The selected educational anchor is [John Preskill, *Quantum Information*, Chapter 7, “Quantum Error Correction”](https://www.preskill.caltech.edu/ph219/chap7_26_6A.pdf), in the author-hosted draft updated March 2026. The [Preskill bridge](../learning/PRESKILL_BRIDGE.md) connects its QEC foundations to this project's definitions and proof dependencies.
+
 ## Results and inherited ingredients
 
 Let $S$ be the phase-free stabilizer label space and $N$ its Pauli centralizer. Define
