@@ -196,7 +196,7 @@ Let $A=[V^\dagger HV]_0$ and let $C_j$ be the scalar-free contribution from phys
 
 Detectable Pauli terms have zero code compression, and stabilizer terms contribute only scalars. They do not invalidate the system and add nonnegative native budget. Consistent scalar shifts between protected error sectors likewise disappear on taking the scalar-free part.
 
-For one logical Pauli axis, the absolute native coefficient sum in a class is at least $\|C_j\|_\infty=|m_j|\omega$. Hence every allowed Hamiltonian satisfies
+For one logical Pauli axis, the absolute native coefficient sum in a class is at least $\lVert C_j\rVert_\infty=|m_j|\omega$. Hence every allowed Hamiltonian satisfies
 
 ```math
 J\ge\sum_j|m_j(d)|\,\omega=J_3(d)\omega.

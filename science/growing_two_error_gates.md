@@ -290,7 +290,7 @@ The matrix in (G7) has determinant $-256$. Its unique solution is
 (C_0,C_1,C_2,C_F)=(a_0,a_1,a_2,b)A.
 ```
 
-If $J_j$ is the absolute native coefficient sum of pattern $j$, the compressed nontrivial logical Paulis each have norm one, so $J_j\ge\|C_j\|_\infty$. For one encoded qubit, $\|A\|_\infty=\omega$. The patterns are disjoint, and any additional scalar or detectable terms add nonnegative budget. Hence
+If $J_j$ is the absolute native coefficient sum of pattern $j$, the compressed nontrivial logical Paulis each have norm one, so $J_j\ge\lVert C_j\rVert_\infty$. For one encoded qubit, $\lVert A\rVert_\infty=\omega$. The patterns are disjoint, and any additional scalar or detectable terms add nonnegative budget. Hence
 
 ```math
 \boxed{J\ge\sum_j\|C_j\|_\infty

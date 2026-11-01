@@ -215,7 +215,7 @@ C_B=-\frac{45}{16}A.
 
 ### From operator masses to coupling budget
 
-For this one-logical-qubit code, the traceless generator $A$ has operator norm $\omega$. If $J_j$ is the sum of absolute native coefficients in type $j$, then $\|C_j\|_\infty\le J_j$: every contributing compressed Hermitian logical Pauli has norm one, and the triangle inequality applies. Terms in the four types are disjoint. Any additional stabilizer or detectable terms can only add to the native budget. Consequently
+For this one-logical-qubit code, the traceless generator $A$ has operator norm $\omega$. If $J_j$ is the sum of absolute native coefficients in type $j$, then $\lVert C_j\rVert_\infty\le J_j$: every contributing compressed Hermitian logical Pauli has norm one, and the triangle inequality applies. Terms in the four types are disjoint. Any additional stabilizer or detectable terms can only add to the native budget. Consequently
 
 ```math
 J\ge\sum_jJ_j
