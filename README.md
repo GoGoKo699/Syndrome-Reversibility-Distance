@@ -2,9 +2,16 @@
 
 **When does an error-syndrome measurement irreversibly reveal encoded quantum information?** This project gives an exact answer for stabilizer codes exposed to known products of single-qubit rotations. A support invariant determines exact reversibility and the sharp small-angle recovery exponent. Codes with identical ordinary parameters can have different values of this invariant.
 
-**Sister project within Protected Gates and Syndrome Readout:** [Error-Transparent Locality](https://github.com/GoGoKo699/Error-Transparent-Locality) determines the native interaction order and coupling cost of logical evolution protected against faults at unknown times. A [shared gate/readout theorem](science/gate_readout_tradeoff.md) relates those resources to syndrome reversibility; fixed-code constructions allow protected control without changing the original syndrome measurement. The gate and readout experiments retain separate assumptions.
-
 The operation order is fixed: encode, apply the physical product unitary, measure the full **original** stabilizer syndrome, then recover. Recovery may know the entire unitary and receives both the syndrome and the remaining quantum state.
+
+## Sister projects: Protected Gates and Syndrome Readout
+
+| Sister repository | Central question |
+|---|---|
+| **[Error-Transparent Locality](https://github.com/GoGoKo699/Error-Transparent-Locality)** | Which native interaction order and coupling budget let a logical gate tolerate faults at unknown times? |
+| **[Syndrome Reversibility Distance](https://github.com/GoGoKo699/Syndrome-Reversibility-Distance) (this repository)** | When does the original syndrome measurement preserve logical information after a known product unitary? |
+
+The [shared gate/readout theorem](science/gate_readout_tradeoff.md) connects the two requirements on a fixed code. The gate and readout models retain separate assumptions.
 
 ## Main results
 
