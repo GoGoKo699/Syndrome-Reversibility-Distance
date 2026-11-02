@@ -2,6 +2,8 @@
 
 **When does an error-syndrome measurement irreversibly reveal encoded quantum information?** This project gives an exact answer for stabilizer codes exposed to known products of single-qubit rotations. A support invariant determines exact reversibility and the sharp small-angle recovery exponent. Codes with identical ordinary parameters can have different values of this invariant.
 
+**Sister project within Protected Gates and Syndrome Readout:** [Error-Transparent Locality](https://github.com/GoGoKo699/Error-Transparent-Locality) determines the native interaction order and coupling cost of logical evolution protected against faults at unknown times. A [shared gate/readout theorem](science/gate_readout_tradeoff.md) relates those resources to syndrome reversibility; fixed-code constructions allow protected control without changing the original syndrome measurement. The gate and readout experiments retain separate assumptions.
+
 The operation order is fixed: encode, apply the physical product unitary, measure the full **original** stabilizer syndrome, then recover. Recovery may know the entire unitary and receives both the syndrome and the remaining quantum state.
 
 ## Main results
@@ -44,7 +46,7 @@ p_4(q)=3q^2-2q^3,
 
 ## Protected gates with the same readout
 
-The sister project [Error-Transparent Locality](https://github.com/GoGoKo699/Error-Transparent-Locality) asks how much native interaction order and coupling an exact protected Hamiltonian requires. Their [joint theorem](science/gate_readout_tradeoff.md) states that, for odd $d\ge3$, $t\ge1$ and $d\ge2t+1$, a nontrivial gate transparent to every Pauli error of weight at most $t$ at interaction order $\ell=d+t$ forces $r(S)=d+1$. Hence $r(S)>d+1$, including infinity, requires $\ell\ge d+t+1$.
+For odd $d\ge3$, $t\ge1$ and $d\ge2t+1$, a nontrivial gate transparent to every Pauli error of weight at most $t$ at interaction order $\ell=d+t$ forces $r(S)=d+1$. Hence $r(S)>d+1$, including infinity, requires $\ell\ge d+t+1$.
 
 The concatenated five-qubit family $Q_m=[[5^m,1,3^m]]$ has $r(S)=\infty$ and nevertheless supports exact protected local gates and entanglers. With $d=3^m$, its family-specific minimum orders and native coupling optima are:
 
@@ -58,7 +60,7 @@ Here $\omega$ is half the logical spectral width and $J$ is the sum of absolute 
 
 On a fixed product of $Q_m$ blocks with $m\ge2$, prescribe $h_L=\Omega P+cI$ with $\Omega\ne0$ and a nonidentity logical Pauli string $P$ of weight $p\ge1$. It has a three-error-transparent realization at minimum order $pd+6$ with optimal budget $|\Omega|J_3(pd)$. The target coset minimum $pd$ differs from ordinary code distance $d$. In particular, a protected logical $ZZ$ gate on two 25-qubit blocks attains order 24 and budget $1789|\Omega|$. Protected single-block controls and this entangler give universal encoded control in the native Hamiltonian model, while the product code and original syndrome measurement retain $r(S)=\infty$.
 
-The physical CNOT used for the code-family separation **conjugates the code**. The protected logical entangler **keeps the product code fixed**. The readout experiment and protected-gate noise model have separate assumptions; no joint threshold or hardware-efficiency claim is made.
+The physical CNOT used for the code-family separation **conjugates the code**. The protected logical entangler **keeps the product code fixed**. No joint threshold or hardware-efficiency claim is made.
 
 ## Read and learn
 
@@ -73,7 +75,7 @@ Start with the [science guide](science/README.md) for a topic-based proof route,
 | What does the ordering mean physically? | [Interpretation](science/interpretation.md) |
 | Which ingredients come from prior research? | [Related work](references/RELATED_WORK.md) and [bibliography](references/references.bib) |
 
-The single educational anchor, shared with [Error-Transparent Locality](https://github.com/GoGoKo699/Error-Transparent-Locality), is **John Preskill, _Quantum Information_, Chapter 7, “Quantum Error Correction”**, in the author-hosted draft updated March 2026. Each project has its own Preskill bridge and 30-milestone map. This project's [Preskill bridge](learning/PRESKILL_BRIDGE.md) maps the chapter's notation and selected sections to the syndrome-readout argument and supplies the additional channel-recovery steps. Its [30-milestone map](learning/MILESTONES.md) has 12 background/preliminaries and 18 narrative/innovation milestones, each with an understanding target, earlier dependencies, a conceptual connection and source pointers. The [learning guide](learning/README.md) enters this route; the [sister project's Preskill bridge](https://github.com/GoGoKo699/Error-Transparent-Locality/blob/main/learning/PRESKILL_BRIDGE.md) develops protected-gate dynamics from the same foundation. The [LLM guide](llms.txt) identifies the authoritative files and distinctions to preserve.
+The shared educational anchor is **John Preskill, _Quantum Information_, Chapter 7, “Quantum Error Correction”**, in the author-hosted draft updated March 2026. This project's [Preskill bridge](learning/PRESKILL_BRIDGE.md) maps selected sections and notation to syndrome readout and the additional channel-recovery steps. Its [30-milestone map](learning/MILESTONES.md) has 12 background/preliminaries and 18 narrative/innovation milestones, each with an understanding target, earlier dependencies, a conceptual connection and source pointers. The [learning guide](learning/README.md) enters this route; the [sister project's Preskill bridge](https://github.com/GoGoKo699/Error-Transparent-Locality/blob/main/learning/PRESKILL_BRIDGE.md) develops protected-gate dynamics with its own 30-milestone map. The [LLM guide](llms.txt) identifies the authoritative files and distinctions to preserve.
 
 The general outcome-conditioned recovery criterion and optimal-fidelity formula are established results of Gregoratti and Werner. The even-repetition mechanism is established in work of Huang, Doherty and Flammia. The [attribution account](references/RELATED_WORK.md) distinguishes these ingredients from the support/circuit classification and its operational consequences proved here.
 
